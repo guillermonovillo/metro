@@ -13,11 +13,6 @@ html, body {
       display: table-cell;
       vertical-align: middle;
    }
-
-   .registration {
-      margin: 0 auto;
-      max-width: 570px;
-   }
 }
 
 // ## form elements ##
@@ -33,11 +28,12 @@ html, body {
       @include clearfix;
    }
 
-   .field.name {
+   .field.field-2 {
 
       .text { float: left; }
 
       .first { margin-right: 5px; }
+
       .last {}
    }
 
@@ -98,6 +94,36 @@ html, body {
       }
    }
 
+   .radio-button {
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: $oxygen_bold;
+      font-size: 10px;
+      float: left;
+      letter-spacing: 1px;
+      margin-right: 5px;
+      padding: 5px 5px 4px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 36px;
+      -webkit-transition: all .2s ease-out;
+      -moz-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+
+      &:hover {
+         background-color: #cc9f3d;
+         border-color: #cc9f3d;
+      }
+
+      &:active, &.selected {
+         background-color: #fff;
+         border-color: #fff;
+         color: #484848;
+      }
+   }
+
    small {
       color: #fff;
       display: inline-block;
@@ -118,6 +144,17 @@ html, body {
       margin: 0;
       padding: 4px 20px;
       text-transform: uppercase;
+      -webkit-transition: all .2s ease-out;
+      -moz-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+
+      &:active {
+         background-color: #cc9f3d;
+         border-color: #cc9f3d;
+         color: #fff;
+      }
 
       &:focus { outline: none; }
    }
@@ -172,9 +209,9 @@ html, body {
    padding-left: 35px;
 
    .hgroup { 
-      background: url('../img/titles/broker_registration.png') no-repeat scroll center 0 transparent;
+      background: url('../img/titles/purchaser_registration.png') no-repeat scroll center 0 transparent;
       margin-bottom: 20px;
-      height: 220px;
+      height: 286px;
    }
 
    .form {
@@ -186,11 +223,11 @@ html, body {
 
          &.column-2 {
 
-            label { text-align: center; }
+            label.alt { text-align: center; }
          }
       }
 
-      .field.name {
+      .field.field-2 {
 
          .text { width: 105px; }
       }
@@ -204,6 +241,16 @@ html, body {
             width: 75px;
          }
       }
+   }
+}
+
+// ## registration alt ##
+.registration.alt {
+
+   .hgroup {
+      background: url('../img/titles/broker_registration.png') no-repeat scroll center 0 transparent;
+      margin-bottom: 20px;
+      height: 305px;
    }
 }
 

@@ -10,7 +10,7 @@
 
    <meta charset="utf-8" />
    
-   <title>Metropolis | Broken Registration</title>
+   <title>Metropolis | Purchaser Registration</title>
 
    <!-- Favicon -->
    <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -31,9 +31,9 @@
    <section class="fullscreen">
       <a class="close" href="#">Close</a>
       <div class="wrapper">
-         <div class="registration alt">
+         <div class="registration">
             <div class="hgroup">
-               <h1>Broker registration</h1>
+               <h1>Purchaser registration</h1>
             </div>
             <div class="main-content">
                <form class="form" method="" action="">
@@ -46,7 +46,7 @@
                               <input name="" class="text last" type="text" value="Last" />
                            </div>
                            <div class="field">
-                              <label>*Brokerage company</label>
+                              <label>*Address</label>
                               <input name="" class="text" type="text" />
                            </div>
                            <div class="field">
@@ -56,20 +56,58 @@
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field">
-                              <label class="alt">How did you hear<br />about metropolis ?</label>
+                              <label>Country</label>
                               <select name="prettyfied" class="prettyfied">
                                  <option value="0" selected="selected"></option>
-                                 <option value="1" data-html-text="Element One">Option One</option>
-                                 <option value="2" data-html-text="Element Two">Option Two</option>
-                                 <option value="3" data-html-text="Element Three">Option Three</option>
-                                 <option value="4" data-html-text="Element Four">Option Four</option>
+                                 <option value="1" data-html-text="Argentine">Option One</option>
+                                 <option value="2" data-html-text="Brazil">Option Two</option>
+                                 <option value="3" data-html-text="Uruguay">Option Three</option>
+                                 <option value="4" data-html-text="Chile">Option Five</option>
+                                 <option value="4" data-html-text="Colombia">Option Six</option>
+                                 <option value="4" data-html-text="Peru">Option Seven</option>
                               </select>
+                           </div>
+                           <div class="field">
+                              <label>*Phone</label>
+                              <input name="" class="text" type="text" />
+                           </div>
+                           <div class="field alt">
+                              <label>How did you hear<br />about metropolis ?</label>
+                              <select name="prettyfied" class="prettyfied">
+                                 <option value="0" selected="selected"></option>
+                                 <option value="1" data-html-text="Bathroom">Option One</option>
+                                 <option value="2" data-html-text="Office">Option Two</option>
+                                 <option value="3" data-html-text="Opera">Option Three</option>
+                                 <option value="4" data-html-text="Listening music">Option Four</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="medium-4 large-4 columns column-3">
+                           <div class="field">
+                              <label>*Represented by Brokers?</label>
+                              <a class="radio-button selected" href="#">Yes</a>
+                              <input name="" type="hidden" />
+                              <a class="radio-button" href="#">No</a>
+                              <input name="" type="hidden" />
+                           </div>
+                           <div class="field field-2">
+                              <label>*Broker's name</label>
+                              <input name="" class="text first" type="text" />
+                              <input name="" class="text last" type="text" />
+                           </div>
+                           <div class="field field-2">
+                              <label>*Broker's Co. Contact Number</label>
+                              <input name="" class="text first" type="text" />
+                              <input name="" class="text last" type="text" />
+                           </div>
+                           <div class="field">
+                              <label>*Broker's Co. email</label>
+                              <input name="" class="text" type="text" />
                            </div>
                            <div class="field field-button">
                               <button class="form-button">Send</button><br /><small>*Required</small>
                            </div>
                         </div>
-                        <div class="medium-4 large-4 columns"></div>
                      </div>
                   </fieldset>
                </form>
