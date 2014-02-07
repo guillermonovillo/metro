@@ -1,0 +1,48 @@
+// ## font-face ##
+@font-face {
+   font-family: 'oxygen_regular';
+   src: url('../fonts/oxygen-regular-webfont.eot');
+   src: url('../fonts/oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oxygen-regular-webfont.woff') format('woff'),
+        url('../fonts/oxygen-regular-webfont.ttf') format('truetype'),
+        url('../fonts/oxygen-regular-webfont.svg#oxygenregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'oxygen_bold';
+   src: url('../fonts/oxygen-bold-webfont.eot');
+   src: url('../fonts/oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oxygen-bold-webfont.woff') format('woff'),
+        url('../fonts/oxygen-bold-webfont.ttf') format('truetype'),
+        url('../fonts/oxygen-bold-webfont.svg#oxygenbold') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+$oxygen_regular: 'oxygen_regular', Helvetica, Arial, sans-serif;
+$oxygen_bold: 'oxygen_bold', Helvetica, Arial, sans-serif;
+
+// ## body ##
+body { -webkit-font-smoothing: antialiased; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+@mixin clearfix {
+   &:before,
+   &:after {
+      content: " "; // * 1 *
+      display: table; // * 2 *
+   }
+
+   &:after { clear: both; }
+}

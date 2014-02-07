@@ -40,10 +40,10 @@
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
-                           <div class="field name">
+                           <div class="field name error">
                               <label>*Name</label>
-                              <input name="" class="text first" type="text" value="First" />
-                              <input name="" class="text last" type="text" value="Last" />
+                              <input name="" class="text first" type="text" placeholder="Real value, please" />
+                              <input name="" class="text last" type="text" placeholder="Real value, please" />
                            </div>
                            <div class="field">
                               <label>*Brokerage company</label>

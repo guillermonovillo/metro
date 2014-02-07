@@ -1,0 +1,55 @@
+// ## registration ##
+.registration {
+
+   .hgroup { margin-bottom: 0; }
+
+   .form {
+      width: auto;
+
+      .columns {
+
+         &.column-1 { 
+            padding-right: 15px;
+            width: 220px;
+         }
+
+         &.column-2 { 
+            padding: 40px 0 15px 0;
+            width: 195px;
+
+            label { text-align: left; }
+         }
+      }
+
+       .field.name {
+
+         .text { width: 100px; }
+
+      }
+
+      .field-button {
+
+         .form-button {
+            float: right;
+            margin-bottom: 10px;
+         }
+
+         small { 
+            float: right;
+            clear: right;
+         }
+      }
+   }
+}
+
+// ## disclaimer ##
+.disclaimer {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+// ## thanks ##
+.thanks {
+   max-width: 1024px;
+   margin: 0 auto;
+}
