@@ -4,6 +4,14 @@ html, body {
    min-height: 100%;
 }
 
+.home {
+   background: url('../img/bg/bg.jpg') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
 .fullscreen {
    display: table;   
    width: 100%;
@@ -62,7 +70,7 @@ html, body {
       border-radius: 0;
       color: #fff;
       font-family: $oxygen_regular;
-      font-size: 8px;
+      font-size: 10px;
       font-weight: normal;
       letter-spacing: 1px;
       padding: 4px 8px;
@@ -101,7 +109,7 @@ html, body {
       font-size: 10px;
       float: left;
       letter-spacing: 1px;
-      margin-right: 5px;
+      margin: 0 5px 2px 0;
       padding: 5px 5px 4px 5px;
       text-align: center;
       text-transform: uppercase;
@@ -157,6 +165,76 @@ html, body {
       }
 
       &:focus { outline: none; }
+   }
+}
+
+// ## home ##
+.home .content {
+   text-align: center;
+
+   .nav {
+      position: absolute;
+      top: 105px;
+      right: -25px;
+
+      ul {
+         color: #fff;
+         display: inline-block;
+         font-family: $oxygen_regular;
+         font-size: 12px;
+         letter-spacing: 2px;
+         list-style: none;
+         padding-left: 0;
+         text-transform: uppercase;
+
+         -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+         li {
+            float: left;
+            margin-right: 10px;
+         }
+
+         a {
+            color: inherit;
+         }
+      }
+   }
+
+   h1 {
+      background: url('../img/logo_metropolis.png') no-repeat scroll 0 0 transparent;
+      display: inline-block;
+      text-indent: -9999px;
+      width: 233px;
+      height: 115px;
+   }
+
+   h2 {
+
+   }
+
+   .main-content {
+
+      p, a {
+         color: #fff;
+         font-family: $oxygen_bold;
+         font-size: 12px;
+         letter-spacing: 2px;
+         text-transform: uppercase;
+      }
+
+      a {
+         border: 1px solid #fff;
+         display: block;
+         font-weight: normal;
+         height: 30px;
+         line-height: 30px;
+         margin: 0 auto 20px auto;
+         width: 220px;
+      }
    }
 }
 
