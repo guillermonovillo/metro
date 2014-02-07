@@ -31,7 +31,7 @@
    <section class="fullscreen">
       <a class="close" href="#">Close</a>
       <div class="wrapper">
-         <div class="registration">
+         <div class="registration alt">
             <div class="hgroup">
                <h1>Broker registration</h1>
             </div>
@@ -43,7 +43,7 @@
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
-                           <div class="field name">
+                           <div class="field field-2">
                               <label>*Name</label>
 
                               <input name="firstname" placeholder="First" class="text required first" type="text" value="" />
@@ -60,7 +60,7 @@
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field">
-                              <label>How did you hear<br />about metropolis ?</label>
+                              <label class="alt">How did you hear<br />about metropolis ?</label>
                               <select name="hearfrom" class="prettyfied">
                                  <option selected="selected">None</option>
                                  <option value="9123" data-html-text="Broker">Broker</option>
