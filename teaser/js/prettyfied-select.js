@@ -4,17 +4,17 @@ $(document).ready(function() {
 
   var selectBoxContainer = $('<div>',{
     width     : select.outerWidth(),
-    className : 'prettyfied-select',
+    "class" : 'prettyfied-select',
     html      : '<div class="prettyfied-select-box"><span></span></div>'
   });
 
-  var dropDown = $('<ul>',{className:'dropDown'});
+  var dropDown = $('<ul>',{"class":'dropDown'});
   var selectBox = selectBoxContainer.find('.prettyfied-select-box');
 
   // Looping though the options of the original select element
   select.find('option').each(function(i) {
     var option = $(this);
-    if(i == select.attr('selectedIndex')) {
+    if(i == select.prop('selectedIndex')) {
       selectBox.html('<span>'+option.text()+'</span>');
     }
 

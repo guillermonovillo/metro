@@ -36,33 +36,36 @@
                <h1>Broker registration</h1>
             </div>
             <div class="main-content">
-               <form class="form" method="" action="">
+               <form class="form" method="post" action="http://ep1.uhdns.com/api_postform.php">
+                  <input type="hidden" name="seckey" value="hEBU830x7T">
+                  <input type="hidden" name="debug" value="0">
+                  <input type="hidden" name="realtor_name" value="">
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field name">
                               <label>*Name</label>
-                              <input name="" class="text first" type="text" value="First" />
-                              <input name="" class="text last" type="text" value="Last" />
+
+                              <input name="firstname" placeholder="First" class="text required first" type="text" value="" />
+                              <input name="lastname" placeholder="Last" class="text required last" type="text" value="" />
                            </div>
                            <div class="field">
                               <label>*Brokerage company</label>
-                              <input name="" class="text" type="text" />
+                              <input name="brokerage_company" class="text required" type="text" />
                            </div>
                            <div class="field">
                               <label>*Email</label>
-                              <input name="" class="text" type="text" />
+                              <input name="email" class="text required email" type="email" />
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field">
                               <label>How did you hear<br />about metropolis ?</label>
-                              <select name="prettyfied" class="prettyfied">
-                                 <option value="0" selected="selected"></option>
-                                 <option value="1" data-html-text="Element One">Option One</option>
-                                 <option value="2" data-html-text="Element Two">Option Two</option>
-                                 <option value="3" data-html-text="Element Three">Option Three</option>
-                                 <option value="4" data-html-text="Element Four">Option Four</option>
+                              <select name="hearfrom" class="prettyfied">
+                                 <option selected="selected">None</option>
+                                 <option value="9123" data-html-text="Broker">Broker</option>
+                                 <option value="9131" data-html-text="Google">Google</option>
+                                 <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
                               </select>
                            </div>
                            <div class="field field-button">
@@ -77,7 +80,9 @@
          </div>
       </div>
    </section>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-   <script src="js/prettyfied-select.js" type="text/javascript"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/plugins.js"></script>
+   <script src="js/scripts.js"></script>
 </body>
 </html>
