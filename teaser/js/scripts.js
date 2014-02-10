@@ -4,8 +4,8 @@ $(function(){
 	$('form').each(function(i, el){
 		$(el).validate({
 			errorPlacement: function(error, element){
-				$(element).attr('placeholder', 'hola');
-				console.log('hola');
+				var error_msj = error.text();
+				$(element).attr('placeholder', error_msj);
 			}
 		});
 	});

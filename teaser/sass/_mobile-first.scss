@@ -45,9 +45,8 @@ html, body {
       .last {}
    }
 
-   .field.error {
-
-      .text {
+   .field {
+      .error.text {
          border: 1px solid #c50000;
          background-color: #c50000;
       }
