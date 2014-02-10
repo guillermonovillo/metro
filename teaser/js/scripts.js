@@ -10,7 +10,7 @@ $(function(){
 		});
 	});
 	$('#brokers-form').submit(function(){
-		$('#realtor-name').val( $('#firstname').val() + ' ' + $('#lastname').val() );
+		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
 	})
 
 });

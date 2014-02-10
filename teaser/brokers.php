@@ -52,8 +52,8 @@
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-2">
                               <label>*Name</label>
-                              <input id="firstname" name="firstname" placeholder="First" class="text required first" type="text" value="" />
-                              <input id="lastname" name="lastname" placeholder="Last" class="text required last" type="text" value="" />
+                              <input id="broker-firstname" name="firstname" placeholder="First" class="text required first" type="text" value="" />
+                              <input id="broker-lastname" name="lastname" placeholder="Last" class="text required last" type="text" value="" />
                            </div>
                            <div class="field">
                               <label>*Brokerage company</label>
@@ -65,7 +65,7 @@
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-2">
-                           <div class="field">
+                           <div class="field alt">
                               <label>How did you hear<br />about metropolis ?</label>
                               <select name="hearfrom" class="prettyfied">
                                  <option selected="selected">None</option>
