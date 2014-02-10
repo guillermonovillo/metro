@@ -45,12 +45,8 @@
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-2">
                               <label>*Name</label>
-                              <div class="first">
-                                 <input name="firstname" placeholder="First" class="text required first" type="text" value="" />
-                              </div>
-                              <div class="last">
-                                 <input name="lastname" placeholder="Last" class="text required last" type="text" value="" />
-                              </div>
+                              <input name="firstname" placeholder="First" class="text required first" type="text" value="" />
+                              <input name="lastname" placeholder="Last" class="text required last" type="text" value="" />
                            </div>
                            <div class="field">
                               <label>*Brokerage company</label>
