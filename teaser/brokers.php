@@ -59,12 +59,13 @@
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field">
-                              <label class="alt">How did you hear<br />about metropolis ?</label>
-                              <select name="hearfrom" class="prettyfied">
-                                 <option selected="selected">None</option>
-                                 <option value="9123" data-html-text="Broker">Broker</option>
-                                 <option value="9131" data-html-text="Google">Google</option>
-                                 <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
+                              <label>How did you hear<br />about metropolis ?</label>
+                              <select name="prettyfied" class="prettyfied">
+                                 <option value="0" selected="selected"></option>
+                                 <option value="1" data-html-text="Element One">Option One</option>
+                                 <option value="2" data-html-text="Element Two">Option Two</option>
+                                 <option value="3" data-html-text="Element Three">Option Three</option>
+                                 <option value="4" data-html-text="Element Four">Option Four</option>
                               </select>
                            </div>
                            <div class="field field-button">
@@ -79,9 +80,9 @@
          </div>
       </div>
    </section>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
    <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script src="js/plugins.js"></script>
-   <script src="js/scripts.js"></script>
+   <script src="js/plugins.js" type="text/javascript"></script>
+   <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

@@ -115,7 +115,9 @@
          </div>
       </div>
    </section>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-   <script src="js/prettyfied-select.js" type="text/javascript"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+   <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/plugins.js" type="text/javascript"></script>
+   <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
