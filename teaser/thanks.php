@@ -10,7 +10,7 @@
 
    <meta charset="utf-8" />
    
-   <title>Metropolis | Broken Registration</title>
+   <title>Metropolis | Brokers Registration</title>
 
    <!-- Favicon -->
    <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -24,13 +24,12 @@
    <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.src.js"></script>
    <![endif]-->
 </head>
 <body>
    <section class="fullscreen">
       <a class="close" href="#">Close</a>
-      <div class="wrapper">
+      <div id="thanks-content" class="wrapper">
          <div class="thanks">
             <div class="hgroup">
                <h1>Thank you</h1>
@@ -41,7 +40,5 @@
          </div>
       </div>
    </section>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-   <script src="js/prettyfied-select.js" type="text/javascript"></script>
 </body>
 </html>

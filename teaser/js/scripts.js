@@ -9,5 +9,8 @@ $(function(){
 			}
 		});
 	});
+	$('#brokers-form').submit(function(){
+		$('#realtor-name').val( $('#firstname').val() + ' ' + $('#lastname').val() );
+	})
 
 });
