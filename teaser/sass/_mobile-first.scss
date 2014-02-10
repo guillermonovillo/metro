@@ -169,43 +169,12 @@ html, body {
 
 // ## home ##
 .home .content {
+   padding-top: 50px;
    text-align: center;
    width: 100%;
 
    .header {
-      margin: 50px 0;
-   }
-
-   .nav {
-      position: absolute;
-      top: 105px;
-      right: -25px;
-
-      ul {
-         color: #fff;
-         display: inline-block;
-         font-family: $oxygen_regular;
-         font-size: 12px;
-         letter-spacing: 2px;
-         list-style: none;
-         padding-left: 0;
-         text-transform: uppercase;
-
-         -webkit-transform: rotate(90deg);
-         -moz-transform: rotate(90deg);
-         -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-         // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-         li {
-            float: left;
-            margin-right: 10px;
-         }
-
-         a {
-            color: inherit;
-         }
-      }
+      margin-bottom: 50px;
    }
 
    h1 {
@@ -213,8 +182,8 @@ html, body {
       display: inline-block;
       margin: 0 0 50px 0;
       text-indent: -9999px;
-      width: 233px;
-      height: 115px;
+      width: 149px;
+      height: 74px;
    }
 
    h2 {
@@ -231,7 +200,7 @@ html, body {
          display: block;
          margin: 0 auto;
          width: 1px;
-         height: 68px;
+         height: 48px;
       }
 
       &:before { margin-bottom: 15px; }
@@ -253,10 +222,10 @@ html, body {
          border: 1px solid #fff;
          display: block;
          font-weight: normal;
-         height: 30px;
-         line-height: 30px;
+         height: 32px;
+         line-height: 32px;
          margin: 0 auto 20px auto;
-         width: 220px;
+         width: 230px;
 
          &.alt {
             background: rgba(251,208,104,1);
@@ -273,57 +242,59 @@ html, body {
    }
 
    .footer {
-      width: 100%;
-      height: 240px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      position: relative;
+      height: 168px;
 
       p {
          color: #fff;
          font-family: $oxygen_regular;
-         font-size: 14px;
-         line-height: 18px;
+         font-size: 12px;
+         line-height: 16px;
          margin: 0;
          padding: 0;
          position: absolute;
       }
 
       .developed {
-         left: 10px;
-         bottom: 106px;
+         text-align: left;
+         left: 15px;
+         bottom: 83px;
       }
 
       .copyright {
-         left: 20px;
-         bottom: 20px;
+         text-align: left;
+         left: 15px;
+         bottom: 15px;
+
+         span { display: block; }
       }
 
       .featured {
-         right: 20px;
-         bottom: 80px;
+         display: block;
+         right: 15px;
+         bottom: 60px;
          text-align: right;
+         width: 190px;
 
          img {
             display: block;
-            margin-top: 10px;
+            margin-top: 5px;
          }
       }
 
       .link-list {
          color: #fff;
          font-family: $oxygen_regular;
-         font-size: 14px;
+         font-size: 12px;
          margin: 0;
          padding: 0;
          position: absolute;
-         bottom: 20px;
+         bottom: 13px;
          right: 15px;
 
          li {
             display: inline-block;
-            margin: 0 5px;
+            margin-left: 10px;
          }
 
          a {
@@ -331,6 +302,38 @@ html, body {
             text-decoration: underline;
          }
       }
+   }
+}
+
+.language {
+   color: #fff;
+   font-family: $oxygen_regular;
+   font-size: 12px;
+   letter-spacing: 2px;
+   list-style: none;
+   padding-left: 0;
+   text-transform: uppercase;
+   position: absolute;
+   top: 45px;
+   right: -10px;
+
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+   li {
+      float: left;
+      margin-right: 15px;
+
+      &:first-child {
+         display: none;
+      }
+   }
+
+   a {
+      color: inherit;
    }
 }
 
@@ -357,7 +360,7 @@ html, body {
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg);
-      // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
    }
 
    .hgroup {

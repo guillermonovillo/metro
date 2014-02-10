@@ -28,26 +28,24 @@
    <![endif]-->
 </head>
 <body class="home">
+   <ul class="language">
+      <li>Language</li>
+      <li><a href="#">En</a></li>
+      <li><a href="#">Ch</a></li>
+   </ul>
    <div class="content">
       <header class="header">
          <h1>Metropolis, Los Angeles</h1>
          <h2>Coming soon to<br />Downtown Los Angeles</h2>
       </header>
-      <nav class="nav">
-         <ul>
-            <li>Language</li>
-            <li><a href="#">En</a></li>
-            <li><a href="#">Ch</a></li>
-         </ul>
-      </nav>
       <div class="main-content">
          <p>Please select one:</p>
          <a href="#">Prospective purchaser</a>
          <a class="alt" href="#">Broker</a>
       </div>
       <footer class="footer">
-         <p class="developed">Developed by<br />&nbsp;&nbsp;Greenland USA</p>
-         <p class="copyright">Metropolis - All right reserved.</p>
+         <p class="developed">Developed by<br />Greenland USA</p>
+         <p class="copyright">Metropolis <span>All right reserved.</span></p>
          <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="190" height="34" /></p>
          <ul class="link-list">
             <li><a href="#">Disclaimer</a></li>
