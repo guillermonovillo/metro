@@ -31,7 +31,7 @@
    <section class="fullscreen">
       <a class="close" href="#">Close</a>
       <div class="wrapper">
-         <div class="registration">
+         <div class="registration alt">
             <div class="hgroup">
                <h1>Broker registration</h1>
             </div>
@@ -40,7 +40,7 @@
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
-                           <div class="field name error">
+                           <div class="field field-2 error">
                               <label>*Name</label>
                               <input name="" class="text first" type="text" placeholder="Real value, please" />
                               <input name="" class="text last" type="text" placeholder="Real value, please" />
@@ -77,7 +77,9 @@
          </div>
       </div>
    </section>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-   <script src="js/prettyfied-select.js" type="text/javascript"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+   <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/plugins.js" type="text/javascript"></script>
+   <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

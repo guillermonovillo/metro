@@ -21,8 +21,20 @@
    font-style: normal;
 }
 
+@font-face {
+   font-family: 'metropolis_thin';
+   src: url('../fonts/metropolis-thin-webfont.eot');
+   src: url('../fonts/metropolis-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/metropolis-thin-webfont.woff') format('woff'),
+        url('../fonts/metropolis-thin-webfont.ttf') format('truetype'),
+        url('../fonts/metropolis-thin-webfont.svg#metropolisthin') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
 $oxygen_regular: 'oxygen_regular', Helvetica, Arial, sans-serif;
 $oxygen_bold: 'oxygen_bold', Helvetica, Arial, sans-serif;
+$metropolis_thin: 'metropolis_thin', Helvetica, Arial, sans-serif;
 
 // ## body ##
 body { -webkit-font-smoothing: antialiased; }

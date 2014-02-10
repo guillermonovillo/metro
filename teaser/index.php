@@ -43,13 +43,13 @@
       <div class="main-content">
          <p>Please select one:</p>
          <a href="#">Prospective purchaser</a>
-         <a href="#">Broker</a>
+         <a class="alt" href="#">Broker</a>
       </div>
       <footer class="footer">
-         <p>Developed by<br />Greenland USA</p>
-         <p>Metropolis - All right reserved.</p>
-         <p>Exclusive Sales & Marketing</p>
-         <ul class="">
+         <p class="developed">Developed by<br />&nbsp;&nbsp;Greenland USA</p>
+         <p class="copyright">Metropolis - All right reserved.</p>
+         <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="190" height="34" /></p>
+         <ul class="link-list">
             <li><a href="#">Disclaimer</a></li>
             <li><a href="#">Site Credits</a></li>
          </ul>
