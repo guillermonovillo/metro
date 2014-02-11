@@ -32,9 +32,9 @@
    font-style: normal;
 }
 
-$oxygen_regular: 'oxygen_regular', Helvetica, Arial, sans-serif;
-$oxygen_bold: 'oxygen_bold', Helvetica, Arial, sans-serif;
-$metropolis_thin: 'metropolis_thin', Helvetica, Arial, sans-serif;
+$oxygen_regular: 'oxygen_regular', Helvetica, Arial, 'Microsoft Yahei','微软雅黑', STXihei, '华文细黑', sans-serif;
+$oxygen_bold: 'oxygen_bold', Helvetica, Arial, 'Microsoft Yahei','微软雅黑', STXihei, '华文细黑', sans-serif;
+$metropolis_thin: 'metropolis_thin', Helvetica, Arial, 'Microsoft Yahei','微软雅黑', STXihei, '华文细黑', sans-serif;
 
 // ## body ##
 body { -webkit-font-smoothing: antialiased; }

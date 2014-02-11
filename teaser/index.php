@@ -51,7 +51,7 @@
          <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
          <ul class="link-list">
             <li><a href="disclaimer.php">Disclaimer</a></li>
-            <li><a href="#">Site Credits</a></li>
+            <li><a class="credits" href="#" title="Bridger Conway">Site Credits</a></li>
          </ul>
       </footer>
    </div>
