@@ -172,6 +172,11 @@ html, body {
    padding-top: 50px;
    text-align: center;
    width: 100%;
+   -webkit-transition: all .5s ease;
+   -moz-transition: all .5s ease;
+   -o-transition: all .5s ease;
+   -ms-transition: all .5s ease;
+   transition: all .5s ease;
 
    .header {
       margin-bottom: 50px;
@@ -209,6 +214,8 @@ html, body {
    }
 
    .main-content {
+      position: relative;
+      z-index: 10;
 
       p, a {
          color: #fff;
@@ -244,6 +251,7 @@ html, body {
    .footer {
       position: relative;
       height: 168px;
+      z-index: 9;
 
       p {
          color: #fff;
@@ -277,7 +285,7 @@ html, body {
          width: 190px;
 
          img {
-            display: block;
+            display: inline-block;
             margin-top: 5px;
          }
       }
@@ -306,34 +314,46 @@ html, body {
 }
 
 .language {
-   color: #fff;
-   font-family: $oxygen_regular;
-   font-size: 12px;
-   letter-spacing: 2px;
-   list-style: none;
-   padding-left: 0;
-   text-transform: uppercase;
    position: absolute;
-   top: 45px;
-   right: -10px;
+   top: 40px;
+   right: 5px;
 
-   -webkit-transform: rotate(90deg);
-   -moz-transform: rotate(90deg);
-   -ms-transform: rotate(90deg);
-   -o-transform: rotate(90deg);
-   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+   .language-list {
+      color: #fff;
+      font-family: $oxygen_regular;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      list-style: none;
+      padding-left: 0;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
-   li {
-      float: left;
-      margin-right: 15px;
+      li {
+         float: left;
+         margin-right: 15px;
 
-      &:first-child {
-         display: none;
+         &:first-child {
+            display: none;
+         }
+      }
+
+      a {
+         color: inherit;
       }
    }
 
-   a {
-      color: inherit;
+   > a {
+      color: #fff;
+      font-family: $oxygen_regular;
+      font-size: 12px;
+      display: block;
+      text-transform: uppercase;
+      padding-left: 3px;
    }
 }
 

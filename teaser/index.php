@@ -28,11 +28,13 @@
    <![endif]-->
 </head>
 <body class="home">
-   <ul class="language">
-      <li>Language</li>
-      <li><a href="#">En</a></li>
-      <li><a href="#">Ch</a></li>
-   </ul>
+   <div class="language">
+      <ul class="language-list">
+         <li>Language</li>
+         <li><a href="#">En</a></li>
+      </ul>
+      <a href="#">中<br />文</a>
+   </div>
    <div class="content">
       <header class="header">
          <h1>Metropolis, Los Angeles</h1>
@@ -46,7 +48,7 @@
       <footer class="footer">
          <p class="developed">Developed by<br />Greenland USA</p>
          <p class="copyright">Metropolis <span>All right reserved.</span></p>
-         <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="190" height="34" /></p>
+         <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
          <ul class="link-list">
             <li><a href="#">Disclaimer</a></li>
             <li><a href="#">Site Credits</a></li>
