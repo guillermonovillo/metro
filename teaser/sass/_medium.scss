@@ -60,7 +60,7 @@
 // ## registration ##
 .registration {
 
-   .hgroup { margin-bottom: 0; }
+   .hgroup { margin-bottom: 0 !important; }
 
    .form {
       width: auto;
@@ -118,7 +118,7 @@
       .columns {
 
          &.column-2 { 
-            padding: 42px 0 15px 0;
+            padding: 50px 0 15px 0;
 
             label { margin-bottom: 8px; }
          }
