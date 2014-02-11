@@ -28,7 +28,7 @@
 </head>
 <body>
    <section class="fullscreen">
-      <a class="close" href="#">Close</a>
+      <a class="close" href="index.php">Close</a>
       <div id="purchaser-form-content" class="wrapper">
          <div class="registration">
             <div class="hgroup">

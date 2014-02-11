@@ -28,7 +28,7 @@
 </head>
 <body>
    <section class="fullscreen">
-      <a class="close" href="#">Close</a>
+      <a class="close" href="index.php">Close</a>
       <div class="wrapper">
          <div class="registration alt">
             <div class="hgroup">

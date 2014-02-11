@@ -42,15 +42,15 @@
       </header>
       <div class="main-content">
          <p>Please select one:</p>
-         <a href="#">Prospective purchaser</a>
-         <a class="alt" href="#">Broker</a>
+         <a href="purchaser.php">Prospective purchaser</a>
+         <a class="alt" href="brokers.php">Broker</a>
       </div>
       <footer class="footer">
          <p class="developed">Developed by<br />Greenland USA</p>
          <p class="copyright">Metropolis <span>All right reserved.</span></p>
          <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
          <ul class="link-list">
-            <li><a href="#">Disclaimer</a></li>
+            <li><a href="disclaimer.php">Disclaimer</a></li>
             <li><a href="#">Site Credits</a></li>
          </ul>
       </footer>
