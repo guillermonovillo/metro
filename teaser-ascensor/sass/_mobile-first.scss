@@ -326,12 +326,11 @@ html, body {
       text-transform: uppercase;
       list-style: none;
       padding-left: 0;
+
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg);
-      transform: rotate(90deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
       li {
          float: left;
@@ -362,6 +361,7 @@ html, body {
    background: url('../img/bg/bg.png') repeat scroll 0 0 #717274;
 
    .close {
+      background-color: transparent;
       background: url('../img/ui/close.png') no-repeat scroll 0 0 transparent;
       color: #fff;
       display: inline-block;
@@ -380,7 +380,6 @@ html, body {
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
    }
 
    .hgroup {

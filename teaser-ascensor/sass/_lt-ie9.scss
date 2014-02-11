@@ -1,0 +1,19 @@
+// ## IE styles ##
+.lt-ie9 {
+
+   // ## home ##
+   .language {
+
+      .language-list {
+         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+      }
+   }
+
+   // ## fullscreen ##
+   .fullscreen {
+      
+      .close {
+         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+      }
+   }
+}
