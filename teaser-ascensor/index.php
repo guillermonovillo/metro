@@ -26,6 +26,12 @@
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.src.js"></script>
    <![endif]-->
+   
+   <script src="js/modernizr.custom.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/placeholder_polyfill.jquery.min.combo.js"></script>
+
 </head>
 <body class="home">
    <div id="ascensor-container">
@@ -44,8 +50,8 @@
             </header>
             <div class="main-content">
                <p>Please select one:</p>
-               <a class="trigger-purchaser" href="purchaser.php">Prospective purchaser</a>
-               <a class="alt trigger-broker" href="brokers.php">Broker</a>
+               <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="Prospective purchaser"><span>Prospective purchaser</span></a></span>
+               <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="Broker"><span>Broker</span></a></span>
             </div>
             <footer class="footer">
                <p class="developed">Developed by<br />Greenland USA</p>
@@ -53,7 +59,7 @@
                <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
                   <li><a class="trigger-disclaimer" href="disclaimer.php">Disclaimer</a></li>
-                  <li><a href="#">Site Credits</a></li>
+                  <li><a id="credits" class="credits" href="#">Site Credits</a></li>
                </ul>
             </footer>
          </div>
@@ -83,8 +89,8 @@
                            <div class="row">
                               <div class="medium-4 large-4 columns column-1">
                                  <div class="field field-2">
-                                    <label>*Name</label>
-                                    <input name="firstname" placeholder="First" class="text required first" type="text" />
+                                    <label for="purchaser-firstname">*Name</label>
+                                    <input id="purchaser-firstname" name="firstname" placeholder="First" class="text required first" type="text" />
                                     <input name="lastname" placeholder="Last" class="text required last" type="text" />
                                  </div>
                                  <div class="field">
@@ -242,8 +248,7 @@
          </section>
       </div>
    </div>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   
    <script src="js/jquery.ascensor.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/scripts.js"></script>
