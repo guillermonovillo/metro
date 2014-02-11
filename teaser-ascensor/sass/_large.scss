@@ -1,0 +1,13 @@
+// ## home ##
+.home .content {
+   padding-top: 5%; 
+
+   h2 {
+      font-size: 60px;
+      line-height: 64px;
+
+      &:before { margin-bottom: 30px; }
+
+      &:after { margin-top: 30px; }
+   }
+}
