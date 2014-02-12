@@ -1,6 +1,4 @@
 // ## sanntu ##
-
-
 .fullscreen {
 
    .registration {
@@ -153,12 +151,27 @@
 // ## chinese version ##
 .chn {
 
+   // ## home ##
    .home .content {
 
       h2 {
          font-size: 48px;
          letter-spacing: 4px;
          line-height: 52px;
+      }
+   }
+
+   // ## registration alt ##
+   .registration.alt {
+
+      .form {
+
+         .columns {
+
+            &.column-2 { 
+               padding-top: 55px;
+            }
+         }
       }
    }
 }

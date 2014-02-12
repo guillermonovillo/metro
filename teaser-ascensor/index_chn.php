@@ -65,14 +65,14 @@
          </div>
       </div>
       <div class="floor-2">
-         <?php include('includes/form-purchaser.php'); ?>
+         <?php include('includes/form-purchaser-chn.php'); ?>
       </div>
       <div class="floor-3">
-         <?php include('includes/form-broker.php'); ?>
+         <?php include('includes/form-broker-chn.php'); ?>
       </div>
       <div class="floor-4">
          <section class="fullscreen">
-            <a class="close trigger-home" href="index.php">Close</a>
+            <a class="close trigger-home" href="index.php"></a>
             <div class="wrapper">
                <div class="disclaimer">
                   <div class="main-content">

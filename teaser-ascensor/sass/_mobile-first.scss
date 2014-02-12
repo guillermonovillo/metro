@@ -161,7 +161,7 @@ html, body {
 
 // ## home ##
 .home {
-   background: url('../img/bg/bg.jpg') no-repeat center center fixed;
+   background: url('../img/bg/bg.jpg') no-repeat center center scroll;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -555,6 +555,43 @@ html, body {
 // ## chinese version ##
 .chn {
 
+   // ## form elements ##
+   .form {
+
+      label {
+         font-size: 13px;
+      }
+
+      .text { 
+         font-size: 11px;
+      }
+
+      small {
+         font-size: 10px;
+      }
+
+      .form-button {
+         font-size: 13px;
+      }
+   }
+
+   // ## fullscreen ##
+   .fullscreen {
+
+      .close {
+         background: url('../img/ui/close_chn.png') no-repeat scroll 0 0 transparent;
+         width: 15px;
+         height: 48px;
+         padding-left: 0;
+         top: 30px;
+         right: 30px;
+         -webkit-transform: none;
+         -moz-transform: none;
+         -ms-transform: none;
+         -o-transform: none;
+      }
+   }
+
    // ## home ##
    .home .content {
 
@@ -579,11 +616,26 @@ html, body {
       }
    }
 
-   // ## registration ##
-   .registration {
+   // ## registration alt ##
+   .registration.alt {
+
+      .form {
+         
+         .field-button {
+            
+            small {
+               width: 70px;
+            }
+         }
+      }
+   }
+
+   // ## registration alt ##
+   .registration.alt {
 
       .hgroup {
          background-image: url('../img/chn/titles/purchaser_registration.png');
+         height: 290px;
       }
    }
 }
