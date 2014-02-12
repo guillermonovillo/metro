@@ -22,18 +22,19 @@ $(function(){
 		ascensor.trigger('scrollToStage', 3);
 	});
 	
-	// if ( ! Modernizr.input.placeholder ) {
-	//   	// no placeholder support
-	//   	// fall back to a scripted solution
-	// 	$('input, textarea').placeholder();
-	// }
+	var placeholder_support = true;
+	if ( ! Modernizr.input.placeholder ) {
+		placeholder_support = false;
+	}
 
 	$('form').each(function(i, el){
 		$(el).validate({
 			errorPlacement: function(error, element){
 				var error_msj = error.text();
 				$(element).attr('placeholder', error_msj);
-				$(element).siblings('label').children('span').text(error_msj);
+				if ( ! placeholder_support ) {
+					$(element).siblings('label').children('span').text(error_msj);
+				}
 			}
 		});
 	});
@@ -41,7 +42,8 @@ $(function(){
 		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
 	})
 
-	$("#credits").click(function(){
+	$("#credits").click(function(e){
+		e.preventDefault();
 		$(this).html($(this).text() == 'Developed by: Bridger Conway' ? 'Site Credits' : 'Developed by: Bridger Conway');
 	});
 
