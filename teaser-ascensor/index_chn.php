@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
    <!-- Set the viewport width to device width for mobile -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
    <meta name="format-detection" content="telephone=no" />
    
    <link type="text/plain" rel="author" href="humans.txt" />
@@ -33,7 +33,7 @@
    <script src="js/placeholder_polyfill.jquery.min.combo.js"></script>
 
 </head>
-<body class="home">
+<body class="body chn">
    <div id="ascensor-container">
       <div class="floor-1 home">
          <div class="language">
@@ -46,10 +46,10 @@
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>
-               <h2>Coming soon to<br />Downtown Los Angeles</h2>
+               <h2>即将来临到洛杉矶市中心野</h2>
             </header>
             <div class="main-content">
-               <p>Please select one:</p>
+               <p>请选择</p>
                <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="Prospective purchaser"><span>Prospective purchaser</span></a></span>
                <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="Broker"><span>Broker</span></a></span>
             </div>
