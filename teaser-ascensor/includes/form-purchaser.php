@@ -62,15 +62,14 @@
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-3">
-                        <div class="field">
+                        <div id="represented-by-broker-wrap" class="field">
                            <label>*Represented by Brokers?</label>
-                           <a class="radio-button selected" href="#">Yes</a>
-                           <input name="hasbroker" type="hidden" value="1" />
-                           <a class="radio-button" href="#">No</a>
-                           <input name="" type="hidden" value="0" />
+                           <a data-hasbroker="1" class="radio-button" href="#">Yes</a>
+                           <a data-hasbroker="0" class="radio-button selected" href="#">No</a>
+                           <input id="hasbroker" name="hasbroker" type="hidden" value="" />
                         </div>
                         <div class="field field-2">
-                           <label for="purchaser--broker-firstname">*Broker's name</label>
+                           <label for="purchaser-broker-firstname">*Broker's name</label>
                            <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" />
                            <label for="purchaser-broker-lastname"></label>
                            <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" />

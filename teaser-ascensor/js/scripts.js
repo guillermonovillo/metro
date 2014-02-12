@@ -47,6 +47,18 @@ $(function(){
 		});
 	});
 
+	var $hasbroker = $('#hasbroker');
+	$('#represented-by-broker-wrap a').click(function(e){
+		e.preventDefault();
+		var $this = $(this);
+		if( ! $this.hasClass('selected') ) {
+			$this
+				.addClass('selected')
+				.siblings('a').removeClass('selected');
+			$hasbroker.val( $this.attr('data-hasbroker') );
+		}
+	})
+
 	$('#purchaser-form').submit(function(){
 		$('#purchaser-realtor-name').val( $('#purchaser-broker-firstname').val() + ' ' + $('#purchaser-broker-lastname').val() );
 	});
