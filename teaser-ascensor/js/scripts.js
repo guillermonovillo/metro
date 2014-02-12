@@ -27,6 +27,14 @@ $(function(){
 		placeholder_support = false;
 	}
 
+	if ( typeof (validation_messages) !== "undefined" ) {
+			
+		$.extend($.validator.messages, {	
+			required: validation_messages.required,
+			email: validation_messages.email
+		});
+	}
+
 	$('form').each(function(i, el){
 		$(el).validate({
 			errorPlacement: function(error, element){
@@ -38,9 +46,14 @@ $(function(){
 			}
 		});
 	});
+
+	$('#purchaser-form').submit(function(){
+		$('#purchaser-realtor-name').val( $('#purchaser-broker-firstname').val() + ' ' + $('#purchaser-broker-lastname').val() );
+	});
+
 	$('#brokers-form').submit(function(){
 		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
-	})
+	});
 
 	$("#credits").click(function(e){
 		e.preventDefault();

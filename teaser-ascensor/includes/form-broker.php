@@ -22,17 +22,18 @@
                            <div class="row">
                               <div class="medium-4 large-4 columns column-1">
                                  <div class="field field-2">
-                                    <label>*Name</label>
-                                    <input id="broker-firstname" name="firstname" placeholder="First" class="text required first" type="text" value="" />
-                                    <input id="broker-lastname" name="lastname" placeholder="Last" class="text required last" type="text" value="" />
+                                    <label for="broker-firstname">*Name</label>
+                                    <input id="broker-firstname" name="" placeholder="First" class="text required first" type="text" value="" />
+                                    <label for="broker-lastname"></label>
+                                    <input id="broker-lastname" name="" placeholder="Last" class="text required last" type="text" value="" />
                                  </div>
                                  <div class="field">
-                                    <label>*Brokerage company</label>
-                                    <input name="brokerage_company" class="text required" type="text" />
+                                    <label for="brokerage_company">*Brokerage company</label>
+                                    <input id="brokerage_company" name="brokerage_company" placeholder="" class="text required" type="text" />
                                  </div>
                                  <div class="field">
-                                    <label>*Email</label>
-                                    <input name="email" class="text required email" type="email" />
+                                    <label for="realtor-email">*Email</label>
+                                    <input id="realtor-email" name="realtor_email" placeholder="" class="text required email" type="email" />
                                  </div>
                               </div>
                               <div class="medium-4 large-4 columns column-2">

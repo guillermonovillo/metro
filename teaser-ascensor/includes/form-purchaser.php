@@ -12,11 +12,11 @@
                $aux = implode('/', $aux);
                $returnURL = $_SERVER["SERVER_NAME"].$aux;
             ?>
-            <form class="form" method="post" action="http://ep1.uhdns.com/api_postform.php">
+            <form id="purchaser-form" class="form" method="post" action="http://ep1.uhdns.com/api_postform.php">
                <input type="hidden" name="seckey" value="hEBU830x7T">
                <input type="hidden" name="debug" value="0">
                <input type="hidden" name="post_type" value="post">
-               <input type="hidden" id="realtor-name" name="realtor_name" value="">
+               <input type="hidden" id="purchaser-realtor-name" name="realtor_name" value="">
                <input type="hidden" name="returnURL" value="<?php echo $returnURL . '/thanks.php'; ?>">
                <fieldset>
                   <div class="row">
@@ -24,15 +24,16 @@
                         <div class="field field-2">
                            <label for="purchaser-firstname">*Name</label>
                            <input id="purchaser-firstname" name="firstname" placeholder="First" class="text required first" type="text" />
-                           <input name="lastname" placeholder="Last" class="text required last" type="text" />
+                           <label for="purchaser-lastname"></label>
+                           <input id="purchaser-lastname" name="lastname" placeholder="Last" class="text required last" type="text" />
                         </div>
                         <div class="field">
-                           <label>*Address</label>
-                           <input name="address" class="text required" type="text" />
+                           <label for="purchaser-address">*Address</label>
+                           <input id="purchaser-address" name="address" placeholder="" class="text required" type="text" />
                         </div>
                         <div class="field">
-                           <label>*Email</label>
-                           <input name="email" class="text required email" type="email" />
+                           <label for="purchaser-email">*Email</label>
+                           <input id="purchaser-email" name="email" placeholder="" class="text required email" type="email" />
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-2">
@@ -47,8 +48,8 @@
                            </select>
                         </div>
                         <div class="field">
-                           <label>*Phone</label>
-                           <input name="" class="text required" type="text" />
+                           <label for="purchaser-phone">*Phone</label>
+                           <input id="purchaser-phone" name="homephone" placeholder="" class="text required" type="text" />
                         </div>
                         <div class="field alt">
                            <label>How did you hear<br />about metropolis ?</label>
@@ -69,18 +70,20 @@
                            <input name="" type="hidden" value="0" />
                         </div>
                         <div class="field field-2">
-                           <label>*Broker's name</label>
-                           <input id="broker-firstname" name="" class="text first" type="text" />
-                           <input id="broker-lastname" name="" class="text last" type="text" />
+                           <label for="purchaser--broker-firstname">*Broker's name</label>
+                           <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" />
+                           <label for="purchaser-broker-lastname"></label>
+                           <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" />
                         </div>
                         <div class="field field-2">
-                           <label>*Broker's Co. Contact Number</label>
-                           <input name="brokerage_company" class="text first" type="text" />
+                           <label for="purchaser-broker-company">*Broker's Co. Contact Number</label>
+                           <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
+                           <label></label>
                            <input name="realtor_phone" class="text last" type="text" />
                         </div>
                         <div class="field">
-                           <label>*Broker's Co. email</label>
-                           <input name="realtor_email" class="text email" type="text" />
+                           <label for="purchaser-broker-email">*Broker's Co. email</label>
+                           <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
                         </div>
                         <div class="field field-button">
                            <button class="form-button">Send</button><br /><small>*Required</small>
