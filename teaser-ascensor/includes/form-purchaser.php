@@ -52,11 +52,11 @@
                         </div>
                         <div class="field alt">
                            <label>How did you hear<br />about metropolis ?</label>
-                            <select name="hearfrom" class="prettyfied">
+                           <select name="hearfrom" class="prettyfied">
                               <option selected="selected">None</option>
                               <option value="9123" data-html-text="Broker">Broker</option>
                               <option value="9131" data-html-text="Google">Google</option>
-                              <option value="9129" data-html-text="Direct Mail">Direct Mail</option>value="4" data-html-text="Element Four">Option Four</option>
+                              <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
                            </select>
                         </div>
                      </div>
