@@ -401,6 +401,7 @@ html, body {
       font-family: $oxygen_regular;
       font-size: 12px;
       display: block;
+      text-align: left;
       text-transform: uppercase;
       padding-left: 3px;
    }
@@ -455,7 +456,7 @@ html, body {
    padding-left: 35px;
 
    .hgroup { 
-      background: url('../img/titles/purchaser_registration.png') no-repeat scroll center 0 transparent;
+      background: url('../img/eng/titles/purchaser_registration.png') no-repeat scroll center 0 transparent;
       margin-bottom: 20px;
       height: 286px;
    }
@@ -494,7 +495,7 @@ html, body {
 .registration.alt {
 
    .hgroup {
-      background: url('../img/titles/broker_registration.png') no-repeat scroll center 0 transparent;
+      background: url('../img/eng/titles/broker_registration.png') no-repeat scroll center 0 transparent;
       margin-bottom: 20px;
       height: 305px;
    }
@@ -531,7 +532,7 @@ html, body {
    padding: 30px 35px;
 
    .hgroup { 
-      background: url('../img/titles/thank_you.png') no-repeat scroll center 0 transparent;
+      background: url('../img/eng/titles/thank_you.png') no-repeat scroll center 0 transparent;
       margin-bottom: 20px;
       height: 211px;
    }
@@ -554,6 +555,7 @@ html, body {
 // ## chinese version ##
 .chn {
 
+   // ## home ##
    .home .content {
 
       h1 {
@@ -574,6 +576,14 @@ html, body {
                line-height: 36px;
             }
          }
+      }
+   }
+
+   // ## registration ##
+   .registration {
+
+      .hgroup {
+         background-image: url('../img/chn/titles/purchaser_registration.png');
       }
    }
 }

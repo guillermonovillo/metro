@@ -56,7 +56,7 @@
             <footer class="footer">
                <p class="developed">大都会来自于<br />Greenland USA</p>
                <p class="copyright">大都会 版权所有</span></p>
-               <p class="featured">独家销售和市场<img class="img" src="img/eng/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
+               <p class="featured">独家销售和市场<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
                   <li><a class="trigger-disclaimer" href="disclaimer.php">免责申明</a></li>
                   <li><a id="credits" class="credits" href="#">网站授权</a></li>
