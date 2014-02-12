@@ -1,6 +1,17 @@
-$(function(){
 
-	var ascensor = $('#ascensor-container').ascensor({direction: [[0,0], [0,1], [0,2], [1,0]]});
+// window.onload(function(){
+// 	var $split = $('#split');
+// 	$split.fadeOut('slow');
+// });
+
+$(function(){
+	var $split = $('#split');
+	var ascensor = $('#ascensor-container').ascensor({
+						direction: [[0,0], [0,1], [0,2], [1,0]]
+						,ready: function(){
+							$split.fadeOut('slow');
+						}
+					});
 
 	$('.trigger-home').click(function(e){
 		e.preventDefault();
@@ -57,7 +68,7 @@ $(function(){
 				.siblings('a').removeClass('selected');
 			$hasbroker.val( $this.attr('data-hasbroker') );
 		}
-	})
+	});
 
 	$('#purchaser-form').submit(function(){
 		$('#purchaser-realtor-name').val( $('#purchaser-broker-firstname').val() + ' ' + $('#purchaser-broker-lastname').val() );

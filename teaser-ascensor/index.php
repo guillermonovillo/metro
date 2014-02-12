@@ -41,6 +41,11 @@
 
 </head>
 <body class="home">
+   <script>
+      var split = document.createElement('div');
+      split.id = 'split';
+      document.getElementsByTagName('body')[0].appendChild(split); 
+   </script>
    <div id="ascensor-container">
       <div class="floor-1 home">
          <div class="language">
