@@ -35,13 +35,16 @@
 </head>
 <body class="body chn">
    <div id="ascensor-container">
+      <div class="floor-2">
+         <?php include('includes/form-purchaser-chn.php'); ?>
+      </div>
       <div class="floor-1 home">
          <div class="language">
             <ul class="language-list">
                <li>Language</li>
-               <li><a href="#">En</a></li>
+               <li><a href="index.php">En</a></li>
             </ul>
-            <a href="#">中<br />文</a>
+            <a href="javascript:void(0)">中<br />文</a>
          </div>
          <div class="content">
             <header class="header">
@@ -63,9 +66,6 @@
                </ul>
             </footer>
          </div>
-      </div>
-      <div class="floor-2">
-         <?php include('includes/form-purchaser-chn.php'); ?>
       </div>
       <div class="floor-3">
          <?php include('includes/form-broker-chn.php'); ?>

@@ -54,9 +54,9 @@
          <div class="language">
             <ul class="language-list">
                <li>Language</li>
-               <li><a href="#">En</a></li>
+               <li><a href="javascript:void(0)">En</a></li>
             </ul>
-            <a href="#">中<br />文</a>
+            <a href="index_chn.php">中<br />文</a>
          </div>
          <div class="content">
             <header class="header">
