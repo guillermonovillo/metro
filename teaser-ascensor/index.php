@@ -47,6 +47,9 @@
       document.getElementsByTagName('body')[0].appendChild(split); 
    </script>
    <div id="ascensor-container">
+      <div class="floor-2">
+         <?php include('includes/form-purchaser.php'); ?>
+      </div>
       <div class="floor-1 home">
          <div class="language">
             <ul class="language-list">
@@ -75,9 +78,6 @@
                </ul>
             </footer>
          </div>
-      </div>
-      <div class="floor-2">
-         <?php include('includes/form-purchaser.php'); ?>
       </div>
       <div class="floor-3">
          <?php include('includes/form-broker.php'); ?>

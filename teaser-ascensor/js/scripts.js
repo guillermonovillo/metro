@@ -7,7 +7,8 @@
 $(function(){
 	var $split = $('#split');
 	var ascensor = $('#ascensor-container').ascensor({
-						direction: [[0,0], [0,1], [0,2], [1,0]]
+						direction: [[0,0], [0,1], [0,2], [1,1]]
+						,windowsOn: 1
 						,ready: function(){
 							$split.fadeOut('slow');
 						}
@@ -15,12 +16,12 @@ $(function(){
 
 	$('.trigger-home').click(function(e){
 		e.preventDefault();
-		ascensor.trigger('scrollToStage', 0);
+		ascensor.trigger('scrollToStage', 1);
 	});
 
 	$('.trigger-purchaser').click(function(e){
 		e.preventDefault();
-		ascensor.trigger('scrollToStage', 1);
+		ascensor.trigger('scrollToStage', 0);
 	});
 
 	$('.trigger-broker').click(function(e){
