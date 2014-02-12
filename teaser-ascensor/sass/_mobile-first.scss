@@ -4,14 +4,6 @@ html, body {
    min-height: 100%;
 }
 
-.home {
-   background: url('../img/bg/bg.jpg') no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-}
-
 .fullscreen {
    display: table;   
    width: 100%;
@@ -168,6 +160,14 @@ html, body {
 }
 
 // ## home ##
+.home {
+   background: url('../img/bg/bg.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
 .home .content {
    padding-top: 50px;
    text-align: center;
@@ -183,7 +183,7 @@ html, body {
    }
 
    h1 {
-      background: url('../img/logo_metropolis.png') no-repeat scroll 0 0 transparent;
+      background: url('../img/eng/logo_metropolis.png') no-repeat scroll 0 0 transparent;
       display: inline-block;
       margin: 0 0 50px 0;
       text-indent: -9999px;
@@ -363,6 +363,7 @@ html, body {
 }
 
 .language {
+   text-align: left;
    position: absolute;
    top: 40px;
    right: 5px;
@@ -400,7 +401,6 @@ html, body {
       font-family: $oxygen_regular;
       font-size: 12px;
       display: block;
-      text-align: left;
       text-transform: uppercase;
       padding-left: 3px;
    }
@@ -552,10 +552,28 @@ html, body {
 }
 
 // ## chinese version ##
-.home .content {
+.chn {
 
-   h1 {
-      background-image: url('../img/chn/logo_metropolis.png');
-      height: 93px;
-   } 
+   .home .content {
+
+      h1 {
+         background-image: url('../img/chn/logo_metropolis.png');
+         height: 93px;
+      }
+
+      .main-content {
+
+         p {
+            font-size: 22px;
+         }
+
+         a {
+            font-size: 16px;
+
+            &:before {
+               line-height: 36px;
+            }
+         }
+      }
+   }
 }

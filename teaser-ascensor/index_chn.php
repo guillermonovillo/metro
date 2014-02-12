@@ -50,16 +50,16 @@
             </header>
             <div class="main-content">
                <p>请选择</p>
-               <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="Prospective purchaser"><span>Prospective purchaser</span></a></span>
-               <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="Broker"><span>Broker</span></a></span>
+               <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="潜在购买者"><span>潜在购买者</span></a></span>
+               <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="房地产经纪人"><span>房地产经纪人</span></a></span>
             </div>
             <footer class="footer">
-               <p class="developed">Developed by<br />Greenland USA</p>
-               <p class="copyright">Metropolis <span>All right reserved.</span></p>
-               <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
+               <p class="developed">大都会来自于<br />Greenland USA</p>
+               <p class="copyright">大都会 版权所有</span></p>
+               <p class="featured">独家销售和市场<img class="img" src="img/eng/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
-                  <li><a class="trigger-disclaimer" href="disclaimer.php">Disclaimer</a></li>
-                  <li><a id="credits" class="credits" href="#">Site Credits</a></li>
+                  <li><a class="trigger-disclaimer" href="disclaimer.php">免责申明</a></li>
+                  <li><a id="credits" class="credits" href="#">网站授权</a></li>
                </ul>
             </footer>
          </div>

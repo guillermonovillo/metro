@@ -1,7 +1,5 @@
 // ## sanntu ##
-.home {
-   background-image: url('../img/bg/bg-medium.jpg');
-}
+
 
 .fullscreen {
 
@@ -17,6 +15,10 @@
 }
 
 // ## home ##
+.home {
+   background-image: url('../img/bg/bg-medium.jpg');
+}
+
 .home .content {
    padding-top: 5%; 
 
@@ -27,6 +29,14 @@
       &:before { margin-bottom: 25px; }
 
       &:after { margin-top: 25px; }
+   }
+
+   .main-content {
+
+      .button-effect {
+         display: inline-block;
+         margin: 0 10px;
+      }
    }
 
    .footer {
@@ -138,4 +148,17 @@
 .thanks {
    max-width: 1024px;
    margin: 0 auto;
+}
+
+// ## chinese version ##
+.chn {
+
+   .home .content {
+
+      h2 {
+         font-size: 48px;
+         letter-spacing: 4px;
+         line-height: 52px;
+      }
+   }
 }
