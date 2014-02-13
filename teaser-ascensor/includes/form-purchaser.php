@@ -48,8 +48,8 @@
                            </select>
                         </div>
                         <div class="field">
-                           <label for="purchaser-phone">*Phone</label>
-                           <input id="purchaser-phone" name="homephone" placeholder="" class="text required" type="text" />
+                           <label for="purchaser-phone">Phone</label>
+                           <input id="purchaser-phone" name="homephone" placeholder="" class="text" type="text" />
                         </div>
                         <div class="field alt">
                            <label>How did you hear<br />about metropolis ?</label>

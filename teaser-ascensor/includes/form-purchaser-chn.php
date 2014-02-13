@@ -49,7 +49,7 @@
                         </div>
                         <div class="field">
                            <label for="purchaser-phone">电话</label>
-                           <input id="purchaser-phone" name="homephone" placeholder="" class="text required" type="text" />
+                           <input id="purchaser-phone" name="homephone" placeholder="" class="text" type="text" />
                         </div>
                         <div class="field">
                            <label class="large">您是如何得知大都会项目？</label>
@@ -68,12 +68,11 @@
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-3">
-                        <div class="field">
+                        <div id="represented-by-broker-wrap" class="field">
                            <label>*为经纪人代表？</label>
-                           <a class="radio-button selected" href="#">是的</a>
-                           <input name="hasbroker" type="hidden" value="1" />
-                           <a class="radio-button" href="#">是</a>
-                           <input name="" type="hidden" value="0" />
+                           <a data-hasbroker="1" class="radio-button" href="#">是的</a>
+                           <a data-hasbroker="0" class="radio-button selected" href="#">是</a>
+                           <input name="hasbroker" type="hidden" value="0" />
                         </div>
                         <div class="field field-2">
                            <label for="purchaser--broker-firstname">*经纪人姓名</label>

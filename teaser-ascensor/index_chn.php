@@ -27,6 +27,12 @@
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.src.js"></script>
    <![endif]-->
    
+   <script type="text/javascript">
+      var validation_messages = {
+         "required": "需要"
+      };
+   </script>
+
    <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script type="text/javascript" type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>

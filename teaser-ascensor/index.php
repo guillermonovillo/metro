@@ -30,7 +30,6 @@
    <script type="text/javascript">
       var validation_messages = {
          "required": "Required"
-         // ,"emai": "Ingrese un email válido."
       };
    </script>
 
