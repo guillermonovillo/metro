@@ -22,23 +22,23 @@
                   <div class="row">
                      <div class="medium-4 large-4 columns column-1">
                         <div class="field field-2">
-                           <label for="purchaser-firstname">*Name</label>
-                           <input id="purchaser-firstname" name="firstname" placeholder="First" class="text required first" type="text" />
+                           <label for="purchaser-firstname">*姓名</label>
+                           <input id="purchaser-firstname" name="firstname" placeholder="名" class="text required first" type="text" />
                            <label for="purchaser-lastname"></label>
-                           <input id="purchaser-lastname" name="lastname" placeholder="Last" class="text required last" type="text" />
+                           <input id="purchaser-lastname" name="lastname" placeholder="姓" class="text required last" type="text" />
                         </div>
                         <div class="field">
-                           <label for="purchaser-address">*Address</label>
+                           <label for="purchaser-address">*地址</label>
                            <input id="purchaser-address" name="address" placeholder="" class="text required" type="text" />
                         </div>
                         <div class="field">
-                           <label for="purchaser-email">*Email</label>
+                           <label for="purchaser-email">*电子邮件地址</label>
                            <input id="purchaser-email" name="email" placeholder="" class="text required email" type="email" />
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-2">
                         <div class="field">
-                           <label>Country</label>
+                           <label>国家</label>
                            <select name="country" class="prettyfied">
                               <option value="" selected="selected">-</option>
                               <option value="Argentine" data-html-text="Argentine">Argentine</option>
@@ -48,45 +48,51 @@
                            </select>
                         </div>
                         <div class="field">
-                           <label for="purchaser-phone">*Phone</label>
+                           <label for="purchaser-phone">电话</label>
                            <input id="purchaser-phone" name="homephone" placeholder="" class="text required" type="text" />
                         </div>
-                        <div class="field alt">
-                           <label>How did you hear<br />about metropolis ?</label>
+                        <div class="field">
+                           <label class="large">您是如何得知大都会项目？</label>
                            <select name="hearfrom" class="prettyfied">
-                              <option selected="selected">None</option>
-                              <option value="9123" data-html-text="Broker">Broker</option>
-                              <option value="9131" data-html-text="Google">Google</option>
-                              <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
+                              <option selected="selected">请选择</option>
+                              <option value="" data-html-text="活动">活动</option>
+                              <option value="" data-html-text="签名">签名</option>
+                              <option value="" data-html-text="网络搜索">网络搜索</option>
+                              <option value="" data-html-text="The Real Deal">The Real Deal</option>
+                              <option value="" data-html-text="NYtimes.com">NYtimes.com</option>
+                              <option value="" data-html-text="Elliman.com">Elliman.com</option>
+                              <option value="" data-html-text="Wall Street Journal">华尔街日报</option>
+                              <option value="" data-html-text="Curbed.com">Curbed.com</option>
+                              <option value="" data-html-text="其他">其他</option>
                            </select>
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-3">
                         <div class="field">
-                           <label>*Represented by Brokers?</label>
-                           <a class="radio-button selected" href="#">Yes</a>
+                           <label>*为经纪人代表？</label>
+                           <a class="radio-button selected" href="#">是的</a>
                            <input name="hasbroker" type="hidden" value="1" />
-                           <a class="radio-button" href="#">No</a>
+                           <a class="radio-button" href="#">是</a>
                            <input name="" type="hidden" value="0" />
                         </div>
                         <div class="field field-2">
-                           <label for="purchaser--broker-firstname">*Broker's name</label>
-                           <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" />
+                           <label for="purchaser--broker-firstname">*经纪人姓名</label>
+                           <input id="purchaser-broker-firstname" name="" placeholder="名" class="text first" type="text" />
                            <label for="purchaser-broker-lastname"></label>
-                           <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" />
+                           <input id="purchaser-broker-lastname" name="" placeholder="姓" class="text last" type="text" />
                         </div>
                         <div class="field field-2">
-                           <label for="purchaser-broker-company">*Broker's Co. Contact Number</label>
+                           <label for="purchaser-broker-company">经纪机构<i>电话</i></label>
                            <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
                            <label></label>
                            <input name="realtor_phone" class="text last" type="text" />
                         </div>
                         <div class="field">
-                           <label for="purchaser-broker-email">*Broker's Co. email</label>
+                           <label for="purchaser-broker-email">*经纪人电子邮件</label>
                            <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
                         </div>
                         <div class="field field-button">
-                           <button class="form-button">Send</button><br /><small>*Required</small>
+                           <button class="form-button">发送</button><br /><small>*不得为空</small>
                         </div>
                      </div>
                   </div>

@@ -40,10 +40,16 @@
                                  <div class="field alt">
                                     <label>How did you hear<br />about metropolis ?</label>
                                     <select name="hearfrom" class="prettyfied">
-                                       <option selected="selected">None</option>
-                                       <option value="9123" data-html-text="Broker">Broker</option>
-                                       <option value="9131" data-html-text="Google">Google</option>
-                                       <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
+                                       <option selected="selected">Choose one</option>
+                                       <option value="" data-html-text="Event">Event</option>
+                                       <option value="" data-html-text="Signane">Signage</option>
+                                       <option value="" data-html-text="Online Search">Online Search</option>
+                                       <option value="" data-html-text="The Real deal">The Real deal</option>
+                                       <option value="" data-html-text="NYtimes.com">NYtimes.com</option>
+                                       <option value="" data-html-text="Elliman.com">Elliman.com</option>
+                                       <option value="" data-html-text="Wall Street Journal">Wall Street Journal</option>
+                                       <option value="" data-html-text="Curbed.com">Curbed.com</option>
+                                       <option value="" data-html-text="Other">Other</option>
                                     </select>
                                  </div>
                                  <div class="field field-button">

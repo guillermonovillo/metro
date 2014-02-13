@@ -38,6 +38,7 @@ html, body {
    }
 
    .field {
+      
       .error.text {
          border: 1px solid #c50000;
          background-color: #c50000;
@@ -101,7 +102,7 @@ html, body {
       float: left;
       letter-spacing: 1px;
       margin: 0 5px 2px 0;
-      padding: 5px 5px 4px 5px;
+      padding: 6px 5px 5px 5px;
       text-align: center;
       text-transform: uppercase;
       width: 36px;
@@ -560,10 +561,23 @@ html, body {
 
       label {
          font-size: 13px;
+
+         i {
+            display: inline-block;
+            font-style: normal;
+            float: right;
+            margin-right: 35px;
+            width: 100px;
+         }
       }
 
       .text { 
          font-size: 11px;
+      }
+
+      .radio-button {
+         font-size: 11px;
+         padding: 6px 5px;
       }
 
       small {
@@ -614,10 +628,22 @@ html, body {
             }
          }
       }
+
+      .footer {
+
+         .developed {
+            bottom: 63px;
+         }
+      }
    }
 
    // ## registration alt ##
-   .registration.alt {
+   .registration {
+
+      .hgroup {
+         background-image: url('../img/chn/titles/purchaser_registration.png');
+         height: 180px;
+      }
 
       .form {
          
@@ -634,8 +660,17 @@ html, body {
    .registration.alt {
 
       .hgroup {
-         background-image: url('../img/chn/titles/purchaser_registration.png');
+         background-image: url('../img/chn/titles/broker_registration.png');
          height: 290px;
+      }
+   }
+
+   // ## disclaimer ##
+   .disclaimer {
+
+      h1, p {
+         font-size: 13px;
+         line-height: 15px;
       }
    }
 }

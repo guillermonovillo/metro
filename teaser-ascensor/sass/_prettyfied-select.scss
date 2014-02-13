@@ -52,7 +52,7 @@
   padding: 10px 0;
   position: absolute;
   z-index: 999;
-  top: 21px;
+  top: 22px;
   left: 0px;
 }
 
@@ -86,3 +86,23 @@
   margin: 0 0 0 21px;
   font-weight: normal;
 }
+
+// ## chinese version ##
+.chn {
+
+   .prettyfied-select {
+      height: 25px;
+   }
+
+   .prettyfied-select .prettyfied-select-box span {
+      font-size: 11px;
+      line-height: 24px;
+   }
+
+   .prettyfied-select .dropDown {
+      font-size: 11px;
+      top: 24px;
+   }
+}
+
+

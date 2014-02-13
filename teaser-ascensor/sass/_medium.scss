@@ -159,11 +159,44 @@
          letter-spacing: 4px;
          line-height: 52px;
       }
+
+      // ## footer ##
+      .footer {
+
+         .developed {
+            bottom: 25px;
+         }
+
+         .copyright {
+            left: 160px;
+         }
+      }
+   }
+
+   // ## registration ##
+   .registration {
+
+      // ## form elements ##
+      .form {
+
+         .large {
+            width: 180px;
+         }
+
+         .columns { 
+
+            &.column-2, &.column-3 {
+
+               .field:first-child { margin-bottom: 8px; }
+            }
+         }
+      }
    }
 
    // ## registration alt ##
    .registration.alt {
 
+      // ## form elements ##
       .form {
 
          .columns {
