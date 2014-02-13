@@ -12,11 +12,11 @@
                         $aux = implode('/', $aux);
                         $returnURL = $_SERVER["SERVER_NAME"].$aux;
                      ?>
-                     <form id="brokers-form" class="form" method="post" action="http://ep1.uhdns.com/api_postform.php">
+                     <form id="brokers-form" class="form" method="post" action="http://www.escrowprocessing.com/api_postform.php">
                         <input type="hidden" name="seckey" value="hEBU830x7T">
                         <input type="hidden" name="debug" value="0">
                         <input type="hidden" name="post_type" value="post">
-                        <input type="hidden" name="returnURL" value="<?php echo $returnURL . '/thanks.php'; ?>">
+                        <input type="hidden" name="returnURL" value="<?php echo $returnURL . '/thanks_chn.php'; ?>">
                         <input type="hidden" id="realtor-name" name="realtor_name" value="">
                         <fieldset>
                            <div class="row">
@@ -25,7 +25,7 @@
                                     <label for="broker-firstname">*姓名</label>
                                     <input id="broker-firstname" name="" placeholder="名字" class="text required first" type="text" value="" />
                                     <label for="broker-lastname"></label>
-                                    <input id="broker-lastname" name="" placeholder="姓氏" class="text required last" type="text" value="" />
+                                    <input id="broker-lastname" name="broker_lastname" placeholder="姓氏" class="text required last" type="text" value="" />
                                  </div>
                                  <div class="field">
                                     <label for="brokerage_company">*经纪公司</label>
