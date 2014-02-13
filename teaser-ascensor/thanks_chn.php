@@ -28,14 +28,14 @@
 </head>
 <body class="chn">
    <section class="fullscreen">
-      <a class="close" href="index.php">Close</a>
+      <a class="close" href="index_chn.php"></a>
       <div id="thanks-content" class="wrapper">
          <div class="thanks">
             <div class="hgroup">
-               <h1>Thank you</h1>
+               <h1>谢谢</h1>
             </div>
             <div class="main-content">
-               <h1>Your information<br />has been successfully submitted</h1>
+               <h1>您的资料已提交成功</h1>
             </div>
          </div>
       </div>

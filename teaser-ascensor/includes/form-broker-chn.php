@@ -1,9 +1,9 @@
-<section class="fullscreen">
-            <a class="close trigger-home" href="index.php"></a>
+         <section class="fullscreen">
+            <a class="close trigger-home" href="index_chn.php"></a>
             <div class="wrapper">
                <div class="registration alt">
                   <div class="hgroup">
-                     <h1>Broker registration</h1>
+                     <h1>经纪人登记表</h1>
                   </div>
                   <div class="main-content">
                      <?php

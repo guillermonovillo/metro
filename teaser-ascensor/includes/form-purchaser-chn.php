@@ -1,9 +1,9 @@
 <section class="fullscreen">
-   <a class="close trigger-home" href="index.php"></a>
+   <a class="close trigger-home" href="index_chn.php"></a>
    <div id="purchaser-form-content" class="wrapper">
       <div class="registration">
          <div class="hgroup">
-            <h1>Purchaser registration</h1>
+            <h1>买家登记</h1>
          </div>
          <div class="main-content">
             <?php
