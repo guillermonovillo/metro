@@ -50,13 +50,11 @@
          <?php include('includes/form-purchaser.php'); ?>
       </div>
       <div class="floor-1 home">
-         <div class="language">
-            <ul class="language-list">
-               <li>Language</li>
-               <li><a href="javascript:void(0)">En</a></li>
-            </ul>
-            <a href="index_chn.php">中<br />文</a>
-         </div>
+         <ul class="language">
+            <li></li>
+            <li class="en"><a href="javascript:void(0)"></a></li>
+            <li class="ch"><a href="index_chn.php"></a></li>
+         </ul>
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>

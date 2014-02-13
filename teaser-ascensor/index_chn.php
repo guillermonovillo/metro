@@ -45,13 +45,11 @@
          <?php include('includes/form-purchaser-chn.php'); ?>
       </div>
       <div class="floor-1 home">
-         <div class="language">
-            <ul class="language-list">
-               <li>Language</li>
-               <li><a href="index.php">En</a></li>
-            </ul>
-            <a href="javascript:void(0)">中<br />文</a>
-         </div>
+         <ul class="language">
+            <li></li>
+            <li class="en"><a href="index.php"></a></li>
+            <li class="ch"><a href="javascript:void(0)"></a></li>
+         </ul>
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>

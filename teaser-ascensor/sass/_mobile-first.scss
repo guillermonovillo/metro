@@ -369,47 +369,38 @@ html, body {
 }
 
 .language {
-   text-align: left;
+   list-style: none;
+   padding-left: 0;
    position: absolute;
-   top: 40px;
-   right: 5px;
+   top: 20px;
+   right: 20px;
+   width: 14px;
 
-   .language-list {
-      color: #fff;
-      font-family: $oxygen_regular;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      list-style: none;
-      padding-left: 0;
+   li {
+      display: block;
+      width: 14px;
 
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-
-      li {
-         float: left;
-         margin-right: 15px;
-
-         &:first-child {
-            display: none;
-         }
-      }
-
-      a {
-         color: inherit;
+      &:first-child {
+         background: url('../img/ui/language_menu.png') no-repeat scroll 0 0 transparent;
+         display: none;
+         height: 65px;
       }
    }
 
-   > a {
-      color: #fff;
-      font-family: $oxygen_regular;
-      font-size: 12px;
+   a {
+      background: url('../img/ui/language_menu.png') no-repeat scroll 0 0 transparent;
       display: block;
-      text-align: left;
-      text-transform: uppercase;
-      padding-left: 3px;
+      width: 14px;
+   }
+
+   .en > a {
+      background-position: 0 -65px;
+      height: 27px;
+   }
+
+   .ch > a {
+      background-position: 0 -92px;
+      height: 35px;
    }
 }
 
