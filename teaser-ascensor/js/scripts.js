@@ -6,13 +6,22 @@
 
 $(function(){
 	var $split = $('#split');
+	var first_scroll = true;
+	
 	var ascensor = $('#ascensor-container').ascensor({
 						direction: [[0,0], [0,1], [0,2], [1,1]]
 						,windowsOn: 1
-						,ready: function(){
-							$split.fadeOut('slow');
-						}
+						// ,ready: function(){
+						// 	$split.fadeOut('slow');
+						// }
 					});
+
+	ascensor.on("scrollEnd", function(event, floor){
+	  if( first_scroll && floor.to == 1 ) {
+	  	$split.fadeOut('slow');
+	  		first_scroll = false;
+	  }
+	});
 
 	$('.trigger-home').click(function(e){
 		e.preventDefault();
