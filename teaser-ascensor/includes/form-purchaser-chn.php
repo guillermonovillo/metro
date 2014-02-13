@@ -40,11 +40,7 @@
                         <div class="field">
                            <label>国家</label>
                            <select name="country" class="prettyfied">
-                              <option value="" selected="selected">-</option>
-                              <option value="Argentine" data-html-text="Argentine">Argentine</option>
-                              <option value="Brazil" data-html-text="Brazil">Brazil</option>
-                              <option value="Uruguay" data-html-text="Uruguay">Uruguay</option>
-                              <option value="Chile" data-html-text="Chile">Chile</option>
+                              <?php include('includes/countries_list.php'); ?>
                            </select>
                         </div>
                         <div class="field">
@@ -54,16 +50,7 @@
                         <div class="field">
                            <label class="large">您是如何了解到大都会项目的？</label>
                            <select name="hearfrom" class="prettyfied">
-                              <option selected="selected">请选择</option>
-                              <option value="" data-html-text="活动">活动</option>
-                              <option value="" data-html-text="签名">签名</option>
-                              <option value="" data-html-text="网络搜索">网络搜索</option>
-                              <option value="" data-html-text="The Real Deal">The Real Deal</option>
-                              <option value="" data-html-text="NYtimes.com">NYtimes.com</option>
-                              <option value="" data-html-text="Elliman.com">Elliman.com</option>
-                              <option value="" data-html-text="Wall Street Journal">华尔街日报</option>
-                              <option value="" data-html-text="Curbed.com">Curbed.com</option>
-                              <option value="" data-html-text="其他">其他</option>
+                              <?php include('includes/hear_from_chn.php'); ?>
                            </select>
                         </div>
                      </div>

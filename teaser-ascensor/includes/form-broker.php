@@ -24,8 +24,6 @@
                                  <div class="field field-2">
                                     <label for="broker-firstname">*Name</label>
                                     <input id="broker-firstname" name="" placeholder="First" class="text required first" type="text" value="" />
-                                    <!-- <label for="broker-lastname"></label>
-                                    <input id="broker-lastname" name="" placeholder="Last" class="text required last" type="text" value="" /> -->
                                     <label for="broker-lastname"></label>
                                     <input id="broker-lastname" name="broker_lastname" placeholder="Last" class="text required last" type="text" value="">
                                  </div>
@@ -42,16 +40,7 @@
                                  <div class="field alt">
                                     <label>How did you hear<br />about metropolis ?</label>
                                     <select name="hearfrom" class="prettyfied">
-                                       <option selected="selected">Choose one</option>
-                                       <option value="" data-html-text="Event">Event</option>
-                                       <option value="" data-html-text="Signane">Signage</option>
-                                       <option value="" data-html-text="Online Search">Online Search</option>
-                                       <option value="" data-html-text="The Real deal">The Real deal</option>
-                                       <option value="" data-html-text="NYtimes.com">NYtimes.com</option>
-                                       <option value="" data-html-text="Elliman.com">Elliman.com</option>
-                                       <option value="" data-html-text="Wall Street Journal">Wall Street Journal</option>
-                                       <option value="" data-html-text="Curbed.com">Curbed.com</option>
-                                       <option value="" data-html-text="Other">Other</option>
+                                       <?php include('includes/hear_from.php'); ?>   
                                     </select>
                                  </div>
                                  <div class="field field-button">

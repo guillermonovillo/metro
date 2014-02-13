@@ -40,11 +40,7 @@
                         <div class="field">
                            <label>Country</label>
                            <select name="country" class="prettyfied">
-                              <option value="" selected="selected">-</option>
-                              <option value="Argentine" data-html-text="Argentine">Argentine</option>
-                              <option value="Brazil" data-html-text="Brazil">Brazil</option>
-                              <option value="Uruguay" data-html-text="Uruguay">Uruguay</option>
-                              <option value="Chile" data-html-text="Chile">Chile</option>
+                              <?php include('includes/countries_list.php'); ?>
                            </select>
                         </div>
                         <div class="field">
@@ -54,10 +50,7 @@
                         <div class="field alt">
                            <label>How did you hear<br />about metropolis ?</label>
                            <select name="hearfrom" class="prettyfied">
-                              <option selected="selected">None</option>
-                              <option value="9123" data-html-text="Broker">Broker</option>
-                              <option value="9131" data-html-text="Google">Google</option>
-                              <option value="9129" data-html-text="Direct Mail">Direct Mail</option>
+                              <?php include('includes/hear_from'); ?>
                            </select>
                         </div>
                      </div>
