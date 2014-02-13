@@ -50,7 +50,7 @@
                         <div class="field alt">
                            <label>How did you hear<br />about metropolis ?</label>
                            <select name="hearfrom" class="prettyfied">
-                              <?php include('includes/hear_from'); ?>
+                              <?php include('includes/hear_from.php'); ?>
                            </select>
                         </div>
                      </div>

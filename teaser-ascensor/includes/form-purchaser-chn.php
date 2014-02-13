@@ -37,12 +37,12 @@
                         </div>
                      </div>
                      <div class="medium-4 large-4 columns column-2">
-                        <div class="field">
+                        <!-- <div class="field">
                            <label>国家</label>
                            <select name="country" class="prettyfied">
                               <?php include('includes/countries_list.php'); ?>
                            </select>
-                        </div>
+                        </div> -->
                         <div class="field">
                            <label for="purchaser-phone">电话</label>
                            <input id="purchaser-phone" name="homephone" placeholder="" class="text" type="text" />
