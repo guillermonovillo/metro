@@ -74,7 +74,7 @@
                <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
                   <li><a class="trigger-disclaimer" href="disclaimer.php">Disclaimer</a></li>
-                  <li id="credits" class="credits">Site Credits</li>
+                  <li><a id="credits" class="credits" href="#">Site Credits</a></li>
                </ul>
             </footer>
          </div>
