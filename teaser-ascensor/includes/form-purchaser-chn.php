@@ -23,9 +23,9 @@
                      <div class="medium-4 large-4 columns column-1">
                         <div class="field field-2">
                            <label for="purchaser-firstname">*姓名</label>
-                           <input id="purchaser-firstname" name="firstname" placeholder="名" class="text required first" type="text" />
+                           <input id="purchaser-firstname" name="firstname" placeholder="名字" class="text required first" type="text" />
                            <label for="purchaser-lastname"></label>
-                           <input id="purchaser-lastname" name="lastname" placeholder="姓" class="text required last" type="text" />
+                           <input id="purchaser-lastname" name="lastname" placeholder="姓氏" class="text required last" type="text" />
                         </div>
                         <div class="field">
                            <label for="purchaser-address">*地址</label>
@@ -52,7 +52,7 @@
                            <input id="purchaser-phone" name="homephone" placeholder="" class="text" type="text" />
                         </div>
                         <div class="field">
-                           <label class="large">您是如何得知大都会项目？</label>
+                           <label class="large">您是如何了解到大都会项目的？</label>
                            <select name="hearfrom" class="prettyfied">
                               <option selected="selected">请选择</option>
                               <option value="" data-html-text="活动">活动</option>
@@ -69,29 +69,29 @@
                      </div>
                      <div class="medium-4 large-4 columns column-3">
                         <div id="represented-by-broker-wrap" class="field">
-                           <label>*为经纪人代表？</label>
-                           <a data-hasbroker="1" class="radio-button" href="#">是的</a>
-                           <a data-hasbroker="0" class="radio-button selected" href="#">是</a>
+                           <label>*由房产经纪人代理？</label>
+                           <a data-hasbroker="1" class="radio-button" href="#">是</a>
+                           <a data-hasbroker="0" class="radio-button selected" href="#">否</a>
                            <input name="hasbroker" type="hidden" value="0" />
                         </div>
                         <div class="field field-2">
-                           <label for="purchaser--broker-firstname">*经纪人姓名</label>
-                           <input id="purchaser-broker-firstname" name="" placeholder="名" class="text first" type="text" />
+                           <label for="purchaser--broker-firstname">*房产经纪人姓名</label>
+                           <input id="purchaser-broker-firstname" name="" placeholder="名字" class="text first" type="text" />
                            <label for="purchaser-broker-lastname"></label>
-                           <input id="purchaser-broker-lastname" name="" placeholder="姓" class="text last" type="text" />
+                           <input id="purchaser-broker-lastname" name="" placeholder="姓氏" class="text last" type="text" />
                         </div>
                         <div class="field field-2">
-                           <label for="purchaser-broker-company">经纪机构<i>电话</i></label>
+                           <label for="purchaser-broker-company">*房地产经济公司联系电话</label>
                            <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
                            <label></label>
                            <input name="realtor_phone" class="text last" type="text" />
                         </div>
                         <div class="field">
-                           <label for="purchaser-broker-email">*经纪人电子邮件</label>
+                           <label for="purchaser-broker-email">*电子邮件地址</label>
                            <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
                         </div>
                         <div class="field field-button">
-                           <button class="form-button">发送</button><br /><small>*不得为空</small>
+                           <button class="form-button">提交</button><br /><small>*不得为空</small>
                         </div>
                      </div>
                   </div>

@@ -23,9 +23,9 @@
                               <div class="medium-4 large-4 columns column-1">
                                  <div class="field field-2">
                                     <label for="broker-firstname">*姓名</label>
-                                    <input id="broker-firstname" name="" placeholder="名" class="text required first" type="text" value="" />
+                                    <input id="broker-firstname" name="" placeholder="名字" class="text required first" type="text" value="" />
                                     <label for="broker-lastname"></label>
-                                    <input id="broker-lastname" name="" placeholder="姓" class="text required last" type="text" value="" />
+                                    <input id="broker-lastname" name="" placeholder="姓氏" class="text required last" type="text" value="" />
                                  </div>
                                  <div class="field">
                                     <label for="brokerage_company">*经纪公司</label>
@@ -38,7 +38,7 @@
                               </div>
                               <div class="medium-4 large-4 columns column-2">
                                  <div class="field">
-                                    <label>您是如何得知大都会项目？</label>
+                                    <label>您是如何了解到大都会项目的？</label>
                                     <select name="hearfrom" class="prettyfied">
                                        <option selected="selected">请选择</option>
                                        <option value="" data-html-text="活动">活动</option>
@@ -53,7 +53,7 @@
                                     </select>
                                  </div>
                                  <div class="field field-button">
-                                    <button class="form-button">发送</button><br /><small>*不得为空</small>
+                                    <button class="form-button">提交</button><br /><small>*不得为空</small>
                                  </div>
                               </div>
                               <div class="medium-4 large-4 columns"></div>

@@ -29,7 +29,7 @@
    
    <script type="text/javascript">
       var validation_messages = {
-         "required": "需要"
+         "required": "不得为空"
       };
    </script>
 
@@ -55,7 +55,7 @@
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>
-               <h2>洛杉矶市中心 即将揭幕</h2>
+               <h2>洛杉矶市中心<br />即将揭幕</h2>
             </header>
             <div class="main-content">
                <p>请选择</p>
@@ -65,7 +65,7 @@
             <footer class="footer">
                <p class="developed">由绿地美国公司开发</p>
                <p class="copyright">大都会 版权所有</span></p>
-               <p class="featured">独家销售和市场<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
+               <p class="featured">独家推广销售<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
                   <li><a class="trigger-disclaimer" href="disclaimer.php">免责申明</a></li>
                   <li><a id="credits" class="credits" href="#">网站授权</a></li>
