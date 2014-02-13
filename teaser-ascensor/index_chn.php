@@ -55,11 +55,11 @@
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>
-               <h2>即将来临到洛杉矶市中心野</h2>
+               <h2>洛杉矶市中心 即将揭幕</h2>
             </header>
             <div class="main-content">
                <p>请选择</p>
-               <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="潜在购买者"><span>潜在购买者</span></a></span>
+               <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="购买者登记表"><span>购买者登记表</span></a></span>
                <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="房地产经纪人"><span>房地产经纪人</span></a></span>
             </div>
             <footer class="footer">
