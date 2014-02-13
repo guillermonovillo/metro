@@ -63,7 +63,7 @@
                <h2>Coming soon to<br />Downtown Los Angeles</h2>
             </header>
             <div class="main-content">
-               <p>Please select one:</p>
+               <p>Please select one :</p>
                <span class="button-effect"><a class="trigger-purchaser" href="purchaser.php" data-hover="Prospective purchaser"><span>Prospective purchaser</span></a></span>
                <span class="button-effect"><a class="trigger-broker" href="brokers.php" data-hover="Broker"><span>Broker</span></a></span>
             </div>
