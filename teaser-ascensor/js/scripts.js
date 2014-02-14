@@ -17,7 +17,8 @@ $(function(){
 					});
 
 	ascensor.on("scrollEnd", function(event, floor){
-	  if( first_scroll && floor.to == 1 ) {
+	  if( first_scroll ) {
+	  	ascensor.trigger('scrollToStage', 1);
 	  	$split.fadeOut('slow');
 	  		first_scroll = false;
 	  }
@@ -84,9 +85,9 @@ $(function(){
 		$('#purchaser-realtor-name').val( $('#purchaser-broker-firstname').val() + ' ' + $('#purchaser-broker-lastname').val() );
 	});
 
-	// $('#brokers-form').submit(function(){
-	// 	$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
-	// });
+	$('#brokers-form').submit(function(){
+		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
+	});
 
 	$("#credits").click(function(e){
 		e.preventDefault();

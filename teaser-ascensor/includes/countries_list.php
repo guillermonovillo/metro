@@ -53,7 +53,7 @@
 <option value="Congo, The Democratic Republic of The" data-html-text="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option> 
 <option value="Cook Islands" data-html-text="Cook Islands">Cook Islands</option> 
 <option value="Costa Rica" data-html-text="Costa Rica">Costa Rica</option> 
-<option value="Cote D'ivoire" data-html-text="Cote D'ivoire">Cote D'ivoire</option> 
+<option value="Cote D ivoire" data-html-text="Cote D ivoire">Cote D ivoire</option> 
 <option value="Croatia" data-html-text="Croatia">Croatia</option> 
 <option value="Cuba" data-html-text="Cuba">Cuba</option> 
 <option value="Cyprus" data-html-text="Cyprus">Cyprus</option> 
@@ -112,11 +112,11 @@
 <option value="Kazakhstan" data-html-text="Kazakhstan">Kazakhstan</option> 
 <option value="Kenya" data-html-text="Kenya">Kenya</option> 
 <option value="Kiribati" data-html-text="Kiribati">Kiribati</option> 
-<option value="Korea, Democratic People's Republic of" data-html-text="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option> 
+<option value="Korea, Democratic People s Republic of" data-html-text="Korea, Democratic People s Republic of">Korea, Democratic People s Republic of</option> 
 <option value="Korea, Republic of" data-html-text="Korea, Republic of">Korea, Republic of</option> 
 <option value="Kuwait" data-html-text="Kuwait">Kuwait</option> 
 <option value="Kyrgyzstan" data-html-text="Kyrgyzstan">Kyrgyzstan</option> 
-<option value="Lao People's Democratic Republic" data-html-text="Lao People's Democratic Republic">Lao People's Democratic Republic</option> 
+<option value="Lao People s Democratic Republic" data-html-text="Lao People s Democratic Republic">Lao People s Democratic Republic</option> 
 <option value="Latvia" data-html-text="Latvia">Latvia</option> 
 <option value="Lebanon" data-html-text="Lebanon">Lebanon</option> 
 <option value="Lesotho" data-html-text="Lesotho">Lesotho</option> 
