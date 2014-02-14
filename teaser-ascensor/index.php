@@ -68,7 +68,7 @@
             <footer class="footer">
                <p class="developed">Developed by<br />Greenland USA</p>
                <p class="copyright">Metropolis <span>All right reserved.</span></p>
-               <p class="featured">Exclusive Sales &amp; Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
+               <p class="featured">Exclusive Marketing<img class="img" src="img/logo_douglas_elliman.png" alt="Doouglas Elliman Development Marketing - Logo" width="126" height="22" /></p>
                <ul class="link-list">
                   <li><a class="trigger-disclaimer" href="disclaimer.php">Disclaimer</a></li>
                   <li><a id="credits" class="credits" href="#">Site Credits</a></li>
