@@ -89,9 +89,4 @@ $(function(){
 		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
 	});
 
-	$("#credits").click(function(e){
-		e.preventDefault();
-		$(this).html($(this).text() == 'Developed by: Bridger Conway' ? 'Site Credits' : 'Developed by: Bridger Conway');
-	});
-
 });
