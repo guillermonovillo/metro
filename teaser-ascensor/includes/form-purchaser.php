@@ -64,9 +64,9 @@
                         <div class="popup hidden">
                            <div class="field field-2">
                               <label for="purchaser-broker-firstname">*Broker's name</label>
-                              <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" disabled="disabled" />
+                              <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" />
                               <label for="purchaser-broker-lastname"></label>
-                              <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" disabled="disabled" />
+                              <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" />
                            </div>
                            <div class="field field-2">
                               <label for="purchaser-broker-company">*Broker's Co. Contact Number</label>
