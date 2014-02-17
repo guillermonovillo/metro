@@ -89,4 +89,16 @@ $(function(){
 		$('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
 	});
 
+	$(".option-broker-yes").click(function(){
+		$(".popup").addClass('visible');
+		// $("input[name='hasbroker']").val("true");
+		// $("[name='form_broker_first_name'], [name='form_broker_last_name'], [name='brokerage_company']").addClass("required");
+	})
+
+	$(".option-broker-no").click(function(){
+		$(".popup").removeClass('visible');
+		// $("input[name='hasbroker']").val("false");
+		// $("[name='form_broker_first_name'], [name='form_broker_last_name'], [name='brokerage_company']").removeClass("required");
+	})
+
 });

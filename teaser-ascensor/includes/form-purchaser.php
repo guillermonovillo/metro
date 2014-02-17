@@ -57,25 +57,27 @@
                      <div class="medium-4 large-4 columns column-3">
                         <div id="represented-by-broker-wrap" class="field">
                            <label>*Represented by Brokers?</label>
-                           <a data-hasbroker="1" class="radio-button" href="#">Yes</a>
-                           <a data-hasbroker="0" class="radio-button selected" href="#">No</a>
+                           <a data-hasbroker="1" class="radio-button option-broker-yes" href="#">Yes</a>
+                           <a data-hasbroker="0" class="radio-button option-broker-no selected" href="#">No</a>
                            <input id="hasbroker" name="hasbroker" type="hidden" value="" />
                         </div>
-                        <div class="field field-2">
-                           <label for="purchaser-broker-firstname">*Broker's name</label>
-                           <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" />
-                           <label for="purchaser-broker-lastname"></label>
-                           <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" />
-                        </div>
-                        <div class="field field-2">
-                           <label for="purchaser-broker-company">*Broker's Co. Contact Number</label>
-                           <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
-                           <label></label>
-                           <input name="realtor_phone" class="text last" type="text" />
-                        </div>
-                        <div class="field">
-                           <label for="purchaser-broker-email">*Broker's Co. email</label>
-                           <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
+                        <div class="popup hidden">
+                           <div class="field field-2">
+                              <label for="purchaser-broker-firstname">*Broker's name</label>
+                              <input id="purchaser-broker-firstname" name="" placeholder="" class="text first" type="text" disabled="disabled" />
+                              <label for="purchaser-broker-lastname"></label>
+                              <input id="purchaser-broker-lastname" name="" placeholder="" class="text last" type="text" disabled="disabled" />
+                           </div>
+                           <div class="field field-2">
+                              <label for="purchaser-broker-company">*Broker's Co. Contact Number</label>
+                              <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
+                              <label></label>
+                              <input name="realtor_phone" class="text last" type="text" />
+                           </div>
+                           <div class="field">
+                              <label for="purchaser-broker-email">*Broker's Co. email</label>
+                              <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
+                           </div>
                         </div>
                         <div class="field field-button">
                            <button class="form-button">Send</button><br /><small>*Required</small>

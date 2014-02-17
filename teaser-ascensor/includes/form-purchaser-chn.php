@@ -57,25 +57,27 @@
                      <div class="medium-4 large-4 columns column-3">
                         <div id="represented-by-broker-wrap" class="field">
                            <label>*由房产经纪人代理？</label>
-                           <a data-hasbroker="1" class="radio-button" href="#">是</a>
-                           <a data-hasbroker="0" class="radio-button selected" href="#">否</a>
+                           <a data-hasbroker="1" class="radio-button option-broker-yes" href="#">是</a>
+                           <a data-hasbroker="0" class="radio-button option-broker-no selected" href="#">否</a>
                            <input name="hasbroker" type="hidden" value="0" />
                         </div>
-                        <div class="field field-2">
-                           <label for="purchaser--broker-firstname">*房产经纪人姓名</label>
-                           <input id="purchaser-broker-firstname" name="" placeholder="名字" class="text first" type="text" />
-                           <label for="purchaser-broker-lastname"></label>
-                           <input id="purchaser-broker-lastname" name="" placeholder="姓氏" class="text last" type="text" />
-                        </div>
-                        <div class="field field-2">
-                           <label for="purchaser-broker-company">*房地产经济公司联系电话</label>
-                           <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
-                           <label></label>
-                           <input name="realtor_phone" class="text last" type="text" />
-                        </div>
-                        <div class="field">
-                           <label for="purchaser-broker-email">*电子邮件地址</label>
-                           <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
+                        <div class="popup hidden">
+                           <div class="field field-2">
+                              <label for="purchaser--broker-firstname">*房产经纪人姓名</label>
+                              <input id="purchaser-broker-firstname" name="" placeholder="名字" class="text first" type="text" />
+                              <label for="purchaser-broker-lastname"></label>
+                              <input id="purchaser-broker-lastname" name="" placeholder="姓氏" class="text last" type="text" />
+                           </div>
+                           <div class="field field-2">
+                              <label for="purchaser-broker-company">*房地产经济公司联系电话</label>
+                              <input id="purchaser-broker-company" name="brokerage_company" placeholder="" class="text first" type="text" />
+                              <label></label>
+                              <input name="realtor_phone" class="text last" type="text" />
+                           </div>
+                           <div class="field">
+                              <label for="purchaser-broker-email">*电子邮件地址</label>
+                              <input id="purchaser-broker-email" name="realtor_email" placeholder="" class="text email" type="text" />
+                           </div>
                         </div>
                         <div class="field field-button">
                            <button class="form-button">提交</button><br /><small>*不得为空</small>

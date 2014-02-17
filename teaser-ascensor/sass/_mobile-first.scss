@@ -133,6 +133,21 @@ html, body {
       text-transform: uppercase;
    }
 
+   .popup {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all .75s ease-out;
+      -moz-transition: all .75s ease-out;
+      -o-transition: all .75s ease-out;
+      -ms-transition: all .75s ease-out;
+      transition: all .75s ease-out;
+
+      &.visible {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+
    .form-button {
       background-color: #fff;
       border: 0 none;
