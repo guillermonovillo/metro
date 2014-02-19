@@ -12,7 +12,8 @@
                $aux = implode('/', $aux);
                $returnURL = $_SERVER["SERVER_NAME"].$aux;
             ?>
-            <form id="purchaser-form" class="form" method="post" action="http://www.escrowprocessing.com/api_postform.php">
+            <!-- <form id="purchaser-form" class="form" method="post" action="http://www.escrowprocessing.com/api_postform.php"> -->
+            <form id="purchaser-form" class="form" method="post" action="send.php">
                <input type="hidden" name="seckey" value="hEBU830x7T">
                <input type="hidden" name="debug" value="0">
                <input type="hidden" name="post_type" value="post">
