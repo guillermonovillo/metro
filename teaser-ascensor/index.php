@@ -37,6 +37,7 @@
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/placeholder_polyfill.jquery.min.combo.js"></script>
+   <script type="text/javascript" src="js/cover.js"></script>
 
 </head>
 <body class="home">
@@ -93,6 +94,13 @@
          </section>
       </div>
    </div>
+
+   <div id="split-wrapper">
+      <div id="split-left"></div>
+      <div id="split-right"></div>
+   </div>
+
+   <script type="text/javascript" src="common/js/jquery.easing.1.3.js"></script>
    <script type="text/javascript" src="js/jquery.ascensor.min.js"></script>
    <script type="text/javascript" src="js/plugins.js"></script>
    <script type="text/javascript" src="js/scripts.js"></script>
