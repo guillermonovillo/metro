@@ -60,14 +60,14 @@
                            <label>*由房产经纪人代理？</label>
                            <a data-hasbroker="1" class="radio-button option-broker-yes" href="#">是</a>
                            <a data-hasbroker="0" class="radio-button option-broker-no selected" href="#">否</a>
-                           <input name="hasbroker" type="hidden" value="0" />
+                           <input id="hasbroker" name="hasbroker" type="hidden" value="0" />
                         </div>
                         <div class="popup hidden">
                            <div class="field field-2">
                               <label for="purchaser--broker-firstname">*房产经纪人姓名</label>
-                              <input id="purchaser-broker-firstname" name="" placeholder="名字" class="text first" type="text" />
+                              <input id="purchaser-broker-firstname" name="broker_firstname" placeholder="名字" class="text first" type="text" />
                               <label for="purchaser-broker-lastname"></label>
-                              <input id="purchaser-broker-lastname" name="" placeholder="姓氏" class="text last" type="text" />
+                              <input id="purchaser-broker-lastname" name="broker_lastname" placeholder="姓氏" class="text last" type="text" />
                            </div>
                            <div class="field field-2">
                               <label for="purchaser-broker-company">*房地产经济公司联系电话</label>

@@ -19,7 +19,8 @@ $(function(){
 	ascensor.on("scrollEnd", function(event, floor){
 	  if( first_scroll ) {
 	  	ascensor.trigger('scrollToStage', 1);
-	  	$split.fadeOut('slow');
+	  	// $split.fadeOut('slow');
+	  	init();
 	  		first_scroll = false;
 	  }
 	});
@@ -58,15 +59,61 @@ $(function(){
 	}
 
 	$('form').each(function(i, el){
-		$(el).validate({
-			errorPlacement: function(error, element){
-				var error_msj = error.text();
-				$(element).attr('placeholder', error_msj);
-				if ( ! placeholder_support ) {
-					$(element).siblings('label').children('span').text(error_msj);
+		
+		if( $(el).find('#hasbroker').length ) {
+
+			var $el_hasbroker = $(el).find('#hasbroker');
+
+			$(el).validate({
+				errorPlacement: function(error, element){
+					var error_msj = error.text();
+					$(element).attr('placeholder', error_msj);
+					if ( ! placeholder_support ) {
+						$(element).siblings('label').children('span').text(error_msj);
+					}
+				},
+				rules: {
+					broker_firstname: {
+						required: function(element) {
+							return $el_hasbroker.val() == 1
+						}
+					},
+					broker_lastname: {
+						required: function(element) {
+							return $el_hasbroker.val() == 1
+						}
+					},
+					brokerage_company: {
+						required: function(element) {
+							return $el_hasbroker.val() == 1
+						}
+					},
+					realtor_phone:  {
+						required: function(element) {
+							return $el_hasbroker.val() == 1;
+						}
+					},
+					realtor_email: {
+						required: function(element) {
+							return $el_hasbroker.val() == 1;
+						}
+					}
 				}
-			}
-		});
+			});
+		} else {
+
+			$(el).validate({
+				errorPlacement: function(error, element){
+					var error_msj = error.text();
+					$(element).attr('placeholder', error_msj);
+					if ( ! placeholder_support ) {
+						$(element).siblings('label').children('span').text(error_msj);
+					}
+				}
+			});
+
+		}
+
 	});
 
 	var $hasbroker = $('#hasbroker');
@@ -91,190 +138,56 @@ $(function(){
 
 	$(".option-broker-yes").click(function(){
 		$(".popup").addClass('visible');
-		// $("input[name='hasbroker']").val("true");
-		// $("[name='form_broker_first_name'], [name='form_broker_last_name'], [name='brokerage_company']").addClass("required");
 	})
 
 	$(".option-broker-no").click(function(){
-		$(".popup").removeClass('visible');
-		// $("input[name='hasbroker']").val("false");
-		// $("[name='form_broker_first_name'], [name='form_broker_last_name'], [name='brokerage_company']").removeClass("required");
+		$(".popup").removeClass('visible');	
 	})
 
 });
 
 (function($){
 
-	var narrow      = false;
-	var header      = $('#globalheader');
-	var headerTop   = header.find('.top');
-	var menuSec     = header.find('.sec');
-	var menuSub     = header.find('.sub');
-	var buttonsTop  = headerTop.find('a');
-	var buttonsSub   = menuSec.find('a');
-	var buttonMenu  = buttonsTop.eq(0);
-	var buttonAmaz  = buttonsTop.eq(1);
-	var buttonLang  = buttonsTop.eq(2);
-	var buttonLocal = buttonsTop.eq(3);
-	var spClose     = header.find('.intsp-btn-close');
-	var regions     = header.find('#local .regions a');
-
-	var chageTimerID = null;
-	var closeTimerID = null;
-	var closeTimeout = 2500;
-
-	/*****************************************************************************************************************
-	 * INIT
-	 *****************************************************************************************************************/
-
-	$('#menu a').each(function(i){
-		var rel = this.getAttribute('rel');
-
-		if(rel && rel.indexOf('#') === 0){
-			$(this).append('<span class="ind"></span>');
-		}
-	});
-
-	if(Shared.css.hasTransition){
-		header.transform('translateZ(0)');
-
-		menuSec.css({display:'none', opacity:0, '-webkit-backface-visibility':'hidden'}).transition('all', 400, 'easeInOutQuart').transformOrigin('50%', '0%');
-		menuSub.css({display:'none', opacity:0, '-webkit-backface-visibility':'hidden'}).transition('all', 400, 'easeInOutQuart').transformOrigin('50%', '0%');
-
-		if(Shared.ua.isAndroid){
-			menuSec.transform('rotateX(-90deg)');
-			menuSub.transform('rotateX(-90deg)');
-		}else{
-			menuSec.transform('perspective(1000px) rotateX(-90deg)');
-			menuSub.transform('perspective(1000px) rotateX(-90deg)');
-		}
-
-		menuSec.transitionEnd(function(){
-			if($(this).hasClass('open')){
-				// videoタグのクリック対応
-				if(Shared.ua.isiPhone){
-					$('.flplayer video, .ytplayer iframe').each(function(){
-						if($(this).offset().top < 1000){
-							$(this).addClass('video_unclickable');
-						}
-					});
-				}
-			}else{
-				this.style.display = 'none';
-			}
-		});
-		menuSub.transitionEnd(function(){
-			if(!$(this).hasClass('open')) this.style.display = 'none';
-		});
-		if(Shared.ua.isAndroid){
-			menuSec.css({webkitPerspective:'none', opacity:1});
-			menuSub.css({webkitPerspective:'none', opacity:1});
-		}
-	}else{
-		menuSec.css({display:'none', opacity:1});
-		menuSub.css({display:'none', opacity:1});
-	}
 
 	/*****************************************************************************************************************
 	 * ANIMATION
 	 *****************************************************************************************************************/
 
-	// open sec
-	function openSec(button){
-		var sec = $('#' + button.attr('href').split('#')[1]);
+	 init = function () {
+	     var mod = window.Modernizr,
+	         modCSSAnimations  = mod && mod.cssanimations,
+	         modCSSTransforms  = mod && mod.csstransforms,
+	         modCSSTransitions = mod && mod.csstransitions,
+	         modTouch          = mod && mod.touch,
+	         modAnim           = modCSSAnimations && modCSSTransitions;
 
-		sec.addClass('open').css({display:'block'});
+	     var $splitWrapper   = $('#split-wrapper'),
+	         $splitLeft      = $('#split-left'),
+	         $splitRight     = $('#split-right'),
+	         $window         = $(window),
+	         w               = $window.width(),
+	         h               = $window.height(),
+	         pos             = (w + h / Math.tan(Math.PI / 180 * 57.5)) / 2 / w * 100 + 50 + '%';
 
-		if(Shared.css.hasTransition){
-			setTimeout(function(){
-				if(button.hasClass('selected')){
-					if(Shared.ua.isAndroid){
-						sec.transform('rotateX(0deg)').css({opacity:1});
-					}else{
-						sec.transform('perspective(1000px) rotateX(0deg)').css({opacity:1});
-					}
-				}
-			}, 300);
-		}
+	     $splitLeft.css({ 
+	         "-webkit-transform"   : "skewX(0deg) translateX(-100%)",
+	         "-ms-transform"       : "skewX(0deg) translateX(-100%)",
+	         "-moz-transform"      : "skewX(0deg) translateX(-100%)",
+	         "-o-transform"        : "skewX(0deg) translateX(-100%)",
+	         "transform"           : "skewX(0deg) translateX(-100%)"
+	     });
+	     $splitRight.css({ 
+	         "-webkit-transform"   : "skewX(0deg) translateX(100%)",
+	         "-ms-transform"       : "skewX(0deg) translateX(100%)",
+	         "-moz-transform"      : "skewX(0deg) translateX(100%)",
+	         "-o-transform"        : "skewX(0deg) translateX(100%)",
+	         "transform"           : "skewX(0deg) translateX(100%)"
+	     });
+	     $splitWrapper.on('transitionend webkitTransitionEnd', function (event) {
+	         $splitWrapper.remove();
+	     });
+	 };
 
-		if(sec.attr('id') == 'local'){
-			map();
-		}
-	}
-
-	// open sub
-	function openSub(button, e){
-		var sub = $(button.attr('rel'));
-
-		sub.addClass('open').css({display:'block'});
-
-		if(e.type == 'click'){
-			var delay = 30;
-		}else{
-			var delay = 300;
-		}
-		if(Shared.css.hasTransition){
-			setTimeout(function(){
-				if(button.hasClass('selected')){
-					if(Shared.ua.isAndroid){
-						sub.transform('rotateX(0deg)').css({opacity:1});
-					}else{
-						sub.transform('perspective(1000px) rotateX(0deg)').css({opacity:1});
-					}
-				}
-			}, delay);
-		}
-	}
-
-	// close sec
-	function closeSec(button){
-		if(button){
-			var sec = $('#' + button.attr('href').split('#')[1]);
-			button.removeClass('selected');
-		}else{
-			var sec = menuSec.filter('.open');
-			buttonsTop.filter('.selected').not('.intlang').removeClass('selected');
-		}
-
-		if(Shared.ua.isiPhone){
-			$('.flplayer video, .ytplayer iframe').removeClass('video_unclickable');
-		}
-
-		sec.removeClass('open');
-
-		if(Shared.css.hasTransition){
-			if(Shared.ua.isAndroid){
-				sec.transform('rotateX(-90deg)').css({opacity:1});
-			}else{
-				sec.transform('perspective(1000px) rotateX(-90deg)').css({opacity:0});
-			}
-		}else{
-			sec.css({display:'none'});
-		}
-	}
-
-	// close sub
-	function closeSub(button){
-		if(button){
-			var sub = $(button.attr('rel'));
-			button.removeClass('selected');
-		}else{
-			var sub = menuSub.filter('.open');
-			buttonsSub.filter('.selected').removeClass('selected');
-		}
-
-		sub.removeClass('open');
-
-		if(Shared.css.hasTransition){
-			if(Shared.ua.isAndroid){
-				sub.transform('rotateX(-90deg)').css({opacity:1});
-			}else{
-				sub.transform('perspective(1000px) rotateX(-90deg)').css({opacity:0});
-			}
-		}else{
-			sub.css({display:'none'});
-
-		}
-	}
-	
 })(jQuery);
+
+// window.onload = init();

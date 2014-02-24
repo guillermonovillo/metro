@@ -40,11 +40,19 @@
 
 </head>
 <body class="body chn">
+   <?php /*
    <script>
       var split = document.createElement('div');
       split.id = 'split';
       document.getElementsByTagName('body')[0].appendChild(split); 
    </script>
+   */ ?>
+
+   <div id="split-wrapper">
+      <div id="split-left"></div>
+      <div id="split-right"></div>
+   </div>
+
    <div id="ascensor-container">
       <div class="floor-2">
          <?php include('includes/form-purchaser-chn.php'); ?>
