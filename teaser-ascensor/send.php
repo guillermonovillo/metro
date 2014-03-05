@@ -9,7 +9,7 @@ if ( isset( $_POST['client_type'] ) && $_POST['client_type'] == '9109' ) {
 }
 
 $header = "From: info@metropolislosangeles.com \r\n";
-$header .= "BCC: mcaceres@bridgerconway.com,saronov@bridgerconway.com,dsantamaria@bridgerconway \r\n";
+$header .= "BCC: mcaceres@bridgerconway.com,saronov@bridgerconway.com,dsantamaria@bridgerconway.com \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain;charset=GB2312 \r\n";
