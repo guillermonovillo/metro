@@ -94,7 +94,7 @@
                <div class="disclaimer">
                   <div class="main-content">
                      <h1>Disclaimer</h1>
-                     <p>This advertisement is not an offering. It is a solicitation of interest in the advertised property. No offering of the advertised units can be made and no deposits can be accepted, or reservations, binding or non-binding, can be made until an offering plan is filed with the California Bureau of Real Estate. No real estate broker or agent is authorized to make any representations or other statements regarding the project, and no agreements with, deposits paid to or other arrangements with any real estate broker are or shall be binding on the developer. This advertising material is not an offer to sell nor a solicitation of an offer to buy to residents of any state or jurisdiction in which registration requirements have not been fulfilled.</p>
+                     <p>This advertisement is not an offering. It is a solicitation of interest in the advertised property. The developer may not enter into binding contracts at this time. No real estate broker or agent is authorized to make any representations or other statements regarding the project, and no agreements with, deposits paid to or other arrangements with any real estate broker are or shall be binding on the developer. This advertising material is not an offer to sell nor a solicitation of an offer to buy to residents of any state or jurisdiction in which registration requirements have not been fulfilled.</p>
                   </div>
                </div>
             </div>
