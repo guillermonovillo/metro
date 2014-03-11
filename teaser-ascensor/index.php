@@ -49,8 +49,12 @@
    */ ?>
 
    <div id="split-wrapper">
-      <div id="split-left"></div>
-      <div id="split-right"></div>
+      <div id="split-left">
+         <h1>In the city of angels</h1>
+      </div>
+      <div id="split-right">
+         <h1>This is your metropolis</h1>
+      </div>
    </div>
 
    <div id="ascensor-container">

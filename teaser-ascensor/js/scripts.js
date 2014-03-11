@@ -153,39 +153,60 @@ $(function(){
 	 * ANIMATION
 	 *****************************************************************************************************************/
 
-	 init = function () {
-	     var mod = window.Modernizr,
-	         modCSSAnimations  = mod && mod.cssanimations,
-	         modCSSTransforms  = mod && mod.csstransforms,
-	         modCSSTransitions = mod && mod.csstransitions,
-	         modTouch          = mod && mod.touch,
-	         modAnim           = modCSSAnimations && modCSSTransitions;
+	init = function () {
+		var mod = window.Modernizr,
+		   modCSSAnimations  = mod && mod.cssanimations,
+		   modCSSTransforms  = mod && mod.csstransforms,
+		   modCSSTransitions = mod && mod.csstransitions,
+		   modTouch          = mod && mod.touch,
+		   modAnim           = modCSSAnimations && modCSSTransitions;
 
-	     var $splitWrapper   = $('#split-wrapper'),
-	         $splitLeft      = $('#split-left'),
-	         $splitRight     = $('#split-right'),
-	         $window         = $(window),
-	         w               = $window.width(),
-	         h               = $window.height(),
-	         pos             = (w + h / Math.tan(Math.PI / 180 * 57.5)) / 2 / w * 100 + 50 + '%';
+		var $splitWrapper   = $('#split-wrapper'),
+		   $splitLeft      = $('#split-left'),
+		   $splitRight     = $('#split-right'),
+		   $window         = $(window),
+		   w               = $window.width(),
+		   h               = $window.height(),
+		   pos             = (w + h / Math.tan(Math.PI / 180 * 57.5)) / 2 / w * 100 + 50 + '%';
 
-	     $splitLeft.css({ 
-	         "-webkit-transform"   : "skewX(0deg) translateX(-100%)",
-	         "-ms-transform"       : "skewX(0deg) translateX(-100%)",
-	         "-moz-transform"      : "skewX(0deg) translateX(-100%)",
-	         "-o-transform"        : "skewX(0deg) translateX(-100%)",
-	         "transform"           : "skewX(0deg) translateX(-100%)"
-	     });
-	     $splitRight.css({ 
-	         "-webkit-transform"   : "skewX(0deg) translateX(100%)",
-	         "-ms-transform"       : "skewX(0deg) translateX(100%)",
-	         "-moz-transform"      : "skewX(0deg) translateX(100%)",
-	         "-o-transform"        : "skewX(0deg) translateX(100%)",
-	         "transform"           : "skewX(0deg) translateX(100%)"
-	     });
-	     $splitWrapper.on('transitionend webkitTransitionEnd', function (event) {
-	         $splitWrapper.remove();
-	     });
+			// $splitLeft.css({ 
+			//    "-webkit-transform"   : "skewX(-10deg) translateX(-125%)",
+			//    "-ms-transform"       : "skewX(-10deg) translateX(-125%)",
+			//    "-moz-transform"      : "skewX(-10deg) translateX(-125%)",
+			//    "-o-transform"        : "skewX(-10deg) translateX(-125%)",
+			//    "transform"           : "skewX(-10deg) translateX(-125%)"
+			// });
+
+			// $splitRight.css({ 
+			//    "-webkit-transform"   : "skewX(-10deg) translateX(125%)",
+			//    "-ms-transform"       : "skewX(-10deg) translateX(125%)",
+			//    "-moz-transform"      : "skewX(-10deg) translateX(125%)",
+			//    "-o-transform"        : "skewX(-10deg) translateX(125%)",
+			//    "transform"           : "skewX(-10deg) translateX(125%)"
+			// });
+
+		$splitLeft.css({ 
+		   "animation"				 : "from-sky-left 2s linear 0s, to-left 3s linear 2s",
+			"-webkit-animation"	 : "from-sky-left 2s linear 0s, to-left 3s linear 2s",
+			"-moz-animation"		 : "from-sky-left 2s linear 0s, to-left 3s linear 2s"
+		});
+
+		$splitRight.css({ 
+		   "animation"				 : "from-sky-right 2s linear 0s, to-right 3s linear 2s",
+			"-webkit-animation"	 : "from-sky-right 2s linear 0s, to-right 3s linear 2s",
+			"-moz-animation"		 : "from-sky-right 2s linear 0s, to-right 3s linear 2s"
+		});
+
+		$splitWrapper.css({
+			"animation"				 : "background 3s linear 2s",
+			"-webkit-animation"	 : "background 3s linear 2s",
+			"-moz-animation"		 : "background 3s linear 2s"
+		});
+
+		$splitWrapper.on('transitionend webkitTransitionEnd', function (event) {
+			$splitWrapper.remove();
+		});
+
 	 };
 
 })(jQuery);
