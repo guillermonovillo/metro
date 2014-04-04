@@ -70,7 +70,7 @@
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>
-               <h2>Coming soon to<br />Downtown Los Angeles</h2>
+               <h2>Introducing the Future of<br> Downtown LA Living</h2>
             </header>
             <div class="main-content">
                <p>Please select one :</p>
