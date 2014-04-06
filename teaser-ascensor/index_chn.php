@@ -66,7 +66,7 @@
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>
-               <h2>洛杉矶市中心<br />即将揭幕</h2>
+               <h2>未來洛城 引領生活</h2>
             </header>
             <div class="main-content">
                <p>请选择</p>
