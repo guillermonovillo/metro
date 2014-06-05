@@ -112,7 +112,7 @@
             <div class="wrapper">
                <div class="disclaimer press">
                   <div class="main-content">
-                     <h1>Thank you for your interest in metropolis</h1>
+                     <h1>Thank you for your interest in metropolis Los Angeles</h1>
                      <br />
                      <p>For any press inquiries please contact:<br />
                      Paulette Kam | Managing Director<br />

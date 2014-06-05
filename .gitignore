@@ -1,6 +1,5 @@
 .DS_Store
 .sass-cache
-teaser/css
 teaser-ascensor/css
 /ascensor/*
 /placeholder/*
