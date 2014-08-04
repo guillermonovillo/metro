@@ -68,6 +68,10 @@
             <li class="en"><a href="index.php"></a></li>
             <li class="ch"><a href="javascript:void(0)"></a></li>
          </ul>
+         <ul class="salescenter">
+            <li>sale center  china   —   <a href="tel:+864006285588">+86 400-628-5588</a></li>
+            <li>sale center  los angeles   —   <a href="tel:8556578300">855-657-8300</a></li>
+         </ul>
          <div class="content">
             <header class="header">
                <h1>Metropolis, Los Angeles</h1>

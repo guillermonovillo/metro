@@ -1,0 +1,42 @@
+
+@media only screen {
+
+
+	.home .content h1 {
+		background: url("../img/eng/logo_metropolis.png") no-repeat scroll 0 0 transparent;
+		display: inline-block;
+		margin: 0 0 27px 0;
+		text-indent: -9999px;
+		width: 200px;
+		height: 151px;
+	}
+}
+
+	
+.salescenter {
+	color: #fff;
+	font-family: "oxygen_bold", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+	font-size: 10px;
+	list-style: none;
+	position: absolute;
+	right: 90px;
+	text-align: right; 
+	text-transform: uppercase;
+	top: 45px;
+
+	a {
+		color: #fff;
+	}
+}
+
+
+@media only screen and (max-width:768px) {
+	
+	.salescenter {
+		text-align: center;
+		left: 50%;
+		margin-left: -109px;
+		right: initial;
+		top: 15px;
+	}
+}
