@@ -1,7 +1,6 @@
 
 @media only screen {
 
-
 	.home .content h1 {
 		background: url("../img/eng/logo_metropolis.png") no-repeat scroll 0 0 transparent;
 		display: inline-block;
@@ -9,6 +8,10 @@
 		text-indent: -9999px;
 		width: 200px;
 		height: 151px;
+	}
+
+	.chn .home .content {
+		padding-top: 55px;
 	}
 }
 
@@ -37,6 +40,6 @@
 		left: 50%;
 		margin-left: -109px;
 		right: initial;
-		top: 15px;
+		top: 25px;
 	}
 }
