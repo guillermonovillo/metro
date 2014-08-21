@@ -5,7 +5,7 @@
 
 .main-nav {
 	background:white;
-	margin-bottom:30px;
+	padding-bottom:30px;
 }
 .nav-lang {
 	font-size:9px;
@@ -36,6 +36,13 @@
 
 }
 
+.nav-logo {
+
+	text-align:center;
+	height:24px; 
+	& img {margin-top:-70px}
+
+}
 
 .nav-links {
 	
@@ -55,7 +62,7 @@
 				position:absolute;
 
 				& a {
-				color:$secondary-color;
+				color:$primary-color;
 
 					& span {
 
@@ -64,7 +71,7 @@
 						  height: 1px;
 						  display: block;
 						  width: 0px;
-						  background-color: $primary-color;
+						  background-color: $third-color;
 						  -webkit-backface-visibility: hidden;
 						  /** prevent ios flickers **/
 						  -webkit-transition-property: width;
@@ -86,10 +93,17 @@
 					}
 
 				}
-				& a.active {color: $primary-color}
+				& a.active {color: $third-color}
 				& a:hover {
-					color: $primary-color;
-
+					color: $third-color;
+-webkit-transition-property: color;
+						  -moz-transition-property: color;
+						  -o-transition-property: color;
+						  transition-property: color;
+						  -webkit-transition-duration: 0.3s;
+						  -moz-transition-duration: 0.3s;
+						  -o-transition-duration: 0.3s;
+						  transition-duration: 0.3s;
 					& span {width:100%}
 				}
 
@@ -122,17 +136,44 @@ figure {
 	background:rgba(255,0,255,0.5)
 }
 
+#sunset{
+
+	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
+	position: relative;
+
+
+	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
+	& .row { position:relative; }
+	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
+	& .sunset {position:absolute;left:0;top:0;z-index:3; display:none}
+	& .txt {position:absolute; z-index:3; top:0; left:0; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
+		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:238px; color:white; }
+		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; padding-right:16px; color:white; }
+	}
+	&	.t1 {width:277px; text-align:right;left: -270px; top: 56%; height:220px}
+		.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
+		.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%}
+		.t4 {width:238px; text-align:left;left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
+			& h2 {padding: 0 0 0 16px}
+		}
+}
+
+// #sunset.on{background:url(/images/sunset/back_c01_Sunset2b.jpg) center -650px;}
+
 
 footer {
 	background:white;
 	padding:46px 0 36px;
 	.column:nth-child(1) {padding-left:0; border-right:1px solid $primary-color}
 	.column:nth-child(2) {
+
+		padding-left: 50px; 
+
 		& p {
 			color: $primary-color;
 			font-size:12px;
-			margin-left:50px;
 		}
+		& .icon-greenland {margin-bottom:30px}
 		}
 }
 
