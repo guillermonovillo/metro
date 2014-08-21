@@ -1,0 +1,53 @@
+/* Styles for screens at least 1024px wide. */
+
+// ## purchaser ##
+.purchaser {
+   padding: 0 5px;
+
+   .form {
+      width: auto;
+
+      .columns {
+
+         &.column-1 { 
+            padding-right: 15px;
+            width: 220px;
+         }
+
+         &.column-2 { 
+            // padding: 0 15px;
+            width: 186px;
+
+            label { text-align: left; }
+
+            .field.alt label { margin: -5px 0 4px 0; }
+         }
+
+         &.column-3 {
+            padding-left: 15px;
+            width: 220px;
+
+            label { width: 240px; }
+         }
+      }
+
+      .field.field-2 {
+
+         .text { width: 100px; }
+      }
+
+      .field-button {
+         padding-top: 9px;
+
+         .form-button {
+            float: right;
+            margin-bottom: 10px;
+         }
+
+         small { 
+            float: right;
+            clear: right;
+         }
+      }
+   }
+}

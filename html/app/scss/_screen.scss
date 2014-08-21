@@ -1,0 +1,9 @@
+/* styles to any device that supports media queries */
+
+/** 
+ * body font antialiased
+ */
+
+body { 
+   -webkit-font-smoothing: $font-smoothing;
+}

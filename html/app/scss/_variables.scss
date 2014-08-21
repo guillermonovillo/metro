@@ -1,0 +1,90 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+@mixin clearfix {
+   &:before,
+   &:after {
+      content: " "; // * 1 *
+      display: table; // * 2 *
+   }
+
+   &:after { clear: both; }
+}
+
+/** 
+ * hide-text mixin for elements with background
+ */
+
+@mixin hide-text {
+   font: 0/0 a;
+   text-shadow: none;
+   color: transparent;
+   // text-indent: -9999px;
+}
+
+/** 
+ * reset for any element (commonly heading text)
+ */
+
+@mixin reset-prop {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/** 
+ * reset for list element (ol, ul, dl)
+ */
+
+@mixin reset-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+/**
+ * general params to animate
+ */
+
+@mixin to-animate {
+   -webkit-transition: all .2s ease-out;
+   -moz-transition: all .2s ease-out;
+   -o-transition: all .2s ease-out;
+   -ms-transition: all .2s ease-out;
+   transition: all .2s ease-out;
+}
+
+/**
+ * typekit fonts
+ */
+
+// Proxima Nova Regular
+@mixin proxima-nova-regular {
+   font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+   font-style: normal;
+   font-weight: 400;
+}
+
+// Proxima Nova Semibold
+@mixin proxima-nova-semibold {
+   font-family: "proxima-nova-n6","proxima-nova",sans-serif;
+   font-style: normal;
+   font-weight: 600;
+}
+
+/**
+ * colors
+ */
+
+$gold: $primary-color;
+$gray: $secondary-color;
