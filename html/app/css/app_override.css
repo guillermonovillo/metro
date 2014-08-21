@@ -1,0 +1,89 @@
+body {}
+.clock {
+background: url('/images/clock.png') no-repeat 2px 2px;
+float: right;
+margin: -3px -4px 0 0;
+}
+
+/*
+	Bounce
+*/
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+
+/*
+	Line W Fifty
+*/
+@-webkit-keyframes lineWfifty{
+	from {width:0}
+	to {width:50%}
+}
+@keyframes lineWfifty{
+	from {width:0}
+	to {width:50%}
+}
+
+/*
+	Line W Hundred
+*/
+@-webkit-keyframes lineWfifty{
+	from {width:0}
+	to {width:100%}
+}
+@keyframes lineWfifty{
+	from {width:0}
+	to {width:100%}
+}
+
+
+/*
+	Line H Fifty
+*/
+@-webkit-keyframes lineWfifty{
+	from {height:0}
+	to {height:50%}
+}
+@keyframes lineWfifty{
+	from {height:0}
+	to {height:50%}
+}
+
+/*
+	Line H Hundred
+*/
+@-webkit-keyframes lineHhundred{
+	from {height:0}
+	to {height:100%}
+}
+
+@keyframes lineHhundred{
+	from {height:0}
+	to {height:100%}
+}
+
+
+
+
+
+/*
+-webkit-animation: lineHhundred .25s 1 linear .7s;
+-webkit-animation-fill-mode: forwards;
+animation: lineHhundred .25s 1 linear .7s;
+animation-fill-mode: forwards;*/
