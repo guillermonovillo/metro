@@ -1,7 +1,42 @@
 /* Styles for screens at least 1024px wide. */
 
-// ## purchaser ##
-.purchaser {
+// ## form elements ##
+.form {
+
+   fieldset {
+      padding: 20px 0;
+   }
+}
+
+// ## contact ##
+.contact {
+
+   .content { padding: 75px 0 55px 0; }
+
+   .hgroup {
+
+      p { margin-bottom: 10px; }
+   }
+}
+
+.contact-ul {
+   margin-bottom: 25px;
+
+   li {
+      display: inline-block;
+      margin-bottom: 0;
+
+      &.separator { 
+         display: inline-block;
+         margin: 0 30px;
+      }
+   }
+}
+
+// ## purchaser form ##
+// ## brokers form ##
+.purchaser,
+.brokers {
    padding: 0 5px;
 
    .form {
@@ -37,15 +72,46 @@
       }
 
       .field-button {
+         margin-bottom: 0;
          padding-top: 9px;
 
          .form-button {
             float: right;
+            margin-bottom: 10px;
          }
 
          small { 
             float: right;
             clear: right;
+         }
+      }
+   }
+}
+
+// ## brokers form ##
+.brokers {
+
+   .form {
+
+      .columns {
+
+         &.column-2 { 
+            padding: 50px 0 15px 0;
+
+            label { margin-bottom: 8px; }
+         }
+      }
+
+      .field-button { 
+         padding-top: 69px;
+
+         .form-button {
+            float: left;
+         }
+
+         small { 
+            float: left;
+            clear: left;
          }
       }
    }

@@ -1,79 +1,39 @@
-/* Available Variables */
-// $small-screen: 480px;
-// $medium-screen: 1024px;
-// $large-screen: 1440px;
-
-// $screen: "only screen";
-// $small: "only screen and (min-width:#{$small-screen})";
-// $medium: "only screen and (min-width:#{$medium-screen})";
-// $large: "only screen and (min-width:#{$large-screen})";
-// $landscape: "only screen and (orientation: landscape)";
-// $portrait: "only screen and (orientation: portrait)";
-
-// /* We use this media query to add styles to any device that supports media queries */
-// @media #{$screen} { 
-//    @import 
-
-// }
-
-// /* Used to alter styles for screens at least 480px wide. This is where the grid changes. */
-// @media #{$small} { 
-//    @import 
-
-// }
-
-// /* Used to alter styles for screens at least 1024px wide. */
-// @media #{$medium} { 
-//    @import
-
-// }
-
-// /* Used to alter styles for screens at least 1440px wide. */
-// // @media #{$large} { 
-// //     @import 
-
-// // }
-
-
-
-
 // Small screens 
 @media #{$small-up} { 
-    @import    	"small",
-       			"small_sanntu";
+   @import  "small",
+            "small_sanntu";
 }
-@media #{$small-only} { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
+@media #{$small-only} { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* min-width 641px, medium screens */
 @media #{$medium-up} {
-    @import   	"medium",
-      			"medium_sanntu";
- }
+    @import "medium",
+            "medium_sanntu";
+}
 
 @media #{$medium-only} { }
 
-
-
 /* min-width 1025px, large screens */
 @media #{$large-up} { 
-   @import   	"large",
-    			"large_sanntu";
+   @import  "large",
+            "large_sanntu";
 }
-@media #{$large-only} { }
 
+// @media #{$large-only} { }
 
-/* min-width 1441px, xlarge screens */
-@media #{$xlarge-up} { 
-//    @import  	"xlarge",
-//     			"xlarge_sanntu";
-}
-@media #{$xlarge-only} { }
+// /* min-width 1441px, xlarge screens */
+// @media #{$xlarge-up} { 
+//    @import  "xlarge",
+//             "xlarge_sanntu";
+// }
 
+// @media #{$xlarge-only} { }
 
-/* min-width 1921px, xxlarge screens */
-@media #{$xxlarge-up} {
-//    @import  	"xxlarge",
-//     			"xxlarge_sanntu"; 
-}
-@media #{$xxlarge-only} { }
+// /* min-width 1921px, xxlarge screens */
+// @media #{$xxlarge-up} {
+//    @import  "xxlarge",
+//             "xxlarge_sanntu"; 
+// }
+
+// @media #{$xxlarge-only} { }
