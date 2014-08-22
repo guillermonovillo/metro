@@ -1,1 +1,163 @@
 /* Styles for screens at least 480px wide. This is where the grid changes. */
+
+
+.main-nav {
+	background:white;
+	padding-bottom:30px;
+}
+
+
+figure {
+
+	margin:0; padding:0;
+
+
+	& .line { 
+		position:relative;
+
+		& span {
+			width:1px; 
+			display:inline-block; 
+			position: absolute;
+
+
+			&.vertical { 
+
+				&.full {
+				-webkit-animation: lineHhundred .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineHhundred .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+				&.half {
+				-webkit-animation: lineHfifty .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineHfifty .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+
+				&.to-t { bottom:0px;}
+				&.to-b { top: 0px}
+
+			}
+
+			&.horizontal {
+
+				&.full {
+				-webkit-animation: lineWhundred .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineWhundred .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+				&.half {
+				-webkit-animation: lineWfifty .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineWfifty .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+
+				&.to-r { left:0px}
+				&.to-l { right:0px}
+			}
+			
+
+			
+
+			&.white { background: white}
+			&.black { background: black}
+		}
+
+		
+
+
+	}
+
+
+	& .center {margin:22% 0; text-align:center}
+	& .title {
+
+		& h1, h2 { color: white; text-align:center; font-weight:bold}
+		& h1 {font-size: 28px;line-height: 28px;margin: 20px 0 18px;}
+		& h2 {font-size: 24px;line-height: 27px;text-transform: uppercase;margin: 0 0 20px;}
+
+	}
+
+	background:rgba(255,0,255,0.5)
+}
+
+#sunset{
+
+	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
+	position: relative;
+
+
+	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
+	& .row { position:relative; }
+	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
+	& .sunset {position:absolute;left:0;top:0;z-index:3; display:block}
+	& .txt {position:absolute; z-index:3; text-transform:uppercase; border:0; padding:16px 19px; margin:0 15px; left: 0; top: 20px; display:none; height:40px;
+		& h1 { font-size: 20px; line-height:18px; font-weight: lighter; margin:0; width:300px; color:white;
+			& span {display:none}
+		 }
+		& h2 { font-size: 20px; line-height:18px; font-weight: bold; margin:0; padding-right:16px; color:white; }
+	}
+	.t1-line-for-medium {display:none; height:0px; border:0; display:none; position: absolute; top:0 }
+	// &	.t1 {width:277px; text-align:right;left: -270px; top: 56%; height:220px}
+	// 	.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
+	// 	.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%}
+	// 	.t4 {width:238px; text-align:left;left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
+	// 		& h2 {padding: 0 0 0 16px}
+	// 	}
+}
+
+
+
+footer {
+	background:white;
+	.column:nth-child(1) {
+	border-bottom: 1px solid $primary-color;
+	margin-bottom: 30px;
+	padding: 50px 0 30px;
+
+		& .vcard {display:block;margin-top:18px}
+
+	}
+	.column:nth-child(2) {
+		padding:0;
+		& p {
+			color: $primary-color;
+			font-size:12px;
+		}
+		& .icon-greenland {margin-bottom:30px}
+		}
+
+
+	.column:nth-child(3){
+			padding-top:40px;
+			.clock {
+			background: url('/images/clock.png') no-repeat 2px 2px;
+			float: left;
+			margin: -3px -4px 0 0;
+			}
+			span {
+				color: $primary-color;
+				font-size:12px;
+				margin: 10px 0 0 60px;
+				display:block;
+				position:relative;
+			}
+	}
+	
+
+}
+
+.vcard {
+	margin:10px  0; 
+	padding:0; 
+	background:none; 
+	border:0; 
+	font-size: 11px; 
+	line-height: 13px;
+	color: $primary-color;
+	& .adr {font-size:12px}
+	& .fn {font-weight:normal; font-size:12px}
+
+	& abbr {color: $primary-color; text-decoration:none}
+
+}

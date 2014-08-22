@@ -1,1 +1,174 @@
 /* Styles for screens at least 1024px wide. */
+
+.nav-lang {
+	font-size:9px;
+	height: 69px;
+	border-bottom:1px solid #B5995C;
+	padding-bottom:8px;
+	
+	& div {
+		height:100%;
+		position:relative;
+		padding: 0;
+		& p {	font-size: 9px;
+					font-family: $body-font-family;
+					text-transform: uppercase;
+					position: absolute;
+					bottom: 0px;
+					line-height: 15px;
+					margin:0;
+				}
+
+	}
+	
+}
+
+.lang {
+	a {color: $secondary-color; margin:0 5px }
+	a.active {color: $primary-color}
+
+}
+
+.nav-logo {
+
+	text-align:center;
+	height:24px; 
+	& img {margin-top:-70px}
+
+}
+
+.nav-links {
+	
+	height: 30px;
+	margin-top: 4px;
+
+	& ul {
+
+		font-size: 12px;
+		font-family: $body-font-family;
+		margin: 0; 
+		position: relative;
+			& li {
+				float:left;
+				display: inline-block;
+				margin-right:15px;
+				position:absolute;
+
+				& a {
+				color:$primary-color;
+
+					& span {
+
+						  position: absolute;
+						  top: 25px;
+						  height: 1px;
+						  display: block;
+						  width: 0px;
+						  background-color: $third-color;
+						  -webkit-backface-visibility: hidden;
+						  /** prevent ios flickers **/
+						  -webkit-transition-property: width;
+						  -moz-transition-property: width;
+						  -o-transition-property: width;
+						  transition-property: width;
+						  -webkit-transition-duration: 0.2s;
+						  -moz-transition-duration: 0.2s;
+						  -o-transition-duration: 0.2s;
+						  transition-duration: 0.2s;
+						  -webkit-transition-timing-function: ease-out;
+						  -moz-transition-timing-function: ease-out;
+						  -o-transition-timing-function: ease-out;
+						  transition-timing-function: ease-out;
+						  -webkit-transition-delay: 0s;
+						  -moz-transition-delay: 0s;
+						  -o-transition-delay: 0s;
+						  transition-delay: 0s;
+					}
+
+				}
+				& a.active {color: $third-color}
+				& a:hover {
+					color: $third-color;
+-webkit-transition-property: color;
+						  -moz-transition-property: color;
+						  -o-transition-property: color;
+						  transition-property: color;
+						  -webkit-transition-duration: 0.3s;
+						  -moz-transition-duration: 0.3s;
+						  -o-transition-duration: 0.3s;
+						  transition-duration: 0.3s;
+					& span {width:100%}
+				}
+
+			}
+
+		.home {left: 0px}
+		.lifestyle {left:48px }
+		.neighborhood  {left:127px }
+		.overview {right:165px; & span {right:0}}
+		.team {right:114px; & span {right:0}}
+		.press {right:57px; & span {right:0}}
+		.contac {right:-18px; & span {right:0}}
+	}
+}
+
+
+#sunset{
+
+	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
+	position: relative;
+
+
+	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
+	& .row { position:relative; }
+	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
+	& .sunset {position:absolute;left:0;top:0;z-index:3; display:none}
+	& .txt {position:absolute; z-index:3; top:0; left:0; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
+		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:238px; color:white; }
+		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; padding-right:16px; color:white; }
+	}
+	&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
+			& h2 {padding: 0 0 0 13px}	
+		}
+		.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
+		.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%; }
+		.t4 {width:238px; text-align:left;left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
+			& h1 {width:150px; }
+			& h2 {padding: 0 0 0 0px}
+		}
+span.show-for-medium-only {float:left}
+.t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
+}
+
+footer {
+	background:white;
+	padding:46px 0 36px;
+	.column:nth-child(1) {padding-left:0; border-right:1px solid $primary-color}
+	.column:nth-child(2) {
+
+		padding: 32px 0 0 50px; 
+		
+		& p {
+			color: $primary-color;
+			font-size:12px;
+		}
+		& .icon-greenland {margin-bottom:30px}
+		}
+	.column:nth-child(3){
+			padding-top:40px;
+			.clock {
+			background: url('/images/clock.png') no-repeat 2px 2px;
+			float: left;
+			margin: -3px -4px 0 0;
+			}
+			span {
+				color: $primary-color;
+				font-size:12px;
+				margin: 10px 0 0 60px;
+				display:block;
+				position:relative;
+			}
+	}
+	
+
+}

@@ -1,1 +1,232 @@
 /* Styles for screens at least 480px wide. This is where the grid changes. */
+
+// ## form elements ##
+.form {
+
+   fieldset {
+      border: 0 none;
+      padding: 20px 0;
+   }
+
+   .field {
+      margin-bottom: 10px;
+      @include clearfix;
+   }
+
+   .field.field-2 {
+
+      .text { float: left; }
+
+      .first { margin-right: 5px; }
+
+      .last {}
+   }
+
+   .field {
+      
+      .error.text {
+         border: 1px solid #c50000;
+         background-color: #c50000;
+      }
+   }
+
+   label {
+      color: $gray;
+      @include proxima-nova-regular;
+      font-size: 12px;
+      display: block;
+      line-height: 12px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+   }
+
+   .text {
+      background: 0 none;
+      border: 1px solid #000;
+      border-radius: 0;
+      color: $gray;
+      @include proxima-nova-regular;
+      font-size: 11px;
+      padding: 4px 6px;
+      text-transform: uppercase;
+      -webkit-appearance: none;
+      -webkit-font-smoothing: antialiased;
+      width: 100%;
+
+      &:focus { outline: 0; }
+
+      &::-webkit-input-placeholder {
+         color: $gray;
+         opacity: 1;
+      }
+
+      &:-moz-placeholder {
+         color: $gray;
+         opacity: 1;
+      }
+
+      &::-moz-placeholder {
+         color: $gray;
+         opacity: 1;
+      }
+
+      &:-ms-input-placeholder {  
+         color: $gray;
+         opacity: 1;
+      }
+   }
+
+   .radio-button {
+      border: 1px solid $gray;
+      color: $gray;
+      @include proxima-nova-regular;
+      font-size: 11px;
+      float: left;
+      line-height: normal;
+      margin: 0 5px 2px 0;
+      padding: 4px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 36px;
+      @include to-animate;
+
+      &:hover, &:active, &.selected {
+         background: rgb(148,214,218); /* Old browsers */
+         background: -moz-linear-gradient(top,  rgb(148,214,218) 0%, rgb(148,214,218) 50%, rgb(129,207,211) 50%, rgb(129,207,211) 100%); /* FF3.6+ */
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(148,214,218)), color-stop(50%,rgb(148,214,218)), color-stop(50%,rgb(129,207,211)), color-stop(100%,rgb(129,207,211))); /* Chrome,Safari4+ */
+         background: -webkit-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* Chrome10+,Safari5.1+ */
+         background: -o-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* Opera 11.10+ */
+         background: -ms-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* IE10+ */
+         background: linear-gradient(to bottom,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* W3C */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 ); /* IE6-9 */
+      }
+
+      &.selected {
+         border-color: transparent;
+      }
+   }
+
+   small {
+      color: #fff;
+      display: inline-block;
+      @include proxima-nova-regular;
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+   }
+
+   .popup {
+      visibility: hidden;
+      opacity: 0;
+      @include to-animate;
+
+      &.visible {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+
+   .form-button {
+      background-color: #fff;
+      border: 0 none;
+      color: #484848;
+      display: inline-block;
+      @include proxima-nova-semibold;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin: 0;
+      padding: 4px 20px;
+      text-transform: uppercase;
+      @include to-animate;
+
+      &:active {
+         background-color: #cc9f3d;
+         border-color: #cc9f3d;
+         color: #fff;
+      }
+
+      &:focus { outline: none; }
+   }
+}
+
+// ## contact ##
+.contact {
+
+   .content {
+      margin: 0 auto;
+      max-width: 640px;
+   }
+
+   .hgroup {
+      border-bottom: 1px solid $gray;
+
+      h1 { display: none; }
+
+      p {
+         color: $gold;
+         @include proxima-nova-semibold;
+         font-size: 13px;
+         margin: 0 0 10px 0;
+         text-transform: uppercase;
+      }
+   }
+}
+
+.contact-ul {
+   @include reset-list;
+   color: $gold;
+   @include proxima-nova-regular;
+   font-size: 13px;
+   margin: 0 0 25px 0;
+   text-transform: uppercase;
+
+   li { 
+      // border-left: 1px solid $primary-color;
+      display: inline-block;
+      // padding: 0 30px;
+
+      &:first-child {
+         // border-left: 0;
+         // padding-left: 0;
+      }
+
+      &.selected { color: #81cfd3; }
+
+      &.separator { margin: 0 30px; }
+   }
+
+   a { color: inherit; }
+}
+
+// ## purchaser ##
+.purchaser {
+
+   .form {
+      margin: 0 auto;
+      width: 220px;
+
+      .columns { 
+         padding: 0;
+
+         &.column-2 {
+
+            label.alt { text-align: center; }
+         }
+      }
+
+      .field.field-2 {
+
+         .text { width: 105px; }
+      }
+
+      .field-button {
+         padding-top: 21px;
+         text-align: center;
+
+         small {
+            text-align: left;
+            width: 75px;
+         }
+      }
+   }
+}
