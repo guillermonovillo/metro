@@ -76,16 +76,24 @@ var app = (function(document, $) {
     $('.clock').hide();
   }
   
+// Responsive imgmap
+$('img[usemap]').rwdImageMaps();
+$('area').mouseenter(function() {
 
+var zone = $(this).data("zone");
 
-
-     $(".over-black").fadeOut();
-$('.zone').mouseenter(function() {
-    console.log($(this).data("zone"));
-   
-    $("#over"+$(this).data("zone")).stop().fadeIn();
+	// console.log($(this).data("zone"));
+	$(".overlay-black").stop(true, true).fadeIn();
+	$(".sunset").filter(".img"+zone).stop(true, true).fadeIn();
+	$(".txt").stop(true,true).filter(".t"+zone).slideDown().children().fadeIn();
+	
 }).mouseleave(function(){
+	var zone = $(this).data("zone");
 
-     $(".over-black").fadeOut();
+	// console.log("out " + $(this).data("zone"));
+	$(".sunset").filter(".img"+zone).hide();
+	$(".txt").stop(true,true).filter(".t"+zone).slideUp().children().fadeOut();
+	$(".overlay-black").hide();
+
+
 });
-

@@ -136,10 +136,20 @@ module.exports = function(grunt) {
 					'foundation'
 				]
 			}
-		}
+		},
+
+		sprite:{
+	      all: {
+	        src: '<%= app %>/images/sprites/*.png',
+	        destImg: '<%= app %>/images/sprites.png',
+	        destCSS: '<%= app %>/css/sprites.css'
+	      }
+  		}
 
 	});
 
+
+ grunt.loadNpmTasks('grunt-spritesmith');
 	
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
@@ -147,6 +157,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
+	grunt.registerTask('img', ['sprite']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
