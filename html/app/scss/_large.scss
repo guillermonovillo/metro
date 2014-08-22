@@ -1,5 +1,14 @@
 /* Styles for screens at least 1440px wide. */
 
+.nav-lang {
+		& div {
+			padding-left:0;
+				& p {	padding-right:0;}
+			}
+		}
+.nav-links {	padding: 0;}
+
+
 #sunset{
 
 	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 

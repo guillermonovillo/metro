@@ -1,10 +1,142 @@
 /* Styles for screens at least 480px wide. This is where the grid changes. */
 
+// For Sprites
+i { display: inline-block;}
+
 
 .main-nav {
 	background:white;
-	padding-bottom:30px;
+	padding-bottom:0px;
+	height:47px;
 }
+
+.nav-lang {
+	display:none; 
+	& div {
+		& p {	}
+	}
+}
+
+.lang {}
+
+.nav-logo {
+	height:24px; 
+	.icon-Metropolis-logo{  
+			background-position: 0px -54px;
+		  width: 180px;
+		  height: 18px;
+		  margin: 14px 0 0 16px;
+		}
+}
+
+.btn-menu {float:right; margin: 12px 15px 0 0}
+
+.nav-links {
+	display:none; 
+	& ul {
+			& li {	}
+		.separator {display:none;}
+	}
+}
+
+.menu-on {
+
+	&.main-nav {
+
+		width: 100%;
+		height: 100%;
+		position:fixed;
+		z-index:10;
+		& .navigation {
+			& .nav-links{
+				display:block; 
+				padding-left:45px;
+				padding-top:80px;
+			}
+		}
+
+		.icon-menu{  
+		  background-image: url(../images/sprites.png);
+		  background-position: 0px -39px;
+		  width: 15px;
+		  height: 15px;
+		  margin: 0px 0 0 16px;
+		}
+		.icon-menu:hover {
+		  background-image: url(../images/sprites.png);
+		  background-position: 0px -24px;
+		  width: 15px;
+		  height: 15px;
+		}
+
+
+		& .navigation {
+
+			& .nav-links {
+				& ul {
+					& li {@include reset-list;
+						height:32px;
+
+						& a {
+						position: relative;
+
+							& span {
+
+								  position: absolute;
+								  top: 25px;
+								  height: 1px;
+								  display: block;
+								  width: 0px;
+								  background-color: $third-color;
+								  -webkit-backface-visibility: hidden;
+								  /** prevent ios flickers **/
+								  -webkit-transition-property: width;
+								  -moz-transition-property: width;
+								  -o-transition-property: width;
+								  transition-property: width;
+								  -webkit-transition-duration: 0.2s;
+								  -moz-transition-duration: 0.2s;
+								  -o-transition-duration: 0.2s;
+								  transition-duration: 0.2s;
+								  -webkit-transition-timing-function: ease-out;
+								  -moz-transition-timing-function: ease-out;
+								  -o-transition-timing-function: ease-out;
+								  transition-timing-function: ease-out;
+								  -webkit-transition-delay: 0s;
+								  -moz-transition-delay: 0s;
+								  -o-transition-delay: 0s;
+								  transition-delay: 0s;
+							}
+
+						}
+										& a.active {color: $third-color}
+				& a:hover {
+					color: $third-color;
+						-webkit-transition-property: color;
+						  -moz-transition-property: color;
+						  -o-transition-property: color;
+						  transition-property: color;
+						  -webkit-transition-duration: 0.3s;
+						  -moz-transition-duration: 0.3s;
+						  -o-transition-duration: 0.3s;
+						  transition-duration: 0.3s;
+					& span {width:100%}
+				}
+
+
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
 
 
 figure {

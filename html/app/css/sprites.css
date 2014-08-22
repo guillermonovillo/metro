@@ -5,17 +5,51 @@ Icon classes can be used entirely standalone. They are named after their origina
 <i class="icon-home"></i>
 ```
 */
+.icon-Metropolis-logo {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -195px;
+  width: 165px;
+  height: 97px;
+}
+.icon-close:hover {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -24px;
+  width: 15px;
+  height: 15px;
+}
+.icon-close {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -39px;
+  width: 15px;
+  height: 15px;
+}
 .icon-greenland {
   background-image: url(../images/sprites.png);
-  background-position: 0px -46px;
+  background-position: 0px -118px;
   width: 124px;
   height: 77px;
-  display: block;
 }
 .icon-isologo {
   background-image: url(../images/sprites.png);
-  background-position: 0px 0px;
+  background-position: 0px -72px;
   width: 47px;
   height: 46px;
-    display: block;
+}
+.icon-menu:hover {
+  background-image: url(../images/sprites.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 12px;
+}
+.icon-menu {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -12px;
+  width: 20px;
+  height: 12px;
+}
+.icon-metropolis {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -54px;
+  width: 180px;
+  height: 18px;
 }
