@@ -124,6 +124,64 @@ figure {
 
 	margin:0; padding:0;
 
+
+	& .line { 
+		position:relative;
+
+		& span {
+			width:1px; 
+			display:inline-block; 
+			position: absolute;
+
+
+			&.vertical { 
+
+				&.full {
+				-webkit-animation: lineHhundred .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineHhundred .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+				&.half {
+				-webkit-animation: lineHfifty .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineHfifty .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+
+				&.to-t { bottom:0px;}
+				&.to-b { top: 0px}
+
+			}
+
+			&.horizontal {
+
+				&.full {
+				-webkit-animation: lineWhundred .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineWhundred .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+				&.half {
+				-webkit-animation: lineWfifty .25s 1 linear .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation: lineWfifty .25s 1 linear .7s;
+				animation-fill-mode: forwards;}
+
+				&.to-r { left:0px}
+				&.to-l { right:0px}
+			}
+			
+
+			
+
+			&.white { background: white}
+			&.black { background: black}
+		}
+
+		
+
+
+	}
+
+
 	& .center {margin:22% 0; text-align:center}
 	& .title {
 
@@ -158,8 +216,6 @@ figure {
 		}
 }
 
-// #sunset.on{background:url(/images/sunset/back_c01_Sunset2b.jpg) center -650px;}
-
 
 footer {
 	background:white;
@@ -175,6 +231,23 @@ footer {
 		}
 		& .icon-greenland {margin-bottom:30px}
 		}
+	.column:nth-child(3){
+			padding-top:40px;
+			.clock {
+			background: url('/images/clock.png') no-repeat 2px 2px;
+			float: left;
+			margin: -3px -4px 0 0;
+			}
+			span {
+				color: $primary-color;
+				font-size:12px;
+				margin: 10px 0 0 60px;
+				display:block;
+				position:relative;
+			}
+	}
+	
+
 }
 
 .vcard {
