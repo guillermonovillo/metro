@@ -2,9 +2,7 @@
   "name": "zf5_project",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "demos": "https://github.com/bmarshall511/demos.git"
-  },
-  "devDependencies": {
+    "demos": "https://github.com/bmarshall511/demos.git",
     "jQuery-rwdImageMaps": "https://github.com/stowball/jQuery-rwdImageMaps.git"
   }
 }

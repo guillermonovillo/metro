@@ -1,0 +1,13 @@
+{
+  "name": "rwdImageMaps",
+  "version": "1",
+  "main": "jquery.rwdImageMaps.js",
+  "ignore": [
+    "**/.*",
+    "component.json",
+    "package.json",
+    "Makefile",
+    "tests",
+    "examples"
+  ]
+}
