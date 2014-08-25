@@ -94,6 +94,19 @@ var zone = $(this).data("zone");
     $(".overlay-black").hide();
 });
 
+
+
+
+// 
+$('.btn-menu').bind('click',(function(e) {
+	$('body').toggleClass('MenuMobile');
+	var $mainNav = $('.main-nav');
+	if($mainNav.hasClass("menu-on")) {$mainNav.addClass( "anim" ); setTimeout(function(){$mainNav.removeClass( "menu-on" ).removeClass("anim");}, 1000); return false;}
+	$mainNav.removeClass("anim").toggleClass( "menu-on" );
+	return false;
+}));
+
+
 // jQuery stuff
 $(document).ready(function() {
 
@@ -108,28 +121,6 @@ $(document).ready(function() {
 
 });
 
-	// console.log($(this).data("zone"));
-	$(".overlay-black").stop(true, true).fadeIn();
-	$(".sunset").filter(".img"+zone).stop(true, true).fadeIn();
-	if(zone == 1) {$(".t1-line-for-medium").slideDown();}	
-	$(".txt").stop(true,true).filter(".t"+zone).slideDown().children().fadeIn();
-}).mouseleave(function(){
-	var zone = $(this).data("zone");
-	// console.log("out " + $(this).data("zone"));
-	$(".sunset").filter(".img"+zone).hide();
-		if(zone == 1) {$(".t1-line-for-medium").slideUp();}	
-	$(".txt").stop(true,true).filter(".t"+zone).slideUp().children().fadeOut();
-	$(".overlay-black").hide();
-});
-
-// 
-$('.btn-menu').bind('click',(function(e) {
-	$('body').toggleClass('MenuMobile');
-	var $mainNav = $('.main-nav');
-	if($mainNav.hasClass("menu-on")) {$mainNav.addClass( "anim" ); setTimeout(function(){$mainNav.removeClass( "menu-on" ).removeClass("anim");}, 1000); return false;}
-	$mainNav.removeClass("anim").toggleClass( "menu-on" );
-	return false;
-}));
 
 mediaCheck({
   media: '(max-width: 640px)',
