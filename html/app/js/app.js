@@ -99,7 +99,6 @@ var zone = $(this).data("zone");
 
 // 
 $('.btn-menu').bind('click',(function(e) {
-	$('body').toggleClass('MenuMobile');
 	var $mainNav = $('.main-nav');
 	if($mainNav.hasClass("menu-on")) {$mainNav.addClass( "anim" ); setTimeout(function(){$mainNav.removeClass( "menu-on" ).removeClass("anim");}, 1000); return false;}
 	$mainNav.removeClass("anim").toggleClass( "menu-on" );
@@ -125,8 +124,10 @@ $(document).ready(function() {
 mediaCheck({
   media: '(max-width: 640px)',
   entry: function() {
+  	$('body').addClass('MenuMobile');
   },
   exit: function() {
     $('.main-nav').removeClass('menu-on'); 
+    $('body').removeClass('MenuMobile');
   }
 });
