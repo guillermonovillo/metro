@@ -3,6 +3,7 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "jQuery-rwdImageMaps": "https://github.com/stowball/jQuery-rwdImageMaps.git",
-    "chosen_v1.1.0": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+    "chosen_v1.1.0": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip",
+    "mediaCheck": "https://github.com/sparkbox/mediaCheck.git#~0.4.5"
   }
 }
