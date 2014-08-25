@@ -123,14 +123,13 @@ $(document).ready(function() {
 });
 
 // 
-var count = 0;
-$('.btn-menu').click(function(e) {
+$('.btn-menu').bind('click',(function(e) {
+	$('body').toggleClass('MenuMobile');
 	var $mainNav = $('.main-nav');
-	if($mainNav.hasClass("menu-on")) {$mainNav.addClass( "anim" ); setTimeout(function(){$mainNav.removeClass( "menu-on" ).removeClass('anim');}, 1000); return false;}
+	if($mainNav.hasClass("menu-on")) {$mainNav.addClass( "anim" ); setTimeout(function(){$mainNav.removeClass( "menu-on" ).removeClass("anim");}, 1000); return false;}
 	$mainNav.removeClass("anim").toggleClass( "menu-on" );
-	count++;
 	return false;
-});
+}));
 
 mediaCheck({
   media: '(max-width: 640px)',
