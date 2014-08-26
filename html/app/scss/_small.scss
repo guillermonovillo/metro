@@ -116,7 +116,6 @@ i { display: inline-block;}
 						position: relative;
 
 							& span {
-
 								  position: absolute;
 								  top: 25px;
 								  height: 1px;
@@ -142,24 +141,23 @@ i { display: inline-block;}
 								  -o-transition-delay: 0s;
 								  transition-delay: 0s;
 							}
-
 						}
-										& a.active {color: $third-color}
-				& a:hover {
-					color: $third-color;
-						-webkit-transition-property: color;
-						  -moz-transition-property: color;
-						  -o-transition-property: color;
-						  transition-property: color;
-						  -webkit-transition-duration: 0.3s;
-						  -moz-transition-duration: 0.3s;
-						  -o-transition-duration: 0.3s;
-						  transition-duration: 0.3s;
-					& span {width:100%}
-				}
-
-
-
+						& a.active {
+							color: $third-color;
+							& span {width: 100%;}
+						}
+						& a:hover {
+							color: $third-color;
+								  -webkit-transition-property: color;
+								  -moz-transition-property: color;
+								  -o-transition-property: color;
+								  transition-property: color;
+								  -webkit-transition-duration: 0.3s;
+								  -moz-transition-duration: 0.3s;
+								  -o-transition-duration: 0.3s;
+								  transition-duration: 0.3s;
+							& span {width:100%}
+						}
 					}
 				}
 			}
@@ -186,28 +184,29 @@ i { display: inline-block;}
 }
 
 
+// 
+// 
+// 
 
 
 
 
 
+// 
+// 
+//  HOME
+// 
+// 
 
 figure {
-
 	margin:0; padding:0;
-
-
 	& .line { 
 		position:relative;
-
 		& span {
 			width:1px; 
 			display:inline-block; 
 			position: absolute;
-
-
 			&.vertical { 
-
 				&.full {
 				-webkit-animation: lineHhundred .25s 1 linear .7s;
 				-webkit-animation-fill-mode: forwards;
@@ -218,14 +217,10 @@ figure {
 				-webkit-animation-fill-mode: forwards;
 				animation: lineHfifty .25s 1 linear .7s;
 				animation-fill-mode: forwards;}
-
 				&.to-t { bottom:0px;}
 				&.to-b { top: 0px}
-
 			}
-
 			&.horizontal {
-
 				&.full {
 				-webkit-animation: lineWhundred .25s 1 linear .7s;
 				-webkit-animation-fill-mode: forwards;
@@ -240,36 +235,28 @@ figure {
 				&.to-r { left:0px}
 				&.to-l { right:0px}
 			}
-
-
 			&.white { background: white}
 			&.black { background: black}
 		}
-
-		
-
-
 	}
 
 
-	& .center {margin:22% 0; text-align:center}
+	& .center {
+		margin:22% 0;
+		text-align:center;
+		& .line {margin:0 50%;}
+	}
 	& .title {
-
 		& h1, h2 { color: white; text-align:center; font-weight:bold}
 		& h1 {font-size: 28px;line-height: 28px;margin: 20px 0 18px;}
 		& h2 {font-size: 24px;line-height: 27px;text-transform: uppercase;margin: 0 0 20px;}
-
 	}
-
 	background:rgba(255,0,255,0.5)
 }
 
 #sunset{
-
 	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
 	position: relative;
-
-
 	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
 	& .row { position:relative; }
 	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
@@ -290,6 +277,70 @@ figure {
 }
 
 
+
+h1 {
+	color:$primary-color;
+	@include proxima-nova-semibold;
+	text-transform:uppercase;
+	line-height:33px;
+	margin-bottom:20px;
+}
+
+// 
+// 
+//  LIFESTYLE
+// 
+// 
+main.lifestyle{
+
+	& .lifestyle {
+		&.wide {
+			margin: 60px 0 80px;
+			height:650px;
+			background:rgba(0,0,0,0.1);
+			&.one{
+				background:url(/images/lifestyle-1.jpg) bottom center; 
+				height:490px;
+				margin-top:0;
+				& .center {margin:14% 0}
+			}
+			&.two{background:url(/images/lifestyle-2.jpg) bottom center }
+			&.three{background:url(/images/lifestyle-3.jpg) bottom center }
+			&.four{background:url(/images/lifestyle-4.jpg) bottom center; margin-bottom:0}
+		}
+	}
+}
+
+
+
+// 
+// 
+//  OVERVIEW
+// 
+// 
+
+.overview {
+
+		& .wide {
+			margin: 60px 0 80px;
+			height:645px;
+			background:rgba(0,0,0,0.1);
+			&.one{background:url(/images/overview-1.jpg) bottom center; }
+			&.two{background:url(/images/overview-2.jpg) bottom center }
+		}
+		& .gallery { 
+			margin: 0px 0 80px;
+			height:450px;
+			background:rgba(0,0,0,0.1);}
+
+}
+
+
+// 
+// 
+//  FOOTER
+// 
+// 
 
 footer {
 	background:white;

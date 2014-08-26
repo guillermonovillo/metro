@@ -27,6 +27,7 @@
 					margin:0;
 					padding-right:0.9375rem;
 					padding-bottom: 5px;
+					color:$primary-color;
 				}
 
 	}
@@ -34,9 +35,8 @@
 }
 
 .lang {
-	a {color: $secondary-color; margin:0 5px }
-	a.active {color: $primary-color}
-
+	a {color: $primary-color; margin:0 5px }
+	a.active {color: $third-color;}
 }
 
 .nav-logo {
@@ -53,6 +53,8 @@
 		}
 
 }
+
+
 
 .nav-links {
 	display:block;
@@ -103,7 +105,10 @@
 					}
 
 				}
-				& a.active {color: $third-color}
+				& a.active {color: $third-color; 
+					& span {width:100%;
+						}
+					}
 				& a:hover {
 					color: $third-color;
 						-webkit-transition-property: color;

@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
+					src: ['fonts/**','!**/*.scss', '!bower_components/**'],
 					dest: '<%= dist %>/'
 				}]
 			},
@@ -144,20 +144,48 @@ module.exports = function(grunt) {
 	        destImg: '<%= app %>/images/sprites.png',
 	        destCSS: '<%= app %>/css/sprites.css'
 	      }
-  		}
+  		},
+
+
+	  autoprefixer: {
+
+	    options: {
+	      // Task-specific options go here.
+	    },
+
+	    // prefix all files
+	    multiple_files: {
+	      expand: true,
+	      flatten: true,
+	      src: '<%= app %>/css/*.css', // -> src/css/file1.css, src/css/file2.css
+	      dest: '<%= app %>/css/prefix/' // -> dest/css/file1.css, dest/css/file2.css
+	    }
+
+	    // if you have specified only the `src` param, the destination will be set automatically,
+	    // so source files will be overwritten
+	    // no_dest: {
+	    //   src: 'dest/css/file.css' // globbing is also possible here
+	    // },
+	  },
+
 
 	});
 
 
  grunt.loadNpmTasks('grunt-spritesmith');
+ grunt.loadNpmTasks('grunt-autoprefixer');
+
 	
+
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	grunt.registerTask('img', ['sprite']);
+	grunt.registerTask('prefix', ['autoprefixer']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
