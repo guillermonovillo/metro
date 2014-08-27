@@ -133,22 +133,38 @@ $(document).ready(function() {
       appendArrows: $('.gallery-control'),
       dots: false,
       infinite: true,
+      swipe: true,
       speed: 600,
       autoplay: false,
       autoplaySpeed: 6000,
-      cssEase: 'cubic-bezier(.09,.50,.90,.1)',
-      easing: 'ease-out',
+      cssEase: 'cubic-bezier(1,.01,.03,.1)',
+      easing: 'ease-inout',
       prevArrow: $('.btn-prev'),
       nextArrow: $('.btn-next'),
+      onBeforeChange : function(slide, index){
+        $('.gallery-name').removeClass('fadeInUp').addClass('fadeOutDown');
+      },
       onAfterChange: function(slide, index){
-            // console.log(slide);
-            console.log("index: "+index);
-            // console.log("b: "+int($('.gallery').slickCurrentSlide())+1);
+            var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
+            
+            var actSlide = index+1;
+            if(actSlide<10) {actSlide = "0"+actSlide;}
+            $('.counter-current').text(actSlide);
+
+            $('.gallery-name').text(altActive).removeClass('fadeOutDown').addClass('fadeInUp');
           },
-      // onInit: function(slide, index){
-      //       // console.log(slide);
-      //       console.log(index);
-      //     }   
+      onInit: function(slide, index){
+            $('.counter-current').text("01");
+
+            var totSlide = $('.slick-slide:not(.slick-cloned)').length-1;
+             if(totSlide<10) {totSlide = "0"+totSlide;}
+            $('.counter-total').text(totSlide);
+
+             var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
+            $('.gallery-name').text(altActive);
+          } 
+
+
     });
 
 

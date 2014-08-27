@@ -37,11 +37,11 @@
 /*
 	Line W Hundred
 */
-@-webkit-keyframes lineWfifty{
+@-webkit-keyframes lineWHundred{
 	from {width:0}
 	to {width:100%}
 }
-@keyframes lineWfifty{
+@keyframes lineWHundred{
 	from {width:0}
 	to {width:100%}
 }
