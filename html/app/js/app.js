@@ -123,11 +123,6 @@ $('.btn-menu').bind('click',(function(e) {
 $(document).ready(function() {
 
    $(window).load(function() {
-      
-      $('.chosen-select').chosen({
-         disable_search: true,
-         placeholder_text_single: "sanntu"
-      });
 
     $('.gallery').slick({
       appendArrows: $('.gallery-control'),

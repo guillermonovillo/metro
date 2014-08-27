@@ -5,18 +5,26 @@
 
    fieldset { padding: 20px 0; }
 
-   .field.field-2 {
+   .field.field-1 {
 
       .first { margin-right: 5px; }
+   }
+
+   .has-broker {
+      display: block;
    }
 }
 
 // ## contact ##
 .contact {
 
-   .content { padding: 75px 0 55px 0; }
+   .content { 
+      padding: 75px 0 55px 0;
+      width: 640px;
+   }
 
    .hgroup {
+      padding: 0;
 
       p { margin-bottom: 10px; }
    }
@@ -38,105 +46,137 @@
 
 // ## purchaser form ##
 // ## brokers form ##
-.purchaser,
-.brokers,
-.press {
-   padding: 0 5px;
+// ## press form ##
+.cgroup {
 
-   .form {
-      width: auto;
+   .purchaser,
+   .broker,
+   .press {
+      padding: 0 5px;
 
-      .columns {
+      .form {
+         width: auto;
 
-         &.column-1 { 
-            padding-right: 15px;
-            width: 220px;
+         .columns {
+
+            &.column-1 { 
+               padding-right: 15px;
+               width: 220px;
+            }
+
+            &.column-2 { 
+               width: 190px;
+
+               label { text-align: left; }
+            }
+
+            &.column-3 {
+               padding-left: 15px;
+               width: 220px;
+
+               label { width: 240px; }
+            }
          }
 
-         &.column-2 { 
-            // padding: 0 15px;
-            width: 190px;
+         .field.field-1 {
 
-            label { text-align: left; }
-
-            .field.alt label { margin: -5px 0 4px 0; }
+            .text { width: 100px; }
          }
 
-         &.column-3 {
-            padding-left: 15px;
-            width: 220px;
+         .field-button {
+            margin-bottom: 0;
+            padding-top: 9px;
 
-            label { width: 240px; }
+            .form-button {
+               float: right;
+               margin-bottom: 10px;
+            }
+
+            small { 
+               float: right;
+               clear: right;
+            }
          }
       }
+   }
+}
 
-      .field.field-2 {
+// ## purchaser form ##
+.cgroup {
 
-         .text { width: 100px; }
-      }
+   .purchaser {
 
-      .field-button {
-         margin-bottom: 0;
-         padding-top: 9px;
+      .form {
 
-         .form-button {
-            float: right;
-            margin-bottom: 10px;
-         }
+         .columns {
 
-         small { 
-            float: right;
-            clear: right;
+            &.column-2 { 
+
+               .field.alt label { 
+                  line-height: 11px;
+                  margin: -6px 0 1px 0;
+               }
+            }
          }
       }
    }
 }
 
 // ## brokers form ##
-.brokers {
+.cgroup {
 
-   .form {
+   .broker {
 
-      .columns {
+      .form {
 
-         &.column-2 { 
-            padding: 50px 0 15px 0;
+         .columns {
 
-            label { margin-bottom: 8px; }
+            &.column-2 { 
+               padding: 50px 0 15px 0;
+
+               label { margin-bottom: 8px; }
+
+               .field.alt label { 
+                  margin: -6px 0 1px 0;
+               }
+            }
          }
-      }
 
-      .field-button { 
-         padding-top: 69px;
+         .field-button { 
+            padding-top: 71px;
 
-         .form-button {
-            float: left;
-         }
+            .form-button {
+               float: left;
+            }
 
-         small { 
-            float: left;
-            clear: left;
+            small { 
+               float: left;
+               clear: left;
+            }
          }
       }
    }
 }
 
 // ## press form ##
-.press {
+.cgroup {
 
-   .form {
+   .press {
 
-      .textarea {
-         min-height: 75px;
-      }
+      .form {
 
-      .columns {
+         .textarea {
+            min-height: 75px;
+         }
 
-         &.column-2 { width: 406px; }
-      }
+         .columns {
 
-      .field-button { 
-         padding-top: 12px;
+            &.column-2 { width: 406px; }
+         }
+
+         .field-button { 
+            padding-top: 12px;
+         }
       }
    }
 }
