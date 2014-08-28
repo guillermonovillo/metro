@@ -167,6 +167,11 @@ $(document).ready(function() {
 
 });
 
+      // Home blocks with animation
+      $('.hover-animation').bind('mouseenter mouseleave tap', function() {
+         $(this).children('img').toggleClass('sepia');
+         $(this).children('.hover-content').toggleClass('visible');
+      });
 
 mediaCheck({
   media: '(max-width: 640px)',

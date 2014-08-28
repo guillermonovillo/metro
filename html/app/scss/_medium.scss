@@ -172,6 +172,31 @@ span.show-for-medium-only {float:left}
 .t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
 }
 
+
+
+
+
+// 
+// 
+// 
+// 
+// 
+.neighborhood {
+
+		.gallery-grid { 
+		& .row {
+			margin-top:1rem;
+			& .column{padding: 0 0.5rem}
+
+			}
+		}
+
+}
+
+
+
+
+
 footer {
 	background:white;
 	padding-top:46px;
