@@ -39,12 +39,29 @@ body {
       label { margin-bottom: 7px; }
    }
 
-   .field {
+   .field.error {
       
-      .error.text {         
+      .text,
+      .textarea {
          border: 1px solid #c50000;
          background-color: #c50000;
-         color: #fff;
+         color: $white;
+
+         &::-webkit-input-placeholder {
+            color: $white;
+         }
+
+         &:-moz-placeholder {
+            color: $white;
+         }
+
+         &::-moz-placeholder {
+            color: $white;
+         }
+
+         &:-ms-input-placeholder {  
+            color: $white;
+         }
       }
    }
 
@@ -126,7 +143,10 @@ body {
          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 ); /* IE6-9 */
       }
 
-      &.selected { border-color: transparent; }
+      &.selected { 
+         border-color: transparent;
+         color: $white;
+      }
    }
 
    small {
@@ -138,7 +158,7 @@ body {
       text-transform: uppercase;
    }
 
-   .has-broker {
+   .has-broker-wrapper {
       display: none;
       visibility: hidden;
       opacity: 0;
@@ -164,9 +184,19 @@ body {
       text-transform: uppercase;
       @include to-animate;
 
+      &:hover, &:active {
+         background: rgb(148,214,218); /* Old browsers */
+         background: -moz-linear-gradient(top,  rgb(148,214,218) 0%, rgb(148,214,218) 50%, rgb(129,207,211) 50%, rgb(129,207,211) 100%); /* FF3.6+ */
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(148,214,218)), color-stop(50%,rgb(148,214,218)), color-stop(50%,rgb(129,207,211)), color-stop(100%,rgb(129,207,211))); /* Chrome,Safari4+ */
+         background: -webkit-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* Chrome10+,Safari5.1+ */
+         background: -o-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* Opera 11.10+ */
+         background: -ms-linear-gradient(top,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* IE10+ */
+         background: linear-gradient(to bottom,  rgb(148,214,218) 0%,rgb(148,214,218) 50%,rgb(129,207,211) 50%,rgb(129,207,211) 100%); /* W3C */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 ); /* IE6-9 */
+      }
+
       &:active {
-         background-color: #cc9f3d;
-         border-color: #cc9f3d;
+         border-color: transparent;
          color: #fff;
       }
 
@@ -223,11 +253,31 @@ body {
 
 .thanks {
    background-color: #f5f5f5;
+   padding: 50px 20px 0 20px;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+   @include to-animate-5s;
+   opacity: 0;
+   visibility: hidden;
+
+   &.visible {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      .wrapper-in {
+         display: table-cell;
+         vertical-align: middle;
+      }
+   }
 
    .close {
       color: $gray;
@@ -240,11 +290,7 @@ body {
       padding-left: 24px;
       top: 35px;
       right: -10px;
-      -moz-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
+      @include to-rotate;
 
       &:before {
          background: url("../images/ui/close.png") no-repeat scroll 0 0 transparent;
@@ -255,6 +301,48 @@ body {
          position: absolute;
          top: 0;
          left: 0;
+      }
+   }
+
+   .hgroup {
+      height: 175px;
+      position: relative;
+
+      h1 {
+         @include reset-prop;
+         color: $gold;
+         @include proxima-nova-semibold;
+         font-size: 15px;
+         display: inline-block;
+         text-transform: uppercase;
+         @include to-rotate;
+         position: absolute;
+         left: 50%;
+         margin-left: -43px;
+         top: 0;
+
+         &:before {
+            content: "";
+            display: block;
+            border-top: 1px solid $gray;
+            width: 85px;
+            height: 0;
+            position: absolute;
+            top: 10px;
+            left: 110%;
+         }
+      }
+   }
+
+   .cgroup {
+      padding: 20px 0;
+      text-align: center;
+
+      p {
+         color: $gray;
+         @include proxima-nova-regular;
+         font-size: 15px;
+         text-transform: uppercase;
       }
    }
 }

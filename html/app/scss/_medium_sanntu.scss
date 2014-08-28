@@ -10,7 +10,7 @@
       .first { margin-right: 5px; }
    }
 
-   .has-broker {
+   .has-broker-wrapper {
       display: block;
    }
 }
@@ -42,6 +42,10 @@
          margin: 0 30px;
       }
    }
+}
+
+.thanks {
+   padding: 50px 35px 0 35px;
 }
 
 // ## purchaser form ##

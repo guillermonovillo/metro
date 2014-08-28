@@ -64,6 +64,26 @@
    transition: all .2s ease-out;
 }
 
+@mixin to-animate-5s {
+   -webkit-transition: all .5s ease-out;
+   -moz-transition: all .5s ease-out;
+   -o-transition: all .5s ease-out;
+   -ms-transition: all .5s ease-out;
+   transition: all .5s ease-out;
+}
+
+/**
+ * rotate text 90 degrees
+ */
+
+@mixin to-rotate {
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   transform: rotate(90deg);
+}
+
 /**
  * typekit fonts
  */
@@ -88,3 +108,4 @@
 
 $gold: $primary-color;
 $gray: $secondary-color;
+$white: #fff;
