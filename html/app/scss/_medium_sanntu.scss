@@ -1,4 +1,4 @@
-/* Styles for screens at least 1024px wide. */
+/* min-width 641px, medium screens */
 
 // ## form elements ##
 .form {
@@ -182,5 +182,51 @@
             padding-top: 12px;
          }
       }
+   }
+}
+
+// ## press ##
+// ## press news (internal) ##
+.press,
+.press-news {
+
+   .cover { height: 295px; }
+}
+
+// ## press ##
+.press {
+
+   .content { max-width: 640px; }
+
+   .main-content { width: 620px; }
+}
+
+// ## press > press-news-preview ##
+.press-news-preview {
+   float: left;
+   margin-right: 20px;
+   width: 290px;
+
+   h1 {
+      height: 48px;
+      text-overflow: ellipsis;
+      // Required for text-overflow to do anything
+      // white-space: nowrap;
+      overflow: hidden;
+   }
+
+   h2 {
+      text-overflow: ellipsis;
+      // Required for text-overflow to do anything
+      white-space: nowrap;
+      overflow: hidden;
+   }
+
+   p {
+      height: 90px;
+      text-overflow: ellipsis;
+      // Required for text-overflow to do anything
+      // white-space: nowrap;
+      overflow: hidden;
    }
 }

@@ -1,0 +1,51 @@
+/* min-width 1025px, large screens */
+
+// ## press ##
+// ## press news (internal) ##
+.press,
+.press-news {
+
+   .cover { height: 340px; }
+}
+
+// ## press ##
+.press {
+
+   .content {
+      max-width: 960px;
+      padding: 0;
+   }
+
+   .aside {
+      float: left;
+      width: 166px;
+   }
+
+   .main-content {
+      float: left;
+      margin-right: -38px;
+      width: 812px;
+   }
+
+   .aside-ul {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+   }
+
+   .load-more {
+      padding-right: 20px;
+      width: 100px;
+
+      &:after {
+         margin-left: -27px;
+      }
+   }
+}
+
+// ## press > press-news-preview ##
+.press-news-preview {
+   width: 386px;
+
+   p { height: 54px; }
+}

@@ -386,3 +386,296 @@ body {
       }
    }
 }
+
+// ## press ##
+// ## press news (internal) ##
+.press,
+.press-news {
+
+   .cover {
+      background: url("../images/press/press_image_cover.jpg") no-repeat center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 245px;
+   }
+
+   .hgroup {
+      border-bottom: 1px solid $gold;
+      margin-bottom: 25px;
+      padding: 45px 0 40px 0;
+      text-align: center;
+
+      h1 {
+         @include reset-prop;
+         color: $gold;
+         @include proxima-nova-bold;
+         font-size: 30px;
+         text-transform: uppercase;
+      }
+   }
+}
+
+// ## press ##
+.press {
+
+   .content {
+      margin: 0 auto;
+      max-width: 386px;
+      overflow: hidden;
+      padding: 0 20px;
+   }
+
+   .aside {}
+
+   .main-content {}
+
+   .aside-ul {
+      @include reset-list;
+      border-bottom: 1px solid $gold;
+      color: $gold;
+      @include proxima-nova-bold;
+      font-size: 12px;
+      margin-bottom: 40px;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+
+      li {
+         display: block;
+         margin-bottom: 15px;
+
+         &.selected {
+            color: $light-blue;
+         }
+      }
+
+      a {
+         color: inherit;
+      }
+   }
+
+   .load-more {
+      color: $light-blue;
+      clear: both;
+      display: block;
+      @include proxima-nova-bold;
+      font-size: 13px;
+      margin: 0 auto 40px auto;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      height: 48px;
+      width: 80px;
+
+      &:after {
+         background: url("../images/ui/load_more.png") no-repeat scroll 0 0 transparent;
+         content: "";
+         display: block;
+         width: 34px;
+         height: 18px;
+         position: absolute;
+         top: 30px;
+         left: 50%;
+         margin-left: -17px;
+      }
+   }
+}
+
+// ## press > press-news-preview ##
+.press-news-preview {
+   margin-bottom: 40px;
+
+   .thumbnail {
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
+
+      .img { 
+         display: block;
+         position: relative;
+         z-index: 1;
+      }
+
+      span {
+         // border: 0 solid $green;
+         line-height: 100%;
+         width: 100%;
+         height: 100%;  
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 2;
+         @include to-animate;
+      }
+
+      i {
+         // border-bottom: 2px solid $green;
+         // color: $green;  
+         @include proxima-nova-semibold;
+         font-size: 12px;
+         letter-spacing: 1px;
+         padding: 0 3px 1px 3px;
+         text-transform: uppercase;
+         width: 84px;
+         opacity: 0;
+         position: absolute;
+         top: 50%;
+         margin-top: -10px;
+         left: 50%;
+         margin-left: -42px;
+         @include to-animate;
+      }
+
+      a:hover {
+
+         span { border-width: 14px ; }
+
+         i { opacity: 1; }
+      }
+   }
+
+   h1, h2, h3 {
+      @include reset-prop;
+      color: $gold;
+      @include proxima-nova-regular;
+      font-size: 23px;
+      text-transform: uppercase;
+   }
+
+   h1 { @include proxima-nova-bold; }
+
+   h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+   }
+
+   p {
+      color: $gray;
+      @include proxima-nova-regular;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px;
+   }
+
+   .link {
+      color: $gold;
+      @include proxima-nova-semibold;
+      font-size: 15px;
+      text-decoration: underline;
+      text-transform: uppercase;
+   }
+}
+
+// ## press news (internal) ##
+.press-news {
+
+   .content {
+      margin: 0 auto;
+      max-width: 632px;
+      padding: 0 20px;
+   }
+}
+
+// ## press > press-news-content ##
+.press-news-content {
+   border-bottom: 1px solid $gold;
+   margin-bottom: 40px;
+
+   .press-image-related {
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
+
+      .img { 
+         display: block;
+         position: relative;
+         z-index: 1;
+      }
+   }
+
+   h1, h2, h3 {
+      @include reset-prop;
+      color: $gold;
+      @include proxima-nova-regular;
+      font-size: 18px;
+      text-transform: uppercase;
+   }
+
+   h1 { 
+      @include proxima-nova-bold;
+      font-size: 25px;
+      margin-bottom: 5px;
+   }
+
+   h2 { margin-bottom: 10px; }
+
+   h3 {
+      line-height: 20px;
+      margin-bottom: 25px;
+
+      time { display: block; }
+   }
+
+   h4 {
+      @include reset-prop;
+      color: $light-blue;
+      @include proxima-nova-regular;
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 25px;
+   }
+
+   p {
+      color: $gray;
+      @include proxima-nova-regular;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 20px;
+   }
+
+   .back {
+      color: $gold;
+      display: block;
+      @include proxima-nova-bold;
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: right;
+      text-decoration: none;
+      text-transform: uppercase;
+   }
+}
+
+// ## press news (internal) > press-news-preview ##
+.press-news {
+
+   .press-news-preview {
+
+      p { 
+         height: 36px;
+         overflow: hidden;
+      }
+
+      .link {
+         display: inline-block;
+         @include proxima-nova-bold;
+         font-size: 20px;
+         margin-bottom: 12px;
+         position: relative;
+         text-decoration: none;
+
+         &:after {
+            border-top: 1px solid $gold;
+            content: "";
+            display: block;
+            width: 56px;
+            height: 0;
+            position: absolute;
+            bottom: 6px;
+            left: 110%;
+         }
+      }
+   }
+}
