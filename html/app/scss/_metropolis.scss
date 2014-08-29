@@ -4,7 +4,7 @@
             "small_sanntu";
 }
 
-@media #{$small-only} { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+// @media #{$small-only} { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* min-width 641px, medium screens */
 @media #{$medium-up} {
@@ -12,7 +12,7 @@
             "medium_sanntu";
 }
 
-@media #{$medium-only} { }
+// @media #{$medium-only} { }
 
 /* min-width 1025px, large screens */
 @media #{$large-up} { 

@@ -102,10 +102,18 @@
    font-weight: 600;
 }
 
+// Proxima Nova Bold
+@mixin proxima-nova-bold {
+   font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+   font-style: normal;
+   font-weight: 700;
+}
+
 /**
  * colors
  */
 
 $gold: $primary-color;
 $gray: $secondary-color;
+$light-blue: $third-color;
 $white: #fff;
