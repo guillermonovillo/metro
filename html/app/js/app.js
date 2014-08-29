@@ -75,23 +75,44 @@ var app = (function(document, $) {
     $('.clock').hide();
   }
   
-// Responsive imgmap
+// Responsive imgmap CHECK AL GIRAR DISPOSITIVO 
 $('img[usemap]').rwdImageMaps();
-$('area').mouseenter(function() {
-var zone = $(this).data('zone');
-    // console.log($(this).data('zone'));
+$('area').on('mouseenter touchstart', function(e) {
+    e.preventDefault();
+    var zone = $(this).data('zone');
     $('.overlay-black').stop(true, true).fadeIn();
     $('.sunset').filter('.img'+zone).stop(true, true).fadeIn();
     if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
     $('.txt').stop(true,true).filter('.t'+zone).slideDown().children().fadeIn();
-}).mouseleave(function(){
+}).on('mouseleave touchend',function(e){
+   e.preventDefault();
     var zone = $(this).data('zone');
-    // console.log('out '' + $(this).data('zone'));
     $('.sunset').filter('.img'+zone).hide();
     if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
     $('.txt').stop(true,true).filter('.t'+zone).slideUp().children().fadeOut();
     $('.overlay-black').hide();
 });
+
+// TODO COMPORTAMIENTO EN TOUCH
+//  var flag = false;
+// $('area').on('tap', function(e) {
+//     alert();
+//     e.preventDefault();
+//     var zone = $(this).data('zone');
+   
+//     if (flag === true) {
+//         $('.sunset').filter('.img'+zone).hide();
+//         if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
+//         $('.txt').stop(true,true).filter('.t'+zone).slideUp().children().fadeOut();
+//         $('.overlay-black').hide();
+//     }
+//     $('.overlay-black').stop(true, true).fadeIn();
+//     $('.sunset').filter('.img'+zone).stop(true, true).fadeIn();
+//     if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
+//     $('.txt').stop(true,true).filter('.t'+zone).slideDown().children().fadeIn();
+//     flag = true;
+// })
+
 
   var wow = new WOW(
   {

@@ -191,7 +191,23 @@ span.show-for-medium-only {float:left}
 			}
 		}
 
+
+		& .txt {
+		background: $third-color; 
+		padding:2rem; color:white; 
+		width:420px; 
+		position:relative; 
+		margin-bottom:-300px; 
+		margin-left:-20%; 
+		z-index:10;
+		& h3 {color:white}
+	}
+
 }
+
+
+
+
 
 
 

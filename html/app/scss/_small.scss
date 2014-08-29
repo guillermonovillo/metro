@@ -307,7 +307,7 @@ h1 {
 }
 
 .wide {
-	margin: 60px 0 80px;
+	margin: 2rem 0 3rem;
 	height:645px;
 	background:rgba(0,0,0,0.1);
 }
@@ -450,7 +450,7 @@ $education: #ff7092;
 $misc: #00c1bc;
 
 .neighborhood{
-margin-bottom:80px;
+margin-bottom:3rem;
 	& .wide {
 
 			&.one{background:url(/images/neighborhood-1.jpg) bottom center; height:490px; margin-top:0;
@@ -464,7 +464,7 @@ margin-bottom:80px;
       -ms-transition: all .3s ease-in;
       transition: all .3s ease-in;  }
 
-	.space {margin-top:100px; margin-bottom:100px;}
+	.space {margin-top:3rem; margin-bottom:3rem;}
 	.gallery-grid { 
 		& .row {
 			margin-top:0px;
@@ -474,20 +474,21 @@ margin-bottom:80px;
 		}
 
 
-	ul { @include reset-list;}
+	ul { @include reset-list;
+	a {color:$secondary_color}
+	}
 
-	#map_canvas {
+
+#map_canvas {
     width: 100%;
     height: 580px;
     background-color: #CCC;
-    margin-bottom:75px;
+    margin-bottom:20px;
   }
 
+ .labels { color: white;border:0px solid black; @include proxima-nova-regular; font-size: 11px; font-weight: bold; text-align: center; width: 12px; }
 
-
-
-
-	& h2 { text-transform:uppercase; font-size:15px; font-weight:bolder;
+	& h2 { text-transform:uppercase; font-size:15px; font-weight:bolder; margin-top:30px;
 		&.food {color: $food;}
 		&.culture {color: $culture;}
 		&.education {color: $education;}
@@ -498,13 +499,17 @@ margin-bottom:80px;
 		& li { margin-bottom:1em;}
 	}
 
-	& .txt {background: $third-color; padding:2rem; color:white; width:420px; position:relative; margin-bottom:-300px; margin-left:-20%; z-index:10;
-		& h3 {color:white}
-
-
-
+	
+	& .txt {
+		background: $third-color; 
+		padding:4rem 2rem; 
+		color:white; 
+		width:100%; 
+		margin-bottom:0; 
+		margin-left:0; 
+		z-index:10;
+		& h3 {color:white; font-size:18px;}
 	}
-
 }
 
 

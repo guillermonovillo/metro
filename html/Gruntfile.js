@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
-					hostname: '127.0.0.1'
+					hostname: '0.0.0.0'
 				}
 			},
 			dist: {
@@ -168,19 +168,31 @@ module.exports = function(grunt) {
 	    // },
 	  },
 
+	   browserSync: {
+            dev: {
+                bsFiles: {
+                    src : '<% app %>/css/*.css'
+                },
+                options: {
+                    watchTask: true // < VERY important
+                }
+            }
+        }
+
 
 	});
 
 
  grunt.loadNpmTasks('grunt-spritesmith');
  grunt.loadNpmTasks('grunt-autoprefixer');
-
+ grunt.loadNpmTasks('grunt-browser-sync');
 	
 
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('sync', ['compile-sass', 'bower-install', 'browserSync:dev', 'connect:app', 'watch']);
 
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
