@@ -206,6 +206,11 @@
   });
 
 
+var getCen = map.getCenter();
+
+google.maps.event.addDomListener(window, 'resize', function() {
+map.setCenter(getCen);
+});
 
 
 
@@ -232,10 +237,10 @@ $('.mapData').each(function (i, list) {
         draggable: true,
         icon: {
           path: 'M26.264,7.561c-8.254,0-14.722,6.271-14.722,14.286c0,3.179,1.079,6.121,2.898,8.496L26.26,45.88l11.799-15.51c1.833-2.385,2.918-5.33,2.918-8.523C40.977,13.966,34.375,7.561,26.264,7.561',
-    fillColor: '#'+$color,
-    fillOpacity: 1,
-    scale: 1,
-    strokeWeight: 0
+          fillColor: '#'+$color,
+          fillOpacity: 1,
+          scale: 1,
+          strokeWeight: 0
         },
         map: map,
         labelContent: iteration < 10 ? '0' + (iteration) : iteration,
@@ -248,7 +253,7 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div><div class="infobox-content"><h2>' + title + '</h2><p>' + address + '</p></div><div class="infobox-tick"></div></div>'
+      var boxText = '<div><div class="infobox-icontype"><img src='+ icon +' /></div><div class="infobox-content"><h2>' + title + '</h2><p>' + address + '</p></div><div class="infobox-tick"></div></div>'
       var myOptions = {
         content: boxText,
         disableAutoPan: true,
@@ -256,9 +261,9 @@ $('.mapData').each(function (i, list) {
         pixelOffset: new google.maps.Size(-76, -105),
         zIndex: null,
         boxStyle: {
-          width: '172px'
+          width: '200px', height:'200px'
         },
-        closeBoxURL: "/images/location/infobox_close.jpg",
+        closeBoxURL: "/images/ui/close.png",
         infoBoxClearance: new google.maps.Size(1, 1),
         isHidden: false,
         pane: "floatPane",
@@ -269,14 +274,14 @@ $('.mapData').each(function (i, list) {
       var ib = new InfoBox(myOptions);
       ib.close(map, newMarker);
 
-  for ( i = 0 ; i < markers.length ; i++ ) {
-      markers[i].setVisible(true);
-  }
+      for ( i = 0 ; i < markers.length ; i++ ) {
+          markers[i].setVisible(true);
+      }
 
-          google.maps.event.addListener(newMarker, 'click', function() {
-            $(".infoBox").hide();
-            ib.open(map, this);
-          });
+      google.maps.event.addListener(newMarker, 'click', function() {
+        $(".infoBox").hide();
+        ib.open(map, this);
+      });
 
     });
   
@@ -287,11 +292,6 @@ $('.mapData').each(function (i, list) {
 
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-
-
-
-
-
 
 
 

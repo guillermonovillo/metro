@@ -5,8 +5,8 @@ $fill: both;
 $visibility: hidden;
 
 @import "properties";
-// @import "bounce";
-// @import "bounceIn";
+@import "bounce";
+@import "bounceIn";
 // @import "bounceInDown";
 // @import "bounceInLeft";
 // @import "bounceInRight";
@@ -59,18 +59,18 @@ $visibility: hidden;
 // @import "rotateOutDownRight";
 // @import "rotateOutUpLeft";
 // @import "rotateOutUpRight";
-// @import "shake";
-// @import "swing";
-// @import "tada";
-// @import "wiggle";
-// @import "wobble";
+ @import "shake";
+ @import "swing";
+ @import "tada";
+ @import "wiggle";
+ @import "wobble";
 
-// .bounce {
-// 	@include bounce($duration, $delay, $function, $fill, $visibility);
-// }
-// .bounceIn {
-// 	@include bounceIn($duration, $delay, $function, $fill, $visibility);
-// }
+.bounce {
+	@include bounce($duration, $delay, $function, $fill, $visibility);
+}
+.bounceIn {
+	@include bounceIn($duration, $delay, $function, $fill, $visibility);
+}
 // .bounceInDown {
 // 	@include bounceInDown($duration, $delay, $function, $fill, $visibility);
 // }
@@ -155,6 +155,7 @@ $visibility: hidden;
 // .fadeOutUpBig {
 // 	@include fadeOutUpBig($duration, $delay, $function, $fill, $visibility);
 // }
+
 // .flash {
 // 	@include flash($duration, $delay, $function, $fill, $visibility);
 // }
@@ -221,18 +222,18 @@ $visibility: hidden;
 // .rotateOutUpRight {
 // 	@include rotateOutUpRight($duration, $delay, $function, $fill, $visibility);
 // }
-// .shake {
-// 	@include shake($duration, $delay, $function, $fill, $visibility);
-// }
-// .swing {
-// 	@include swing($duration, $delay, $function, $fill, $visibility);
-// }
-// .tada {
-// 	@include tada($duration, $delay, $function, $fill, $visibility);
-// }
-// .wiggle {
-// 	@include wiggle($duration, $delay, $function, $fill, $visibility);
-// }
-// .wobble {
-// 	@include wobble($duration, $delay, $function, $fill, $visibility);
-// }
+.shake {
+	@include shake($duration, $delay, $function, $fill, $visibility);
+}
+.swing {
+	@include swing($duration, $delay, $function, $fill, $visibility);
+}
+.tada {
+	@include tada($duration, $delay, $function, $fill, $visibility);
+}
+.wiggle {
+	@include wiggle($duration, $delay, $function, $fill, $visibility);
+}
+.wobble {
+	@include wobble($duration, $delay, $function, $fill, $visibility);
+}

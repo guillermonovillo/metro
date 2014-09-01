@@ -17,6 +17,9 @@ i { display: inline-block;}
 	background:white;
 	padding-bottom:0px;
 	height:47px;
+	position:fixed;
+	z-index:10;
+	width:100%;
 }
 
 .nav-lang {
@@ -36,6 +39,9 @@ i { display: inline-block;}
 		  height: 18px;
 		  margin: 14px 0 0 16px;
 		}
+	& .icon-isologo {
+		display:none;
+	}	
 }
 
 .btn-menu {float:right; margin: 12px 15px 0 0}
@@ -51,31 +57,21 @@ i { display: inline-block;}
 
 .anim {
 	&.main-nav { 
-
-		    -webkit-transition: height .2s ease-out;
-   			-moz-transition: height .2s ease-out;
-   			-o-transition: height .2s ease-out;
-  			-ms-transition: height .2s ease-out;
-   			transition: height .2s ease-out ;
-		& .navigation {
-		@include fadeOut(.5s, .3s, $function, $fill, $visibility);
-		}	
+		@include fadeOut(.8s, .0s, $function, $fill, $visibility);
+		& .navigation {}
 		& .icon-menu {}
 	}
 }
 
-.MenuMobile	 {overflow:hidden;position:fixed;}
+.MenuMobile	 {overflow:hidden;position:fixed; width:100%}
 .menu-on {
 
 	&.main-nav {
-		// width: 100%;
-		// height: 100%;
-		// position:fixed;
-		// display:block;
 		z-index:10;
-
-		overflow-y: auto;position: relative;
-		top: 0;bottom: 0;height: 100%;min-height: 100%; 
+		overflow-y: auto;
+		top: 0;
+		bottom: 0;
+		height: 100%;
 
 		& .navigation {
 				.home {@include fadeInUp($duration, .1s, $function, $fill, $visibility);}
@@ -84,22 +80,22 @@ i { display: inline-block;}
 				.overview {@include fadeInUp($duration, .4s, $function, $fill, $visibility);}
 				.team {@include fadeInUp($duration, .5s, $function, $fill, $visibility);}
 				.press {@include fadeInUp($duration, .6s, $function, $fill, $visibility);}
-				.contac {@include fadeInUp($duration, .7s, $function, $fill, $visibility);}
+				.contact {@include fadeInUp($duration, .7s, $function, $fill, $visibility);}
 				.line {@include fadeInUp($duration, .8s, $function, $fill, $visibility);}
-			& .nav-links, & .line{display:block;							}
+			& .nav-links, & .line{display:block;}
 		}
 
 		.icon-menu{  
 		  @include fadeInRight($duration, .4s, $function, $fill, $visibility);
 		  background-image: url(../images/sprites.png);
-		  background-position: 0px -39px;
+		  background-position: 0px -24px;
 		  width: 15px;
 		  height: 15px;
 		  margin: 0px 0 0 16px;
 		}
 		.icon-menu:hover {
 		  background-image: url(../images/sprites.png);
-		  background-position: 0px -24px;
+		  background-position: 0px -39px;
 		  width: 15px;
 		  height: 15px;
 		}
@@ -349,6 +345,7 @@ main.lifestyle{
 
 .overview {
 		margin-bottom:80px;
+		padding-top:45px;
 		& .wide {
 			margin: 60px 0 80px;
 			height:645px;
@@ -382,7 +379,7 @@ main.lifestyle{
 			margin-top:-50px;
 			margin-bottom:80px;
 			position:relative;
-			z-index:10;
+			z-index:5;
 			& div.column { 
 				& div.column {padding:0;}
 
@@ -486,7 +483,7 @@ margin-bottom:3rem;
     margin-bottom:20px;
   }
 
- .labels { color: white;border:0px solid black; @include proxima-nova-regular; font-size: 11px; font-weight: bold; text-align: center; width: 12px; }
+ .labels { color: white;border:0px solid black; @include proxima-nova-regular; font-size: 11px; font-weight: bold; text-align: center; width: 14px; }
 
 	& h2 { text-transform:uppercase; font-size:15px; font-weight:bolder; margin-top:30px;
 		&.food {color: $food;}
@@ -512,7 +509,29 @@ margin-bottom:3rem;
 	}
 }
 
+.infoBox {
+	@include swing(.3s, 0, $function, $fill, $visibility);
+	background:#f5f5f5; 
+	border-radius:( 100% );
+}
+.infobox-content { 
+	padding:30px;
+	text-align:center;
+	& h2 {margin:0}
+	& img {margin-top:-20px}
+}
+.infobox-icontype {
+	@include fadeIn(.5s, .1s, $function, $fill, $visibility);
+	// @include swing(.5s, .5s, $function, $fill, $visibility);
+	background: black;
+	width: 50px;
+	border-radius: 100%;
+	height: 50px;
+	padding: 9px;
+	float: left;
 
+	& img {margin-top:-10px}
+}
 
 .sepia { 
 -webkit-filter: sepia(1);
@@ -620,6 +639,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5995c', end
          right: 0;
       }
    }
+}
+
+
+// 
+// 
+//  TEAM
+// 
+// 
+.team {
+	padding-bottom:9rem;
+
+	.wide {
+		margin:0; padding:0;
+		&.one {background:url(/images/team-1.jpg) center; height:340px}
+	}
+	h1 {padding:3rem 0 0; margin:0}
+	h2 {text-transform:uppercase; color:$primary-color; margin:2rem 0}
+	hr {border-color: $primary-color; margin:3rem  0; padding:0}
 }
 
 

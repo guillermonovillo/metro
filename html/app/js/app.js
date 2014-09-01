@@ -130,14 +130,36 @@ wow.init();
 
 
 
+var $mainNav = $('.main-nav');
 // 
-$('.btn-menu').bind('click',(function(e) {
-	var $mainNav = $('.main-nav');
-	if($mainNav.hasClass('menu-on')) {$mainNav.addClass( 'anim' );  $('body').removeClass('MenuMobile'); setTimeout(function(){$mainNav.removeClass( 'menu-on' ).removeClass('anim');}, 1000); return false;}
+$('.btn-menu').bind('click tap',(function(e) {
+
+	if($mainNav.hasClass('menu-on')) {
+    $mainNav.addClass( 'anim' );  
+    $('body').removeClass('MenuMobile'); 
+    setTimeout(function(){
+      $mainNav.removeClass( 'menu-on' ).removeClass('anim');
+    }, 400); return false;
+  }
+
 	$mainNav.removeClass('anim').toggleClass( 'menu-on' );
   $('body').addClass('MenuMobile');
 	return false;
+
 }));
+
+
+// Stycky Nav
+var origOffsetY = 70;
+function scroll() {
+    if ($(window).scrollTop() >= origOffsetY) {
+        $mainNav.addClass('sticky');
+    } else {
+        $mainNav.removeClass('sticky');
+    }
+   }
+  document.onscroll = scroll;
+
 
 
 // jQuery stuff

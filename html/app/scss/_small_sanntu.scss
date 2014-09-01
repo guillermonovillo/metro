@@ -480,6 +480,13 @@ body {
          margin-left: -17px;
       }
    }
+   .load-more:hover {
+@include bounce(1s, 0, $function, $fill, $visibility);
+      &:after {
+         
+      }
+
+   }
 }
 
 // ## press > press-news-preview ##

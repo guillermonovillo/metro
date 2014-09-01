@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation project</title>
+    <title>Metropolis</title>
     <!-- build:css css/libraries.min.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
@@ -20,10 +20,11 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!-- endbuild -->
   </head>
-  <body>
+
+    <body>
 
 
-<header role="mainNav" class="main-nav">
+        <header role="mainNav" class="main-nav">
   
    <div class="row nav-lang">
       <div class="column medium-4">
@@ -43,6 +44,7 @@
    <div class="row nav-logo">
      <div class="large-12">
       <i class="icon-Metropolis-logo"></i>
+      <i class="icon-isologo"></i>
      </div>
     </div> 
 
@@ -52,17 +54,16 @@
        <ul>
          <li class="nav-item home"><a href="index.html" class="active">HOME<span></span></a></li>
                   <li class="lifestyle separator">&middot;</li>
-         <li class="nav-item lifestyle"><a href="lifestyle.html">LIFESTYLE<span></span></a></li>
+         <li class="nav-item lifestyle"><a href="lifestyle.html" >LIFESTYLE<span></span></a></li>
                   <li class="neighborhood separator">&middot;</li>
-         <li class="nav-item neighborhood"><a href="neighborhood.html">NEIGHBORHOOD<span></span></a></li>
+         <li class="nav-item neighborhood"><a href="neighborhood.html" >NEIGHBORHOOD<span></span></a></li>
                   <li class="overview separator">&middot;</li>
          <li class="nav-item overview"><a href="overview.html" >OVERVIEW<span></span></a></li>
                   <li class="team separator">&middot;</li>
          <li class="nav-item team"><a href="team.html" >TEAM<span></span></a></li>
                   <li class="press separator">&middot;</li>
          <li class="nav-item press"><a href="press.html" >PRESS<span></span></a></li>
-                  <li class="contact separator">&middot;</li>
-         <li class="nav-item contac"><a href="contact_us.html" >CONTACT<span></span></a></li>
+         <li class="nav-item contact"><a href="contact_us.html" >CONTACT<span></span></a></li>
        </ul>
      </nav>
      <hr class="line">
@@ -76,7 +77,7 @@
 
    </div>
 </header>
-
+        
 <main class="home">
 
 <figure class="wide one ">
@@ -139,7 +140,7 @@
 </map>
 
 </main>
-
+        
 <footer>
   <div class="row">
     
@@ -183,6 +184,8 @@
   </div>
 </footer>
 
+
+
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -216,7 +219,20 @@
 
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
+    <script src="js/jquery.validation.plugin.js"></script>
+    <script src="js/app_sanntu.js"></script>
     <!-- endbuild -->
+
+
+    <!-- Google Maps API -->
+     <script src="https://maps.googleapis.com/maps/api/js"></script>
+     <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+     <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+     
+     <!-- build:js js/map.min.js -->
+     <script src="js/map.js"></script>
+     <!-- endbuild -->
+
   </body>
   
   <script type='text/javascript'>//<![CDATA[

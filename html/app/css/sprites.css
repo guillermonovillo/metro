@@ -7,25 +7,37 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-Metropolis-logo {
   background-image: url(../images/sprites.png);
-  background-position: 0px -195px;
+  background-position: 0px -395px;
   width: 165px;
   height: 97px;
 }
 .icon-close:hover {
   background-image: url(../images/sprites.png);
-  background-position: 0px -24px;
+  background-position: 0px -39px;
   width: 15px;
   height: 15px;
 }
 .icon-close {
   background-image: url(../images/sprites.png);
-  background-position: 0px -39px;
+  background-position: 0px -24px;
   width: 15px;
   height: 15px;
 }
+.icon-douglas {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -168px;
+  width: 185px;
+  height: 50px;
+}
+.icon-gensler {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -218px;
+  width: 83px;
+  height: 50px;
+}
 .icon-greenland {
   background-image: url(../images/sprites.png);
-  background-position: 0px -118px;
+  background-position: 0px -318px;
   width: 124px;
   height: 77px;
 }
@@ -52,4 +64,16 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: 0px -54px;
   width: 180px;
   height: 18px;
+}
+.icon-span {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -268px;
+  width: 186px;
+  height: 50px;
+}
+.icon-tishman {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -118px;
+  width: 123px;
+  height: 50px;
 }

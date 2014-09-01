@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**','!**/*.scss', '!bower_components/**'],
+					src: ['fonts/**','!**/*.scss', '!bower_components/**', '!templates/**'],
 					dest: '<%= dist %>/'
 				}]
 			},
@@ -94,8 +94,18 @@ module.exports = function(grunt) {
 				files: '<%= app %>/scss/**/*.scss',
 				tasks: ['sass']
 			},
+			assemble: {
+				files: '<%= app %>/templates/**/*.hbs',
+				tasks: ['assemble']
+			},
 			livereload: {
-				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
+				files: [
+				'<%= app %>/**/*.html', 
+				'!<%= app %>/bower_components/**', 
+				'<%= app %>/js/**/*.js', 
+				'<%= app %>/css/**/*.css', 
+				'<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'
+				],
 				options: {
 					livereload: true
 				}
@@ -123,6 +133,8 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+
 
 		wiredep: {
 			target: {
@@ -177,7 +189,25 @@ module.exports = function(grunt) {
                     watchTask: true // < VERY important
                 }
             }
-        }
+        },
+
+        assemble: {
+            options: {
+                flatten: true,
+                layout: '<%= app %>/templates/layouts/default.hbs',
+                partials: '<%= app %>/templates/partials/*.hbs'
+            },
+            pages: {
+                files: {
+                    '<%= app %>': ['<%= app %>/templates/pages/*.hbs', '!<%= app %>/templates/pages/index.hbs']
+                }
+            },
+            index: {
+                files: {
+                    '<%= app %>': ['<%= app %>/templates/pages/index.hbs']
+                }
+            }
+        },
 
 
 	});
@@ -186,12 +216,13 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-spritesmith');
  grunt.loadNpmTasks('grunt-autoprefixer');
  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('assemble');
 	
 
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'assemble', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('sync', ['compile-sass', 'bower-install', 'browserSync:dev', 'connect:app', 'watch']);
 
 	grunt.registerTask('validate-js', ['jshint']);

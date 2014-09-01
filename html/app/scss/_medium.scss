@@ -2,8 +2,29 @@
 
 .main-nav {
 	padding:12px 0 30px;
-	height: auto;
+	height: 158px;
 	padding-bottom:30px;
+	position:relative;
+
+
+	&.sticky {
+		position:fixed;
+		z-index:50;
+		top:-89px;
+		width:100%;
+
+			& .nav-links {top: 22px; transition: all .5s ease-in-out;}
+			& .icon-isologo {
+				@include fadeInDown(.3s, .1s, $function, $fill, $visibility); 
+				top:99px;
+				display:inline-block;
+			}
+			& .icon-Metropolis-logo{
+				@include fadeOutUp(.2s, .0s, $function, $fill, $visibility);
+
+			}
+
+	} 
 }
 
 
@@ -45,12 +66,23 @@
 	height:13px; 
 
 	& .icon-Metropolis-logo{  
-			  background-position: 0px -195px;
+			  background-position: 0px -395px;
 			  width: 165px;
 			  height: 97px;
 			  margin:0;
-			  background-color:white; margin-top:-50px; 
+			  background-color:white; 
+			  margin-top:-50px; 
+			  margin-left: -96px;
+				z-index: 10;
+				position: absolute;
+				// @include fadeInDown(.2s, .0s, $function, $fill, $visibility);
 		}
+	& .icon-isologo {
+			position:absolute;
+			margin-left:-38px;
+			z-index:8;
+
+	}	
 
 }
 
@@ -59,7 +91,7 @@
 .nav-links {
 	display:block;
 	height: 30px;
-	margin-top: 4px;
+	top: 4px;
 	padding: 0 0.9375rem;
 	& ul {
 
@@ -132,7 +164,7 @@
 		.overview {right:165px; & span {right:0}}
 		.team {right:114px; & span {right:0}}
 		.press {right:57px; & span {right:0}}
-		.contac {right:-18px; & span {right:0}}
+		.contact {right:-18px; & span {right:0}}
 
 		.separator {color:$primary-color; display:block}
 		.separator.lifestyle {left:40px }
@@ -206,6 +238,15 @@ span.show-for-medium-only {float:left}
 }
 
 
+// 
+// 
+//  OVERVIEW
+// 
+// 
+
+.overview {
+		padding-top:0px;
+	}
 
 
 
