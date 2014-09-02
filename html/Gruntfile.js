@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			},
 			assemble: {
 				files: '<%= app %>/templates/**/*.hbs',
-				tasks: ['assemble']
+				tasks: ['newer:assemble']
 			},
 			livereload: {
 				files: [
@@ -216,13 +216,14 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-spritesmith');
  grunt.loadNpmTasks('grunt-autoprefixer');
  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('assemble');
-	
+ grunt.loadNpmTasks('assemble');
+ grunt.loadNpmTasks('grunt-newer');	
+
 
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['compile-sass', 'assemble', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'newer:assemble', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('sync', ['compile-sass', 'bower-install', 'browserSync:dev', 'connect:app', 'watch']);
 
 	grunt.registerTask('validate-js', ['jshint']);
@@ -230,6 +231,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('img', ['sprite']);
 	grunt.registerTask('prefix', ['autoprefixer']);
 	
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', /*'validate-js',*/ 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };
