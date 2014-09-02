@@ -452,6 +452,10 @@ body {
 
       a {
          color: inherit;
+
+         &:hover {
+            color: $light-blue;
+         }
       }
    }
 
@@ -552,7 +556,11 @@ body {
       text-transform: uppercase;
    }
 
-   h1 { @include proxima-nova-bold; }
+   h1 { 
+      @include proxima-nova-bold;
+
+      a:hover { color: $light-blue; }
+   }
 
    h3 {
       font-size: 15px;
@@ -573,6 +581,10 @@ body {
       font-size: 15px;
       text-decoration: underline;
       text-transform: uppercase;
+
+      &:hover {
+         color: $light-blue;
+      }
    }
 }
 
@@ -649,9 +661,23 @@ body {
       @include proxima-nova-bold;
       font-size: 20px;
       margin-bottom: 30px;
+      position: relative;
       text-align: right;
       text-decoration: none;
       text-transform: uppercase;
+
+      // &:hover { color: $light-blue; }
+
+      &:before {
+         border-top: 1px solid $gold;
+         content: "";
+         display: block;
+         width: 56px;
+         height: 0;
+         position: absolute;
+         bottom: 6px;
+         right: 200px;
+      }
    }
 }
 
@@ -659,6 +685,20 @@ body {
 .press-news {
 
    .press-news-preview {
+
+      .thumbnail-wrapper {
+         margin-bottom: 18px;
+         text-align: center;
+      }
+
+      .thumbnail {
+         display: inline-block;
+         margin: 0 auto;
+
+         .img {
+            display: inline-block;
+         }
+      }
 
       p { 
          height: 36px;
@@ -672,6 +712,8 @@ body {
          margin-bottom: 12px;
          position: relative;
          text-decoration: none;
+
+         &:hover { color: $gold; }
 
          &:after {
             border-top: 1px solid $gold;
