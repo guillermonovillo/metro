@@ -236,5 +236,22 @@
 
    .press-news-preview {
       float: none;
+      margin-right: 0;
+      width: auto;
+
+      .thumbnail-wrapper {
+         float: left;
+         margin-right: 20px;
+         margin-bottom: 0;
+      }
+
+      .thumbnail {
+
+         .img { 
+            width: 306px;
+         }
+      }
+
+      .link { margin-top: 14px; }
    }
 }
