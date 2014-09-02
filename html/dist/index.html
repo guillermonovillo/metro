@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis</title>
-
-    <link rel="stylesheet" href="css/libraries.min.css" />
+    <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
     <script src="js/vendor/modernizr.min.js"></script>
+
     <script type="text/javascript" src="//use.typekit.net/kwt3kgo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   </head>
 
     <body>
@@ -102,11 +103,11 @@
 <figure id="sunset">
 <div class="overlay-black" > </div> 
 <div class="row" >
-  <img src="/images/sunset/0.jpg" alt="Metropolis"  usemap="#m_crop_c01_Sunset2" id="sunset-image">
-  <img src="/images/sunset/1.jpg" alt="Metropolis - Hotel Tower"  usemap="#m_crop_c01_Sunset2" class="sunset img1">
-  <img src="/images/sunset/2.jpg" alt="Metropolis Residential — Tower 1"  usemap="#m_crop_c01_Sunset2" class="sunset img2">
-  <img src="/images/sunset/3.jpg" alt="Metropolis Residential — Tower 2"  usemap="#m_crop_c01_Sunset2" class="sunset img3">
-  <img src="/images/sunset/4.jpg" alt="Metropolis Residential — Tower 3"  usemap="#m_crop_c01_Sunset2" class="sunset img4">
+  <img src="images/sunset/0.jpg" alt="Metropolis"  usemap="#m_crop_c01_Sunset2" id="sunset-image">
+  <img src="images/sunset/1.jpg" alt="Metropolis - Hotel Tower"  usemap="#m_crop_c01_Sunset2" class="sunset img1">
+  <img src="images/sunset/2.jpg" alt="Metropolis Residential — Tower 1"  usemap="#m_crop_c01_Sunset2" class="sunset img2">
+  <img src="images/sunset/3.jpg" alt="Metropolis Residential — Tower 2"  usemap="#m_crop_c01_Sunset2" class="sunset img3">
+  <img src="images/sunset/4.jpg" alt="Metropolis Residential — Tower 3"  usemap="#m_crop_c01_Sunset2" class="sunset img4">
 
   <span class="t1-line-for-medium"></span>
   <div class="txt t1">
@@ -176,16 +177,39 @@
 </footer>
 
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+    <script src="js/vendor/jquery.min.js"></script>
 
 
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
+
     <script src="js/app.min.js"></script>
+
 
     <!-- Google Maps API -->
      <script src="https://maps.googleapis.com/maps/api/js"></script>
      <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
      <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+     
      <script src="js/map.min.js"></script>
+
   </body>
+  
+  <script type='text/javascript'>//<![CDATA[
+document.write("<script async src='//HOST:3000/browser-sync-client.1.3.6.js'><\/script>".replace(/HOST/g, location.hostname));
+//]]></script>
 </html>

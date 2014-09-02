@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis</title>
-    <link rel="stylesheet" href="css/libraries.min.css" />
+    <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
     <script src="js/vendor/modernizr.min.js"></script>
+
     <script type="text/javascript" src="//use.typekit.net/kwt3kgo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   </head>
 
     <body>
@@ -68,7 +70,7 @@
    </div>
 </header>
         
-   <article class="press">
+  <article class="press">
       <section class="cover"></section>
       <section class="content">
          <div class="hgroup">
@@ -89,7 +91,7 @@
                   </a>
                </div>
                <h2>Capital Magazine —</h2>
-               <h1>Beach St. Eatery's Grand Opening</h1>
+               <h1><a href="#">Beach St. Eatery's Grand Opening</a></h1>
                <h3><time>January 05, 2014</time></h3>
                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
                <a href="#" class="link">Download pdf</a>
@@ -102,7 +104,7 @@
                   </a>
                </div>
                <h2>Forbes Brasil —</h2>
-               <h1>New Amenities Coming Soon</h1>
+               <h1><a href="#">New Amenities Coming Soon</a></h1>
                <h3><time>December 20, 2013</time></h3>
                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
                <a href="#" class="link">Read more</a>
@@ -115,7 +117,7 @@
                   </a>
                </div>
                <h2>Vogue —</h2>
-               <h1>Downtown L.A.'s Biggest Party</h1>
+               <h1><a href="#">Downtown L.A.'s Biggest Party</a></h1>
                <h3><time>November 15, 2013</time></h3>
                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
                <a href="#" class="link">Read more</a>
@@ -128,7 +130,7 @@
                   </a>
                </div>
                <h2>Forbes Brasil —</h2>
-               <h1>Unique Interior Design</h1>
+               <h1><a href="#">Unique Interior Design</a></h1>
                <h3><time>December 20, 2013</time></h3>
                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
                <a href="#" class="link">Download pdf</a>
@@ -182,17 +184,39 @@
 </footer>
 
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+    <script src="js/vendor/jquery.min.js"></script>
 
 
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
+
     <script src="js/app.min.js"></script>
+
 
     <!-- Google Maps API -->
      <script src="https://maps.googleapis.com/maps/api/js"></script>
      <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
      <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+     
      <script src="js/map.min.js"></script>
+
   </body>
+  
+  <script type='text/javascript'>//<![CDATA[
+document.write("<script async src='//HOST:3000/browser-sync-client.1.3.6.js'><\/script>".replace(/HOST/g, location.hostname));
+//]]></script>
 </html>

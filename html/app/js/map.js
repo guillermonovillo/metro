@@ -230,7 +230,7 @@ $('.mapData').each(function (i, list) {
       coords = $item.attr('data-coords').split(',');
       iteration = $item.attr('data-iteration');
       latLng = new google.maps.LatLng(coords[0], coords[1]);
-      icon = '/images/locations/'+type+'.png';
+      icon = '/images/locations/infobox-'+type+'.png';
 
       newMarker = new MarkerWithLabel({
         position: latLng,
@@ -253,15 +253,15 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div><div class="infobox-icontype"><img src='+ icon +' /></div><div class="infobox-content"><h2>' + title + '</h2><p>' + address + '</p></div><div class="infobox-tick"></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div>  <div><div class="infobox-content"><img src="/images/locations/infobox-tick.png" style="margin-top:-25px"/><h2>' + title + '</h2><p>' + address + '</p></div></div>'
       var myOptions = {
         content: boxText,
-        disableAutoPan: true,
+        disableAutoPan: false,
         maxWidth: 0,
-        pixelOffset: new google.maps.Size(-76, -105),
-        zIndex: null,
+        pixelOffset: new google.maps.Size(-100, -110),
+        zIndex: 0,
         boxStyle: {
-          width: '200px', height:'200px'
+          // width: '120px', height:'120px'
         },
         closeBoxURL: "/images/ui/close.png",
         infoBoxClearance: new google.maps.Size(1, 1),
@@ -292,6 +292,29 @@ $('.mapData').each(function (i, list) {
 
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+  $('.mapData li a').click(function (e) {
+
+    e.preventDefault();
+    $self = $(this);
+    type = $self.parent().attr('data-type');
+    iteration = $self.attr('data-iteration');
+
+    $(markers).each(function (i, item) {
+
+      if ( item.iteration == iteration ) {
+        // map.panTo(new google.maps.LatLng(item.position.lat(), item.position.lng()));
+        google.maps.event.trigger(item, 'click');
+        return false;
+      }
+
+    });
+
+    updateMapCenter = true;
+
+  });
 
 
 
@@ -342,29 +365,6 @@ $('.mapData').each(function (i, list) {
 //   });
 
 
-//   /*
-//    * select location from list
-//    */
-//   $('#locations-lists .list a').click(function (e) {
-
-//     e.preventDefault();
-//     $self = $(this);
-//     type = $self.closest('.location-list-wrapper').attr('data-type');
-//     iteration = $self.attr('data-iteration');
-
-//     $(markers).each(function (i, item) {
-
-//       if ( item.category == type && item.iteration == iteration && updateMapCenter ) {
-//         map.panTo(new google.maps.LatLng(item.position.lat(), item.position.lng()));
-//         google.maps.event.trigger(item, 'click');
-//         return false;
-//       }
-
-//     });
-
-//     updateMapCenter = true;
-
-//   });
 
 
   

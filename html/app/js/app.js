@@ -135,14 +135,15 @@ var $mainNav = $('.main-nav');
 $('.btn-menu').bind('click tap',(function(e) {
 
 	if($mainNav.hasClass('menu-on')) {
-    $mainNav.addClass( 'anim' );  
+    $mainNav.removeClass( 'menu-on' ).toggleClass('menu-off');  
     $('body').removeClass('MenuMobile'); 
-    setTimeout(function(){
-      $mainNav.removeClass( 'menu-on' ).removeClass('anim');
-    }, 400); return false;
+    // setTimeout(function(){
+    //   $mainNav.removeClass( 'menu-on' ).removeClass('anim');
+    // }, 400); 
+  return false;
   }
 
-	$mainNav.removeClass('anim').toggleClass( 'menu-on' );
+	$mainNav.removeClass('menu-off').toggleClass( 'menu-on' );
   $('body').addClass('MenuMobile');
 	return false;
 
@@ -161,60 +162,48 @@ function scroll() {
   document.onscroll = scroll;
 
 
+$('.gallery').slick({
+  appendArrows: $('.gallery-control'),
+  dots: false,
+  infinite: true,
+  swipe: true,
+  speed: 600,
+  autoplay: false,
+  autoplaySpeed: 6000,
+  cssEase: 'cubic-bezier(1,.01,.03,.1)',
+  easing: 'ease-inout',
+  prevArrow: $('.btn-prev'),
+  nextArrow: $('.btn-next'),
+  onBeforeChange : function(slide, index){
+    $('.gallery-name').removeClass('fadeInUp').addClass('fadeOutDown');
+  },
+  onAfterChange: function(slide, index){
+        var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
+        
+        var actSlide = index+1;
+        if(actSlide<10) {actSlide = "0"+actSlide;}
+        $('.counter-current').text(actSlide);
 
-// jQuery stuff
-$(document).ready(function() {
-
-   $(window).load(function() {
-
-    $('.gallery').slick({
-      appendArrows: $('.gallery-control'),
-      dots: false,
-      infinite: true,
-      swipe: true,
-      speed: 600,
-      autoplay: false,
-      autoplaySpeed: 6000,
-      cssEase: 'cubic-bezier(1,.01,.03,.1)',
-      easing: 'ease-inout',
-      prevArrow: $('.btn-prev'),
-      nextArrow: $('.btn-next'),
-      onBeforeChange : function(slide, index){
-        $('.gallery-name').removeClass('fadeInUp').addClass('fadeOutDown');
+        $('.gallery-name').text(altActive).removeClass('fadeOutDown').addClass('fadeInUp');
       },
-      onAfterChange: function(slide, index){
-            var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
-            
-            var actSlide = index+1;
-            if(actSlide<10) {actSlide = "0"+actSlide;}
-            $('.counter-current').text(actSlide);
+  onInit: function(slide, index){
+        $('.counter-current').text("01");
 
-            $('.gallery-name').text(altActive).removeClass('fadeOutDown').addClass('fadeInUp');
-          },
-      onInit: function(slide, index){
-            $('.counter-current').text("01");
+        var totSlide = $('.slick-slide:not(.slick-cloned)').length-1;
+         if(totSlide<10) {totSlide = "0"+totSlide;}
+        $('.counter-total').text(totSlide);
 
-            var totSlide = $('.slick-slide:not(.slick-cloned)').length-1;
-             if(totSlide<10) {totSlide = "0"+totSlide;}
-            $('.counter-total').text(totSlide);
-
-             var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
-            $('.gallery-name').text(altActive);
-          } 
-
-
-    });
-
-
-   });
-
+         var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
+        $('.gallery-name').text(altActive);
+      } 
 });
 
-      // Home blocks with animation
-      $('.hover-animation').bind('mouseenter mouseleave tap', function() {
-         $(this).children('img').toggleClass('sepia');
-         $(this).children('.hover-content').toggleClass('visible');
-      });
+
+  // Home blocks with animation
+  $('.hover-animation').bind('mouseenter mouseleave tap', function() {
+     $(this).children('img').toggleClass('sepia');
+     $(this).children('.hover-content').toggleClass('visible');
+  });
 
 mediaCheck({
   media: '(max-width: 640px)',
@@ -222,7 +211,7 @@ mediaCheck({
   	
   },
   exit: function() {
-    $('.main-nav').removeClass('menu-on'); 
+    $('.main-nav').removeClass('menu-on').removeClass('menu-off'); 
     $('body').removeClass('MenuMobile');
   }
 });
