@@ -28,7 +28,7 @@
 
 	} 
 }
-.main-nav + main {padding-top:158px}
+.main-nav + main, .main-nav + article {padding-top:158px}
 
 
 .nav-lang {
@@ -77,13 +77,22 @@
 				z-index: 10;
 				position: absolute;
 				left:51%;
-				// @include fadeInDown(.2s, .0s, $function, $fill, $visibility);
+				@media only screen and (min-width: 40.063em) and (max-width:46em){
+					@include fadeOutUp(.2s, .0s, $function, $fill, $visibility);
+				}
+
 		}
 	& .icon-isologo {
 			position:absolute;
 			margin-left:-38px;
 			z-index:8;
 			left:51%;
+			@media only screen and (min-width: 40.063em) and (max-width:46em){
+					@include fadeInDown(.3s, .1s, $function, $fill, $visibility);
+					display:inline-block;
+					top:50px;
+				}
+			 
 	}	
 
 }
@@ -190,19 +199,22 @@
 	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
 	& .sunset {position:absolute;left:0;top:0;z-index:3; display:none}
 	& .txt {position:absolute; z-index:3; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
-		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:100%; color:white; }
+		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:100%; color:white; 
+			& span {display:inline;}
+		}
 		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; width:100%; padding-right:16px; color:white; }
 	}
 	&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
-			& h2 {padding: 0 0 0 13px}	
+			& h2 {padding: 0 0 0 17px}	
 		}
 		.t2 {width:277px; text-align:right; left: auto; right: 68%; top: 43%; height:46%}
 		.t3 {width:277px; text-align:right; left: auto; right: 51%; top: 25%; height:45%; }
-		.t4 {width:238px; text-align:left;  left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
-			& h1 {width:150px; }
+		.t4 {width:238px; padding-left:25px; text-align:left;  left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
+			& h1 {width:150px; text-indent:-15px}
 			& h2 {padding: 0 0 0 0px}
 		}
-span.show-for-medium-only {float:left}
+span.hide-for-large-up {float:left; margin-right:5px}
+
 .t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
 }
 

@@ -283,7 +283,7 @@ figure {
 	& .row { position:relative; }
 	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
 	& .sunset {position:absolute;left:0;top:0;z-index:3; display:block}
-	& .txt {position:absolute; z-index:3; text-transform:uppercase; border:0; margin:0 15px; left: 0; top: 20px; display:block; height:40px;
+	& .txt {position:absolute; z-index:3; text-transform:uppercase; border:0; margin:0 15px; left: 0; top: 20px; display:none; height:40px;
 		& h1 { font-size: 16px; line-height:18px; font-weight: lighter; margin:0; width:300px; color:white;
 			& span {display:none}
 		 }
@@ -409,7 +409,7 @@ main.lifestyle{
 
 	.line { 
 		position:relative;
-		width: 70px;
+		width: 40px;
 		height: 1px;
 		& span {
 			height:1px; 

@@ -1,8 +1,13 @@
 'use strict';
 
+
+
+
+
 module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
+
 
 
 	grunt.initConfig({
@@ -151,18 +156,8 @@ module.exports = function(grunt) {
 		},
 
 		sprite:{
-	      // all: {
-	      //   src: '<%= app %>/images/sprites/*.png',
-	      //   destImg: '<%= app %>/images/sprites.png',
-	      //   destCSS: '<%= app %>/css/sprites.css'
-	      // },
-	      // retina: {
-	      // 	src: '<%= app %>/images/sprites/spritesX2/*.png',
-	      //   destImg: '<%= app %>/images/sprites@2x.png',
-	      //   destCSS: '<%= app %>/css/sprites@2x.css'
-	      // }
-
-
+			// CHEQUEAR QUE LAS IMAGENES SEAN EXACTAMENTE EL x2
+			// Nota: NO USAR @ EN LOS NOMBRES DE LOS ARCHIVOS PORQUE LAS VARIABLES QUE GENERA LAS ROMPE...
 			core: {
 			    src: '<%= app %>/images/sprites/core/*.png',
 			    destImg: '<%= app %>/images/sprites/sprites.png',
@@ -177,7 +172,6 @@ module.exports = function(grunt) {
 			    destCSS: '<%= app %>/scss/sprites@2x.scss',
 			    padding: 2
 			}
-
   		},
 
 

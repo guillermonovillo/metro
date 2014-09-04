@@ -206,7 +206,7 @@
    float: left;
    margin-right: 20px;
    width: 290px;
-
+   &.next { & .thumbnail {float:left; margin-right:20px}}
    h1 {
       height: 48px;
       text-overflow: ellipsis;

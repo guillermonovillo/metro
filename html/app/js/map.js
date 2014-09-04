@@ -292,8 +292,11 @@ $('.mapData').each(function (i, list) {
 
 
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
 
+      if($("#map_canvas").length) {
+          google.maps.event.addDomListener(window, 'load', initialize);
+      }
+    
 
 
   $('.mapData li a').click(function (e) {

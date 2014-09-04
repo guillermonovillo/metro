@@ -501,6 +501,9 @@ body {
       margin-bottom: 18px;
       overflow: hidden;
       position: relative;
+      
+      a {color:white;}
+      a:hover {color: $third-color;}
 
       .img { 
          display: block;
@@ -530,8 +533,6 @@ body {
          letter-spacing: 1px;
          padding: 0 3px 1px 3px;
          text-transform: uppercase;
-         width: 84px;
-         opacity: 0;
          position: absolute;
          top: 50%;
          margin-top: -10px;
@@ -540,12 +541,6 @@ body {
          @include to-animate;
       }
 
-      a:hover {
-
-         span { border-width: 14px ; }
-
-         i { opacity: 1; }
-      }
    }
 
    h1, h2, h3 {
@@ -666,13 +661,13 @@ body {
       text-decoration: none;
       text-transform: uppercase;
 
-      // &:hover { color: $light-blue; }
+      &:hover:before { width: 56px; transition: all 1s ease }
 
       &:before {
          border-top: 1px solid $gold;
          content: "";
          display: block;
-         width: 56px;
+         width: 0;
          height: 0;
          position: absolute;
          bottom: 6px;
@@ -714,12 +709,12 @@ body {
          text-decoration: none;
 
          &:hover { color: $gold; }
-
+         &:hover:after {width: 56px; transition: all 1s ease}
          &:after {
             border-top: 1px solid $gold;
             content: "";
             display: block;
-            width: 56px;
+            width: 0;
             height: 0;
             position: absolute;
             bottom: 6px;

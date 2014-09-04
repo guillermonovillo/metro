@@ -58,7 +58,7 @@ var clock = (function(){
     wow.init();
 
  var clockHandColor = '#B5995C';
-      startClock('clockCanvasNY',{
+      startClock('clockCanvasLA',{
           noFace: true,
           tz: -7,
           hideSeconds: true,
@@ -179,11 +179,9 @@ $('.gallery').slick({
   },
   onAfterChange: function(slide, index){
         var altActive = $('.slick-slide:not(.gallery)').filter('.slick-active').children().attr('alt');
-        
         var actSlide = index+1;
         if(actSlide<10) {actSlide = "0"+actSlide;}
         $('.counter-current').text(actSlide);
-
         $('.gallery-name').text(altActive).removeClass('fadeOutDown').addClass('fadeInUp');
       },
   onInit: function(slide, index){
@@ -203,4 +201,18 @@ $('.gallery').slick({
   $('.hover-animation').bind('mouseenter mouseleave tap', function() {
      $(this).children('img').toggleClass('sepia');
      $(this).children('.hover-content').toggleClass('visible');
+  });
+
+
+  $('.load-more').click(function() {
+    var page = $(this).data("page");
+    console.log(page);
+    
+    $.post(this.href, function(content) {
+      $('.main-content').append(content);
+      $('.load-more').attr('href', $('.load-more').attr('href').replace(/\d+/, function(n) { return ++n; }));
+      if(content == "") {$('.load-more').fadeOut();} 
+    });
+
+    return false;
   });
