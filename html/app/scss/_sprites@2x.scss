@@ -1,0 +1,167 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$close-hover2x-x: 0px;
+$close-hover2x-y: 56px;
+$close-hover2x-offset-x: 0px;
+$close-hover2x-offset-y: -56px;
+$close-hover2x-width: 30px;
+$close-hover2x-height: 30px;
+$close-hover2x-total-width: 372px;
+$close-hover2x-total-height: 966px;
+$close-hover2x-image: '../images/sprites/sprites@2x.png';
+$close-hover2x: 0px 56px 0px -56px 30px 30px 372px 966px '../images/sprites/sprites@2x.png';
+$close2x-x: 0px;
+$close2x-y: 88px;
+$close2x-offset-x: 0px;
+$close2x-offset-y: -88px;
+$close2x-width: 30px;
+$close2x-height: 30px;
+$close2x-total-width: 372px;
+$close2x-total-height: 966px;
+$close2x-image: '../images/sprites/sprites@2x.png';
+$close2x: 0px 88px 0px -88px 30px 30px 372px 966px '../images/sprites/sprites@2x.png';
+$douglas2x-x: 0px;
+$douglas2x-y: 158px;
+$douglas2x-offset-x: 0px;
+$douglas2x-offset-y: -158px;
+$douglas2x-width: 370px;
+$douglas2x-height: 66px;
+$douglas2x-total-width: 372px;
+$douglas2x-total-height: 966px;
+$douglas2x-image: '../images/sprites/sprites@2x.png';
+$douglas2x: 0px 158px 0px -158px 370px 66px 372px 966px '../images/sprites/sprites@2x.png';
+$gensler2x-x: 0px;
+$gensler2x-y: 404px;
+$gensler2x-offset-x: 0px;
+$gensler2x-offset-y: -404px;
+$gensler2x-width: 166px;
+$gensler2x-height: 100px;
+$gensler2x-total-width: 372px;
+$gensler2x-total-height: 966px;
+$gensler2x-image: '../images/sprites/sprites@2x.png';
+$gensler2x: 0px 404px 0px -404px 166px 100px 372px 966px '../images/sprites/sprites@2x.png';
+$greenland2x-x: 0px;
+$greenland2x-y: 608px;
+$greenland2x-offset-x: 0px;
+$greenland2x-offset-y: -608px;
+$greenland2x-width: 268px;
+$greenland2x-height: 162px;
+$greenland2x-total-width: 372px;
+$greenland2x-total-height: 966px;
+$greenland2x-image: '../images/sprites/sprites@2x.png';
+$greenland2x: 0px 608px 0px -608px 268px 162px 372px 966px '../images/sprites/sprites@2x.png';
+$isologo2x-x: 0px;
+$isologo2x-y: 310px;
+$isologo2x-offset-x: 0px;
+$isologo2x-offset-y: -310px;
+$isologo2x-width: 94px;
+$isologo2x-height: 92px;
+$isologo2x-total-width: 372px;
+$isologo2x-total-height: 966px;
+$isologo2x-image: '../images/sprites/sprites@2x.png';
+$isologo2x: 0px 310px 0px -310px 94px 92px 372px 966px '../images/sprites/sprites@2x.png';
+$menu-hover2x-x: 0px;
+$menu-hover2x-y: 0px;
+$menu-hover2x-offset-x: 0px;
+$menu-hover2x-offset-y: 0px;
+$menu-hover2x-width: 40px;
+$menu-hover2x-height: 26px;
+$menu-hover2x-total-width: 372px;
+$menu-hover2x-total-height: 966px;
+$menu-hover2x-image: '../images/sprites/sprites@2x.png';
+$menu-hover2x: 0px 0px 0px 0px 40px 26px 372px 966px '../images/sprites/sprites@2x.png';
+$menu2x-x: 0px;
+$menu2x-y: 28px;
+$menu2x-offset-x: 0px;
+$menu2x-offset-y: -28px;
+$menu2x-width: 40px;
+$menu2x-height: 26px;
+$menu2x-total-width: 372px;
+$menu2x-total-height: 966px;
+$menu2x-image: '../images/sprites/sprites@2x.png';
+$menu2x: 0px 28px 0px -28px 40px 26px 372px 966px '../images/sprites/sprites@2x.png';
+$metropolis-h2x-x: 0px;
+$metropolis-h2x-y: 120px;
+$metropolis-h2x-offset-x: 0px;
+$metropolis-h2x-offset-y: -120px;
+$metropolis-h2x-width: 360px;
+$metropolis-h2x-height: 36px;
+$metropolis-h2x-total-width: 372px;
+$metropolis-h2x-total-height: 966px;
+$metropolis-h2x-image: '../images/sprites/sprites@2x.png';
+$metropolis-h2x: 0px 120px 0px -120px 360px 36px 372px 966px '../images/sprites/sprites@2x.png';
+$metropolis2x-x: 0px;
+$metropolis2x-y: 772px;
+$metropolis2x-offset-x: 0px;
+$metropolis2x-offset-y: -772px;
+$metropolis2x-width: 330px;
+$metropolis2x-height: 194px;
+$metropolis2x-total-width: 372px;
+$metropolis2x-total-height: 966px;
+$metropolis2x-image: '../images/sprites/sprites@2x.png';
+$metropolis2x: 0px 772px 0px -772px 330px 194px 372px 966px '../images/sprites/sprites@2x.png';
+$span2x-x: 0px;
+$span2x-y: 506px;
+$span2x-offset-x: 0px;
+$span2x-offset-y: -506px;
+$span2x-width: 372px;
+$span2x-height: 100px;
+$span2x-total-width: 372px;
+$span2x-total-height: 966px;
+$span2x-image: '../images/sprites/sprites@2x.png';
+$span2x: 0px 506px 0px -506px 372px 100px 372px 966px '../images/sprites/sprites@2x.png';
+$tishman2x-x: 0px;
+$tishman2x-y: 226px;
+$tishman2x-offset-x: 0px;
+$tishman2x-offset-y: -226px;
+$tishman2x-width: 200px;
+$tishman2x-height: 82px;
+$tishman2x-total-width: 372px;
+$tishman2x-total-height: 966px;
+$tishman2x-image: '../images/sprites/sprites@2x.png';
+$tishman2x: 0px 226px 0px -226px 200px 82px 372px 966px '../images/sprites/sprites@2x.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

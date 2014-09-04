@@ -1,10 +1,11 @@
 /* Styles for screens at least 1024px wide. */
 
+
 .main-nav {
 	padding:12px 0 30px;
 	height: 158px;
 	padding-bottom:30px;
-	position:relative;
+	position:absolute;
 
 
 	&.sticky {
@@ -13,19 +14,21 @@
 		top:-89px;
 		width:100%;
 
-			& .nav-links {top: 22px; transition: all .5s ease-in-out;}
+			& .nav-links {
+				top: 22px;
+				transition: all .5s ease-in-out;}
 			& .icon-isologo {
 				@include fadeInDown(.3s, .1s, $function, $fill, $visibility); 
 				top:99px;
 				display:inline-block;
 			}
-			& .icon-Metropolis-logo{
+			& .icon-metropolis{
 				@include fadeOutUp(.2s, .0s, $function, $fill, $visibility);
-
 			}
 
 	} 
 }
+.main-nav + main {padding-top:158px}
 
 
 .nav-lang {
@@ -65,23 +68,22 @@
 	text-align:center;
 	height:13px; 
 
-	& .icon-Metropolis-logo{  
-			  background-position: 0px -395px;
-			  width: 165px;
-			  height: 97px;
+	& .icon-metropolis{  
+				@include sprite-retina($metropolis, $metropolis2x);
 			  margin:0;
 			  background-color:white; 
 			  margin-top:-50px; 
 			  margin-left: -96px;
 				z-index: 10;
 				position: absolute;
+				left:51%;
 				// @include fadeInDown(.2s, .0s, $function, $fill, $visibility);
 		}
 	& .icon-isologo {
 			position:absolute;
 			margin-left:-38px;
 			z-index:8;
-
+			left:51%;
 	}	
 
 }
@@ -187,16 +189,16 @@
 	& .row { position:relative; }
 	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
 	& .sunset {position:absolute;left:0;top:0;z-index:3; display:none}
-	& .txt {position:absolute; z-index:3; top:0; left:0; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
-		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:238px; color:white; }
-		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; padding-right:16px; color:white; }
+	& .txt {position:absolute; z-index:3; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
+		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:100%; color:white; }
+		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; width:100%; padding-right:16px; color:white; }
 	}
 	&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
 			& h2 {padding: 0 0 0 13px}	
 		}
-		.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
-		.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%; }
-		.t4 {width:238px; text-align:left;left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
+		.t2 {width:277px; text-align:right; left: auto; right: 68%; top: 43%; height:46%}
+		.t3 {width:277px; text-align:right; left: auto; right: 51%; top: 25%; height:45%; }
+		.t4 {width:238px; text-align:left;  left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
 			& h1 {width:150px; }
 			& h2 {padding: 0 0 0 0px}
 		}
@@ -250,8 +252,33 @@ span.show-for-medium-only {float:left}
 
 
 
+// 
+// 
+//  LIFESTYLE
+// 
+// 
+main.lifestyle{
+	& .lifestyle {
+		&.wide {
+			&.two{height:500px;}
+			&.three{height:500px;}
+			&.four{height:500px;}
+		}
+	}
+}
 
-
+// 
+// 
+//  OVERVIEW
+// 
+// 
+.overview {
+		& .wide {
+			height:500px;
+			&.one{ }
+			&.two{ }
+		}
+	}
 
 
 footer {

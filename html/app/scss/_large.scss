@@ -51,3 +51,31 @@
 	}
 
 }
+
+// 
+// 
+//  LIFESTYLE
+// 
+// 
+main.lifestyle{
+	& .lifestyle {
+		&.wide {
+			&.two{height:650px;}
+			&.three{height:650px;}
+			&.four{height:650px;}
+		}
+	}
+}
+
+// 
+// 
+//  OVERVIEW
+// 
+// 
+.overview {
+		& .wide {
+			height:650px;
+			&.one{ }
+			&.two{ }
+		}
+	}

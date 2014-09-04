@@ -117,3 +117,19 @@ $gold: $primary-color;
 $gray: $secondary-color;
 $light-blue: $third-color;
 $white: #fff;
+
+
+
+// Retina Sprites 
+@mixin sprite-background-size($sprite) {
+  background-size: nth($sprite, 7) nth($sprite, 8);
+}
+ 
+@mixin sprite-retina($sprite, $sprite2x) {
+   @include sprite($sprite);
+ 
+   @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+        @include sprite-image($sprite2x);
+        @include sprite-background-size($sprite);
+    }
+}

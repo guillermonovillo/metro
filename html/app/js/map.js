@@ -8,6 +8,7 @@
     scrolls = Array();
 
   function initialize() {
+        var isDraggable = $(document).width() > 480 ? true : false; 
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
           center: new google.maps.LatLng(34.052751, -118.258978), 
@@ -28,7 +29,7 @@
               position: google.maps.ControlPosition.RIGHT_CENTER
           },
           scrollwheel: false,
-          draggable: true,
+          draggable: isDraggable,
           styles: [
                 {
                   "featureType": "road.highway",
@@ -234,7 +235,7 @@ $('.mapData').each(function (i, list) {
 
       newMarker = new MarkerWithLabel({
         position: latLng,
-        draggable: true,
+        draggable: false,
         icon: {
           path: 'M26.264,7.561c-8.254,0-14.722,6.271-14.722,14.286c0,3.179,1.079,6.121,2.898,8.496L26.26,45.88l11.799-15.51c1.833-2.385,2.918-5.33,2.918-8.523C40.977,13.966,34.375,7.561,26.264,7.561',
           fillColor: '#'+$color,

@@ -1,0 +1,168 @@
+@import "sprites@2x.scss";
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$close-hover-x: 0px;
+$close-hover-y: 28px;
+$close-hover-offset-x: 0px;
+$close-hover-offset-y: -28px;
+$close-hover-width: 15px;
+$close-hover-height: 15px;
+$close-hover-total-width: 186px;
+$close-hover-total-height: 484px;
+$close-hover-image: '../images/sprites/sprites.png';
+$close-hover: 0px 28px 0px -28px 15px 15px 186px 484px '../images/sprites/sprites.png';
+$close-x: 0px;
+$close-y: 44px;
+$close-offset-x: 0px;
+$close-offset-y: -44px;
+$close-width: 15px;
+$close-height: 15px;
+$close-total-width: 186px;
+$close-total-height: 484px;
+$close-image: '../images/sprites/sprites.png';
+$close: 0px 44px 0px -44px 15px 15px 186px 484px '../images/sprites/sprites.png';
+$douglas-x: 0px;
+$douglas-y: 79px;
+$douglas-offset-x: 0px;
+$douglas-offset-y: -79px;
+$douglas-width: 185px;
+$douglas-height: 33px;
+$douglas-total-width: 186px;
+$douglas-total-height: 484px;
+$douglas-image: '../images/sprites/sprites.png';
+$douglas: 0px 79px 0px -79px 185px 33px 186px 484px '../images/sprites/sprites.png';
+$gensler-x: 0px;
+$gensler-y: 203px;
+$gensler-offset-x: 0px;
+$gensler-offset-y: -203px;
+$gensler-width: 83px;
+$gensler-height: 50px;
+$gensler-total-width: 186px;
+$gensler-total-height: 484px;
+$gensler-image: '../images/sprites/sprites.png';
+$gensler: 0px 203px 0px -203px 83px 50px 186px 484px '../images/sprites/sprites.png';
+$greenland-x: 0px;
+$greenland-y: 305px;
+$greenland-offset-x: 0px;
+$greenland-offset-y: -305px;
+$greenland-width: 134px;
+$greenland-height: 81px;
+$greenland-total-width: 186px;
+$greenland-total-height: 484px;
+$greenland-image: '../images/sprites/sprites.png';
+$greenland: 0px 305px 0px -305px 134px 81px 186px 484px '../images/sprites/sprites.png';
+$isologo-x: 0px;
+$isologo-y: 155px;
+$isologo-offset-x: 0px;
+$isologo-offset-y: -155px;
+$isologo-width: 47px;
+$isologo-height: 47px;
+$isologo-total-width: 186px;
+$isologo-total-height: 484px;
+$isologo-image: '../images/sprites/sprites.png';
+$isologo: 0px 155px 0px -155px 47px 47px 186px 484px '../images/sprites/sprites.png';
+$menu-hover-x: 0px;
+$menu-hover-y: 0px;
+$menu-hover-offset-x: 0px;
+$menu-hover-offset-y: 0px;
+$menu-hover-width: 20px;
+$menu-hover-height: 13px;
+$menu-hover-total-width: 186px;
+$menu-hover-total-height: 484px;
+$menu-hover-image: '../images/sprites/sprites.png';
+$menu-hover: 0px 0px 0px 0px 20px 13px 186px 484px '../images/sprites/sprites.png';
+$menu-x: 0px;
+$menu-y: 14px;
+$menu-offset-x: 0px;
+$menu-offset-y: -14px;
+$menu-width: 20px;
+$menu-height: 13px;
+$menu-total-width: 186px;
+$menu-total-height: 484px;
+$menu-image: '../images/sprites/sprites.png';
+$menu: 0px 14px 0px -14px 20px 13px 186px 484px '../images/sprites/sprites.png';
+$metropolis-h-x: 0px;
+$metropolis-h-y: 60px;
+$metropolis-h-offset-x: 0px;
+$metropolis-h-offset-y: -60px;
+$metropolis-h-width: 180px;
+$metropolis-h-height: 18px;
+$metropolis-h-total-width: 186px;
+$metropolis-h-total-height: 484px;
+$metropolis-h-image: '../images/sprites/sprites.png';
+$metropolis-h: 0px 60px 0px -60px 180px 18px 186px 484px '../images/sprites/sprites.png';
+$metropolis-x: 0px;
+$metropolis-y: 387px;
+$metropolis-offset-x: 0px;
+$metropolis-offset-y: -387px;
+$metropolis-width: 165px;
+$metropolis-height: 97px;
+$metropolis-total-width: 186px;
+$metropolis-total-height: 484px;
+$metropolis-image: '../images/sprites/sprites.png';
+$metropolis: 0px 387px 0px -387px 165px 97px 186px 484px '../images/sprites/sprites.png';
+$span-x: 0px;
+$span-y: 254px;
+$span-offset-x: 0px;
+$span-offset-y: -254px;
+$span-width: 186px;
+$span-height: 50px;
+$span-total-width: 186px;
+$span-total-height: 484px;
+$span-image: '../images/sprites/sprites.png';
+$span: 0px 254px 0px -254px 186px 50px 186px 484px '../images/sprites/sprites.png';
+$tishman-x: 0px;
+$tishman-y: 113px;
+$tishman-offset-x: 0px;
+$tishman-offset-y: -113px;
+$tishman-width: 100px;
+$tishman-height: 41px;
+$tishman-total-width: 186px;
+$tishman-total-height: 484px;
+$tishman-image: '../images/sprites/sprites.png';
+$tishman: 0px 113px 0px -113px 100px 41px 186px 484px '../images/sprites/sprites.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

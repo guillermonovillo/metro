@@ -7,7 +7,7 @@ var app = (function(document, $) {
             docElem.setAttribute('data-useragent', navigator.userAgent);
         },
         _init = function() {
-            $(document).foundation();
+            // $(document).foundation();
             _userAgentInit();
         };
 
@@ -17,22 +17,18 @@ var app = (function(document, $) {
 
 })(document, jQuery);
 
-(function() {
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true        // act on asynchronously loaded content (default is true)
+  }
+);
 
-    'use strict';
-    app.init();
-
-
-})();
-
-
-
-// 
-/**
- * March 1.0
- * For more information, please contact <graham@goat1000.com>
- */
-(function(){
+var clock = (function(){
+    
     function b(){
         var M,m,z,K,O,L,u,s,F,I,B,A={},o='red',E='#000',p='butt',
         N=Math.PI,e=Math.sin,f=Math.cos,
@@ -53,27 +49,43 @@ var app = (function(document, $) {
         function a(e){c[e]&&c[e].stop()}window.startClock=d;window.stopClock=a}());
 
 
+
+
+(function() {
+
+    'use strict';
+    app.init();
+    wow.init();
+
  var clockHandColor = '#B5995C';
-
-  try {
-
-    startClock('clockCanvasNY',{
-      noFace: true,
-      tz: -4,
-      hideSeconds: true,
-      mColour: clockHandColor,
-      mThickness: 1,
-      hColour: clockHandColor,
-      hThickness: 1
-    });
+      startClock('clockCanvasNY',{
+          noFace: true,
+          tz: -7,
+          hideSeconds: true,
+          mColour: clockHandColor,
+          mThickness: 1,
+          hColour: clockHandColor,
+          hThickness: 1
+        });
 
 
-
-  } catch(e) {
-    // in Internet Explorer there is no canvas!
-   // console.log(e);
-    $('.clock').hide();
+  mediaCheck({
+  media: '(max-width: 640px)',
+  entry: function() {
+    
+  },
+  exit: function() {
+    $('.main-nav').removeClass('menu-on').removeClass('menu-off'); 
+    $('body').removeClass('MenuMobile');
   }
+});    
+
+
+
+})();
+
+
+
   
 // Responsive imgmap CHECK AL GIRAR DISPOSITIVO 
 $('img[usemap]').rwdImageMaps();
@@ -114,16 +126,7 @@ $('area').on('mouseenter touchstart', function(e) {
 // })
 
 
-  var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true        // act on asynchronously loaded content (default is true)
-  }
-);
-wow.init();
+
 
 
 
@@ -137,9 +140,6 @@ $('.btn-menu').bind('click tap',(function(e) {
 	if($mainNav.hasClass('menu-on')) {
     $mainNav.removeClass( 'menu-on' ).toggleClass('menu-off');  
     $('body').removeClass('MenuMobile'); 
-    // setTimeout(function(){
-    //   $mainNav.removeClass( 'menu-on' ).removeClass('anim');
-    // }, 400); 
   return false;
   }
 
@@ -204,14 +204,3 @@ $('.gallery').slick({
      $(this).children('img').toggleClass('sepia');
      $(this).children('.hover-content').toggleClass('visible');
   });
-
-mediaCheck({
-  media: '(max-width: 640px)',
-  entry: function() {
-  	
-  },
-  exit: function() {
-    $('.main-nav').removeClass('menu-on').removeClass('menu-off'); 
-    $('body').removeClass('MenuMobile');
-  }
-});

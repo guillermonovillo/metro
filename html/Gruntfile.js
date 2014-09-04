@@ -151,12 +151,38 @@ module.exports = function(grunt) {
 		},
 
 		sprite:{
-	      all: {
-	        src: '<%= app %>/images/sprites/*.png',
-	        destImg: '<%= app %>/images/sprites.png',
-	        destCSS: '<%= app %>/css/sprites.css'
-	      }
+	      // all: {
+	      //   src: '<%= app %>/images/sprites/*.png',
+	      //   destImg: '<%= app %>/images/sprites.png',
+	      //   destCSS: '<%= app %>/css/sprites.css'
+	      // },
+	      // retina: {
+	      // 	src: '<%= app %>/images/sprites/spritesX2/*.png',
+	      //   destImg: '<%= app %>/images/sprites@2x.png',
+	      //   destCSS: '<%= app %>/css/sprites@2x.css'
+	      // }
+
+
+			core: {
+			    src: '<%= app %>/images/sprites/core/*.png',
+			    destImg: '<%= app %>/images/sprites/sprites.png',
+			    cssFormat: 'scss',
+			    destCSS: '<%= app %>/scss/sprites.scss',
+			    padding: 1
+			},
+			core_2x: {
+			    src: '<%= app %>/images/sprites/core-2x/*.png',
+			    destImg: '<%= app %>/images/sprites/sprites@2x.png',
+			    cssFormat: 'scss',
+			    destCSS: '<%= app %>/scss/sprites@2x.scss',
+			    padding: 2
+			}
+
   		},
+
+
+  
+
 
 
 	  autoprefixer: {
@@ -207,8 +233,7 @@ module.exports = function(grunt) {
                     '<%= app %>': ['<%= app %>/templates/pages/index.hbs']
                 }
             }
-        },
-
+        }
 
 	});
 
@@ -223,7 +248,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['compile-sass', 'newer:assemble', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'assemble', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('sync', ['compile-sass', 'bower-install', 'browserSync:dev', 'connect:app', 'watch']);
 
 	grunt.registerTask('validate-js', ['jshint']);
