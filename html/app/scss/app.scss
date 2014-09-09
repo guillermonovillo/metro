@@ -46,9 +46,13 @@
   // @import "foundation/components/offcanvas";
   @import "foundation/components/visibility";
 
+// animate.css
+@import "animate/animate.scss";
+
+
 // Metropolis
 @import "variables";
 @import "chosen";
-@import "animate/animate.scss";
 @import "sprites.scss";
+@import "sprites@2x.scss";
 @import "metropolis";

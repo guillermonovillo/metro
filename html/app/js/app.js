@@ -203,6 +203,12 @@ $('.gallery').slick({
      $(this).children('.hover-content').toggleClass('visible');
   });
 
+$('.icon-totop').click(function() {
+$('html,body').animate({
+          scrollTop: 0
+        }, 1000);
+return false;
+});
 
   $('.load-more').click(function() {
     var page = $(this).data("page");
@@ -216,3 +222,91 @@ $('.gallery').slick({
 
     return false;
   });
+
+
+
+ var offsetY = window.pageYOffset,
+        $body = $('body'),
+        $win = $(window),
+        $close = $('.btnClose'),
+        $open = $('.btnOpen'),
+        $holder = $('#disclaimer'),
+        $stuff = $('.modal-content');
+ 
+
+   $(document).keyup(function (e) {
+        if (e.keyCode == 27) $close.trigger('click');
+    });
+// Disclaimer Modal
+$open.bind('click tap',(function(e) {
+    $holder.removeClass('invisible').addClass('visible');
+     offsetY = window.pageYOffset;
+        // Block scrolling
+        $body.delay(2000).css({
+            'position': 'fixed',
+            'top': -offsetY + 'px',
+            'width':'100%',
+        });
+
+        // Show popup
+
+  return false;
+}));
+
+
+$close.click(function () {
+        // Allow scrolling again
+        $body.css({
+            'position': 'static',
+        });
+        $win.scrollTop(offsetY);
+        // Reset the overlay scroll position to the top
+        $stuff.scrollTop(0);
+        // Hide popup
+        $holder.removeClass('visible').addClass('invisible');
+         return false;
+    });
+
+
+// $(".art-filter").click(function () {
+//       $(".art-filter").removeClass("selected");
+//       $(this).addClass("selected");
+
+
+//       var t = $(this).text().toLowerCase(); 
+// var eT;
+//       $(".press-news-preview").each(function() {
+//     $(this).removeClass('wow fadeInUp').addClass('wow fadeOut');
+// })
+
+
+
+//          return false;
+//     });
+
+// var $grid = $(".main-content");
+
+//     $grid.shuffle({
+//       itemSelector: '.press-news-preview',
+//       sizer: $(".press-news-preview")
+//     });
+
+
+
+// $(".art-filter").on('click', function() {
+//       var $this = $(this),
+//           isActive = $this.hasClass( 'active' ),
+//           group = isActive ? 'all' : $this.data('group');
+
+//       // Hide current label, show current label in title
+//       if ( !isActive ) {
+//         $('.filter-options .active').removeClass('active');
+//       }
+
+//       $this.toggleClass('active');
+
+//       // Filter elements
+//       $grid.shuffle( 'shuffle', group );
+//     });
+
+

@@ -157,19 +157,19 @@ module.exports = function(grunt) {
 
 		sprite:{
 			// CHEQUEAR QUE LAS IMAGENES SEAN EXACTAMENTE EL x2
-			// Nota: NO USAR @ EN LOS NOMBRES DE LOS ARCHIVOS PORQUE LAS VARIABLES QUE GENERA LAS ROMPE...
+			// Nota: NO USAR @2x EN LOS NOMBRES DE LOS ARCHIVOS PORQUE LAS VARIABLES QUE GENERA LAS ROMPE...
 			core: {
 			    src: '<%= app %>/images/sprites/core/*.png',
 			    destImg: '<%= app %>/images/sprites/sprites.png',
 			    cssFormat: 'scss',
-			    destCSS: '<%= app %>/scss/sprites.scss',
+			    destCSS: '<%= app %>/scss/_sprites.scss',
 			    padding: 1
 			},
 			core_2x: {
 			    src: '<%= app %>/images/sprites/core-2x/*.png',
 			    destImg: '<%= app %>/images/sprites/sprites@2x.png',
 			    cssFormat: 'scss',
-			    destCSS: '<%= app %>/scss/sprites@2x.scss',
+			    destCSS: '<%= app %>/scss/_sprites@2x.scss',
 			    padding: 2
 			}
   		},
@@ -181,17 +181,34 @@ module.exports = function(grunt) {
 
 	  autoprefixer: {
 
-	    options: {
-	      // Task-specific options go here.
-	    },
+     build: {
+        options: {
+          browsers: ['last 2 versions', '> 1%']
+        },
+        files: [
+          {
+            cwd : '<%= app %>/css/',
+             src : ['*.css'],
+            dest: '<%= app %>/css/prefix',
+            expand : true
+          }
+        ]
+      }
 
-	    // prefix all files
-	    multiple_files: {
-	      expand: true,
-	      flatten: true,
-	      src: '<%= app %>/css/*.css', // -> src/css/file1.css, src/css/file2.css
-	      dest: '<%= app %>/css/prefix/' // -> dest/css/file1.css, dest/css/file2.css
-	    }
+
+
+	    // options: {
+	    //   browsers: ['last 2 versions', '> 1%']
+	    // },
+
+
+	    // // prefix all files
+	    // multiple_files: {
+	    //   expand: true,
+	    //   flatten: true,
+	    //   src: '<%= app %>/css/*.css', // -> src/css/file1.css, src/css/file2.css
+	    //   dest: '<%= app %>/css/prefix/' // -> dest/css/file1.css, dest/css/file2.css
+	    // }
 
 	    // if you have specified only the `src` param, the destination will be set automatically,
 	    // so source files will be overwritten
@@ -215,7 +232,8 @@ module.exports = function(grunt) {
             options: {
                 flatten: true,
                 layout: '<%= app %>/templates/layouts/default.hbs',
-                partials: '<%= app %>/templates/partials/*.hbs'
+                partials: '<%= app %>/templates/partials/*.hbs',
+                data: '<%= app %>/templates/data/*.{json,yml}'
             },
             pages: {
                 files: {
@@ -225,6 +243,15 @@ module.exports = function(grunt) {
             index: {
                 files: {
                     '<%= app %>': ['<%= app %>/templates/pages/index.hbs']
+                }
+            },
+            press: {
+            	options: {
+				      layout: '<%= app %>/templates/layouts/press.hbs',
+				      data: '<%= app %>/templates/data/articles.{json,yml}'
+				    },
+                files: {
+                    '<%= app %>/press/': ['<%= app %>/templates/pages/press/*.hbs']
                 }
             }
         }
@@ -242,7 +269,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['compile-sass', 'assemble', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass', 'autoprefixer', 'assemble', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('sync', ['compile-sass', 'bower-install', 'browserSync:dev', 'connect:app', 'watch']);
 
 	grunt.registerTask('validate-js', ['jshint']);

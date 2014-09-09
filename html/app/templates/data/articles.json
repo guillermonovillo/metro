@@ -1,0 +1,117 @@
+{
+  "posts": [
+	{
+	    "id":0,
+	    "title": "Downtown LA Development Boom Pits Condos Against Hotels",
+	    "link": "http://www.nbclosangeles.com/news/local/Downtown-Mega-Development-Boom-Pits-Condos-versus-Hotels--260062961.html",
+	    "type": "domestic",
+	    "author": {"name":"Patrick Healy", "source": "NBC4 News"},
+	    "fecha": "Wednesday, May 21, 2014",
+	    "photo": "1. Downtown LA Development Boom Pits Condos Against Hotels.jpg",
+	    "short": "In a few weeks, construction will begin on Metropolis, a development being called a “city within a city” in the downtown Los Angeles area",
+	    "article": ""
+	  },
+	  {
+	    "id":1,
+	    "nopublic" : "nopublic",
+	    "title": "Live, work and play in downtown Los Angeles",
+	    "link": "http://edition.cnn.com/video/?/video/business/2014/05/20/spc-one-sqaure-meter-losangeles.cnn&video_referrer=http%3A%2F%2Fedition.cnn.com%2FSPECIALS%2FOne-Square-Meter",
+	    "type": "domestic",
+	    "author": {"name":"", "source": "CNN"},
+	    "fecha": "May, 20, 2014",
+	      "photo": "",
+	    "short": "CNN's One Square Meter looks at investment and development in Los Angeles South Park region.",
+	    "article": ""
+	  },	
+	  {
+	    "id":2,
+	    "title": "Chinese Investments in  U.S. Commercial Real Estate Surges",
+	    "link": "http://www.bloomberg.com/news/2014-03-31/chinese-brooklyn-to-los-angeles-plans-surge-real-estate.html",
+	    "type": "domestic",
+	     "author":{"name": "Nadja Brandt and John Gittelsohn", "source": "Bloomberg News"},
+	    "fecha": "Apr 1, 2014",
+	      "photo": "3. Chinese Investments in  U.S. Commercial Real Estate Surges.jpg",
+	    "short": "The speed at which Ifei Chang, 49, assumed her position as president and chief executive officer of Greenland U.S. Holding and her equally swift investment in two multibillion-dollar deals demonstrate the pace at which Chinese companies are committing to large-scale construction outside their homeland.",
+	    "article": ""
+	  },	
+	  {
+	    "id":3,
+	    "title": "Chinese developer unveils plans for Metropolis project in L.A",
+	    "type": "domestic",
+	     "link": "http://articles.latimes.com/2014/feb/14/business/la-fi-mo-metropolis-plan-20140213",
+	    "author": {"name":"Roger Vincent", "source": "Los Angeles Times"},
+	    "fecha": "Wednesday, May 21, 2014",
+	      "photo": "4. Chinese developer unveils plans for Metropolis project in L.A..jpg",
+	    "short": "Chinese real estate developer Greenland Group revealed plans Friday for a quick start on the first phase of its $1-billion Metropolis Los Angeles project that is expected to redefine the downtown skyline.",
+	    "article": ""
+	  },	
+	  {
+	    "id":4,
+	    "title": "Here's a First Look at the Big Plans for South Park's Metropolis",
+	    "type": "domestic",
+	     "link": "http://la.curbed.com/archives/2014/02/heres_a_first_look_at_the_big_plans_for_south_parks_metropolis.php",
+	    "author": {"name":"Bianca Barragan", "source": "Curbed LA"},
+	    "fecha": "Wednesday, May 21, 2014",
+	      "photo": "5.  Here's a First Look at the Big Plans for South Park's Metropolis.jpg",
+	    "short": "Friday's record-setting pour at Wilshire Grand wasn't the only big news downtown this weekend. The groundbreaking for the long-awaited Metropolis development was a lot more exciting than shovels in the dirt because it also included a big reveal of never-before seen conceptual renderings and models",
+	    "article": ""
+	  },	
+	  {
+	    "id":5,
+	    "title": "Chinese Developer Greenland Begins Construction on $1 Billion Metropolis Project in Downtown LA",
+	    "link": "http://brighamyen.com/2014/02/16/chinese-developer-greenland-begins-construction-1-billion-metropolis-project-downtown-la/#more-11856",
+	    "type": "domestic",
+	     "author": {"name":"Brigham Yen", "source": "DTLA RISING"},
+	    "fecha": "February 16, 2014",
+	      "photo": "6. Chinese Developer Greenland Begins Construction on $1 Billion Metropolis Project in Downtown LA.jpg",
+	    "short": "This past Valentine’s Day was another major, major milestone in Downtown LA’s continued march forward toward urban renewal and revitalization. The Metropolis project, which is a 6.3 acre development site (currently an ugly surface parking lot) on the western edge of downtown abutting the 110 freeway, held a ceremonial ground breaking event that finally secured the fate of the long-delayed project.",
+	    "article": ""
+	  },	
+	  {
+	    "id":6,
+	    "title": "Metropolis, In the Works for 27 Years, Breaks Ground",
+	    "type": "domestic",
+	     "link": "http://www.ladowntownnews.com/news/metropolis-in-the-works-for-years-breaks-ground/article_05ccfb58-95a5-11e3-8153-0019bb2963f4.html",
+	    "author":  {"name":"Eddie Kim", "source": "LA Downtown News"},
+	    "fecha": "Wednesday, May 21, 2014",
+	      "photo": "7. Metropolis, In the Works for 27 Years, Breaks Ground.jpg",
+	    "short": "The first phase of Metropolis will create a 38-story apartment building with around 300 units and a 19-story hotel with 350 rooms. It will rise just north of L.A. Live.",
+	    "article": ""
+	  },	
+	  {
+	    "id":7,
+	    "title": "Chinese developer unveils plans for Metropolis project in L.A.",
+	    "type": "domestic",
+	    "link": "http://www.latimes.com/business/money/la-fi-mo-metropolis-plan-20140213,0,466896.story#axzz2tLFbRu5E",
+	    "author":  {"name":"Roger Vincent", "source": "LA Times"},
+	    "fecha": "February 14, 2014",
+	      "photo": "8. Chinese developer unveils plans for Metropolis project in L.A..jpg",
+	    "short": "Greenland USA's Metropolis Los Angeles development is set to rise on Francisco Street downtown. The image shows the planned hotel, center, and residential tower at right. (Gensler).",
+	    "article": ""
+	  },	
+	  {
+	    "id":8,
+	    "nopublic" : "nopublic",
+	    "type": "domestic",
+	    "title": "$1B Metropolis Site Plans Revealed",
+	    "link": "http://www.globest.com/news/12_797/losangeles/development/1B-Metropolis-Site-Plans-Revealed-342888.html",
+	    "author":  {"name":"Kelsi Maree Borland", "source": "Globest.com"},
+	    "fecha": "February 18, 2014",
+	      "photo": "9. $1B Metropolis Site Plans Revealed.jpg",
+	    "short": "LOS ANGELES-Shanghai developer Greenland USA releases the phase I renderings of the $1 billion high rise project in Downtown Los Angeles, which include a 19-floor hotel and a 38-floor multifamily tower",
+	    "article": ""
+	  },	
+	  {
+	    "id":9,
+	    "nopublic" : "nopublic",
+	    "type": "domestic",
+	     "title": "China Firm Broadens Reach",
+	    "link": "http://online.wsj.com/news/articles/SB20001424052702303967904580073734184808138?mod=yahoo_itp&mg=reno64-wsj&url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB20001424052702303967904580073734184808138.html%3Fmod%3Dyahoo_itp",
+	    "author":  {"name":"Eliot Brown and Esther Fung", "source": "WSJ"},
+	    "fecha": "August 6th , 2014",
+	      "photo": "10. China Firm Broadens Reach.jpg",
+	    "short": "Forest City Ratner Cos.' giant, 6,400-unit development near the new Barclays Center in Brooklyn has faced delays for over a decade. Enter China's Greenland Holding Group, which has different plans: finish the 15-tower project in less than 10 years. Forest City has only one tower under way and had been planning to take nearly two decades to complete the remaining buildings.",
+	    "article": ""
+	  }
+  ]
+}

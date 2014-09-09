@@ -1,25 +1,30 @@
 /* Styles for screens at least 1024px wide. */
 
 
+
 .main-nav {
 	padding:12px 0 30px;
 	height: 158px;
 	padding-bottom:30px;
 	position:absolute;
 
+	& .row {
+		width:90%;
+	}
 
 	&.sticky {
 		position:fixed;
 		z-index:50;
-		top:-89px;
+		top:-70px;
 		width:100%;
 
 			& .nav-links {
-				top: 22px;
+				top: 14px;
 				transition: all .5s ease-in-out;}
+			& .nav-lang { & div {border:0}	}
 			& .icon-isologo {
 				@include fadeInDown(.3s, .1s, $function, $fill, $visibility); 
-				top:99px;
+				top:89px;
 				display:inline-block;
 			}
 			& .icon-metropolis{
@@ -29,6 +34,7 @@
 	} 
 }
 .main-nav + main, .main-nav + article {padding-top:158px}
+
 
 
 .nav-lang {
@@ -41,6 +47,7 @@
 	& div {
 		height:100%;
 		position:relative;
+		padding-left:0;
 		border-bottom:1px solid $primary-color;
 		& p {	font-size: 10px;
 					font-family: $body-font-family;
@@ -49,7 +56,8 @@
 					bottom: 0px;
 					line-height: 15px;
 					margin:0;
-					padding-right:0.9375rem;
+					// padding-right:0.9375rem;
+					padding-right:0;
 					padding-bottom: 5px;
 					color:$primary-color;
 				}
@@ -69,7 +77,8 @@
 	height:13px; 
 
 	& .icon-metropolis{  
-				@include sprite-retina($metropolis, $metropolis2x);
+				@include sprite-retina($metropolis, $metropolis-2x);
+				@include fadeInDown(.3s, .1s, $function, $fill, $visibility);
 			  margin:0;
 			  background-color:white; 
 			  margin-top:-50px; 
@@ -98,12 +107,12 @@
 }
 
 
-
 .nav-links {
 	display:block;
 	height: 30px;
 	top: 4px;
-	padding: 0 0.9375rem;
+	// padding: 0 0.9375rem;
+	padding: 0;
 	& ul {
 
 		font-size: 12px;
@@ -218,16 +227,30 @@ span.hide-for-large-up {float:left; margin-right:5px}
 .t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
 }
 
-
+.home {
+		& .wide {
+			&.one{
+				height:550px;
+			}
+		}
+}
 
 
 
 // 
 // 
-// 
+//  NEIGHTBORHOOD
 // 
 // 
 .neighborhood {
+
+	& .wide {
+		height:400px; 
+			&.one{& .center {margin:14% 0}}
+			&.two{}
+	}
+
+
 
 		.gallery-grid { 
 		& .row {
@@ -238,18 +261,10 @@ span.hide-for-large-up {float:left; margin-right:5px}
 		}
 
 
-		& .txt {
-		background: $third-color; 
-		padding:2rem; color:white; 
-		width:420px; 
-		position:relative; 
-		margin-bottom:-300px; 
-		margin-left:-20%; 
-		z-index:10;
-		& h3 {color:white}
 	}
 
-}
+
+
 
 
 // 
@@ -260,6 +275,36 @@ span.hide-for-large-up {float:left; margin-right:5px}
 
 .overview {
 		padding-top:0px;
+
+& .gallery-control {
+			height:50px;
+			padding:15px 0 0;
+			margin-top:-50px;
+			margin-bottom:80px;
+
+			& div.column { 
+				& div.column {padding:0;}
+			}
+			h2{
+				margin-bottom:0px
+			}
+			& .gallery-btngroup {
+				margin-top:0px;
+				
+				& .btn-prev {
+					left:0;  
+					& .line {
+						top:17px;
+						right:0px;
+					}
+				}
+				& .gallery-counter {
+					margin-top:0px;
+				}
+			}
+		}
+	
+
 	}
 
 
@@ -269,14 +314,12 @@ span.hide-for-large-up {float:left; margin-right:5px}
 //  LIFESTYLE
 // 
 // 
-main.lifestyle{
-	& .lifestyle {
-		&.wide {
+.lifestyle{
+		& .wide {
 			&.two{height:500px;}
 			&.three{height:500px;}
 			&.four{height:500px;}
 		}
-	}
 }
 
 // 
@@ -296,24 +339,29 @@ main.lifestyle{
 footer {
 	background:white;
 	padding-top:46px;
-
 	padding-bottom: 46px;
+
+	& .row {
+			width:90%;
+		}
 
 	.column:nth-child(1) { 
 		padding:0;
-			padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
-		border:0;  border-right:1px solid $primary-color}
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
+		border:0;  
+	}
 	.column:nth-child(2) {
-
-		padding: 32px 0 0 50px; 
+		border-left:1px solid $primary-color;
+		padding: 5px 0 0 50px; 
 		
 		& p {
 			color: $primary-color;
 			font-size:12px;
+			margin:0;
 		}
-		& .icon-greenland {margin-bottom:30px}
-		}
+		& .icon-greenland {margin-bottom:20px}
+	}
 	.column:nth-child(3){
 			padding-top:40px;
 			.clock {
@@ -328,6 +376,7 @@ footer {
 				display:block;
 				position:relative;
 			}
+			.icon-totop{ margin-top: 30px}
 	}
 	
 

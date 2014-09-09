@@ -22,10 +22,10 @@ $visibility: hidden;
 @import "fadeInLeft";
 @import "fadeInRight";
 
-// @import "fadeInLeftBig";
-// @import "fadeInDownBig";
-// @import "fadeInRightBig";
-// @import "fadeInUpBig";
+@import "fadeInLeftBig";
+@import "fadeInDownBig";
+@import "fadeInRightBig";
+@import "fadeInUpBig";
 
 @import "fadeOut";
 @import "fadeOutDown";
@@ -37,6 +37,9 @@ $visibility: hidden;
 // @import "fadeOutLeftBig";
 // @import "fadeOutRightBig";
 // @import "fadeOutUpBig";
+
+@import "movehideRight";
+
 // @import "flash";
 // @import "flip";
 // @import "flipInX";
@@ -59,11 +62,11 @@ $visibility: hidden;
 // @import "rotateOutDownRight";
 // @import "rotateOutUpLeft";
 // @import "rotateOutUpRight";
- @import "shake";
- @import "swing";
- @import "tada";
- @import "wiggle";
- @import "wobble";
+ // @import "shake";
+ // @import "swing";
+ // @import "tada";
+ // @import "wiggle";
+ // @import "wobble";
 
 .bounce {
 	@include bounce($duration, $delay, $function, $fill, $visibility);
@@ -114,18 +117,18 @@ $visibility: hidden;
 	@include fadeInUp($duration, $delay, $function, $fill, $visibility);
 }
 
-// .fadeInDownBig {
-// 	@include fadeInDownBig($duration, $delay, $function, $fill, $visibility);
-// }
-// .fadeInLeftBig {
-// 	@include fadeInLeftBig($duration, $delay, $function, $fill, $visibility);
-// }
-// .fadeInRightBig {
-// 	@include fadeInRightBig($duration, $delay, $function, $fill, $visibility);
-// }
-// .fadeInUpBig {
-// 	@include fadeInUpBig($duration, $delay, $function, $fill, $visibility);
-// }
+.fadeInDownBig {
+	@include fadeInDownBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeInLeftBig {
+	@include fadeInLeftBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeInRightBig {
+	@include fadeInRightBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeInUpBig {
+	@include fadeInUpBig($duration, $delay, $function, $fill, $visibility);
+}
 
 .fadeOut {
 	@include fadeOut($duration, $delay, $function, $fill, $visibility);
@@ -221,19 +224,19 @@ $visibility: hidden;
 // }
 // .rotateOutUpRight {
 // 	@include rotateOutUpRight($duration, $delay, $function, $fill, $visibility);
+// // }
+// .shake {
+// 	@include shake($duration, $delay, $function, $fill, $visibility);
 // }
-.shake {
-	@include shake($duration, $delay, $function, $fill, $visibility);
-}
-.swing {
-	@include swing($duration, $delay, $function, $fill, $visibility);
-}
-.tada {
-	@include tada($duration, $delay, $function, $fill, $visibility);
-}
-.wiggle {
-	@include wiggle($duration, $delay, $function, $fill, $visibility);
-}
-.wobble {
-	@include wobble($duration, $delay, $function, $fill, $visibility);
-}
+// .swing {
+// 	@include swing($duration, $delay, $function, $fill, $visibility);
+// }
+// .tada {
+// 	@include tada($duration, $delay, $function, $fill, $visibility);
+// }
+// .wiggle {
+// 	@include wiggle($duration, $delay, $function, $fill, $visibility);
+// }
+// .wobble {
+// 	@include wobble($duration, $delay, $function, $fill, $visibility);
+// }

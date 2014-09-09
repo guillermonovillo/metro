@@ -1,12 +1,6 @@
 /* Styles for screens at least 1440px wide. */
 
-.nav-lang {
-		& div {
-			padding-left:0;
-				& p {	padding-right:0;}
-			}
-		}
-.nav-links {	padding: 0;}
+
 
 
 #sunset{
@@ -36,19 +30,33 @@
 }
 
 
-
+// 
+// 
+//  NEIGHTBORHOOD
+// 
+// 
 .neighborhood {
 
-		& .txt {
-		background: $third-color; 
-		padding:2rem; color:white; 
-		width:420px; 
-		position:relative; 
-		margin-bottom:-300px; 
-		margin-left:-20%; 
-		z-index:10;
-		& h3 {color:white}
-	}
+		& .wide {
+			height:500px; 
+				&.one{& .center {margin:14% 0}}
+				&.two{}
+		}
+
+
+		& .txt-wrap {
+			@include grid-row();
+			& .txt {
+				
+				padding:2rem; 
+				width:420px; 
+				position:relative; 
+				margin-bottom:-300px; 
+				margin-left:-20%; 
+					& h3 {color:white}
+			}
+		}
+
 
 }
 

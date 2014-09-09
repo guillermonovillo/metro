@@ -1,0 +1,69 @@
+
+@-webkit-keyframes moveRightBig {
+  0% { -webkit-transform: translateX(100%);}
+  100% { -webkit-transform: translateX(0);}
+}
+
+@-moz-keyframes moveRightBig {
+  0% {-moz-transform: translateX(100%);}
+  100% {-moz-transform: translateX(0);}
+}
+
+@-ms-keyframes moveRightBig {
+  0% {-ms-transform: translateX(100%);}
+  100% {-ms-transform: translateX(0);}
+}
+
+@-o-keyframes moveRightBig {
+  0% { -o-transform: translateX(100%);}
+  100% { -o-transform: translateX(0);}
+}
+
+@keyframes moveRightBig {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(0);}
+}
+
+@mixin moveRightBig($duration, $delay, $function, $fill, $visibility) {
+  @include animation-name(moveRightBig);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+
+
+@-webkit-keyframes hideRightBig {
+  0% { -webkit-transform: translateX(0);}
+  100% { -webkit-transform: translateX(100%);}
+}
+
+@-moz-keyframes hideRightBig {
+  0% {-moz-transform: translateX(0);}
+  100% {-moz-transform: translateX(100%);}
+}
+
+@-ms-keyframes hideRightBig {
+  0% {-ms-transform: translateX(0);}
+  100% {-ms-transform: translateX(100%);}
+}
+
+@-o-keyframes hideRightBig {
+  0% { -o-transform: translateX(0);}
+  100% { -o-transform: translateX(100%);}
+}
+
+@keyframes hideRightBig {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(100%);}
+}
+
+@mixin hideRightBig($duration, $delay, $function, $fill, $visibility) {
+  @include animation-name(hideRightBig);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

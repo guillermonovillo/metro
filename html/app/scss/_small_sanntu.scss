@@ -445,7 +445,7 @@ body {
          display: block;
          margin-bottom: 15px;
 
-         &.selected {
+         & .active {
             color: $light-blue;
          }
       }

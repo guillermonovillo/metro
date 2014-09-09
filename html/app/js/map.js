@@ -206,9 +206,42 @@
     map: map
   });
 
+    var boxText = '  <div><div class="infobox-content"><img src="/images/locations/infobox-tick-wh.png" style="margin-top:-25px"/><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
+      var myOptions2 = {
+        content: boxText,
+        disableAutoPan: false,
+        maxWidth: 0,
+        // pixelOffset: new google.maps.Size(-100, -110),
+        zIndex: 0,
+        boxStyle: {
+          background: 'rgb(191,166,113)',
+          background: '-moz-linear-gradient(top,  rgba(191,166,113,1) 0%, rgba(158,133,80,1) 100%)',
+          background: '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,166,113,1)), color-stop(100%,rgba(158,133,80,1)))',
+          background: '-webkit-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)',
+          background: '-o-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
+          background: '-ms-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
+          background: 'linear-gradient(to bottom,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
+          filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#bfa671, endColorstr=#9e8550,GradientType=0 )',
+          color: 'white',
+          border:'1px solid rgba(0,0,0,0.3)'
+        },
+        closeBoxURL: "/images/ui/close.png",
+        infoBoxClearance: new google.maps.Size(1, 1),
+        isHidden: false,
+        pane: "floatPane",
+        enableEventPropagation: false
+      };
 
+      var ib = new InfoBox(myOptions2);
+      ib.close(map, marker);
+
+      google.maps.event.addListener(marker, 'click', function() {
+        $(".infoBox").hide();
+        ib.open(map, this);
+      });
+
+// Center on resize 
 var getCen = map.getCenter();
-
 google.maps.event.addDomListener(window, 'resize', function() {
 map.setCenter(getCen);
 });
@@ -219,13 +252,13 @@ map.setCenter(getCen);
 
 $('.mapData').each(function (i, list) {
     var iteration;
-    $type = $(this).data('type');
     $color = $(this).data('color');
 
     $(list).find('a').each(function (c, item) {
 
       $item = $(item);
       title = $item.text();
+      $type = $(this).data('type');
       type = $type;
       address = $item.attr('data-address');
       coords = $item.attr('data-coords').split(',');
@@ -254,7 +287,7 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div>  <div><div class="infobox-content"><img src="/images/locations/infobox-tick.png" style="margin-top:-25px"/><h2>' + title + '</h2><p>' + address + '</p></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div>  <div><div class="infobox-content"><img src="/images/locations/infobox-tick-bl.png" style="margin-top:-25px"/><h2>' + title + '</h2><p>' + address + '</p></div></div>'
       var myOptions = {
         content: boxText,
         disableAutoPan: false,
