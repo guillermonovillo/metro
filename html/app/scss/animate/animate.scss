@@ -5,6 +5,7 @@ $fill: both;
 $visibility: hidden;
 
 @import "properties";
+@import "lines";
 @import "bounce";
 @import "bounceIn";
 // @import "bounceInDown";
@@ -145,6 +146,22 @@ $visibility: hidden;
 .fadeOutUp {
 	@include fadeOutUp($duration, $delay, $function, $fill, $visibility);
 }
+
+.lineWfifty {
+	@include lineWfifty($duration, $delay, $function, $fill, $visibility);
+}
+.lineHfifty {
+	@include lineHfifty($duration, $delay, $function, $fill, $visibility);
+}
+.lineWHundred {
+	@include lineWhundred($duration, $delay, $function, $fill, $visibility);
+}
+.lineHHundred {
+	@include lineHhundred($duration, $delay, $function, $fill, $visibility);
+}
+
+
+
 
 // .fadeOutDownBig {
 // 	@include fadeOutDownBig($duration, $delay, $function, $fill, $visibility);

@@ -164,18 +164,18 @@
 							color: $third-color;
 							& span {width: 100%;}
 						}
-						& a:hover {
-							color: $third-color;
-								  -webkit-transition-property: color;
-								  -moz-transition-property: color;
-								  -o-transition-property: color;
-								  transition-property: color;
-								  -webkit-transition-duration: 0.3s;
-								  -moz-transition-duration: 0.3s;
-								  -o-transition-duration: 0.3s;
-								  transition-duration: 0.3s;
-							& span {width:100%}
-						}
+						// & a:hover {
+						// 	color: $third-color;
+						// 		  -webkit-transition-property: color;
+						// 		  -moz-transition-property: color;
+						// 		  -o-transition-property: color;
+						// 		  transition-property: color;
+						// 		  -webkit-transition-duration: 0.3s;
+						// 		  -moz-transition-duration: 0.3s;
+						// 		  -o-transition-duration: 0.3s;
+						// 		  transition-duration: 0.3s;
+						// 	& span {width:100%}
+						// }
 					}
 				}
 			}
@@ -222,30 +222,22 @@
 			position: absolute;
 			&.vertical { 
 				&.full {
-				-webkit-animation: lineHhundred .25s 1 linear .7s;
-				-webkit-animation-fill-mode: forwards;
-				animation: lineHhundred .25s 1 linear .7s;
-				animation-fill-mode: forwards;}
+				@include lineHhundred($duration, $delay, $function, $fill, $visibility);
+				}
 				&.half {
-				-webkit-animation: lineHfifty .25s 1 linear .7s;
-				-webkit-animation-fill-mode: forwards;
-				animation: lineHfifty .25s 1 linear .7s;
-				animation-fill-mode: forwards;}
+				@include lineHfifty($duration, $delay, $function, $fill, $visibility);
+				}
+				
 				&.to-t { bottom:0px;}
 				&.to-b { top: 0px}
 			}
 			&.horizontal {
 				&.full {
-				-webkit-animation: lineWhundred .25s 1 linear .7s;
-				-webkit-animation-fill-mode: forwards;
-				animation: lineWhundred .25s 1 linear .7s;
-				animation-fill-mode: forwards;}
+					@include lineWhundred($duration, $delay, $function, $fill, $visibility);
+				}
 				&.half {
-				-webkit-animation: lineWfifty .25s 1 linear .7s;
-				-webkit-animation-fill-mode: forwards;
-				animation: lineWfifty .25s 1 linear .7s;
-				animation-fill-mode: forwards;}
-
+					@include lineWfifty(".25s", ".7s", $function, "forwards", $visibility);
+				}
 				&.to-r { left:0px}
 				&.to-l { right:0px}
 			}
@@ -279,7 +271,7 @@ figure {
 }
 
 #sunset{
-	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
+	background:url(../images/sunset/back_c01_Sunset2.jpg) center top; 
 	position: relative;
 	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
 	& .row { position:relative; }
@@ -305,7 +297,7 @@ figure {
 			margin: 60px 0 80px;
 			background:rgba(0,0,0,0.1);
 			&.one{
-				background:url(/images/home-1.jpg) bottom center; 
+				background:url(../images/home-1.jpg) bottom center; 
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -327,7 +319,7 @@ h1 {
 
 .wide {
 	margin: 2rem 0 3rem;
-	height:645px;
+	height:430px;
 	background:rgba(0,0,0,0.1);
 }
 
@@ -342,11 +334,11 @@ h1 {
 
 		& .wide {
 			margin: 60px 0 80px;
-			height:500px;
+			height:430px;
 			background:rgba(0,0,0,0.1);
 
 			&.one{
-				background:url(/images/lifestyle/lifestyle-1.jpg) bottom center; 
+				background:url(../images/lifestyle/lifestyle-1.jpg) bottom center; 
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -354,21 +346,21 @@ h1 {
 				height:430px;
 				margin-top:0;
 			}
-			&.two{background:url(/images/lifestyle/lifestyle-2.jpg) bottom center;				
+			&.two{background:url(../images/lifestyle/lifestyle-2.jpg) bottom center;				
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
 				height:300px;
 			}
-			&.three{background:url(/images/lifestyle/lifestyle-3.jpg) bottom center; 				
+			&.three{background:url(../images/lifestyle/lifestyle-3.jpg) bottom center; 				
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
 				height:300px;
 			}
-			&.four{background:url(/images/lifestyle/lifestyle-4.jpg) bottom center; 
+			&.four{background:url(../images/lifestyle/lifestyle-4.jpg) bottom center; 
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -391,21 +383,20 @@ h1 {
 		padding-top:45px;
 		& .wide {
 			margin: 60px 0 80px;
-			height:300px;
+			height:430px;
 			background:rgba(0,0,0,0.1);
-			&.one{background:url(/images/overview/overview-1.jpg) bottom center;
+			&.one{background:url(../images/overview/overview-1.jpg) bottom center;
 			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover; }
-			&.two{background:url(/images/overview/overview-2.jpg) bottom center;
+			&.two{background:url(../images/overview/overview-2.jpg) bottom center;
 			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover; }
 		}
 		& .gallery { 
-			// height:450px;
 			background:rgba(0,0,0,0.1);
 		}
 
@@ -464,6 +455,7 @@ h1 {
 			margin-bottom:80px;
 			position:relative;
 			z-index:5;
+			color: $primary-color;
 			& div.column { 
 				& div.column {padding:0;}
 			}
@@ -497,19 +489,7 @@ h1 {
 						left:53px;
 					}
 				}
-				& a {}
-				& a:hover {
-					color:$third-color;
-					transition: color 0.8s linear;
-					& .line {
-						& span {
-							transition: background 0.8s linear,
-										width 0.4s ease;
-							width:100%;
-							background: $third-color;
-							}
-					}
-				}
+				
 				& .gallery-counter {
 					text-align:center; 
 					font-size:12px;
@@ -539,7 +519,7 @@ margin-bottom:3rem;
 		height:300px; 
 
 			&.one{
-				background:url(/images/neighborhood/neighborhood-1.jpg) bottom center;
+				background:url(../images/neighborhood/neighborhood-1.jpg) bottom center;
 				margin-top:0;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
@@ -548,7 +528,7 @@ margin-bottom:3rem;
 				height:430px;
 				}
 			&.two{
-				background:url(/images/neighborhood/neighborhood-2.jpg) bottom center;
+				background:url(../images/neighborhood/neighborhood-2.jpg) bottom center;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -578,14 +558,12 @@ margin-bottom:3rem;
 		}
 
 
-	ul { @include reset-list;
-	a {color:$secondary_color}
-	}
+
 
 
 #map_canvas {
     width: 100%;
-    height: 580px;
+    height: 400px;
     background-color: #CCC;
     margin-bottom:20px;
   }
@@ -599,9 +577,19 @@ margin-bottom:3rem;
 		&.misc {color: $misc;}
 		&.edu {color: $third-color;}
 	}
-	& ul { text-transform:uppercase; font-size:11px; 
-		& li { margin-bottom:1em;}
+	& ul {
+			@include reset-list;
+	 text-transform:uppercase; font-size:11px; 
+		& li { margin-bottom:1em; text-indent:-25px; margin-left:25px
+
+		}
+		&.edu {
+			& li {text-indent:-13px; margin-left:13px}
+		}
+			a { color:$secondary_color;}
+			a:hover {color: $third-color; }
 	}
+
 
 	& .txt-wrap {
 		width:100%;
@@ -638,7 +626,38 @@ margin-bottom:3rem;
 	height:130px;
 	width:130px;
 	border:1px solid rgab(0,0,0,0.1);
+
+
+	& > img {padding:5px; border-radius:100%; 	-webkit-box-shadow: 4px 4px 18px 4px rgba(0,0,0,.5);
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,.5); margin-right:-50px;
+	@include fadeInLeft(.5s, .1s, $function, $fill, $visibility);
+	}
+	&.food > img {background: $food}
+	&.entertainment > img {background: $culture}
+	&.education > img {background: $education}
+	&.park > img {background: $education}
+	&.shopping > img {background: $misc}
+	&.metropolis > img {background: black}
+
+
+	&.metropolis{
+          background: rgb(191,166,113);
+          background: -moz-linear-gradient(top,  rgba(191,166,113,1) 0%, rgba(158,133,80,1) 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,166,113,1)), color-stop(100%,rgba(158,133,80,1)));
+          background: -webkit-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%);
+          background: -o-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%);
+          background: -ms-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%);
+          background: linear-gradient(to bottom,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#bfa671", endColorstr="#9e8550",GradientType=0);
+          color: white;
+          border:1px solid rgba(0,0,0,0.3)
+	}
+
 }
+
+
+
+
 .infobox-content { 
 	padding:25px 10px 0;
 	text-align:center;
@@ -701,8 +720,6 @@ background: -o-linear-gradient(left,  rgba(181,153,92,1) 0%,rgba(205,170,73,0.1)
 background: -ms-linear-gradient(left,  rgba(181,153,92,1) 0%,rgba(205,170,73,0.1) 100%); /* IE10+ */
 background: linear-gradient(to right,  rgba(181,153,92,1) 0%,rgba(205,170,73,0.1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5995c', endColorstr='#1acdaa49',GradientType=1 ); /* IE6-9 */
-
-
 
 
                padding: 0 20px;
@@ -789,7 +806,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5995c', end
 
 	.wide {
 		margin:0; padding:0;
-		&.one {background:url(/images/team/team-1.jpg) center; height:430px}
+		&.one {background:url(../images/team/team-1.jpg) center; height:430px}
 	}
 	h1 {padding:3rem 0 0; margin:0}
 	h2 {text-transform:uppercase; color:$primary-color; margin:2rem 0}
@@ -828,7 +845,7 @@ footer {
 	.column:nth-child(3){
 			padding:0 0 20px;
 			.clock {
-			background: url('/images/clock.png') no-repeat 2px 2px;
+			background: url('../images/clock.png') no-repeat 2px 2px;
 			float: left;
 			margin: -13px -4px 0 0;
 			}

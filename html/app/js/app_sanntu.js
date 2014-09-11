@@ -2,7 +2,9 @@
 $(document).ready(function() {
 
    $('.chosen-select').chosen({
-      disable_search: true
+      disable_search: true,
+      placeholder_text_single: '',
+      placeholder_text_multiple: ''
    });
 
    $(window).load(function() {
@@ -70,6 +72,9 @@ $(document).ready(function() {
 
             $(".thanks").addClass('visible');
             
+            form.reset();
+            $(".chosen-select").val('').trigger("chosen:updated");
+
             // var $form = $(form);
             
             // $.ajax({

@@ -171,7 +171,6 @@ $('.gallery').slick({
   autoplay: false,
   autoplaySpeed: 6000,
   cssEase: 'cubic-bezier(1,.01,.03,.1)',
-  easing: 'ease-inout',
   prevArrow: $('.btn-prev'),
   nextArrow: $('.btn-next'),
   onBeforeChange : function(slide, index){
@@ -209,6 +208,9 @@ $('html,body').animate({
         }, 1000);
 return false;
 });
+
+
+
 
   $('.load-more').click(function() {
     var page = $(this).data("page");

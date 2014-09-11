@@ -1,0 +1,140 @@
+/*
+	Line W Fifty
+*/
+@-webkit-keyframes lineWfifty{
+	from {width:0}
+	to {width:50%}
+}
+@-moz-keyframes lineWfifty {
+	from {width:0}
+	to {width:50%}
+}
+@-ms-keyframes lineWfifty {
+	from {width:0}
+	to {width:50%}
+}
+@-o-keyframes lineWfifty {
+	from {width:0}
+	to {width:50%}
+}
+@keyframes lineWfifty{
+	from {width:0}
+	to {width:50%}
+}
+
+
+@mixin lineWfifty($duration, $delay, $function, $fill, $visibility) {
+	@include animation-name(lineWfifty);
+  	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}
+
+
+/*
+	Line W Hundred
+*/
+@-webkit-keyframes lineWhundred{
+	from {width:0}
+	to {width:100%}
+}
+@-moz-keyframes lineWhundred {
+	from {width:0}
+	to {width:100%}
+}
+
+@-ms-keyframes lineWhundred {
+	from {width:0}
+	to {width:100%}
+}
+@-o-keyframes lineWhundred {
+	from {width:0}
+	to {width:100%}
+}
+@keyframes lineWhundred{
+	from {width:0}
+	to {width:100%}
+}
+
+@mixin lineWhundred($duration, $delay, $function, $fill, $visibility) {
+	@include animation-name(lineWhundred);
+  	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}
+
+
+/*
+	Line H Fifty
+*/
+@-webkit-keyframes lineHfifty{
+	from {height:0}
+	to {height:50%}
+}
+@-moz-keyframes lineHfifty {
+	from {height:0}
+	to {height:50%}
+}
+
+@-ms-keyframes lineHfifty {
+	from {height:0}
+	to {height:50%}
+}
+@-o-keyframes lineHfifty {
+	from {height:0}
+	to {height:50%}
+}
+@keyframes lineHfifty{
+	from {height:0}
+	to {height:50%}
+}
+
+@mixin lineHfifty($duration, $delay, $function, $fill, $visibility) {
+	@include animation-name(lineHfifty);
+  	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}
+
+
+
+/*
+	Line H Hundred
+*/
+@-webkit-keyframes lineHhundred{
+	from {height:0}
+	to {height:100%}
+}
+
+@-moz-keyframes lineHhundred {
+	from {height:0}
+	to {height:100%}
+}
+
+@-ms-keyframes lineHhundred {
+	from {height:0}
+	to {height:100%}
+}
+@-o-keyframes lineHhundred {
+	from {height:0}
+	to {height:100%}
+}
+@keyframes lineHhundred{
+	from {height:0}
+	to {height:100%}
+}
+
+@mixin lineHhundred($duration, $delay, $function, $fill, $visibility) {
+	@include animation-name(lineHhundred);
+  	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}

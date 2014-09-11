@@ -209,23 +209,14 @@
     var boxText = '  <div><div class="infobox-content"><img src="/images/locations/infobox-tick-wh.png" style="margin-top:-25px"/><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
       var myOptions2 = {
         content: boxText,
+        boxClass: "infoBox metropolis",
         disableAutoPan: false,
         maxWidth: 0,
         // pixelOffset: new google.maps.Size(-100, -110),
         zIndex: 0,
-        boxStyle: {
-          background: 'rgb(191,166,113)',
-          background: '-moz-linear-gradient(top,  rgba(191,166,113,1) 0%, rgba(158,133,80,1) 100%)',
-          background: '-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,166,113,1)), color-stop(100%,rgba(158,133,80,1)))',
-          background: '-webkit-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)',
-          background: '-o-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
-          background: '-ms-linear-gradient(top,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
-          background: 'linear-gradient(to bottom,  rgba(191,166,113,1) 0%,rgba(158,133,80,1) 100%)', 
-          filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#bfa671, endColorstr=#9e8550,GradientType=0 )',
-          color: 'white',
-          border:'1px solid rgba(0,0,0,0.3)'
-        },
+        boxStyle: {},
         closeBoxURL: "/images/ui/close.png",
+        closeBoxMargin: "5px -10px",
         infoBoxClearance: new google.maps.Size(1, 1),
         isHidden: false,
         pane: "floatPane",
@@ -258,13 +249,14 @@ $('.mapData').each(function (i, list) {
 
       $item = $(item);
       title = $item.text();
+      var title = title.split(" — ");
       $type = $(this).data('type');
       type = $type;
       address = $item.attr('data-address');
       coords = $item.attr('data-coords').split(',');
       iteration = $item.attr('data-iteration');
       latLng = new google.maps.LatLng(coords[0], coords[1]);
-      icon = '/images/locations/infobox-'+type+'.png';
+      icon = 'images/locations/infobox-'+type+'.png';
 
       newMarker = new MarkerWithLabel({
         position: latLng,
@@ -287,17 +279,20 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div>  <div><div class="infobox-content"><img src="/images/locations/infobox-tick-bl.png" style="margin-top:-25px"/><h2>' + title + '</h2><p>' + address + '</p></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><img src="images/locations/infobox-tick-bl.png" style="margin-top:-25px"/><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
       var myOptions = {
         content: boxText,
+        boxClass: "infoBox "+type,
         disableAutoPan: false,
         maxWidth: 0,
         pixelOffset: new google.maps.Size(-100, -110),
         zIndex: 0,
         boxStyle: {
           // width: '120px', height:'120px'
+          border:0
         },
-        closeBoxURL: "/images/ui/close.png",
+        closeBoxURL: "images/ui/close.png",
+        closeBoxMargin: "5px -10px",
         infoBoxClearance: new google.maps.Size(1, 1),
         isHidden: false,
         pane: "floatPane",
@@ -312,10 +307,14 @@ $('.mapData').each(function (i, list) {
           markers[i].setVisible(true);
       }
 
+
+
       google.maps.event.addListener(newMarker, 'click', function() {
         $(".infoBox").hide();
         ib.open(map, this);
       });
+
+
 
     });
   
@@ -351,141 +350,9 @@ $('.mapData').each(function (i, list) {
 
     updateMapCenter = true;
 
+var offset = $("#map_canvas").offset();
+    $('html,body').animate({
+          scrollTop: offset.top - 80
+        }, 1000);
+
   });
-
-
-
-
-// $(document).ready(function(){
-
-//   /*
-//    * open close locations sidebar
-//    */
-//   $('#sidebar .btn-handle').click(function(e){
-//     e.preventDefault();
-//     $self = $(this);
-//     if ( $self.hasClass('open') ) {
-//       $('#sidebar').removeClass('close');
-//     } else {
-//       $('#sidebar').addClass('close');
-//     }
-//   });
-
-//   /*
-//    * select locations filter
-//    */
-//   $('#sidebar .filters a').click(function(e){
-//     e.preventDefault();
-//     $self = $(this);
-//     $self.closest('ul').hide();
-//     $('#locations-lists').show();
-//     $('.location-list-wrapper').removeClass('active');
-//     $('.location-list-wrapper.' + $self.attr('data-target')).addClass('active');
-//     displayMarkers($self.attr('data-target'));
-//     setTimeout(function () {
-//       $('.location-list-wrapper.' + $self.attr('data-target')).find('.location-list-scroll').jScrollPane();
-//       $('.location-list-wrapper.' + $self.attr('data-target')).find('.list > li:first-child a').click();
-//     }, 100);
-//   });
-
-//   /*
-//    * close locations filter
-//    */
-//   $('#locations-lists .close, #sidebar h1').click(function (e) {
-//     e.preventDefault();
-//     $self = $(this);
-//     $('#locations-lists').hide();
-//     $('.location-list-wrapper').removeClass('active');
-//     $('#sidebar .filters').show();
-//     $('.infoBox > img').click();
-//     displayMarkers('');
-//   });
-
-
-
-
-  
-//   /*
-//    * create locations markers
-//    */
-
-//   $('#locations-lists .list').each(function (i, list) {
-//     iteration = 1;
-
-//     $(list).find('a').each(function (c, item) {
-
-//       $item = $(item);
-//       title = $item.text();
-//       type = $item.closest('.location-list-wrapper').attr('data-type');
-//       address = $item.attr('data-address');
-//       coords = $item.attr('data-coords').split(',');
-//       iteration = $item.attr('data-iteration');
-
-//       latLng = new google.maps.LatLng(coords[0], coords[1]);
-
-//       newMarker = new MarkerWithLabel({
-//         position: latLng,
-//         draggable: false,
-//         icon: {
-//           url: null
-//         },
-//         map: map,
-//         labelContent: c < 9 ? '0' + (c + 1) : c + 1,
-//         labelAnchor: new google.maps.Point(9, 32),
-//         labelClass: 'marker-label ' + type,
-//         labelStyle: { opacity: 1.0 },
-//         labelInBackground: false
-//       });
-//       newMarker.iteration = iteration;
-//       newMarker.category = type;
-//       newMarker.setVisible(false);
-
-//       var boxText = '<div><div class="infobox-content"><h2>' + title + '</h2><p>' + address + '</p></div><div class="infobox-tick"></div></div>'
-
-//       var myOptions = {
-//         content: boxText,
-//         disableAutoPan: true,
-//         maxWidth: 0,
-//         pixelOffset: new google.maps.Size(-76, -105),
-//         zIndex: null,
-//         boxStyle: {
-//           width: '172px'
-//         },
-//         closeBoxURL: stylesheet_directory + "/images/location/infobox_close.jpg",
-//         infoBoxClearance: new google.maps.Size(1, 1),
-//         isHidden: false,
-//         pane: "floatPane",
-//         enableEventPropagation: false
-//       };
-
-//       markers.push(newMarker);
-//       var ib = new InfoBox(myOptions);
-//       ib.close(map, newMarker);
-
-//       google.maps.event.addListener(newMarker, 'click', function() {
-//         $(".infoBox").hide();
-//         ib.open(map, this);
-//       });
-
-//     });
-  
-//   });
-  
-//   var updateMapCenter = false;
-//   // $('#sidebar-content .filters li:first-child a').click();
-
-// });
-
-// function displayMarkers(filter) {
-
-//   for ( i = 0 ; i < markers.length ; i++ ) {
-
-//     if ( markers[i].category === filter ) {
-//       markers[i].setVisible(true);
-//     } else {
-//       markers[i].setVisible(false);
-//     }
-
-//   }
-
-// }

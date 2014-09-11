@@ -198,20 +198,16 @@
 
 
 #sunset{
-
-	background:url(/images/sunset/back_c01_Sunset2.jpg) center top; 
-	position: relative;
-
-
-	& .overlay-black { width:100%; height: 100%; position:absolute;left:0;top:0; background:rgba(0,0,0,0.2); display:none}
-	& .row { position:relative; }
-	& .sunset-image { position:absolute;left:0;top:0;z-index:1 }
-	& .sunset {position:absolute;left:0;top:0;z-index:3; display:none}
-	& .txt {position:absolute; z-index:3; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px;  display:none;
-		& h1 { font-size: 15px; line-height:15px; font-weight: lighter; margin:0; width:100%; color:white; 
-			& span {display:inline;}
+	& .sunset {display:none}
+	& .txt {border-right:1px solid white; padding:16px 19px;  display:none;
+		& h1 { font-size: 15px; line-height:15px; width:100%;
+			
+			& span {display:inline;
+			&.h-large {display:none;}
+			&.h-small {display:inline; float:left; margin-right:5px}
+			} 
 		}
-		& h2 { font-size: 15px; line-height:15px; font-weight: bold; margin:0; width:100%; padding-right:16px; color:white; }
+		& h2 { font-size: 15px; line-height:15px; width:100%; padding-right:16px;}
 	}
 	&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
 			& h2 {padding: 0 0 0 17px}	
@@ -222,7 +218,7 @@
 			& h1 {width:150px; text-indent:-15px}
 			& h2 {padding: 0 0 0 0px}
 		}
-span.hide-for-large-up {float:left; margin-right:5px}
+
 
 .t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
 }
@@ -245,12 +241,15 @@ span.hide-for-large-up {float:left; margin-right:5px}
 .neighborhood {
 
 	& .wide {
-		height:400px; 
-			&.one{& .center {margin:14% 0}}
+		height:550px; 
+			&.one{}
 			&.two{}
 	}
 
 
+	#map_canvas {
+	    height: 550px;
+	}
 
 		.gallery-grid { 
 		& .row {
@@ -298,6 +297,19 @@ span.hide-for-large-up {float:left; margin-right:5px}
 						right:0px;
 					}
 				}
+				& a {}
+				& a:hover {
+					color:$third-color;
+					transition: color 0.8s linear;
+					& .line {
+						& span {
+							transition: background 0.8s linear,
+										width 0.4s ease;
+							width:100%;
+							background: $third-color;
+							}
+					}
+				}
 				& .gallery-counter {
 					margin-top:0px;
 				}
@@ -316,9 +328,11 @@ span.hide-for-large-up {float:left; margin-right:5px}
 // 
 .lifestyle{
 		& .wide {
-			&.two{height:500px;}
-			&.three{height:500px;}
-			&.four{height:500px;}
+			height:550px;
+			&.one{}
+			&.two{}
+			&.three{}
+			&.four{}
 		}
 }
 
@@ -329,7 +343,7 @@ span.hide-for-large-up {float:left; margin-right:5px}
 // 
 .overview {
 		& .wide {
-			height:500px;
+			height:550px;
 			&.one{ }
 			&.two{ }
 		}
@@ -337,7 +351,6 @@ span.hide-for-large-up {float:left; margin-right:5px}
 
 
 footer {
-	background:white;
 	padding-top:46px;
 	padding-bottom: 46px;
 
@@ -364,20 +377,6 @@ footer {
 	}
 	.column:nth-child(3){
 			padding-top:40px;
-			.clock {
-			background: url('/images/clock.png') no-repeat 2px 2px;
-			float: left;
-			margin: -3px -4px 0 0;
-			}
-			span {
-				color: $primary-color;
-				font-size:12px;
-				margin: 10px 0 0 60px;
-				display:block;
-				position:relative;
-			}
 			.icon-totop{ margin-top: 30px}
-	}
-	
-
+	}	
 }
