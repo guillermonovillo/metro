@@ -66,6 +66,7 @@ $(document).ready(function() {
 
          unhighlight: function( element, errorClass, validClass ) {
             $(element).parent().removeClass('error');
+            $(element).attr('placeholder', '').attr('placeholder', $(element).data('place'));
          },
 
          submitHandler: function (form) {

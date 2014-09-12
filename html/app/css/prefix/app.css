@@ -1846,21 +1846,21 @@ th.hide-for-touch {
 /*
 	Line W Hundred
 */
-@-webkit-keyframes lineWHundred {
+@-webkit-keyframes lineWhundred {
   from {
     width: 0; }
 
   to {
     width: 100%; } }
 
-@-ms-keyframes lineWHundred {
+@-ms-keyframes lineWhundred {
   from {
     width: 0; }
 
   to {
     width: 100%; } }
 
-@keyframes lineWHundred {
+@keyframes lineWhundred {
   from {
     width: 0; }
 
@@ -2794,9 +2794,9 @@ th.hide-for-touch {
   backface-visibility: hidden; }
 
 .lineWHundred {
-  -webkit-animation-name: lineWHundred;
-  -ms-animation-name: lineWHundred;
-  animation-name: lineWHundred;
+  -webkit-animation-name: lineWhundred;
+  -ms-animation-name: lineWhundred;
+  animation-name: lineWhundred;
   -webkit-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
@@ -2814,9 +2814,9 @@ th.hide-for-touch {
   backface-visibility: hidden; }
 
 .lineHHundred {
-  -webkit-animation-name: lineHHundred;
-  -ms-animation-name: lineHHundred;
-  animation-name: lineHHundred;
+  -webkit-animation-name: lineHhundred;
+  -ms-animation-name: lineHhundred;
+  animation-name: lineHhundred;
   -webkit-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
@@ -3774,21 +3774,21 @@ The provided mixins are intended to be used with the array-like variables
       display: inline-block;
       position: absolute; }
       .line span.vertical.full {
-        -webkit-animation-name: lineHHundred;
-        -ms-animation-name: lineHHundred;
-        animation-name: lineHHundred;
-        -webkit-animation-duration: ".25s";
-        -ms-animation-duration: ".25s";
-        animation-duration: ".25s";
-        -webkit-animation-delay: 1;
-        -ms-animation-delay: 1;
-        animation-delay: 1;
+        -webkit-animation-name: lineHhundred;
+        -ms-animation-name: lineHhundred;
+        animation-name: lineHhundred;
+        -webkit-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        animation-delay: 0.2s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
-        -webkit-animation-fill-mode: "forwards";
-        -ms-animation-fill-mode: "forwards";
-        animation-fill-mode: "forwards";
+        -webkit-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        animation-fill-mode: both;
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
@@ -3796,18 +3796,18 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-animation-name: lineHfifty;
         -ms-animation-name: lineHfifty;
         animation-name: lineHfifty;
-        -webkit-animation-duration: ".25s";
-        -ms-animation-duration: ".25s";
-        animation-duration: ".25s";
-        -webkit-animation-delay: 1;
-        -ms-animation-delay: 1;
-        animation-delay: 1;
+        -webkit-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        animation-delay: 0.2s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
-        -webkit-animation-fill-mode: "forwards";
-        -ms-animation-fill-mode: "forwards";
-        animation-fill-mode: "forwards";
+        -webkit-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        animation-fill-mode: both;
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
@@ -3816,21 +3816,21 @@ The provided mixins are intended to be used with the array-like variables
       .line span.vertical.to-b {
         top: 0px; }
       .line span.horizontal.full {
-        -webkit-animation-name: lineWHundred;
-        -ms-animation-name: lineWHundred;
-        animation-name: lineWHundred;
-        -webkit-animation-duration: ".25s";
-        -ms-animation-duration: ".25s";
-        animation-duration: ".25s";
-        -webkit-animation-delay: 1;
-        -ms-animation-delay: 1;
-        animation-delay: 1;
+        -webkit-animation-name: lineWhundred;
+        -ms-animation-name: lineWhundred;
+        animation-name: lineWhundred;
+        -webkit-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        animation-delay: 0.2s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
-        -webkit-animation-fill-mode: "forwards";
-        -ms-animation-fill-mode: "forwards";
-        animation-fill-mode: "forwards";
+        -webkit-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        animation-fill-mode: both;
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
@@ -3841,9 +3841,9 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-animation-duration: ".25s";
         -ms-animation-duration: ".25s";
         animation-duration: ".25s";
-        -webkit-animation-delay: 1;
-        -ms-animation-delay: 1;
-        animation-delay: 1;
+        -webkit-animation-delay: ".7s";
+        -ms-animation-delay: ".7s";
+        animation-delay: ".7s";
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
@@ -3964,11 +3964,11 @@ The provided mixins are intended to be used with the array-like variables
     margin-bottom: 20px; }
   .wide {
     margin: 2rem 0 3rem;
-    height: 645px;
+    height: 430px;
     background: rgba(0, 0, 0, 0.1); }
   .lifestyle .wide {
     margin: 60px 0 80px;
-    height: 500px;
+    height: 430px;
     background: rgba(0, 0, 0, 0.1); }
     .lifestyle .wide.one {
       background: url(../images/lifestyle/lifestyle-1.jpg) bottom center;
@@ -3993,7 +3993,7 @@ The provided mixins are intended to be used with the array-like variables
     padding-top: 45px; }
     .overview .wide {
       margin: 60px 0 80px;
-      height: 300px;
+      height: 430px;
       background: rgba(0, 0, 0, 0.1); }
       .overview .wide.one {
         background: url(../images/overview/overview-1.jpg) bottom center;
@@ -5386,112 +5386,80 @@ The provided mixins are intended to be used with the array-like variables
         right: 45px; }
       .nav-links ul .separator.contac {
         right: -8px; }
-  #sunset {
-    background: url(../images/sunset/back_c01_Sunset2.jpg) center top;
-    position: relative; }
-    #sunset .overlay-black {
+  #sunset .sunset {
+    display: none; }
+  #sunset .txt {
+    border-right: 1px solid white;
+    padding: 16px 19px;
+    display: none; }
+    #sunset .txt h1 {
+      font-size: 15px;
+      line-height: 15px;
+      width: 100%; }
+      #sunset .txt h1 span {
+        display: inline; }
+        #sunset .txt h1 span.h-large {
+          display: none; }
+        #sunset .txt h1 span.h-small {
+          display: inline;
+          float: left;
+          margin-right: 5px; }
+    #sunset .txt h2 {
+      font-size: 15px;
+      line-height: 15px;
       width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: rgba(0, 0, 0, 0.2);
-      display: none; }
-    #sunset .row {
-      position: relative; }
-    #sunset .sunset-image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1; }
-    #sunset .sunset {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 3;
-      display: none; }
-    #sunset .txt {
-      position: absolute;
-      z-index: 3;
-      text-transform: uppercase;
-      border-right: 1px solid white;
-      padding: 16px 19px;
-      margin: 0 15px;
-      display: none; }
-      #sunset .txt h1 {
-        font-size: 15px;
-        line-height: 15px;
-        font-weight: lighter;
-        margin: 0;
-        width: 100%;
-        color: white; }
-        #sunset .txt h1 span {
-          display: inline; }
-          #sunset .txt h1 span.h-large {
-            display: none; }
-          #sunset .txt h1 span.h-small {
-            display: inline;
-            float: left;
-            margin-right: 5px; }
-      #sunset .txt h2 {
-        font-size: 15px;
-        line-height: 15px;
-        font-weight: bold;
-        margin: 0;
-        width: 100%;
-        padding-right: 16px;
-        color: white; }
-    #sunset .t1 {
-      width: 277px;
-      text-align: left;
-      left: 0px;
-      top: 47%;
-      height: 55px;
-      border: 0; }
-      #sunset .t1 h2 {
-        padding: 0 0 0 17px; }
-    #sunset .t2 {
-      width: 277px;
-      text-align: right;
-      left: auto;
-      right: 68%;
-      top: 43%;
-      height: 46%; }
-    #sunset .t3 {
-      width: 277px;
-      text-align: right;
-      left: auto;
-      right: 51%;
-      top: 25%;
-      height: 45%; }
-    #sunset .t4 {
-      width: 238px;
-      padding-left: 25px;
-      text-align: left;
-      left: 84.2%;
-      top: 13%;
-      height: 51%;
-      border: 0;
-      border-left: 1px solid white; }
-      #sunset .t4 h1 {
-        width: 150px;
-        text-indent: -15px; }
-      #sunset .t4 h2 {
-        padding: 0 0 0 0px; }
-    #sunset .t1-line-for-medium {
-      display: none;
-      background: white;
-      width: 1px;
-      height: 300px;
-      float: left;
-      position: absolute;
-      top: 47%;
-      left: 15px;
-      z-index: 3; }
+      padding-right: 16px; }
+  #sunset .t1 {
+    width: 277px;
+    text-align: left;
+    left: 0px;
+    top: 47%;
+    height: 55px;
+    border: 0; }
+    #sunset .t1 h2 {
+      padding: 0 0 0 17px; }
+  #sunset .t2 {
+    width: 277px;
+    text-align: right;
+    left: auto;
+    right: 68%;
+    top: 43%;
+    height: 46%; }
+  #sunset .t3 {
+    width: 277px;
+    text-align: right;
+    left: auto;
+    right: 51%;
+    top: 25%;
+    height: 45%; }
+  #sunset .t4 {
+    width: 238px;
+    padding-left: 25px;
+    text-align: left;
+    left: 84.2%;
+    top: 13%;
+    height: 51%;
+    border: 0;
+    border-left: 1px solid white; }
+    #sunset .t4 h1 {
+      width: 150px;
+      text-indent: -15px; }
+    #sunset .t4 h2 {
+      padding: 0 0 0 0px; }
+  #sunset .t1-line-for-medium {
+    display: none;
+    background: white;
+    width: 1px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    top: 47%;
+    left: 15px;
+    z-index: 3; }
   .home .wide.one {
     height: 550px; }
   .neighborhood .wide {
-    height: 500px; }
+    height: 550px; }
   .neighborhood #map_canvas {
     height: 550px; }
   .neighborhood .gallery-grid .row {
@@ -5527,18 +5495,11 @@ The provided mixins are intended to be used with the array-like variables
             background: #81cfd3; }
         .overview .gallery-control .gallery-btngroup .gallery-counter {
           margin-top: 0px; }
-  .lifestyle .wide.one {
-    height: 500px; }
-  .lifestyle .wide.two {
-    height: 500px; }
-  .lifestyle .wide.three {
-    height: 500px; }
-  .lifestyle .wide.four {
-    height: 500px; }
+  .lifestyle .wide {
+    height: 550px; }
   .overview .wide {
-    height: 500px; }
+    height: 550px; }
   footer {
-    background: white;
     padding-top: 46px;
     padding-bottom: 46px; }
     footer .row {
@@ -5675,83 +5636,45 @@ The provided mixins are intended to be used with the array-like variables
 @media only screen and (min-width:64.063em) {
   /* Styles for screens at least 1440px wide. */
   /* min-width 1025px, large screens */
-  #sunset {
-    background: url(../images/sunset/back_c01_Sunset2.jpg) center top;
-    position: relative; }
-    #sunset .overlay-black {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: rgba(0, 0, 0, 0.2);
-      display: none; }
-    #sunset .row {
-      position: relative; }
-    #sunset .sunset-image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1; }
-    #sunset .sunset {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 3;
-      display: none; }
-    #sunset .txt {
-      position: absolute;
-      z-index: 3;
-      top: 0;
-      left: 0;
-      text-transform: uppercase;
-      border-right: 1px solid white;
-      padding: 16px 19px;
-      margin: 0 15px; }
-      #sunset .txt h1 {
-        font-size: 15px;
-        line-height: 15px;
-        font-weight: lighter;
-        margin: 0;
-        width: 238px;
-        color: white; }
-      #sunset .txt h2 {
-        font-size: 15px;
-        line-height: 15px;
-        font-weight: bold;
-        margin: 0;
-        padding-right: 16px;
-        color: white; }
-    #sunset .t1 {
-      width: 277px;
-      text-align: left;
-      left: 0px;
-      top: 47%;
-      height: 55px;
-      border: 0; }
-      #sunset .t1 h2 {
-        padding: 0 0 0 17px; }
-    #sunset .t2 {
-      width: 277px;
-      text-align: right;
-      left: -0.5%;
-      top: 43%;
-      height: 46%; }
-    #sunset .t3 {
-      width: 277px;
-      text-align: right;
-      left: 17%;
-      top: 25%;
-      height: 45%; }
-    #sunset .t4 {
-      width: 238px;
-      padding-left: 26px;
-      text-align: left;
-      left: 84.2%;
-      top: 13%;
-      height: 51%;
-      border: 0;
-      border-left: 1px solid white; }
+  #sunset .txt {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    border-right: 1px solid white;
+    padding: 16px 19px;
+    margin: 0 15px; }
+  #sunset .t1 {
+    width: 277px;
+    text-align: left;
+    left: 0px;
+    top: 47%;
+    height: 55px;
+    border: 0; }
+    #sunset .t1 h2 {
+      padding: 0 0 0 17px; }
+  #sunset .t2 {
+    width: 277px;
+    text-align: right;
+    left: -0.5%;
+    top: 43%;
+    height: 46%; }
+  #sunset .t3 {
+    width: 277px;
+    text-align: right;
+    left: 17%;
+    top: 25%;
+    height: 45%; }
+  #sunset .t4 {
+    width: 238px;
+    padding-left: 26px;
+    text-align: left;
+    left: 84.2%;
+    top: 13%;
+    height: 51%;
+    border: 0;
+    border-left: 1px solid white; }
   @media only screen and (min-width: 1200px) {
     #sunset .t1 {
       text-align: right;
@@ -5776,9 +5699,7 @@ The provided mixins are intended to be used with the array-like variables
       height: 0px;
       border: 0; } }
   .neighborhood .wide {
-    height: 500px; }
-    .neighborhood .wide.one .center {
-      margin: 14% 0; }
+    height: 650px; }
   .neighborhood .txt-wrap {
     width: 100%;
     margin-left: auto;
@@ -5799,11 +5720,7 @@ The provided mixins are intended to be used with the array-like variables
       margin-left: 0%; }
       .neighborhood .txt-wrap .txt h3 {
         color: white; }
-  main.lifestyle .lifestyle.wide.two {
-    height: 650px; }
-  main.lifestyle .lifestyle.wide.three {
-    height: 650px; }
-  main.lifestyle .lifestyle.wide.four {
+  main.lifestyle .lifestyle.wide {
     height: 650px; }
   .overview .wide {
     height: 650px; }
