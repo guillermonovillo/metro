@@ -1,0 +1,26 @@
+{
+  "name": "QueryLoader2",
+  "version": "3.0.3",
+  "homepage": "http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/",
+  "authors": [
+    "Gaya <gaya.kessler@gmail.com>"
+  ],
+  "description": "A simple script to create a preloader for images",
+  "main": "queryloader2.min.js",
+  "keywords": [
+    "preloader",
+    "queryloader",
+    "gayadesign"
+  ],
+  "license": "MIT",
+  "_release": "3.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.3",
+    "commit": "cefa5396f9cdaf3ab5a2fec0e86df6d3d91d963d"
+  },
+  "_source": "git://github.com/Gaya/QueryLoader2.git",
+  "_target": "~3.0.3",
+  "_originalSource": "queryloader2",
+  "_direct": true
+}

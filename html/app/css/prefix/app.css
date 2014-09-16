@@ -3306,7 +3306,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-close:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -28px;
@@ -3315,70 +3315,88 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-douglas {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -108px;
+    background-position: 0px -137px;
     width: 185px;
     height: 33px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-douglas {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-gensler {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -232px;
+    background-position: 0px -312px;
     width: 83px;
     height: 50px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-gensler {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-greenland {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -443px;
+    background-position: 0px -472px;
     width: 134px;
     height: 81px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
+  .icon-greenland:hover {
+    background-image: url(../images/sprites/sprites.png);
+    background-position: 0px -554px;
+    width: 134px;
+    height: 81px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .icon-greenland:hover {
+        background-image: url(../images/sprites/sprites@2x.png);
+        background-size: 246px 733px; } }
   .icon-greenland-infinite {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -79px;
+    background-position: 0px -108px;
     width: 246px;
     height: 28px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland-infinite {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
+  .icon-greenland-infinite:hover {
+    background-image: url(../images/sprites/sprites.png);
+    background-position: 0px -79px;
+    width: 246px;
+    height: 28px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .icon-greenland-infinite:hover {
+        background-image: url(../images/sprites/sprites@2x.png);
+        background-size: 246px 733px; } }
   .icon-isologo {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -184px;
+    background-position: 0px -213px;
     width: 47px;
     height: 47px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-isologo {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-menu {
-    background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -14px;
-    width: 20px;
-    height: 13px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
-      .icon-menu {
-        background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
-  .icon-menu:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px 0px;
     width: 20px;
     height: 13px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .icon-menu {
+        background-image: url(../images/sprites/sprites@2x.png);
+        background-size: 246px 733px; } }
+  .icon-menu:hover {
+    background-image: url(../images/sprites/sprites.png);
+    background-position: 0px -14px;
+    width: 20px;
+    height: 13px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-menu:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-metropolis-h {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -60px;
@@ -3387,52 +3405,52 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis-h {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-metropolis {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -525px;
+    background-position: 0px -636px;
     width: 165px;
     height: 97px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-span {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -283px;
+    background-position: 0px -261px;
     width: 186px;
     height: 50px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-span {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-tishman {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -142px;
+    background-position: 0px -171px;
     width: 100px;
     height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-tishman {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-totop {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -387px;
+    background-position: 0px -416px;
     width: 61px;
     height: 55px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-totop {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .icon-xclose {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -334px;
+    background-position: 0px -363px;
     width: 14px;
     height: 52px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-xclose {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 622px; } }
+        background-size: 246px 733px; } }
   .gold {
     color: #B5995C; }
   .rp {
@@ -3461,7 +3479,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 622px; } }
+          background-size: 246px 733px; } }
     .nav-logo .icon-isologo {
       display: none; }
   .btn-menu {
@@ -3687,7 +3705,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 622px; } }
+          background-size: 246px 733px; } }
     .menu-on.main-nav .icon-menu:hover {
       background-image: url(../images/sprites/sprites.png);
       background-position: 0px -28px;
@@ -3696,7 +3714,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu:hover {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 622px; } }
+          background-size: 246px 733px; } }
     .menu-on.main-nav .navigation {
       display: block;
       position: absolute; }
@@ -3739,6 +3757,8 @@ The provided mixins are intended to be used with the array-like variables
   .menu-on .nav-lang-small {
     display: block;
     padding: 0 0.9375rem; }
+    .menu-on .nav-lang-small a.active {
+      color: #81cfd3; }
     .menu-on .nav-lang-small div {
       margin: 0 45px; }
       .menu-on .nav-lang-small div p {
@@ -3766,23 +3786,32 @@ The provided mixins are intended to be used with the array-like variables
         backface-visibility: hidden; }
   .main-nav + main, .main-nav + article {
     padding-top: 50px; }
+  html.ie9 .line span.vertical.full {
+    height: 100%; }
+  html.ie9 .line span.vertical.half {
+    height: 50%; }
+  html.ie9 .line span.horizontal.full {
+    width: 100%; }
+  html.ie9 .line span.horizontal.half {
+    width: 50%; }
   .line {
     position: relative;
-    height: 60px; }
-    .line span {
+    height: 50px; }
+    .line.ready span {
       width: 1px;
       display: inline-block;
-      position: absolute; }
-      .line span.vertical.full {
+      position: absolute;
+      left: 50%; }
+      .line.ready span.vertical.full {
         -webkit-animation-name: lineHhundred;
         -ms-animation-name: lineHhundred;
         animation-name: lineHhundred;
-        -webkit-animation-duration: 1s;
-        -ms-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-delay: 0.2s;
-        -ms-animation-delay: 0.2s;
-        animation-delay: 0.2s;
+        -webkit-animation-duration: 0.25s;
+        -ms-animation-duration: 0.25s;
+        animation-duration: 0.25s;
+        -webkit-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        animation-delay: 0s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
@@ -3792,16 +3821,16 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
-      .line span.vertical.half {
+      .line.ready span.vertical.half {
         -webkit-animation-name: lineHfifty;
         -ms-animation-name: lineHfifty;
         animation-name: lineHfifty;
-        -webkit-animation-duration: 1s;
-        -ms-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-delay: 0.2s;
-        -ms-animation-delay: 0.2s;
-        animation-delay: 0.2s;
+        -webkit-animation-duration: 0.25s;
+        -ms-animation-duration: 0.25s;
+        animation-duration: 0.25s;
+        -webkit-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        animation-delay: 0s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
@@ -3811,20 +3840,20 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
-      .line span.vertical.to-t {
+      .line.ready span.vertical.to-t {
         bottom: 0px; }
-      .line span.vertical.to-b {
+      .line.ready span.vertical.to-b {
         top: 0px; }
-      .line span.horizontal.full {
+      .line.ready span.horizontal.full {
         -webkit-animation-name: lineWhundred;
         -ms-animation-name: lineWhundred;
         animation-name: lineWhundred;
-        -webkit-animation-duration: 1s;
-        -ms-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-delay: 0.2s;
-        -ms-animation-delay: 0.2s;
-        animation-delay: 0.2s;
+        -webkit-animation-duration: 0.25s;
+        -ms-animation-duration: 0.25s;
+        animation-duration: 0.25s;
+        -webkit-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        animation-delay: 0s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
@@ -3834,16 +3863,16 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
-      .line span.horizontal.half {
+      .line.ready span.horizontal.half {
         -webkit-animation-name: lineWfifty;
         -ms-animation-name: lineWfifty;
         animation-name: lineWfifty;
-        -webkit-animation-duration: ".25s";
-        -ms-animation-duration: ".25s";
-        animation-duration: ".25s";
-        -webkit-animation-delay: ".7s";
-        -ms-animation-delay: ".7s";
-        animation-delay: ".7s";
+        -webkit-animation-duration: 0.25s;
+        -ms-animation-duration: 0.25s;
+        animation-duration: 0.25s;
+        -webkit-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        animation-delay: 0s;
         -webkit-animation-timing-function: ease;
         -ms-animation-timing-function: ease;
         animation-timing-function: ease;
@@ -3853,15 +3882,15 @@ The provided mixins are intended to be used with the array-like variables
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
-      .line span.horizontal.to-r {
+      .line.ready span.horizontal.to-r {
         left: 0px; }
-      .line span.horizontal.to-l {
+      .line.ready span.horizontal.to-l {
         right: 0px; }
-      .line span.white {
+      .line.ready span.white {
         background: white; }
-      .line span.black {
+      .line.ready span.black {
         background: black; }
-      .line span.gold {
+      .line.ready span.gold {
         background: #B5995C; }
   figure {
     margin: 0;
@@ -4158,10 +4187,10 @@ The provided mixins are intended to be used with the array-like variables
       font-size: 11px; }
       .neighborhood ul li {
         margin-bottom: 1em;
-        text-indent: -25px;
+        text-indent: -26px;
         margin-left: 25px; }
       .neighborhood ul.edu li {
-        text-indent: -13px;
+        text-indent: -14px;
         margin-left: 13px; }
       .neighborhood ul a {
         color: #353535; }
@@ -4202,7 +4231,12 @@ The provided mixins are intended to be used with the array-like variables
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: white;
+    box-shadow: 4px 4px 18px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f0f0f0;
     /* Old browsers */
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
@@ -4214,12 +4248,7 @@ The provided mixins are intended to be used with the array-like variables
     background: linear-gradient(to right, #ffffff 0%, #e5e5e5 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
-    /* IE6-9 */
-    box-shadow: 4px 4px 18px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
-    height: 130px;
-    width: 130px;
-    border: 1px solid rgab(0, 0, 0, 0.1); }
+    /* IE6-9 */ }
     .infoBox > img {
       padding: 5px;
       border-radius: 100%;
@@ -4295,7 +4324,7 @@ The provided mixins are intended to be used with the array-like variables
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: white;
+    background: #f0f0f0;
     /* Old browsers */
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
@@ -4319,6 +4348,15 @@ The provided mixins are intended to be used with the array-like variables
     text-align: center; }
     .infobox-icontype img {
       margin-top: 0px; }
+  html.ie9 .infoBox {
+    -webkit-filter: none;
+            filter: none; }
+    html.ie9 .infoBox .metropolis {
+      -webkit-filter: none;
+              filter: none; }
+  html.ie9 .infobox-icontype {
+    -webkit-filter: none;
+            filter: none; }
   .sepia {
     -webkit-filter: sepia(1);
     -webkit-filter: sepia(100%);
@@ -4410,6 +4448,8 @@ The provided mixins are intended to be used with the array-like variables
       padding: 0; }
   footer {
     background: white; }
+    footer a:hover {
+      color: #81cfd3; }
     footer .column:nth-child(1) {
       border-bottom: 1px solid #B5995C;
       margin-bottom: 30px;
@@ -4507,6 +4547,16 @@ The provided mixins are intended to be used with the array-like variables
       -ms-backface-visibility: hidden;
       backface-visibility: hidden;
       display: block; }
+  html.ie9 #disclaimer.visible {
+    left: 0%; }
+  html.ie9 #disclaimer.invisible {
+    display: none; }
+  .loader_overlay {
+    background: url("../images/MET-loader.gif") no-repeat center center white;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999; }
   .vcard {
     margin: 10px 0;
     padding: 0;
@@ -4763,7 +4813,7 @@ The provided mixins are intended to be used with the array-like variables
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
       .thanks .close:before {
-        background: url("../images/ui/close.png") no-repeat scroll 0 0 transparent;
+        background: url("../images/ui/close-black.png") no-repeat scroll 0 0 transparent;
         content: "";
         display: block;
         width: 14px;
@@ -5130,6 +5180,10 @@ The provided mixins are intended to be used with the array-like variables
 @media only screen and (min-width:40.063em) {
   /* Styles for screens at least 1024px wide. */
   /* min-width 641px, medium screens */
+  html.ie9 .main-nav.sticky .icon-isologo {
+    display: inline-block; }
+  html.ie9 .main-nav.sticky .icon-metropolis {
+    display: none; }
   .main-nav {
     padding: 12px 0 30px;
     height: 158px;
@@ -5221,7 +5275,7 @@ The provided mixins are intended to be used with the array-like variables
     height: 13px; }
     .nav-logo .icon-metropolis {
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -525px;
+      background-position: 0px -636px;
       width: 165px;
       height: 97px;
       -webkit-animation-name: fadeInDown;
@@ -5243,7 +5297,6 @@ The provided mixins are intended to be used with the array-like variables
       -ms-backface-visibility: hidden;
       backface-visibility: hidden;
       margin: 0;
-      background-color: white;
       margin-top: -50px;
       margin-left: -96px;
       z-index: 10;
@@ -5252,7 +5305,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 622px; } }
+          background-size: 246px 733px; } }
       @media only screen and (min-width: 40.063em) and (max-width: 46em) {
         .nav-logo .icon-metropolis {
           -webkit-animation-name: fadeOutUp;
@@ -5458,7 +5511,9 @@ The provided mixins are intended to be used with the array-like variables
     z-index: 3; }
   .home .wide.one {
     height: 550px; }
-  .neighborhood .wide {
+  .neighborhood .wide.one {
+    height: 550px; }
+  .neighborhood .wide.two {
     height: 550px; }
   .neighborhood #map_canvas {
     height: 550px; }
@@ -5495,9 +5550,17 @@ The provided mixins are intended to be used with the array-like variables
             background: #81cfd3; }
         .overview .gallery-control .gallery-btngroup .gallery-counter {
           margin-top: 0px; }
-  .lifestyle .wide {
+  .lifestyle .wide.one {
     height: 550px; }
-  .overview .wide {
+  .lifestyle .wide.two {
+    height: 550px; }
+  .lifestyle .wide.three {
+    height: 550px; }
+  .lifestyle .wide.four {
+    height: 550px; }
+  .overview .wide.one {
+    height: 550px; }
+  .overview .wide.two {
     height: 550px; }
   footer {
     padding-top: 46px;

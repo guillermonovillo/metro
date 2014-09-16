@@ -34,7 +34,8 @@ title: Press
                <h1><a href="press/{{id}}.html">{{title}}</a></h1>
                <h3>{{author.name}} <time>{{fecha}}</time></h3>
                <p>{{short}}</p>
-               <a href="press/{{id}}.html" class="link">Read more</a>
+               {{#unless pdf}}<a href="press/{{id}}.html" class="link">Read more</a>{{/unless}}
+               {{#if pdf.file}}<a href="press/{{pdf.file}}.html" class="link">Download PDF</a>{{/if}}
             </article>
 {{/unless}}
 {{/each}}

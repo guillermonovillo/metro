@@ -1,6 +1,19 @@
 /* Styles for screens at least 1024px wide. */
 
 
+html.ie9 {
+	.main-nav{
+		&.sticky{
+			& .icon-isologo {
+				display:inline-block;
+			}
+			& .icon-metropolis{
+				display:none;
+			}
+		}
+	}
+}
+
 
 .main-nav {
 	padding:12px 0 30px;
@@ -29,6 +42,7 @@
 			}
 			& .icon-metropolis{
 				@include fadeOutUp(.2s, .0s, $function, $fill, $visibility);
+
 			}
 
 	} 
@@ -80,7 +94,6 @@
 				@include sprite-retina($metropolis, $metropolis-2x);
 				@include fadeInDown(.3s, .1s, $function, $fill, $visibility);
 			  margin:0;
-			  background-color:white; 
 			  margin-top:-50px; 
 			  margin-left: -96px;
 				z-index: 10;
@@ -241,9 +254,9 @@
 .neighborhood {
 
 	& .wide {
-		height:550px; 
-			&.one{}
-			&.two{}
+		
+			&.one{height:550px; }
+			&.two{height:550px; }
 	}
 
 
@@ -328,11 +341,11 @@
 // 
 .lifestyle{
 		& .wide {
-			height:550px;
-			&.one{}
-			&.two{}
-			&.three{}
-			&.four{}
+			
+			&.one{height:550px;}
+			&.two{height:550px;}
+			&.three{height:550px;}
+			&.four{height:550px;}
 		}
 }
 
@@ -343,9 +356,9 @@
 // 
 .overview {
 		& .wide {
-			height:550px;
-			&.one{ }
-			&.two{ }
+			
+			&.one{ height:550px;}
+			&.two{ height:550px;}
 		}
 	}
 

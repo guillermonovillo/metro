@@ -1,3 +1,26 @@
+
+   var $loader_overlay = $('.loader_overlay');
+   if ( $loader_overlay.length > 0 ) {
+      // preloader init
+      $('body').queryLoader2({
+         barColor: 'transparent',
+         backgroundColor: 'transparent',
+         percentage: false,
+         barHeight: 1,
+         minimumTime: 500,
+         deepSearch: true,
+         onComplete: function() {
+            $loader_overlay.fadeOut('normal', function(){
+                $(".line").addClass("ready");
+            });
+         }
+      });
+   }
+
+
+
+
+
 var app = (function(document, $) {
 
     'use strict';
@@ -23,9 +46,10 @@ var wow = new WOW(
     animateClass: 'animated', // animation css class (default is animated)
     offset:       0,          // distance to the element when triggering the animation (default is 0)
     mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true        // act on asynchronously loaded content (default is true)
+    live:         false        // act on asynchronously loaded content (default is true)
   }
 );
+
 
 var clock = (function(){
     
@@ -86,6 +110,11 @@ var clock = (function(){
 
 
 
+
+
+
+
+
   
 // Responsive imgmap CHECK AL GIRAR DISPOSITIVO 
 $('img[usemap]').rwdImageMaps();
@@ -95,13 +124,13 @@ $('area').on('mouseenter touchstart', function(e) {
     $('.overlay-black').stop(true, true).fadeIn();
     $('.sunset').filter('.img'+zone).stop(true, true).fadeIn();
     if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
-    $('.txt').stop(true,true).filter('.t'+zone).slideDown().children().fadeIn();
+    $('.txt').stop(true,true).filter('.t'+zone).slideDown(); //.children().fadeIn();
 }).on('mouseleave touchend',function(e){
    e.preventDefault();
     var zone = $(this).data('zone');
     $('.sunset').filter('.img'+zone).hide();
     if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
-    $('.txt').stop(true,true).filter('.t'+zone).slideUp().children().fadeOut();
+    $('.txt').stop(true,true).filter('.t'+zone).slideUp(); //.children().fadeOut()
     $('.overlay-black').hide();
 });
 
@@ -170,7 +199,7 @@ $('.gallery').slick({
   speed: 600,
   autoplay: false,
   autoplaySpeed: 6000,
-  cssEase: 'cubic-bezier(1,.01,.03,.1)',
+ cssEase:'cubic-bezier(1,.01,.03,.1)',
   prevArrow: $('.btn-prev'),
   nextArrow: $('.btn-next'),
   onBeforeChange : function(slide, index){
@@ -268,6 +297,11 @@ $close.click(function () {
         $holder.removeClass('visible').addClass('invisible');
          return false;
     });
+
+
+
+
+
 
 
 // $(".art-filter").click(function () {

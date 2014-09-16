@@ -206,7 +206,7 @@
     map: map
   });
 
-    var boxText = '  <div><div class="infobox-content"><img src="/images/locations/infobox-tick-wh.png" style="margin-top:-25px"/><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
+    var boxText = '<div><div class="infobox-content"><img src="/images/locations/infobox-tick-wh.png" style="margin-top:-25px; display:none"/><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
       var myOptions2 = {
         content: boxText,
         boxClass: "infoBox metropolis",
@@ -279,7 +279,7 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><img src="images/locations/infobox-tick-bl.png" style="margin-top:-25px"/><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><img src="images/locations/infobox-tick-bl.png" style="margin-top:-25px; display:none"/><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
       var myOptions = {
         content: boxText,
         boxClass: "infoBox "+type,

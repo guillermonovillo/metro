@@ -1,6 +1,6 @@
 <!doctype html>
-<!--[if lt IE 9]>      <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9]>      <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,7 +12,7 @@
     <script type="text/javascript" src="//use.typekit.net/kwt3kgo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-
+<link rel="shortcut icon" href="favicon.ico"/>
 <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
@@ -35,7 +35,7 @@
   </head>
 
     <body>
-
+   <div class="loader_overlay"></div>
  
         <header role="mainNav" class="main-nav">
   
@@ -112,8 +112,8 @@
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label>*Name</label>
-                              <input name="first_name" placeholder="First" class="text required first" type="text" />
-                              <input name="last_name" placeholder="Last" class="text required last" type="text" />
+                              <input name="first_name" placeholder="First" data-place="First" class="text required first" type="text" />
+                              <input name="last_name" placeholder="Last" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label>*Address</label>
@@ -165,8 +165,8 @@
                            <div class="has-broker-wrapper">
                               <div class="field field-1">
                                  <label>*Broker's name</label>
-                                 <input name="broker_first_name" placeholder="First" class="text first required skip" type="text" />
-                                 <input name="broker_last_name" placeholder="Last" class="text last required skip" type="text" />
+                                 <input name="broker_first_name" placeholder="First" data-place="First" class="text first required skip" type="text" />
+                                 <input name="broker_last_name" placeholder="Last" data-place="Last" class="text last required skip" type="text" />
                               </div>
                               <div class="field field-1">
                                  <label>*Broker's Co. Contact Number</label>
@@ -193,8 +193,8 @@
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label>*Name</label>
-                              <input name="first_name" placeholder="First" class="text required first" type="text" />
-                              <input name="last_name" placeholder="Last" class="text required last" type="text" />
+                              <input name="first_name" placeholder="First" data-place="First" class="text required first" type="text" />
+                              <input name="last_name" placeholder="Last" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label for="">*Brokers company</label>
@@ -239,8 +239,8 @@
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label>*Name</label>
-                              <input name="first_name" class="text required first" type="text" placeholder="First" />
-                              <input name="last_name" class="text required last" type="text" placeholder="Last" />
+                              <input name="first_name" class="text required first" type="text" placeholder="First" data-place="First"  />
+                              <input name="last_name" class="text required last" type="text" placeholder="Last" data-place="Last"  />
                            </div>
                            <div class="field">
                               <label>*Email</label>
@@ -354,6 +354,7 @@
     </div> 
 </div>
 
+ 
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

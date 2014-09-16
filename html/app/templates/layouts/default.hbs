@@ -1,6 +1,6 @@
 <!doctype html>
-<!--[if lt IE 9]>      <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9]>      <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -44,13 +44,14 @@
   </head>
 
     <body>
-
+   {{> loader }}
  
         {{> header }}
         {{> body }}
         {{> foot }}
  
     {{> disclaimer }}
+ 
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -72,6 +73,7 @@
     <script src="bower_components/mediaCheck/js/mediaCheck.js"></script>
     <script src="bower_components/wow/dist/wow.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/queryloader2/queryloader2.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->

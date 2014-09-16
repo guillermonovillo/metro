@@ -12,21 +12,20 @@ id: 2
                <p>LOS ANGELES-Shanghai developer Greenland USA releases the phase I renderings of the $1 billion high rise project in Downtown Los Angeles, which include a 19-floor hotel and a 38-floor multifamily tower.</p>
                <br />
                <br />
+               {{#if articles.posts.8.pdf.file}}<a href="{{articles.posts.8.pdf.file}}.html" class="link">Download PDF</a>{{/if}}
                <a href="/press.html" class="back">Back to all News</a>
 </article>
 
             <article class="press-news-preview next">
-               <div class="thumbnail">
-                  <a href="../press/{{articles.posts.9.id}}.html" title="{{articles.posts.9.title}}" class="hover-animation">
-                     <img class="img" src="../images/press/img/{{articles.posts.9.photo}}" alt="{{articles.posts.9.title}}" />
-                     <div class="hover-content to-right">
-                        <div>
-                           <span>
-                              <b>Read more —</b>
-                           </span>
-                        </div>
+               <div class="thumbnail box-img hover-animation">
+                      <img class="img" src="../images/press/img/{{articles.posts.9.photo}}" alt="{{articles.posts.9.title}}" />
+                   <div class="hover-content to-right">
+                      <div>
+                         <span><i>  
+                           <a href="../press/{{articles.posts.9.id}}.html" title="{{articles.posts.9.title}}">Read more -</a>
+                        </i></span>
+                      </div>
                    </div>
-                  </a>
                </div>
                <a href="../press/{{articles.posts.9.id}}.html" class="link">Read next</a>
                <h2>{{articles.posts.9.author.source}}  —</h2>
