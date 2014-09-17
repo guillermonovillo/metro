@@ -63,7 +63,7 @@ get_header(); ?>
       <p class="wow fadeInUp">From the stunning view to the subtle details, Metropolis is designed for 
 stylish, effortless living. Residences feature the finest materials, top-of-the-line appliances, energy-efficient design, maximized light and space and 
 cinematic views from every angle. </p>
-      <a class="btn download wow fadeInUp" href="#">Download Floor Plans </a>
+      <a class="btn download wow fadeInUp" href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" target="_BLANK">Download Floor Plans </a>
     </div>
   </div>
 

@@ -10,8 +10,8 @@
 
 define("URL",get_template_directory_uri());
 ?><!doctype html>
-<!--[if lt IE 9]>      <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9]>      <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -23,7 +23,7 @@ define("URL",get_template_directory_uri());
     <script type="text/javascript" src="//use.typekit.net/kwt3kgo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-
+<link rel="shortcut icon" href="favicon.ico"/>
 <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
@@ -46,7 +46,7 @@ define("URL",get_template_directory_uri());
   </head>
 
     <body>
-
+<div class="loader_overlay"></div>
  
         <header role="mainNav" class="main-nav">
   
@@ -54,7 +54,7 @@ define("URL",get_template_directory_uri());
       <div class="column medium-4">
        <p class="lang">
           LANGUAGE <a href="" class="active">EN</a> <a href="">中文</a><br>
-          <span class="gold">AVAILABILITY    —    <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK">floor plans</a></span>
+          <span class="gold">AVAILABILITY — <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK">floor plans</a></span>
         </p>
       </div>
       <div class="column medium-4 text-right"><p class="sale rp gold">sales center  los angeles   —   <a href="#">855-657-8300</a></p></div>
