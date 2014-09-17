@@ -54,7 +54,7 @@ define("URL",get_template_directory_uri());
       <div class="column medium-4">
        <p class="lang">
           LANGUAGE <a href="" class="active">EN</a> <a href="">中文</a><br>
-          <span class="gold">AVAILABILITY    —    floor plans</span>
+          <span class="gold">AVAILABILITY    —    <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK">floor plans</a></span>
         </p>
       </div>
       <div class="column medium-4 text-right"><p class="sale rp gold">sales center  los angeles   —   <a href="#">855-657-8300</a></p></div>

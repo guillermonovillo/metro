@@ -523,4 +523,88 @@ function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
+add_action( 'init', 'neighborhood_init' );
+
+function neighborhood_init() {
+
+$labels = array(
+		'name'               => __("Map Point","metropolis"),
+		'singular_name'      => __("Map Point","metropolis"),
+		'menu_name'          => __("Map Points","metropolis"),
+		'name_admin_bar'     => __("Map","metropolis"),
+		'add_new'            => __("Add New","metropolis"),
+		'add_new_item'       => __("Add New Point","metropolis"),
+		'new_item'           => __("New Point","metropolis"),
+		'edit_item'          => __("Edit Point","metropolis"),
+		'view_item'          => __("View Point","metropolis"),
+		'all_items'          => __("All","metropolis"),
+		'search_items'       => __("Search","metropolis"),
+		'parent_item_colon'  => __("Parent Point :","metropolis"),
+		'not_found'          => __("No Points found.","metropolis"),
+		'not_found_in_trash' => __("No Points found in Trash.","metropolis")
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'map-point' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title')
+	);
+
+	register_post_type( 'map-point', $args );
+}
+
+add_action( 'init', 'create_typepost_taxonomies', 0 );
+
+
+function create_typepost_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => __( 'Types', 'metropolis' ),
+		'singular_name'     => __( 'Type', 'metropolis' ),
+		'search_items'      => __( 'Search Types' ),
+		'all_items'         => __( 'All Types' ),
+		'parent_item'       => __( 'Parent Type' ),
+		'parent_item_colon' => __( 'Parent Type:' ),
+		'edit_item'         => __( 'Edit Type' ),
+		'update_item'       => __( 'Update Type' ),
+		'add_new_item'      => __( 'Add New Type' ),
+		'new_item_name'     => __( 'New Type Name' ),
+		'menu_name'         => __( 'Types' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'type' ),
+	);
+
+	register_taxonomy( 'type', array( 'map-point' ), $args );
+}
+
+function change_default_title( $title ){
+
+    $screen = get_current_screen();
+
+    if ( $screen->post_type == "map-point" ){
+        $title = 'Point Name';
+    }
+
+    return $title;
+}
+
+add_filter( 'enter_title_here', 'change_default_title' );
+
+
 ?>
