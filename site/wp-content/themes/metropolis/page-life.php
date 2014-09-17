@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Life Style
  */
-
+$activa="lifestyle";
 get_header(); ?>
 
 <main class="lifestyle">

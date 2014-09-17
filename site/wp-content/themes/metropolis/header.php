@@ -9,6 +9,8 @@
  */
 
 define("URL",get_template_directory_uri());
+define("RAIZ",get_bloginfo("url"));
+global $activa;
 ?><!doctype html>
 <!--[if IE 9]>      <html class="no-js ie9"> <![endif]-->
 <!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -76,18 +78,18 @@ define("URL",get_template_directory_uri());
    <div class="row navigation">
      <nav class="medium-12 columns nav-links">
        <ul>
-         <li class="nav-item home"><a href="index.html" class="active">HOME<span></span></a></li>
+         <li class="nav-item home"><a href="<?php echo RAIZ; ?>" <?php if($activa=="home"){echo "class='active'";} ?>>HOME<span></span></a></li>
                   <li class="lifestyle separator">&middot;</li>
-         <li class="nav-item lifestyle"><a href="lifestyle.html" >LIFESTYLE<span></span></a></li>
+         <li class="nav-item lifestyle"><a href="<?php echo RAIZ; ?>/lifestyle" <?php if($activa=="lifestyle"){echo "class='active'";} ?>>LIFESTYLE<span></span></a></li>
                   <li class="neighborhood separator">&middot;</li>
-         <li class="nav-item neighborhood"><a href="neighborhood.html" >NEIGHBORHOOD<span></span></a></li>
+         <li class="nav-item neighborhood"><a href="<?php echo RAIZ; ?>/neighborhood" <?php if($activa=="neighborhood"){echo "class='active'";} ?>>NEIGHBORHOOD<span></span></a></li>
                   <li class="overview separator">&middot;</li>
-         <li class="nav-item overview"><a href="overview.html" >OVERVIEW<span></span></a></li>
+         <li class="nav-item overview"><a href="<?php echo RAIZ; ?>/overview" <?php if($activa=="overview"){echo "class='active'";} ?>>OVERVIEW<span></span></a></li>
                   <li class="team separator">&middot;</li>
-         <li class="nav-item team"><a href="team.html" >TEAM<span></span></a></li>
+         <li class="nav-item team"><a href="<?php echo RAIZ; ?>/team" <?php if($activa=="team"){echo "class='active'";} ?>>TEAM<span></span></a></li>
                   <li class="press separator">&middot;</li>
-         <li class="nav-item press"><a href="press.html" >PRESS<span></span></a></li>
-         <li class="nav-item contact"><a href="contact_us.html" >CONTACT<span></span></a></li>
+         <li class="nav-item press"><a href="<?php echo RAIZ; ?>/press" <?php if($activa=="press"){echo "class='active'";} ?>>PRESS<span></span></a></li>
+         <li class="nav-item contact"><a href="<?php echo RAIZ; ?>/contact" <?php if($activa=="contact"){echo "class='active'";} ?>>CONTACT<span></span></a></li>
        </ul>
      </nav>
      <hr class="line">

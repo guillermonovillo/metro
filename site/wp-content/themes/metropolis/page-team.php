@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Team
  */
-
+$activa="team";
 get_header(); ?>
 
 	<main class="team">

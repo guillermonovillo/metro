@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Press
  */
-
+$activa="press";
 get_header(); ?>
 
 <article class="press">

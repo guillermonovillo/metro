@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Contact
  */
-
+$activa="contact";
 get_header(); ?>
 
 	        

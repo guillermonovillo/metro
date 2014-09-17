@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Home
  */
-
+$activa="home";
 get_header(); ?>
 <main class="home">
 

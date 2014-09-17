@@ -11,7 +11,7 @@
  * @subpackage Metropolis
  * Template Name: Neighborhood
  */
-
+$activa="neighborhood";
 get_header(); ?>
 
 <?php
