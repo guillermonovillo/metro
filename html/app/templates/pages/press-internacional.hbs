@@ -1,0 +1,50 @@
+---
+title: Press
+---
+  <article class="press">
+      <section class="cover"></section>
+      <section class="content">
+         <div class="hgroup">
+            <h1>Press</h1>
+         </div>
+         <aside class="aside">
+            <ul class="aside-ul filter-options">
+               <li><a href="#" class="art-filter" data-filter-value="domestic">Domestic</a></li>
+               <li><a href="#" class="art-filter" data-filter-value="international">International</a></li>
+
+            </ul>
+         </aside>
+         <section class="main-content">
+
+
+{{#each articles.internationals}}
+{{#unless nopublic}}
+            <article class="press-news-preview"  data-groups='["{{type}}"]'>
+                <div class="thumbnail box-img hover-animation">
+                     <img class="img" src="images/press/img/{{photo}}" alt="{{title}}" />
+                   <div class="hover-content to-right">
+                      <div>
+                         <span><i>  
+                           <a href="press/int-{{id}}.html" title="">Read more -</a>
+                        </i></span>
+                      </div>
+                   </div>
+               </div> 
+               <h2>{{author.source}} —</h2>
+               <h1><a href="press/{{id}}.html">{{title}}</a></h1>
+               <h3>{{author.name}} <time>{{fecha}}</time></h3>
+               <p>{{short}}</p>
+               {{#unless pdf}}<a href="press/int-{{id}}.html" class="link">Read more</a>{{/unless}}
+               {{#if pdf.file}}<a href="press/{{pdf.file}}" class="link">Download PDF</a>{{/if}}
+            </article>
+{{/unless}}
+{{/each}}
+
+
+
+
+
+         </section>
+         {{!-- <a href="morenews.html" data-page="2" class="load-more">Load More</a> --}}
+      </section>
+   </article>

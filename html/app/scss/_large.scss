@@ -4,36 +4,39 @@
 
 
 #sunset{
-	& .txt {position:absolute; z-index:3; top:0; left:0; text-transform:uppercase; border-right:1px solid white; padding:16px 19px; margin:0 15px; 
+	& .txt {
 		& h1 {}
 		& h2 {}
 	}
-		&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
+		&	.t1 {text-align:left;
 			& h2 {padding: 0 0 0 17px}	
 		}
-		.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
-		.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%}
-		.t4 {width:238px; padding-left:26px; text-align:left;left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
-			// & h2 {padding: 0 0 0 16px}
+		.t2 { }
+		.t3 { }
+		.t4 { 
+			text-align:left;left: 84.2%; top: 13%; width:240px;
+			 & h1 {
+				& span:nth-child(1) {display:inline;}
+				& span:nth-child(2) {display:none;}
+			 }
+			 & h2 {padding: 0 0 0 16px}
 		}
-		
+			.t4-line {left: 84.2%; top: 13%; height: 51%;}
 	
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
 	#sunset {
-	.t1 {text-align:right; left: -270px; top: 56%; height:220px; border-right:1px solid white; padding:16px 19px; margin:0 15px; 
+	.t1 {text-align:right; left: -158px; top: 56%;  
 			& h1 {padding-right:16px;
 					span.h-large {display:none;}
 					span.h-small {display:block; float:right; margin: 0 -16px 0 0}
 			}
 			& h2 {padding: 0 17px 0 0}	
 		}
-	.t1-line-for-medium {display:none; height:0px; border:0}
-
+	.t1-line {top: 56%; height: 38%;}
 	}
 }
-
 // 
 // 
 //  NEIGHTBORHOOD

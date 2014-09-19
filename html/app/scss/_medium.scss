@@ -64,7 +64,7 @@ html.ie9 {
 		padding-left:0;
 		border-bottom:1px solid $primary-color;
 		& p {	font-size: 10px;
-					font-family: $body-font-family;
+					@include proxima-nova-semibold;
 					text-transform: uppercase;
 					position: absolute;
 					bottom: 0px;
@@ -212,29 +212,43 @@ html.ie9 {
 
 #sunset{
 	& .sunset {display:none}
-	& .txt {border-right:1px solid white; padding:16px 19px;  display:none;
-		& h1 { font-size: 15px; line-height:15px; width:100%;
-			
+	& .txt { padding:16px 19px; 
+		& h1 { font-size: 15px; line-height:15px;
 			& span {display:inline;
 			&.h-large {display:none;}
 			&.h-small {display:inline; float:left; margin-right:5px}
 			} 
 		}
-		& h2 { font-size: 15px; line-height:15px; width:100%; padding-right:16px;}
+		& h2 { font-size: 15px; line-height:15px; padding-right:16px;}
 	}
-	&	.t1 {width:277px; text-align:left;left: 0px; top: 47%; height:55px; border: 0;
+	&	.t1  {text-align:left;left: 0px; top: 47%;  
 			& h2 {padding: 0 0 0 17px}	
 		}
-		.t2 {width:277px; text-align:right; left: auto; right: 68%; top: 43%; height:46%}
-		.t3 {width:277px; text-align:right; left: auto; right: 51%; top: 25%; height:45%; }
-		.t4 {width:238px; padding-left:25px; text-align:left;  left: 84.2%; top: 13%; height: 51%; border: 0; border-left: 1px solid white;
-			& h1 {width:150px; text-indent:-15px}
-			& h2 {padding: 0 0 0 0px}
+		.t2 {text-align:right; left: auto; right: 68%; top: 43%; width:260px;}
+		.t3 {text-align:right; left: auto; right: 51%; top: 25%; }
+		.t4 {text-align:right; top: 4%;	left: auto;	right: 13%; width:230px;
+			& h1 { 
+					span:nth-child(1) {display:none;}
+					span:nth-child(2) {display:block; float:right; margin: 0 -16px 0 0}
+				}
+			& h2 { padding:0}	
 		}
 
+		
 
-.t1-line-for-medium {display:none; background: white;width: 1px;height: 300px;float: left;position: absolute;top: 47%;left: 15px;z-index:3}
+
+	.t1-line, .t2-line, .t3-line, .t4-line {background:white; width:1px; position: absolute; top:0; float: left;position: absolute; z-index:3; margin:0 15px; display:none; }
+	.t1-line {left:0%; top: 47%; height:51%;}
+	.t2-line {right: 68%; top: 43%; height:46%;}
+	.t3-line {right: 51%; top: 25%; height:45%;}
+	.t4-line {left: 84.2%; top:4%; height:60%;}
 }
+
+
+
+
+
+
 
 .home {
 		& .wide {

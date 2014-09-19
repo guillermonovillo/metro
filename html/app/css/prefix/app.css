@@ -362,7 +362,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   line-height: 150%;
   position: relative;
@@ -1299,12 +1299,12 @@ a {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.18;
+  font-size: 0.9375rem;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
-    font-size: 1.21875rem;
+    font-size: 1.15625rem;
     line-height: 1.6; }
   p aside {
     font-size: 0.875rem;
@@ -1383,8 +1383,8 @@ code {
 
 /* Lists */
 ul, ol, dl {
-  font-size: 1rem;
-  line-height: 1.18;
+  font-size: 0.9375rem;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
   list-style-position: outside;
   font-family: inherit; }
@@ -1456,7 +1456,7 @@ blockquote {
       color: #555555; }
 
 blockquote, blockquote p {
-  line-height: 1.18;
+  line-height: 1.4;
   color: #6f6f6f; }
 
 /* Microformats */
@@ -3306,7 +3306,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-close:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -28px;
@@ -3315,88 +3315,88 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-douglas {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -137px;
+    background-position: 0px -239px;
     width: 185px;
-    height: 33px; }
+    height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-douglas {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-gensler {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -312px;
+    background-position: 0px -197px;
     width: 83px;
-    height: 50px; }
+    height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-gensler {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-greenland {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -472px;
+    background-position: 0px -466px;
     width: 134px;
     height: 81px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-greenland:hover {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -554px;
+    background-position: 0px -548px;
     width: 134px;
     height: 81px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-greenland-infinite {
-    background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -108px;
-    width: 246px;
-    height: 28px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
-      .icon-greenland-infinite {
-        background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
-  .icon-greenland-infinite:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -79px;
     width: 246px;
     height: 28px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .icon-greenland-infinite {
+        background-image: url(../images/sprites/sprites@2x.png);
+        background-size: 246px 727px; } }
+  .icon-greenland-infinite:hover {
+    background-image: url(../images/sprites/sprites.png);
+    background-position: 0px -108px;
+    width: 246px;
+    height: 28px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland-infinite:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-isologo {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -213px;
+    background-position: 0px -365px;
     width: 47px;
     height: 47px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-isologo {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-menu {
-    background-image: url(../images/sprites/sprites.png);
-    background-position: 0px 0px;
-    width: 20px;
-    height: 13px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
-      .icon-menu {
-        background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
-  .icon-menu:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -14px;
     width: 20px;
     height: 13px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+      .icon-menu {
+        background-image: url(../images/sprites/sprites@2x.png);
+        background-size: 246px 727px; } }
+  .icon-menu:hover {
+    background-image: url(../images/sprites/sprites.png);
+    background-position: 0px 0px;
+    width: 20px;
+    height: 13px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-menu:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-metropolis-h {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -60px;
@@ -3405,52 +3405,52 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis-h {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-metropolis {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -636px;
+    background-position: 0px -630px;
     width: 165px;
     height: 97px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-span {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -261px;
+    background-position: 0px -281px;
     width: 186px;
-    height: 50px; }
+    height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-span {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-tishman {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -171px;
+    background-position: 0px -323px;
     width: 100px;
     height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-tishman {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-totop {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -416px;
-    width: 61px;
-    height: 55px; }
+    background-position: 0px -137px;
+    width: 29px;
+    height: 29px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-totop {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .icon-xclose {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -363px;
+    background-position: 0px -413px;
     width: 14px;
     height: 52px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-xclose {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 733px; } }
+        background-size: 246px 727px; } }
   .gold {
     color: #B5995C; }
   .rp {
@@ -3463,7 +3463,10 @@ The provided mixins are intended to be used with the array-like variables
     height: 50px;
     position: fixed;
     z-index: 10;
-    width: 100%; }
+    width: 100%;
+    font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
+    font-style: normal;
+    font-weight: 600; }
   .nav-lang {
     display: none; }
   .nav-lang-small {
@@ -3479,7 +3482,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 733px; } }
+          background-size: 246px 727px; } }
     .nav-logo .icon-isologo {
       display: none; }
   .btn-menu {
@@ -3705,7 +3708,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 733px; } }
+          background-size: 246px 727px; } }
     .menu-on.main-nav .icon-menu:hover {
       background-image: url(../images/sprites/sprites.png);
       background-position: 0px -28px;
@@ -3714,7 +3717,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu:hover {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 733px; } }
+          background-size: 246px 727px; } }
     .menu-on.main-nav .navigation {
       display: block;
       position: absolute; }
@@ -3908,7 +3911,8 @@ The provided mixins are intended to be used with the array-like variables
         figure .table .cell h1, figure .table .cell h2 {
           color: white;
           text-align: center;
-          font-weight: bold; }
+          font-weight: bold;
+          text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3); }
         figure .table .cell h1 {
           font-size: 28px;
           line-height: 28px;
@@ -3919,7 +3923,7 @@ The provided mixins are intended to be used with the array-like variables
           text-transform: uppercase;
           margin: 0 0 20px; }
   #sunset {
-    background: url(../images/sunset/back_c01_Sunset2.jpg) center top;
+    background: url("../images/sunset/back_c01_Sunset2.jpg") center top;
     position: relative; }
     #sunset .overlay-black {
       width: 100%;
@@ -3950,14 +3954,13 @@ The provided mixins are intended to be used with the array-like variables
       margin: 0 15px;
       left: 0;
       top: 20px;
-      display: none;
-      height: 40px; }
+      height: 40px;
+      display: none; }
       #sunset .txt h1 {
         font-size: 16px;
         line-height: 18px;
         font-weight: lighter;
         margin: 0;
-        width: 300px;
         color: white; }
         #sunset .txt h1 span {
           display: none; }
@@ -3968,18 +3971,11 @@ The provided mixins are intended to be used with the array-like variables
         margin: 0;
         padding-right: 16px;
         color: white; }
-    #sunset .t1-line-for-medium {
-      display: none;
-      height: 0px;
-      border: 0;
-      display: none;
-      position: absolute;
-      top: 0; }
   .home .wide {
     margin: 60px 0 80px;
     background: rgba(0, 0, 0, 0.1); }
     .home .wide.one {
-      background: url(../images/home-1.jpg) bottom center;
+      background: url("../images/home-1.jpg") bottom center;
       background-size: cover;
       margin: 0;
       height: 430px; }
@@ -4000,20 +3996,20 @@ The provided mixins are intended to be used with the array-like variables
     height: 430px;
     background: rgba(0, 0, 0, 0.1); }
     .lifestyle .wide.one {
-      background: url(../images/lifestyle/lifestyle-1.jpg) bottom center;
+      background: url("../images/lifestyle/lifestyle-1.jpg") bottom center;
       background-size: cover;
       height: 430px;
       margin-top: 0; }
     .lifestyle .wide.two {
-      background: url(../images/lifestyle/lifestyle-2.jpg) bottom center;
+      background: url("../images/lifestyle/lifestyle-2.jpg") bottom center;
       background-size: cover;
       height: 300px; }
     .lifestyle .wide.three {
-      background: url(../images/lifestyle/lifestyle-3.jpg) bottom center;
+      background: url("../images/lifestyle/lifestyle-3.jpg") bottom center;
       background-size: cover;
       height: 300px; }
     .lifestyle .wide.four {
-      background: url(../images/lifestyle/lifestyle-4.jpg) bottom center;
+      background: url("../images/lifestyle/lifestyle-4.jpg") bottom center;
       background-size: cover;
       height: 300px;
       margin-bottom: 0; }
@@ -4025,10 +4021,10 @@ The provided mixins are intended to be used with the array-like variables
       height: 430px;
       background: rgba(0, 0, 0, 0.1); }
       .overview .wide.one {
-        background: url(../images/overview/overview-1.jpg) bottom center;
+        background: url("../images/overview/overview-1.jpg") bottom center;
         background-size: cover; }
       .overview .wide.two {
-        background: url(../images/overview/overview-2.jpg) bottom center;
+        background: url("../images/overview/overview-2.jpg") bottom center;
         background-size: cover; }
     .overview .gallery {
       background: rgba(0, 0, 0, 0.1); }
@@ -4056,19 +4052,8 @@ The provided mixins are intended to be used with the array-like variables
       -webkit-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
       .overview .btn.download:hover, .overview .btn.download:active {
-        background: #94d6da;
+        background: #81cfd3;
         /* Old browsers */
-        /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94d6da), color-stop(50%, #94d6da), color-stop(50%, #81cfd3), color-stop(100%, #81cfd3));
-        /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-        /* Chrome10+,Safari5.1+ */
-        /* Opera 11.10+ */
-        /* IE10+ */
-        background: linear-gradient(to bottom, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-        /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 );
-        /* IE6-9 */
         color: #353535;
         border-color: #353535; }
       .overview .btn.download:active {
@@ -4121,12 +4106,12 @@ The provided mixins are intended to be used with the array-like variables
     .neighborhood .wide {
       height: 300px; }
       .neighborhood .wide.one {
-        background: url(../images/neighborhood/neighborhood-1.jpg) bottom center;
+        background: url("../images/neighborhood/neighborhood-1.jpg") bottom center;
         margin-top: 0;
         background-size: cover;
         height: 430px; }
       .neighborhood .wide.two {
-        background: url(../images/neighborhood/neighborhood-2.jpg) bottom center;
+        background: url("../images/neighborhood/neighborhood-2.jpg") bottom center;
         background-size: cover; }
       .neighborhood .wide .line {
         height: 40px; }
@@ -4188,7 +4173,11 @@ The provided mixins are intended to be used with the array-like variables
       .neighborhood ul li {
         margin-bottom: 1em;
         text-indent: -26px;
-        margin-left: 25px; }
+        margin-left: 25px;
+        font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: #5A5A5A; }
       .neighborhood ul.edu li {
         text-indent: -14px;
         margin-left: 13px; }
@@ -4362,7 +4351,7 @@ The provided mixins are intended to be used with the array-like variables
     -webkit-filter: sepia(100%);
     -moz-filter: sepia(100%);
     -ms-filter: sepia(100%);
-    filter: url(sepia.svg#old-timey);
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="old-timey"><feColorMatrix values="0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0 /></filter></svg>#old-timey');
     -webkit-filter: sepia(100%);
             filter: sepia(100%);
     background-color: #B5995C;
@@ -4372,13 +4361,13 @@ The provided mixins are intended to be used with the array-like variables
             transition: all 500ms ease; }
   .box-img .hover-content {
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b5995c), color-stop(100%, rgba(205, 170, 73, 0.1)));
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b5995c), color-stop(100%, rgba(205, 170, 73, 0.4)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #b5995c 0%, rgba(205, 170, 73, 0.1) 100%);
+    background: -webkit-linear-gradient(left, #b5995c 0%, rgba(205, 170, 73, 0.4) 100%);
     /* Chrome10+,Safari5.1+ */
     /* Opera 11.10+ */
     /* IE10+ */
-    background: linear-gradient(to right, #b5995c 0%, rgba(205, 170, 73, 0.1) 100%);
+    background: linear-gradient(to right, #b5995c 0%, rgba(205, 170, 73, 0.4) 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5995c', endColorstr='#1acdaa49',GradientType=1 );
     /* IE6-9 */
@@ -4433,7 +4422,7 @@ The provided mixins are intended to be used with the array-like variables
       margin: 0;
       padding: 0; }
       .team .wide.one {
-        background: url(../images/team/team-1.jpg) center;
+        background: url("../images/team/team-1.jpg") center;
         height: 430px; }
     .team h1 {
       padding: 3rem 0 0;
@@ -4441,11 +4430,14 @@ The provided mixins are intended to be used with the array-like variables
     .team h2 {
       text-transform: uppercase;
       color: #B5995C;
-      margin: 2rem 0; }
+      margin: 2rem 0;
+      font-weight: bolder; }
     .team hr {
       border-color: #B5995C;
       margin: 3rem 0;
       padding: 0; }
+    .team .icon > p {
+      margin-bottom: 3rem; }
   footer {
     background: white; }
     footer a:hover {
@@ -4480,6 +4472,13 @@ The provided mixins are intended to be used with the array-like variables
         position: relative; }
       footer .column:nth-child(3) .icon-totop {
         margin-top: 0px; }
+      footer .column:nth-child(3) .cl-col {
+        clear: both;
+        margin-left: 22px; }
+      footer .column:nth-child(3) .tot-col {
+        clear: both; }
+        footer .column:nth-child(3) .tot-col span {
+          margin: 0; }
   #disclaimer {
     max-height: none;
     position: fixed;
@@ -4667,19 +4666,8 @@ The provided mixins are intended to be used with the array-like variables
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
     .form .radio-button:hover, .form .radio-button:active, .form .radio-button.selected {
-      background: #94d6da;
-      /* Old browsers */
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94d6da), color-stop(50%, #94d6da), color-stop(50%, #81cfd3), color-stop(100%, #81cfd3));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-      /* Chrome10+,Safari5.1+ */
-      /* Opera 11.10+ */
-      /* IE10+ */
-      background: linear-gradient(to bottom, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 );
-      /* IE6-9 */ }
+      background: #81cfd3;
+      /* Old browsers */ }
     .form .radio-button.selected {
       border-color: transparent;
       color: #fff; }
@@ -4718,19 +4706,8 @@ The provided mixins are intended to be used with the array-like variables
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
     .form .form-button:hover, .form .form-button:active {
-      background: #94d6da;
-      /* Old browsers */
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94d6da), color-stop(50%, #94d6da), color-stop(50%, #81cfd3), color-stop(100%, #81cfd3));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-      /* Chrome10+,Safari5.1+ */
-      /* Opera 11.10+ */
-      /* IE10+ */
-      background: linear-gradient(to bottom, #94d6da 0%, #94d6da 50%, #81cfd3 50%, #81cfd3 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d6da', endColorstr='#81cfd3',GradientType=0 );
-      /* IE6-9 */ }
+      background: #81cfd3;
+      /* Old browsers */ }
     .form .form-button:active {
       border-color: transparent;
       color: #fff; }
@@ -5256,7 +5233,9 @@ The provided mixins are intended to be used with the array-like variables
       border-bottom: 1px solid #B5995C; }
       .nav-lang div p {
         font-size: 10px;
-        font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
+        font-style: normal;
+        font-weight: 600;
         text-transform: uppercase;
         position: absolute;
         bottom: 0px;
@@ -5275,7 +5254,7 @@ The provided mixins are intended to be used with the array-like variables
     height: 13px; }
     .nav-logo .icon-metropolis {
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -636px;
+      background-position: 0px -630px;
       width: 165px;
       height: 97px;
       -webkit-animation-name: fadeInDown;
@@ -5305,7 +5284,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 733px; } }
+          background-size: 246px 727px; } }
       @media only screen and (min-width: 40.063em) and (max-width: 46em) {
         .nav-logo .icon-metropolis {
           -webkit-animation-name: fadeOutUp;
@@ -5442,13 +5421,10 @@ The provided mixins are intended to be used with the array-like variables
   #sunset .sunset {
     display: none; }
   #sunset .txt {
-    border-right: 1px solid white;
-    padding: 16px 19px;
-    display: none; }
+    padding: 16px 19px; }
     #sunset .txt h1 {
       font-size: 15px;
-      line-height: 15px;
-      width: 100%; }
+      line-height: 15px; }
       #sunset .txt h1 span {
         display: inline; }
         #sunset .txt h1 span.h-large {
@@ -5460,55 +5436,71 @@ The provided mixins are intended to be used with the array-like variables
     #sunset .txt h2 {
       font-size: 15px;
       line-height: 15px;
-      width: 100%;
       padding-right: 16px; }
   #sunset .t1 {
-    width: 277px;
     text-align: left;
     left: 0px;
-    top: 47%;
-    height: 55px;
-    border: 0; }
+    top: 47%; }
     #sunset .t1 h2 {
       padding: 0 0 0 17px; }
   #sunset .t2 {
-    width: 277px;
     text-align: right;
     left: auto;
     right: 68%;
-    top: 43%;
-    height: 46%; }
+    top: 43%; }
   #sunset .t3 {
-    width: 277px;
     text-align: right;
     left: auto;
     right: 51%;
-    top: 25%;
-    height: 45%; }
+    top: 25%; }
   #sunset .t4 {
-    width: 238px;
-    padding-left: 25px;
-    text-align: left;
+    text-align: right;
     left: 84.2%;
-    top: 13%;
-    height: 51%;
-    border: 0;
-    border-left: 1px solid white; }
-    #sunset .t4 h1 {
-      width: 150px;
-      text-indent: -15px; }
-    #sunset .t4 h2 {
-      padding: 0 0 0 0px; }
-  #sunset .t1-line-for-medium {
-    display: none;
+    top: 13%; }
+    #sunset .t4 h1 span:nth-child(2) {
+      display: none; }
+  #sunset .t1-line, #sunset .t2-line, #sunset .t3-line, #sunset .t4-line {
     background: white;
     width: 1px;
-    height: 300px;
+    position: absolute;
+    top: 0;
     float: left;
     position: absolute;
+    z-index: 3;
+    margin: 0 15px; }
+  #sunset .t1-line {
+    left: 0%;
     top: 47%;
-    left: 15px;
-    z-index: 3; }
+    height: 51%; }
+  #sunset .t2-line {
+    right: 68%;
+    top: 43%;
+    height: 46%; }
+  #sunset .t3-line {
+    right: 51%;
+    top: 25%;
+    height: 45%; }
+  #sunset .t4-line {
+    left: 84.2%;
+    top: 13%;
+    height: 51%; }
+  @media only screen and (min-width: 641px) and (max-width: 1050px) {
+    #sunset .t4 {
+      text-align: right;
+      top: 4%;
+      left: auto;
+      right: 13%; }
+      #sunset .t4 h1 span:nth-child(1) {
+        display: none; }
+      #sunset .t4 h1 span:nth-child(2) {
+        display: block;
+        float: right;
+        margin: 0 -16px 0 0; }
+      #sunset .t4 h2 {
+        padding: 0; }
+    #sunset .t4-line {
+      top: 4%;
+      height: 60%; } }
   .home .wide.one {
     height: 550px; }
   .neighborhood .wide.one {
@@ -5699,54 +5691,21 @@ The provided mixins are intended to be used with the array-like variables
 @media only screen and (min-width:64.063em) {
   /* Styles for screens at least 1440px wide. */
   /* min-width 1025px, large screens */
-  #sunset .txt {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    text-transform: uppercase;
-    border-right: 1px solid white;
-    padding: 16px 19px;
-    margin: 0 15px; }
   #sunset .t1 {
-    width: 277px;
-    text-align: left;
-    left: 0px;
-    top: 47%;
-    height: 55px;
-    border: 0; }
+    text-align: left; }
     #sunset .t1 h2 {
       padding: 0 0 0 17px; }
-  #sunset .t2 {
-    width: 277px;
-    text-align: right;
-    left: -0.5%;
-    top: 43%;
-    height: 46%; }
-  #sunset .t3 {
-    width: 277px;
-    text-align: right;
-    left: 17%;
-    top: 25%;
-    height: 45%; }
   #sunset .t4 {
-    width: 238px;
-    padding-left: 26px;
-    text-align: left;
-    left: 84.2%;
-    top: 13%;
-    height: 51%;
-    border: 0;
-    border-left: 1px solid white; }
-  @media only screen and (min-width: 1200px) {
+    text-align: left; }
+    #sunset .t4 h1 {
+      width: 240px; }
+    #sunset .t4 h2 {
+      padding: 0 0 0 16px; }
+  @media only screen and (min-width: 1100px) {
     #sunset .t1 {
       text-align: right;
-      left: -270px;
-      top: 56%;
-      height: 220px;
-      border-right: 1px solid white;
-      padding: 16px 19px;
-      margin: 0 15px; }
+      left: -158px;
+      top: 56%; }
       #sunset .t1 h1 {
         padding-right: 16px; }
         #sunset .t1 h1 span.h-large {
@@ -5757,10 +5716,12 @@ The provided mixins are intended to be used with the array-like variables
           margin: 0 -16px 0 0; }
       #sunset .t1 h2 {
         padding: 0 17px 0 0; }
-    #sunset .t1-line-for-medium {
-      display: none;
-      height: 0px;
-      border: 0; } }
+    #sunset .t1-line {
+      top: 56%;
+      height: 38%; }
+    #sunset .t4 {
+      width: 250px;
+      text-align: left; } }
   .neighborhood .wide {
     height: 650px; }
   .neighborhood .txt-wrap {

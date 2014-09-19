@@ -95,9 +95,7 @@ var clock = (function(){
 
   mediaCheck({
   media: '(max-width: 640px)',
-  entry: function() {
-    
-  },
+  entry: function() {},
   exit: function() {
     $('.main-nav').removeClass('menu-on').removeClass('menu-off'); 
     $('body').removeClass('MenuMobile');
@@ -118,65 +116,53 @@ var clock = (function(){
   
 // Responsive imgmap CHECK AL GIRAR DISPOSITIVO 
 $('img[usemap]').rwdImageMaps();
+
+var $overBlack = $('.overlay-black'),
+    $sunset    = $('.sunset'), 
+    $txt       = $('.txt');
+
 $('area').on('mouseenter touchstart', function(e) {
     e.preventDefault();
     var zone = $(this).data('zone');
-    $('.overlay-black').stop(true, true).fadeIn();
-    $('.sunset').filter('.img'+zone).stop(true, true).fadeIn();
-    if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
-    $('.txt').stop(true,true).filter('.t'+zone).slideDown(); //.children().fadeIn();
+    $overBlack.stop(true, true).fadeIn();
+    $sunset.filter('.img'+zone).stop(true, true).fadeIn();
+    // if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
+    $txt.stop(true,true).filter('.t'+zone).fadeIn('slow');
+    $('.t'+zone+'-line').slideDown();
 }).on('mouseleave touchend',function(e){
    e.preventDefault();
     var zone = $(this).data('zone');
-    $('.sunset').filter('.img'+zone).hide();
-    if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
-    $('.txt').stop(true,true).filter('.t'+zone).slideUp(); //.children().fadeOut()
-    $('.overlay-black').hide();
+    $sunset.filter('.img'+zone).hide();
+    // if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
+    $txt.stop(true,true).filter('.t'+zone).fadeOut(); 
+    $('.t'+zone+'-line').slideUp();
+    $overBlack.hide();
 });
 
-// TODO COMPORTAMIENTO EN TOUCH
-//  var flag = false;
-// $('area').on('tap', function(e) {
-//     alert();
-//     e.preventDefault();
-//     var zone = $(this).data('zone');
-   
-//     if (flag === true) {
-//         $('.sunset').filter('.img'+zone).hide();
-//         if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
-//         $('.txt').stop(true,true).filter('.t'+zone).slideUp().children().fadeOut();
-//         $('.overlay-black').hide();
-//     }
-//     $('.overlay-black').stop(true, true).fadeIn();
-//     $('.sunset').filter('.img'+zone).stop(true, true).fadeIn();
-//     if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
-//     $('.txt').stop(true,true).filter('.t'+zone).slideDown().children().fadeIn();
-//     flag = true;
-// })
 
 
 
+ var offsetY = window.pageYOffset,
+        $body = $('body'),
+        $win = $(window),
+        $close = $('.btnClose'),
+        $open = $('.btnOpen'),
+        $holder = $('#disclaimer'),
+        $stuff = $('.modal-content'),
+        $mainNav = $('.main-nav');
 
-
-
-
-
-
-var $mainNav = $('.main-nav');
-// 
 $('.btn-menu').bind('click tap',(function(e) {
-
 	if($mainNav.hasClass('menu-on')) {
     $mainNav.removeClass( 'menu-on' ).toggleClass('menu-off');  
-    $('body').removeClass('MenuMobile'); 
+    $body.removeClass('MenuMobile'); 
   return false;
   }
 
 	$mainNav.removeClass('menu-off').toggleClass( 'menu-on' );
-  $('body').addClass('MenuMobile');
-	return false;
-
+  $body.addClass('MenuMobile');
+	e.preventDefault();
 }));
+
 
 
 // Stycky Nav
@@ -187,7 +173,7 @@ function scroll() {
     } else {
         $mainNav.removeClass('sticky');
     }
-   }
+  }
   document.onscroll = scroll;
 
 
@@ -199,7 +185,7 @@ $('.gallery').slick({
   speed: 600,
   autoplay: false,
   autoplaySpeed: 6000,
- cssEase:'cubic-bezier(1,.01,.03,.1)',
+  cssEase:'cubic-bezier(1,.01,.03,.1)',
   prevArrow: $('.btn-prev'),
   nextArrow: $('.btn-next'),
   onBeforeChange : function(slide, index){
@@ -231,71 +217,69 @@ $('.gallery').slick({
      $(this).children('.hover-content').toggleClass('visible');
   });
 
-$('.icon-totop').click(function() {
-$('html,body').animate({
-          scrollTop: 0
-        }, 1000);
-return false;
-});
+  $('.icon-totop').click(function(e) {
+    $('html,body').animate({scrollTop: 0}, 1000);
+    e.preventDefault();
+  });
 
-
-
-
-  $('.load-more').click(function() {
+  $('.load-more').click(function(e) {
     var page = $(this).data("page");
     console.log(page);
-    
     $.post(this.href, function(content) {
       $('.main-content').append(content);
       $('.load-more').attr('href', $('.load-more').attr('href').replace(/\d+/, function(n) { return ++n; }));
       if(content == "") {$('.load-more').fadeOut();} 
     });
-
-    return false;
+    e.preventDefault();
   });
 
 
 
- var offsetY = window.pageYOffset,
-        $body = $('body'),
-        $win = $(window),
-        $close = $('.btnClose'),
-        $open = $('.btnOpen'),
-        $holder = $('#disclaimer'),
-        $stuff = $('.modal-content');
- 
-
    $(document).keyup(function (e) {
         if (e.keyCode == 27) $close.trigger('click');
     });
-// Disclaimer Modal
-$open.bind('click tap',(function(e) {
-    $holder.removeClass('invisible').addClass('visible');
-     offsetY = window.pageYOffset;
-        // Block scrolling
-        $body.delay(2000).css({
-            'position': 'fixed',
-            'top': -offsetY + 'px',
-            'width':'100%',
-        });
+    // Disclaimer Modal
+    $open.bind('click tap',(function(e) {
+        $holder.removeClass('invisible').addClass('visible');
+         offsetY = window.pageYOffset;
+            // Block scrolling
+            $body.css({
+                // 'position': 'fixed',
+                // 
+                // 'width':'100%',
+                // '-webkit-overflow-scrolling': 'touch',
+                // 'overflow':'hidden',
+                // 'height':'100%',
 
-        // Show popup
+              'overflow': 'hidden',
+              'position': 'fixed',
+              'top': -offsetY + 'px',
+              'left': '0',
+              'width': '100%',
 
-  return false;
-}));
+
+            });
+            $(window).scrollTop(0) 
+
+            // Show popup
+
+      e.preventDefault();
+    }));
 
 
-$close.click(function () {
+    $close.click(function (e) {
         // Allow scrolling again
         $body.css({
             'position': 'static',
+            'height':'auto',
+            'overflow':'auto'
         });
         $win.scrollTop(offsetY);
         // Reset the overlay scroll position to the top
         $stuff.scrollTop(0);
         // Hide popup
         $holder.removeClass('visible').addClass('invisible');
-         return false;
+         e.preventDefault();
     });
 
 

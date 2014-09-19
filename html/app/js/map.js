@@ -194,7 +194,7 @@
 
 
   var image = new google.maps.MarkerImage(
-    '/images/locations/metropolis-pin.png',
+    'images/locations/metropolis-pin.png',
     new google.maps.Size(82,104),
     new google.maps.Point(0,0),
     new google.maps.Point(41,101)
@@ -206,7 +206,7 @@
     map: map
   });
 
-    var boxText = '<div><div class="infobox-content"><img src="/images/locations/infobox-tick-wh.png" style="margin-top:-25px; display:none"/><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
+    var boxText = '<div><div class="infobox-content"><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
       var myOptions2 = {
         content: boxText,
         boxClass: "infoBox metropolis",
@@ -215,7 +215,7 @@
         // pixelOffset: new google.maps.Size(-100, -110),
         zIndex: 0,
         boxStyle: {},
-        closeBoxURL: "/images/ui/close.png",
+        closeBoxURL: "images/ui/close.png",
         closeBoxMargin: "5px -10px",
         infoBoxClearance: new google.maps.Size(1, 1),
         isHidden: false,
@@ -279,7 +279,7 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><img src="images/locations/infobox-tick-bl.png" style="margin-top:-25px; display:none"/><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
       var myOptions = {
         content: boxText,
         boxClass: "infoBox "+type,
