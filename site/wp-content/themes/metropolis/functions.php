@@ -516,6 +516,7 @@ add_action( 'admin_init', 'hide_editor' );
 
 if ( function_exists( 'add_image_size' ) ) { 
 	add_image_size('press', 386, 237, TRUE);
+	add_image_size('full-press', 592, 363, TRUE);
 }
 
 add_action('get_header', 'remove_admin_login_header');
