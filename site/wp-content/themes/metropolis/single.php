@@ -34,7 +34,7 @@ get_header(); ?>
                <br />
                <a href="<?php echo RAIZ; ?>/press" class="back">Back to all News</a>
 			</article>
-			<?php $next=get_next_post();
+			<?php $next=get_previous_post();
 				if(!empty($next)){
 				$arg=array("p"=>$next->ID);
 				$proximo=new WP_Query($arg);

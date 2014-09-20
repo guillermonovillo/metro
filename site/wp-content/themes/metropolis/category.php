@@ -8,44 +8,74 @@
  *
  * @package WordPress
  * @subpackage Metropolis
- 
+ *
  */
+$activa="press";
+get_header(); 
+global $query_string;
+$query_string.="&posts_per_page=4";
+query_posts( $query_string );
+?>
 
-get_header(); ?>
+<article class="press">
+      <section class="cover"></section>
+      <section class="content">
+         <div class="hgroup">
+            <h1>Press</h1>
+         </div>
+         <aside class="aside">
+            <ul class="aside-ul filter-options">
+               <li><a href="<?php echo RAIZ ?>/category/domestic/" class="art-filter" data-filter-value="domestic">Domestic</a></li>
+               <li><a href="<?php echo RAIZ ?>/category/international/" class="art-filter" data-filter-value="international">International</a></li>
 
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
+            </ul>
+         </aside>
+         <section class="main-content">
 
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'metropolis' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+            $cat=get_the_category();
+            $imgid=get_post_thumbnail_id( get_the_ID());
+            $imgsrc=wp_get_attachment_image_src( $imgid, "press");
+            $file=get_field("pdf");
 
-			<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-			<?php endif; ?>
-			</header><!-- .archive-header -->
+            if(empty($file)){
+              $enlace=get_permalink();
+              $text="Read more";
+              $tar="_parent";
+            }else{
+              $enlace=$file;
+              $text="Download PDF";
+              $tar="_BLANK";
+            }
+          ?>
+          
+            <article class="press-news-preview"  data-groups='["<?php echo $cat[0]->slug; ?>"]'>
+                <div class="thumbnail box-img hover-animation">
+                     <img class="img" src="<?php echo $imgsrc[0]; ?>" />
+                   <div class="hover-content to-right">
+                      <div>
+                         <span><i>  
+                           <a href="<?php echo $enlace; ?>" title="<?php echo the_title(); ?>" TARGET="<?php echo $tar; ?>"><?php echo $text ?> -</a>
+                        </i></span>
+                      </div>
+                   </div>
+               </div> 
+               <h2><?php the_field("media"); ?> —</h2>
+               <h1><a href="<?php echo $enlace; ?>" TARGET="<?php echo $tar; ?>"><?php the_title(); ?></a></h1>
+               <h3><?php the_field("journalist"); ?> <time><?php the_date("M d, Y"); ?></time></h3>
+               <p><?php echo get_the_excerpt(); ?></p>
+               <a href="<?php echo $enlace; ?>" class="link" TARGET="<?php echo $tar; ?>"><?php echo $text; ?></a>
+            </article>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+          <?php endwhile; ?>
+          <?php else: ?>
+          <?php endif; ?>
 
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
+            
 
-			endwhile;
+         </section>
+         
+      </section>
+   </article>
 
-			twentytwelve_content_nav( 'nav-below' );
-			?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
