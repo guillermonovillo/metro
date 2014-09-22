@@ -18,6 +18,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 					$imgid=get_post_thumbnail_id( get_the_ID());
 					$imgsrc=wp_get_attachment_image_src( $imgid, "full-press");
+          $file=get_field("pdf");
 				?>
 
                <h2><?php the_field("media"); ?> -</h2>
@@ -30,6 +31,14 @@ get_header(); ?>
 				<?php endwhile; ?>
 				<?php else: ?>
 				<?php endif; ?>
+
+        <?php 
+            if(!empty($file)){
+              ?>
+              <a href="<?php echo $file; ?>" class="link" target="_BLANK">Download PDF</a>
+              <?php
+            }
+        ?>
                <br />
                <br />
                <a href="<?php echo RAIZ; ?>/press" class="back">Back to all News</a>

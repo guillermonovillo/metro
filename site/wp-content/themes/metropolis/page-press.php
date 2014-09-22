@@ -60,7 +60,7 @@ $query_news= new WP_Query($args_news);
                    <div class="hover-content to-right">
                       <div>
                          <span><i>  
-                           <a href="<?php echo $enlace; ?>" title=""><?php echo $text ?> -</a>
+                           <a href="<?php the_permalink(); ?>" title="">Read More -</a>
                         </i></span>
                       </div>
                    </div>
