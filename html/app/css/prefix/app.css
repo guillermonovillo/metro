@@ -3469,6 +3469,8 @@ The provided mixins are intended to be used with the array-like variables
     font-weight: 600; }
   .nav-lang {
     display: none; }
+    .nav-lang a:hover {
+      color: #81cfd3; }
   .nav-lang-small {
     display: none; }
   .nav-logo {
@@ -3975,10 +3977,11 @@ The provided mixins are intended to be used with the array-like variables
     margin: 60px 0 80px;
     background: rgba(0, 0, 0, 0.1); }
     .home .wide.one {
-      background: url("../images/home-1.jpg") bottom center;
-      background-size: cover;
+      background: url("../images/home-1.jpg");
+      background-size: 1447px 490px !important;
+      background-position: center center;
       margin: 0;
-      height: 430px; }
+      height: 490px; }
   h1 {
     color: #B5995C;
     font-family: "proxima-nova-n6", "proxima-nova", sans-serif;
@@ -3996,21 +3999,25 @@ The provided mixins are intended to be used with the array-like variables
     height: 430px;
     background: rgba(0, 0, 0, 0.1); }
     .lifestyle .wide.one {
-      background: url("../images/lifestyle/lifestyle-1.jpg") bottom center;
-      background-size: cover;
-      height: 430px;
+      background: url("../images/lifestyle/lifestyle-1.jpg");
+      background-size: 1447px 490px !important;
+      background-position: center center;
+      height: 490px;
       margin-top: 0; }
     .lifestyle .wide.two {
-      background: url("../images/lifestyle/lifestyle-2.jpg") bottom center;
-      background-size: cover;
+      background: url("../images/lifestyle/lifestyle-2.jpg");
+      background-size: 1447px 490px !important;
+      background-position: center center;
       height: 300px; }
     .lifestyle .wide.three {
-      background: url("../images/lifestyle/lifestyle-3.jpg") bottom center;
-      background-size: cover;
+      background: url("../images/lifestyle/lifestyle-3.jpg");
+      background-size: 1447px 490px !important;
+      background-position: center center;
       height: 300px; }
     .lifestyle .wide.four {
-      background: url("../images/lifestyle/lifestyle-4.jpg") bottom center;
-      background-size: cover;
+      background: url("../images/lifestyle/lifestyle-4.jpg");
+      background-size: 1447px 490px !important;
+      background-position: center center;
       height: 300px;
       margin-bottom: 0; }
   .overview {
@@ -4021,16 +4028,17 @@ The provided mixins are intended to be used with the array-like variables
       height: 430px;
       background: rgba(0, 0, 0, 0.1); }
       .overview .wide.one {
-        background: url("../images/overview/overview-1.jpg") bottom center;
-        background-size: cover; }
+        background: url("../images/overview/overview-1.jpg");
+        background-size: 1344px 490px !important;
+        background-position: center center; }
       .overview .wide.two {
-        background: url("../images/overview/overview-2.jpg") bottom center;
-        background-size: cover; }
+        background: url("../images/overview/overview-2.jpg");
+        background-size: 1089px 490px !important;
+        background-position: center center; }
     .overview .gallery {
       background: rgba(0, 0, 0, 0.1); }
     .overview .line {
-      width: 40px;
-      height: 1px; }
+      display: none; }
       .overview .line span {
         height: 1px;
         width: 0px;
@@ -4106,13 +4114,14 @@ The provided mixins are intended to be used with the array-like variables
     .neighborhood .wide {
       height: 300px; }
       .neighborhood .wide.one {
-        background: url("../images/neighborhood/neighborhood-1.jpg") bottom center;
-        margin-top: 0;
-        background-size: cover;
-        height: 430px; }
+        background: url("../images/neighborhood/neighborhood-1.jpg");
+        background-size: 1920px 490px !important;
+        background-position: center center;
+        height: 430px;
+        margin-top: 0; }
       .neighborhood .wide.two {
-        background: url("../images/neighborhood/neighborhood-2.jpg") bottom center;
-        background-size: cover; }
+        background: url("../images/neighborhood/neighborhood-2.jpg");
+        background-position: center center; }
       .neighborhood .wide .line {
         height: 40px; }
     .neighborhood img {
@@ -4961,7 +4970,8 @@ The provided mixins are intended to be used with the array-like variables
       .press-news-preview .thumbnail .img {
         display: block;
         position: relative;
-        z-index: 1; }
+        z-index: 1;
+        background: white url(../images/MET-loader1.gif) center center no-repeat; }
       .press-news-preview .thumbnail span {
         line-height: 100%;
         width: 100%;
@@ -5447,7 +5457,8 @@ The provided mixins are intended to be used with the array-like variables
     text-align: right;
     left: auto;
     right: 68%;
-    top: 43%; }
+    top: 43%;
+    width: 260px; }
   #sunset .t3 {
     text-align: right;
     left: auto;
@@ -5455,10 +5466,18 @@ The provided mixins are intended to be used with the array-like variables
     top: 25%; }
   #sunset .t4 {
     text-align: right;
-    left: 84.2%;
-    top: 13%; }
-    #sunset .t4 h1 span:nth-child(2) {
+    top: 4%;
+    left: auto;
+    right: 13%;
+    width: 230px; }
+    #sunset .t4 h1 span:nth-child(1) {
       display: none; }
+    #sunset .t4 h1 span:nth-child(2) {
+      display: block;
+      float: right;
+      margin: 0 -16px 0 0; }
+    #sunset .t4 h2 {
+      padding: 0; }
   #sunset .t1-line, #sunset .t2-line, #sunset .t3-line, #sunset .t4-line {
     background: white;
     width: 1px;
@@ -5467,7 +5486,8 @@ The provided mixins are intended to be used with the array-like variables
     float: left;
     position: absolute;
     z-index: 3;
-    margin: 0 15px; }
+    margin: 0 15px;
+    display: none; }
   #sunset .t1-line {
     left: 0%;
     top: 47%;
@@ -5482,31 +5502,8 @@ The provided mixins are intended to be used with the array-like variables
     height: 45%; }
   #sunset .t4-line {
     left: 84.2%;
-    top: 13%;
-    height: 51%; }
-  @media only screen and (min-width: 641px) and (max-width: 1050px) {
-    #sunset .t4 {
-      text-align: right;
-      top: 4%;
-      left: auto;
-      right: 13%; }
-      #sunset .t4 h1 span:nth-child(1) {
-        display: none; }
-      #sunset .t4 h1 span:nth-child(2) {
-        display: block;
-        float: right;
-        margin: 0 -16px 0 0; }
-      #sunset .t4 h2 {
-        padding: 0; }
-    #sunset .t4-line {
-      top: 4%;
-      height: 60%; } }
-  .home .wide.one {
-    height: 550px; }
-  .neighborhood .wide.one {
-    height: 550px; }
-  .neighborhood .wide.two {
-    height: 550px; }
+    top: 4%;
+    height: 60%; }
   .neighborhood #map_canvas {
     height: 550px; }
   .neighborhood .gallery-grid .row {
@@ -5535,25 +5532,17 @@ The provided mixins are intended to be used with the array-like variables
           color: #81cfd3;
           -webkit-transition: color 0.8s linear;
                   transition: color 0.8s linear; }
-          .overview .gallery-control .gallery-btngroup a:hover .line span {
-            -webkit-transition: background 0.8s linear, width 0.4s ease;
-                    transition: background 0.8s linear, width 0.4s ease;
-            width: 100%;
-            background: #81cfd3; }
+          .overview .gallery-control .gallery-btngroup a:hover .line {
+            display: none;
+            width: 40px;
+            height: 1px; }
+            .overview .gallery-control .gallery-btngroup a:hover .line span {
+              -webkit-transition: background 0.8s linear, width 0.4s ease;
+                      transition: background 0.8s linear, width 0.4s ease;
+              width: 100%;
+              background: #81cfd3; }
         .overview .gallery-control .gallery-btngroup .gallery-counter {
           margin-top: 0px; }
-  .lifestyle .wide.one {
-    height: 550px; }
-  .lifestyle .wide.two {
-    height: 550px; }
-  .lifestyle .wide.three {
-    height: 550px; }
-  .lifestyle .wide.four {
-    height: 550px; }
-  .overview .wide.one {
-    height: 550px; }
-  .overview .wide.two {
-    height: 550px; }
   footer {
     padding-top: 46px;
     padding-bottom: 46px; }
@@ -5696,11 +5685,20 @@ The provided mixins are intended to be used with the array-like variables
     #sunset .t1 h2 {
       padding: 0 0 0 17px; }
   #sunset .t4 {
-    text-align: left; }
-    #sunset .t4 h1 {
-      width: 240px; }
+    text-align: left;
+    left: 84.2%;
+    top: 13%;
+    width: 240px; }
+    #sunset .t4 h1 span:nth-child(1) {
+      display: inline; }
+    #sunset .t4 h1 span:nth-child(2) {
+      display: none; }
     #sunset .t4 h2 {
       padding: 0 0 0 16px; }
+  #sunset .t4-line {
+    left: 84.2%;
+    top: 13%;
+    height: 51%; }
   @media only screen and (min-width: 1100px) {
     #sunset .t1 {
       text-align: right;
@@ -5718,12 +5716,19 @@ The provided mixins are intended to be used with the array-like variables
         padding: 0 17px 0 0; }
     #sunset .t1-line {
       top: 56%;
-      height: 38%; }
-    #sunset .t4 {
-      width: 250px;
-      text-align: left; } }
+      height: 38%; } }
+  .home .wide.one {
+    height: 650px;
+    background-size: auto !important;
+    background-size: cover; }
   .neighborhood .wide {
-    height: 650px; }
+    height: 490px; }
+    .neighborhood .wide.one {
+      background-size: auto !important;
+      background-size: cover; }
+    .neighborhood .wide.two {
+      background-size: auto !important;
+      background-size: cover; }
   .neighborhood .txt-wrap {
     width: 100%;
     margin-left: auto;
@@ -5744,10 +5749,31 @@ The provided mixins are intended to be used with the array-like variables
       margin-left: 0%; }
       .neighborhood .txt-wrap .txt h3 {
         color: white; }
-  main.lifestyle .lifestyle.wide {
+  .lifestyle .wide {
     height: 650px; }
+    .lifestyle .wide.one {
+      background-size: auto auto !important;
+      background-size: cover; }
+    .lifestyle .wide.two {
+      background-size: auto !important;
+      background-size: cover;
+      height: 650px; }
+    .lifestyle .wide.three {
+      background-size: auto !important;
+      background-size: cover;
+      height: 650px; }
+    .lifestyle .wide.four {
+      background-size: auto !important;
+      background-size: cover;
+      height: 650px; }
   .overview .wide {
     height: 650px; }
+    .overview .wide.one {
+      background-size: auto !important;
+      background-size: cover; }
+    .overview .wide.two {
+      background-size: auto !important;
+      background-size: cover; }
   .press .cover, .press-news .cover {
     height: 340px; }
   .press .content {

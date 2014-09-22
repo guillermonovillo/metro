@@ -1,8 +1,6 @@
 /* Styles for screens at least 1440px wide. */
 
 
-
-
 #sunset{
 	& .txt {
 		& h1 {}
@@ -37,6 +35,28 @@
 	.t1-line {top: 56%; height: 38%;}
 	}
 }
+
+
+// 
+// 
+//  HOME
+// 
+// 
+.home {
+		& .wide {
+			&.one{
+				height:650px;
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+		}
+}
+
+
 // 
 // 
 //  NEIGHTBORHOOD
@@ -44,9 +64,21 @@
 // 
 .neighborhood {
 		& .wide {
-			height:650px; 
-				&.one{}
-				&.two{}
+			height:490px; 
+				&.one{
+					-webkit-background-size: auto !important;
+    			background-size: auto !important;
+					-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;}
+				&.two{
+					-webkit-background-size: auto !important;
+    			background-size: auto !important;
+					-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;}
 		}
 		& .txt-wrap {
 			@include grid-row();
@@ -66,15 +98,40 @@
 //  LIFESTYLE
 // 
 // 
-main.lifestyle{
-	& .lifestyle {
-		&.wide {
+
+.lifestyle {
+		& .wide {
 			height:650px;
-			&.two{}
-			&.three{}
-			&.four{}
+			&.one{
+				-webkit-background-size: auto auto !important;
+    			background-size: auto auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;}
+			&.two{
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				height:650px}
+			&.three{
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;height:650px}
+			&.four{
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;height:650px}
 		}
-	}
 }
 
 // 
@@ -85,7 +142,24 @@ main.lifestyle{
 .overview {
 		& .wide {
 			height:650px;
-			&.one{ }
-			&.two{ }
+			&.one{
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover; }
+			&.two{
+				-webkit-background-size: auto !important;
+    			background-size: auto !important;
+    			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover; }
 		}
+	
+	
+
+		
+
 	}

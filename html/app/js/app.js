@@ -128,14 +128,14 @@ $('area').on('mouseenter touchstart', function(e) {
     $sunset.filter('.img'+zone).stop(true, true).fadeIn();
     // if(zone == 1) {$('.t1-line-for-medium').slideDown();}   
     $txt.stop(true,true).filter('.t'+zone).fadeIn('slow');
-    $('.t'+zone+'-line').slideDown();
+    $('.t'+zone+'-line').stop(true,true).slideDown();
 }).on('mouseleave touchend',function(e){
    e.preventDefault();
     var zone = $(this).data('zone');
     $sunset.filter('.img'+zone).hide();
     // if(zone == 1) {$('.t1-line-for-medium').slideUp();} 
     $txt.stop(true,true).filter('.t'+zone).fadeOut(); 
-    $('.t'+zone+'-line').slideUp();
+    $('.t'+zone+'-line').stop(true,true).slideUp();
     $overBlack.hide();
 });
 
@@ -211,11 +211,12 @@ $('.gallery').slick({
 });
 
 
-  // Home blocks with animation
-  $('.hover-animation').bind('mouseenter mouseleave tap', function() {
+  // Press blocks with animation
+  $('.main-content, .gallery-grid').on('mouseenter mouseleave tap', '.hover-animation', function() {
      $(this).children('img').toggleClass('sepia');
      $(this).children('.hover-content').toggleClass('visible');
-  });
+  }); 
+
 
   $('.icon-totop').click(function(e) {
     $('html,body').animate({scrollTop: 0}, 1000);
@@ -224,12 +225,29 @@ $('.gallery').slick({
 
   $('.load-more').click(function(e) {
     var page = $(this).data("page");
-    console.log(page);
-    $.post(this.href, function(content) {
+    var mode = $(this).data("mode");
+    var load = "press/morenews-"+mode+"-"+page+".html";
+    console.log("ahora:"+load);
+    var loadNext = "press/morenews-"+mode+"-"+Number(page+1)+".html";
+    console.log("Next:"+loadNext);
+    $.post(load, function(content) {
       $('.main-content').append(content);
-      $('.load-more').attr('href', $('.load-more').attr('href').replace(/\d+/, function(n) { return ++n; }));
-      if(content == "") {$('.load-more').fadeOut();} 
     });
+
+    $.post(loadNext, function(content) { 
+      if(content == "") {
+        console.log("NO MAS NEWS");
+       $('.load-more').fadeOut();
+        return;
+    }
+
+    }).fail(function() {
+      console.log("NO FILE");
+        $('.load-more').fadeOut();
+        return;
+  });
+
+    $(this).data("page", page+1);
     e.preventDefault();
   });
 
@@ -284,49 +302,5 @@ $('.gallery').slick({
 
 
 
-
-
-
-
-// $(".art-filter").click(function () {
-//       $(".art-filter").removeClass("selected");
-//       $(this).addClass("selected");
-
-
-//       var t = $(this).text().toLowerCase(); 
-// var eT;
-//       $(".press-news-preview").each(function() {
-//     $(this).removeClass('wow fadeInUp').addClass('wow fadeOut');
-// })
-
-
-
-//          return false;
-//     });
-
-// var $grid = $(".main-content");
-
-//     $grid.shuffle({
-//       itemSelector: '.press-news-preview',
-//       sizer: $(".press-news-preview")
-//     });
-
-
-
-// $(".art-filter").on('click', function() {
-//       var $this = $(this),
-//           isActive = $this.hasClass( 'active' ),
-//           group = isActive ? 'all' : $this.data('group');
-
-//       // Hide current label, show current label in title
-//       if ( !isActive ) {
-//         $('.filter-options .active').removeClass('active');
-//       }
-
-//       $this.toggleClass('active');
-
-//       // Filter elements
-//       $grid.shuffle( 'shuffle', group );
-//     });
 
 

@@ -1,0 +1,32 @@
+---
+title: MoreNews
+layout: none
+---
+
+{{#each articles.posts}}
+{{#unless nopublic}}
+{{#if p4}}
+            <article class="press-news-preview"  data-groups='["{{type}}"]'>
+                <div class="thumbnail box-img hover-animation">
+                     <img class="img" src="images/press/img/{{photo}}" alt="{{title}}" />
+                   <div class="hover-content to-right">
+                      <div>
+                         <span><i>  
+                           {{#unless pdf}}{{#unless video}}<a href="press/{{id}}.html" class="link">Read more</a>{{/unless}}{{/unless}}
+               {{#if pdf.file}}<a href="press/{{pdf.file}}" class="link">Download PDF</a>{{/if}}
+               {{#if video}}<a href="press/{{id}}.html" class="link">Play Video</a>{{/if}}
+                        </i></span>
+                      </div>
+                   </div>
+               </div> 
+               <h2>{{author.source}} —</h2>
+               <h1><a href="press/{{id}}.html">{{title}}</a></h1>
+               <h3>{{author.name}} <time>{{fecha}}</time></h3>
+               <p>{{short}}</p>
+               {{#unless pdf}}{{#unless video}}<a href="press/{{id}}.html" class="link">Read more</a>{{/unless}}{{/unless}}
+               {{#if pdf.file}}<a href="press/{{pdf.file}}" class="link">Download PDF</a>{{/if}}
+               {{#if video}}<a href="press/{{id}}.html" class="link">Play Video</a>{{/if}}
+            </article>
+{{/if}}  
+{{/unless}}
+{{/each}}

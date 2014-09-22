@@ -43,6 +43,8 @@
 
 .nav-lang {
 	display:none; 
+	a {}
+	a:hover {color:$third-color;}
 }
 .nav-lang-small {
 	display:none; 
@@ -328,13 +330,12 @@ figure {
 			margin: 60px 0 80px;
 			background:rgba(0,0,0,0.1);
 			&.one{
-				background:url("../images/home-1.jpg") bottom center; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				background:url("../images/home-1.jpg"); 
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
+				background-position: center center;
 				margin:0;
-				height:430px;
+				height:490px;
 			}
 		}
 }
@@ -369,33 +370,29 @@ h1 {
 			background:rgba(0,0,0,0.1);
 
 			&.one{
-				background:url("../images/lifestyle/lifestyle-1.jpg") bottom center; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				height:430px;
+				background:url("../images/lifestyle/lifestyle-1.jpg") ; 
+				-webkit-background-size: 1966px 490px !important;
+    			background-size: 1447px 490px !important;
+				background-position: center center;
+				height:490px;
 				margin-top:0;
 			}
-			&.two{background:url("../images/lifestyle/lifestyle-2.jpg") bottom center;				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+			&.two{background:url("../images/lifestyle/lifestyle-2.jpg") ;				
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
+				background-position: center center;
 				height:300px;
 			}
-			&.three{background:url("../images/lifestyle/lifestyle-3.jpg") bottom center; 				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+			&.three{background:url("../images/lifestyle/lifestyle-3.jpg") ; 				
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
+				background-position: center center;
 				height:300px;
 			}
-			&.four{background:url("../images/lifestyle/lifestyle-4.jpg") bottom center; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+			&.four{background:url("../images/lifestyle/lifestyle-4.jpg")  ; 
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
+				background-position: center center;
 				height:300px;
 				margin-bottom:0}
 		}
@@ -416,16 +413,17 @@ h1 {
 			margin: 60px 0 80px;
 			height:430px;
 			background:rgba(0,0,0,0.1);
-			&.one{background:url("../images/overview/overview-1.jpg") bottom center;
-			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover; }
-			&.two{background:url("../images/overview/overview-2.jpg") bottom center;
-			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover; }
+			&.one{
+				background:url("../images/overview/overview-1.jpg");
+				-webkit-background-size: 1344px 490px !important;
+    			background-size: 1344px 490px !important;
+				background-position: center center;
+			}
+			&.two{background:url("../images/overview/overview-2.jpg") ;
+				-webkit-background-size: 1089px 490px !important;
+    			background-size: 1089px 490px !important;
+				background-position: center center;
+ 			}
 		}
 		& .gallery { 
 			background:rgba(0,0,0,0.1);
@@ -433,10 +431,8 @@ h1 {
 
 
 	.line { 
-		width: 40px;
-		height: 1px;
-		& span {
-			height:1px; 
+		display:none;
+		& span {height:1px; 
 			width:0px;
 			display:inline-block; 
 			position: absolute;}
@@ -550,20 +546,16 @@ margin-bottom:3rem;
 		height:300px; 
 
 			&.one{
-				background:url("../images/neighborhood/neighborhood-1.jpg") bottom center;
-				margin-top:0;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				background:url("../images/neighborhood/neighborhood-1.jpg") ;
+				-webkit-background-size: 1920px 490px !important;
+    			background-size: 1920px 490px !important;
+				background-position: center center;
 				height:430px;
+				margin-top:0;
 				}
 			&.two{
-				background:url("../images/neighborhood/neighborhood-2.jpg") bottom center;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				background:url("../images/neighborhood/neighborhood-2.jpg")  ;
+				background-position: center center;
 			}
 
 			& .line {height:40px;}
