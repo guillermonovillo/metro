@@ -3978,7 +3978,7 @@ The provided mixins are intended to be used with the array-like variables
     background: rgba(0, 0, 0, 0.1); }
     .home .wide.one {
       background: url("../images/home-1.jpg");
-      background-size: 1447px 490px !important;
+      background-size: 1447px 490px;
       background-position: center center;
       margin: 0;
       height: 490px; }
@@ -4000,23 +4000,23 @@ The provided mixins are intended to be used with the array-like variables
     background: rgba(0, 0, 0, 0.1); }
     .lifestyle .wide.one {
       background: url("../images/lifestyle/lifestyle-1.jpg");
-      background-size: 1447px 490px !important;
+      background-size: 1447px 490px;
       background-position: center center;
       height: 490px;
       margin-top: 0; }
     .lifestyle .wide.two {
       background: url("../images/lifestyle/lifestyle-2.jpg");
-      background-size: 1447px 490px !important;
+      background-size: 1447px 490px;
       background-position: center center;
       height: 300px; }
     .lifestyle .wide.three {
       background: url("../images/lifestyle/lifestyle-3.jpg");
-      background-size: 1447px 490px !important;
+      background-size: 1447px 490px;
       background-position: center center;
       height: 300px; }
     .lifestyle .wide.four {
       background: url("../images/lifestyle/lifestyle-4.jpg");
-      background-size: 1447px 490px !important;
+      background-size: 1447px 490px;
       background-position: center center;
       height: 300px;
       margin-bottom: 0; }
@@ -4029,11 +4029,11 @@ The provided mixins are intended to be used with the array-like variables
       background: rgba(0, 0, 0, 0.1); }
       .overview .wide.one {
         background: url("../images/overview/overview-1.jpg");
-        background-size: 1344px 490px !important;
+        background-size: 1344px 490px;
         background-position: center center; }
       .overview .wide.two {
         background: url("../images/overview/overview-2.jpg");
-        background-size: 1089px 490px !important;
+        background-size: 1089px 490px;
         background-position: center center; }
     .overview .gallery {
       background: rgba(0, 0, 0, 0.1); }
@@ -4115,7 +4115,7 @@ The provided mixins are intended to be used with the array-like variables
       height: 300px; }
       .neighborhood .wide.one {
         background: url("../images/neighborhood/neighborhood-1.jpg");
-        background-size: 1920px 490px !important;
+        background-size: 1920px 490px;
         background-position: center center;
         height: 430px;
         margin-top: 0; }
@@ -5719,15 +5719,13 @@ The provided mixins are intended to be used with the array-like variables
       height: 38%; } }
   .home .wide.one {
     height: 650px;
-    background-size: auto !important;
     background-size: cover; }
   .neighborhood .wide {
     height: 490px; }
     .neighborhood .wide.one {
-      background-size: auto !important;
-      background-size: cover; }
+      background-size: cover;
+      height: 550px; }
     .neighborhood .wide.two {
-      background-size: auto !important;
       background-size: cover; }
   .neighborhood .txt-wrap {
     width: 100%;
@@ -5752,28 +5750,26 @@ The provided mixins are intended to be used with the array-like variables
   .lifestyle .wide {
     height: 650px; }
     .lifestyle .wide.one {
-      background-size: auto auto !important;
       background-size: cover; }
     .lifestyle .wide.two {
-      background-size: auto !important;
       background-size: cover;
       height: 650px; }
     .lifestyle .wide.three {
-      background-size: auto !important;
       background-size: cover;
       height: 650px; }
     .lifestyle .wide.four {
-      background-size: auto !important;
       background-size: cover;
       height: 650px; }
   .overview .wide {
     height: 650px; }
     .overview .wide.one {
-      background-size: auto !important;
-      background-size: cover; }
+      background: url("../images/overview/overview-1.jpg");
+      background-size: cover;
+      background-position: center center; }
     .overview .wide.two {
-      background-size: auto !important;
-      background-size: cover; }
+      background: url("../images/overview/overview-2.jpg");
+      background-size: cover;
+      background-position: center center; }
   .press .cover, .press-news .cover {
     height: 340px; }
   .press .content {

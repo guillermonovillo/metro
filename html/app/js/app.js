@@ -223,33 +223,33 @@ $('.gallery').slick({
     e.preventDefault();
   });
 
-  $('.load-more').click(function(e) {
-    var page = $(this).data("page");
-    var mode = $(this).data("mode");
-    var load = "press/morenews-"+mode+"-"+page+".html";
-    console.log("ahora:"+load);
-    var loadNext = "press/morenews-"+mode+"-"+Number(page+1)+".html";
-    console.log("Next:"+loadNext);
-    $.post(load, function(content) {
-      $('.main-content').append(content);
-    });
+  // $('.load-more').click(function(e) {
+  //   var page = $(this).data("page");
+  //   var mode = $(this).data("mode");
+  //   var load = "press/morenews-"+mode+"-"+page+".html";
+  //   console.log("ahora:"+load);
+  //   var loadNext = "press/morenews-"+mode+"-"+Number(page+1)+".html";
+  //   console.log("Next:"+loadNext);
+  //   $.post(load, function(content) {
+  //     $('.main-content').append(content);
+  //   });
 
-    $.post(loadNext, function(content) { 
-      if(content == "") {
-        console.log("NO MAS NEWS");
-       $('.load-more').fadeOut();
-        return;
-    }
+  //   $.post(loadNext, function(content) { 
+  //     if(content == "") {
+  //       console.log("NO MAS NEWS");
+  //      $('.load-more').fadeOut();
+  //       return;
+  //   }
 
-    }).fail(function() {
-      console.log("NO FILE");
-        $('.load-more').fadeOut();
-        return;
-  });
+  //   }).fail(function() {
+  //     console.log("NO FILE");
+  //       $('.load-more').fadeOut();
+  //       return;
+  // });
 
-    $(this).data("page", page+1);
-    e.preventDefault();
-  });
+  //   $(this).data("page", page+1);
+  //   e.preventDefault();
+  // });
 
 
 

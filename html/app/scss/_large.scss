@@ -46,8 +46,6 @@
 		& .wide {
 			&.one{
 				height:650px;
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -66,15 +64,12 @@
 		& .wide {
 			height:490px; 
 				&.one{
-					-webkit-background-size: auto !important;
-    			background-size: auto !important;
-					-webkit-background-size: cover;
+				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
-				background-size: cover;}
+				background-size: cover;
+				height:550px}
 				&.two{
-					-webkit-background-size: auto !important;
-    			background-size: auto !important;
 					-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -103,30 +98,22 @@
 		& .wide {
 			height:650px;
 			&.one{
-				-webkit-background-size: auto auto !important;
-    			background-size: auto auto !important;
     			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;}
 			&.two{
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
     			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
 				height:650px}
 			&.three{
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
     			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;height:650px}
 			&.four{
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
     			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -143,19 +130,21 @@
 		& .wide {
 			height:650px;
 			&.one{
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
-    			-webkit-background-size: cover;
+				background:url("../images/overview/overview-1.jpg");
+				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
-				background-size: cover; }
+				background-size: cover;
+				background-position: center center;
+			}
 			&.two{
-				-webkit-background-size: auto !important;
-    			background-size: auto !important;
-    			-webkit-background-size: cover;
+				background:url("../images/overview/overview-2.jpg") ;
+				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
-				background-size: cover; }
+				background-size: cover;
+				background-position: center center;
+ 			}
 		}
 	
 	
