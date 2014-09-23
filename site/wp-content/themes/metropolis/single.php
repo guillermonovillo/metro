@@ -16,17 +16,20 @@ get_header(); ?>
          <section class="main-content">
 			<article class="press-news-content">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-					$imgid=get_post_thumbnail_id( get_the_ID());
+					$imgid=get_post_thumbnail_id( get_the_ID()); 
 					$imgsrc=wp_get_attachment_image_src( $imgid, "full-press");
           $file=get_field("pdf");
+          $video=get_field("video");
 				?>
 
                <h2><?php the_field("media"); ?> -</h2>
                <h1><?php the_title(); ?></h1>
                <h3><?php the_field("journalist"); ?><time><?php the_date("M d, Y"); ?></time></h3>
+               <?php if(empty($video)){ ?>
                <div class="press-image-related">
                   <img class="img" src="<?php echo $imgsrc[0]; ?>" />
                </div>
+               <?php } ?>
                			<?php the_content(); ?>
 				<?php endwhile; ?>
 				<?php else: ?>
@@ -37,6 +40,13 @@ get_header(); ?>
               ?>
               <a href="<?php echo $file; ?>" class="link" target="_BLANK">Download PDF</a>
               <?php
+            }
+
+            if(!empty($video)){
+              $iframe=wp_oembed_get($video);
+              echo "<pre>";
+              print_r($iframe);
+              echo "</pre>";
             }
         ?>
                <br />
@@ -84,3 +94,12 @@ get_header(); ?>
    </article>
 	
 <?php get_footer(); ?>
+
+<SCRIPT TYPE="text/javascript">
+  $(document).ready(function() {
+    $("iframe").attr({
+      width: '100%',
+      height: 360
+    });
+  });
+</SCRIPT>
