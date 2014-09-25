@@ -278,5 +278,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('prefix', ['autoprefixer']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', /*'validate-js',*/ 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish2', ['compile-sass', 'clean:dist', 'useminPrepare', 'copy:dist', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

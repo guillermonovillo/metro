@@ -90,21 +90,21 @@
 
 // Proxima Nova Regular
 @mixin proxima-nova-regular {
-   font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+   font-family: "proxima-nova-n4","proxima-nova", "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
    font-style: normal;
    font-weight: 400;
 }
 
 // Proxima Nova Semibold
 @mixin proxima-nova-semibold {
-   font-family: "proxima-nova-n6","proxima-nova",sans-serif;
+   font-family: "proxima-nova-n6","proxima-nova", "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
    font-style: normal;
    font-weight: 600;
 }
 
 // Proxima Nova Bold
 @mixin proxima-nova-bold {
-   font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+   font-family: "proxima-nova-n7","proxima-nova","Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
    font-style: normal;
    font-weight: 700;
 }

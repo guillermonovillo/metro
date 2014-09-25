@@ -459,6 +459,8 @@ body {
       }
    }
 
+   .loadMore-wrap{
+      margin-left:0px; 
    .load-more {
       color: $light-blue;
       clear: both;
@@ -485,11 +487,9 @@ body {
       }
    }
    .load-more:hover {
-@include bounce(1s, 0, $function, $fill, $visibility);
-      &:after {
-         
-      }
-
+         @include bounce(1s, 0, $function, $fill, $visibility);
+      &:after {}
+   }
    }
 }
 

@@ -9,22 +9,26 @@
 .icon {  	display: inline-block;}
 
 .icon-close { @include sprite-retina($close, $close-2x); }
-.icon-close:hover { @include sprite-retina($close-hover, $close-hover-2x); }
+.icon-close:hover { @include sprite-retina($_close-hover, $_close-hover-2x); }
 .icon-douglas { @include sprite-retina($douglas, $douglas-2x); }
 .icon-gensler { @include sprite-retina($gensler, $gensler-2x); }
 .icon-greenland { @include sprite-retina($greenland, $greenland-2x); }
-.icon-greenland:hover { @include sprite-retina($greenland-hover, $greenland-hover-2x); }
-.icon-greenland-infinite { @include sprite-retina($greenland-infinite, $greenland-infinite-2x); }
-.icon-greenland-infinite:hover { @include sprite-retina($greenland-infinite-hover, $greenland-infinite-hover-2x); }
+.icon-greenland:hover { @include sprite-retina($_greenland-hover, $_greenland-hover-2x); }
+.icon-greenland-infinite { @include sprite-retina($greenland2, $greenland2-2x); }
+.icon-greenland-infinite:hover { @include sprite-retina($_greenland2-hover, $_greenland2-hover-2x); }
 .icon-isologo { @include sprite-retina($isologo, $isologo-2x); }
 .icon-menu { @include sprite-retina($menu, $menu-2x); }
-.icon-menu:hover { @include sprite-retina($menu-hover, $menu-hover-2x); }
+.icon-menu:hover { @include sprite-retina($_menu-hover, $_menu-hover-2x); }
 .icon-metropolis-h { @include sprite-retina($metropolis-h, $metropolis-h-2x); }
 .icon-metropolis { @include sprite-retina($metropolis, $metropolis-2x); }
 .icon-span { @include sprite-retina($span, $span-2x); }
 .icon-tishman { @include sprite-retina($tishman, $tishman-2x); }
 .icon-totop { @include sprite-retina($totop, $totop-2x); }
 .icon-xclose { @include sprite-retina($xclose, $xclose-2x); }
+.icon-left { @include sprite-retina($left, $left-2x); }
+.icon-right { @include sprite-retina($right, $right-2x); }
+.icon-left:hover { @include sprite-retina($_left-hover, $_left-hover-2x); }
+.icon-right:hover { @include sprite-retina($_right-hover, $_right-hover-2x); }
 
 /* all app scss styles here */
 .gold {color: $primary-color}
@@ -121,7 +125,7 @@
 		  margin: 0px 0 0 16px;
 		}
 		.icon-menu:hover {
-		  @include sprite-retina($close-hover, $close-hover-2x);
+		  @include sprite-retina($_close-hover, $_close-hover-2x);
 		}
 
 
@@ -314,6 +318,7 @@ figure {
 		 }
 		& h2 { font-size: 16px; line-height:18px; font-weight: bold; margin:0; padding-right:16px; color:white; }
 	}
+	& h4 {position:absolute; z-index:5; text-transform:uppercase; border:0; margin:0 15px; left: 0; top: 10px; height:40px; color: $primary-color; line-height:15px;font-size:14px;font-weight: bold;}
 
 	// &	.t1 {width:277px; text-align:right;left: -270px; top: 56%; height:220px}
 	// 	.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
@@ -331,8 +336,8 @@ figure {
 			background:rgba(0,0,0,0.1);
 			&.one{
 				background:url("../images/home-1.jpg"); 
-				-webkit-background-size: 1447px 490px;
-    			background-size: 1447px 490px;
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
 				background-position: center center;
 				margin:0;
 				height:490px;
@@ -371,27 +376,27 @@ h1 {
 
 			&.one{
 				background:url("../images/lifestyle/lifestyle-1.jpg") ; 
-				-webkit-background-size: 1966px 490px;
-    			background-size: 1447px 490px;
+				-webkit-background-size: 1966px 490px !important;
+    			background-size: 1447px 490px !important;
 				background-position: center center;
 				height:490px;
 				margin-top:0;
 			}
 			&.two{background:url("../images/lifestyle/lifestyle-2.jpg") ;				
-				-webkit-background-size: 1447px 490px;
-    			background-size: 1447px 490px;
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
 				background-position: center center;
 				height:300px;
 			}
 			&.three{background:url("../images/lifestyle/lifestyle-3.jpg") ; 				
-				-webkit-background-size: 1447px 490px;
-    			background-size: 1447px 490px;
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
 				background-position: center center;
 				height:300px;
 			}
 			&.four{background:url("../images/lifestyle/lifestyle-4.jpg")  ; 
-				-webkit-background-size: 1447px 490px;
-    			background-size: 1447px 490px;
+				-webkit-background-size: 1447px 490px !important;
+    			background-size: 1447px 490px !important;
 				background-position: center center;
 				height:300px;
 				margin-bottom:0}
@@ -415,13 +420,13 @@ h1 {
 			background:rgba(0,0,0,0.1);
 			&.one{
 				background:url("../images/overview/overview-1.jpg");
-				-webkit-background-size: 1344px 490px;
-    			background-size: 1344px 490px;
+				-webkit-background-size: 1344px 490px !important;
+    			background-size: 1344px 490px !important;
 				background-position: center center;
 			}
 			&.two{background:url("../images/overview/overview-2.jpg") ;
-				-webkit-background-size: 1089px 490px;
-    			background-size: 1089px 490px;
+				-webkit-background-size: 1089px 490px !important;
+    			background-size: 1089px 490px !important;
 				background-position: center center;
  			}
 		}
@@ -495,6 +500,17 @@ h1 {
 				text-align:center;
 				margin-bottom:-10px
 			}
+
+			& .slider.arrows{
+				position:absolute;
+				width:100%;
+				margin-top:-28%;
+				& a {text-indent:-9000px}
+				& .prev {float:left}
+				& .next {float:right}
+			}
+
+
 			& .gallery-btngroup {
 				margin-top:-10px;
 				& .btn {
@@ -524,6 +540,26 @@ h1 {
 				}
 			}
 		}	
+
+
+ /* Arrows */
+.slick-prev, .slick-next {background:none; position: absolute; display: block; cursor: pointer; color: transparent; top: 50%; margin-top: -22px; padding: 0; border: none; outline: none; }
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none;  color: transparent; }
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+
+
+.slick-prev { left: 30px; @include sprite-retina($left, $left-2x);}
+.slick-prev:hover {  @include sprite-retina($_left-hover, $_left-hover-2x);}
+
+
+.slick-next { right: 30px;  @include sprite-retina($right, $right-2x);}
+.slick-next:hover {   @include sprite-retina($_right-hover, $_right-hover-2x);}
+
+
+
 }
 
 // 
@@ -547,8 +583,8 @@ margin-bottom:3rem;
 
 			&.one{
 				background:url("../images/neighborhood/neighborhood-1.jpg") ;
-				-webkit-background-size: 1920px 490px;
-    			background-size: 1920px 490px;
+				-webkit-background-size: 1920px 490px !important;
+    			background-size: 1920px 490px !important;
 				background-position: center center;
 				height:430px;
 				margin-top:0;

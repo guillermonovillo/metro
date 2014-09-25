@@ -33,14 +33,18 @@
       padding-bottom: 0;
    }
 
-   .load-more {
-      padding-right: 20px;
-      width: 100px;
+   .loadMore-wrap{
+      margin-left:166px; 
+         .load-more {
+            padding-right: 20px;
+            width: 100px;
 
-      &:after {
-         margin-left: -27px;
-      }
+            &:after {
+               margin-left: -27px;
+            }
+         }
    }
+
 }
 
 // ## press > press-news-preview ##

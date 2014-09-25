@@ -8,7 +8,6 @@ $(document).ready(function() {
    });
 
    $(window).load(function() {
-      
       // contact us
       $('.contact-ul a').on('click tap', function(e){
          e.preventDefault();
@@ -25,6 +24,7 @@ $(document).ready(function() {
       // contact us > *represented by brokers?
       var broker_wrapper = $(".has-broker-wrapper");
       var broker_input_text = $(".has-broker-wrapper .text");
+      var has_broker = $("#hasbroker");
 
       $('.radio-button').on('click tap', (function(e){
          e.preventDefault();
@@ -40,12 +40,14 @@ $(document).ready(function() {
          e.preventDefault();
          broker_wrapper.addClass('visible');
          broker_input_text.removeClass('skip');
+         has_broker.val(1);
       });
 
       $(".has-broker-no").on('click tap', function(e){
          e.preventDefault();
          broker_wrapper.removeClass('visible');
          broker_input_text.addClass('skip');
+         has_broker.val(0);
       });
 
       // contact us > thanks
@@ -70,27 +72,10 @@ $(document).ready(function() {
          },
 
          submitHandler: function (form) {
-
-            $(".thanks").addClass('visible');
-            
-            form.reset();
-            $(".chosen-select").val('').trigger("chosen:updated");
-
-            // var $form = $(form);
-            
-            // $.ajax({
-            //    url: $form.attr('action'),
-            //    type: $form.attr('method'),
-            //    data: $form.serialize(),
-            //    dataType: 'json',
-            //    success: function (response) {
-            //       if (response.ok) {
-            //          $(".thanks").addClass('visible');
-            //       } else {
-            //          alert ('Please, try again later');
-            //       }
-            //    }
-            // });
+            // $(".thanks").addClass('visible');
+            form.submit();
+            // form.reset();
+            // $(".chosen-select").val('').trigger("chosen:updated");
          }
 
       });
@@ -101,17 +86,17 @@ $(document).ready(function() {
 
          messages: {
 
-            first_name: { required: 'Required' },
-            last_name: { required: 'Required' },
+            firstname: { required: 'Required' },
+            lastname: { required: 'Required' },
             address: { required: 'Required' },
             phone: { required: 'Required' },
             email: { required: 'Required' },
             
-            broker_first_name: { required: 'Required' },
-            broker_last_name: { required: 'Required' },
-            broker_contact_number_one: { required: 'Required' },
-            broker_contact_number_two: { required: 'Required' },
-            broker_email: { required: 'Required' }
+            broker_firstname: { required: 'Required' },
+            broker_lastname: { required: 'Required' },
+            brokerage_company: { required: 'Required' },
+            realtor_phone: { required: 'Required' },
+            realtor_email: { required: 'Required' }
          }
 
       });
@@ -119,10 +104,10 @@ $(document).ready(function() {
       $("#broker-form").validate({
 
          messages: {
-            first_name: { required: 'Required' },
-            last_name: { required: 'Required' },
-            brokers_company_name: { required: 'Required' },
-            email: { required: 'Required' }
+            firstname: { required: 'Required' },
+            lastname: { required: 'Required' },
+            brokerage_company: { required: 'Required' },
+            realtor_email: { required: 'Required' }
          }
 
       });
@@ -130,14 +115,24 @@ $(document).ready(function() {
       $("#press-form").validate({
 
          messages: {
-            first_name: { required: 'Required' },
-            last_name: { required: 'Required' },
+            firstname: { required: 'Required' },
+            lastname: { required: 'Required' },
             email: { required: 'Required' },
             publication: { required: 'Required' },
             request: { required: 'Required' }
          }
          
       });
+
+
+   $('#purchaser-form').submit(function(){
+      $('#purchaser-realtor-name').val( $('#purchaser-broker-firstname').val() + ' ' + $('#purchaser-broker-lastname').val() );
+   });
+
+   $('#brokers-form').submit(function(){
+      $('#realtor-name').val( $('#broker-firstname').val() + ' ' + $('#broker-lastname').val() );
+   });
+
 
    });
 

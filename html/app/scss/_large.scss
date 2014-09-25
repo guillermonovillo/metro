@@ -46,10 +46,10 @@
 		& .wide {
 			&.one{
 				height:650px;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				-webkit-background-size: cover !important;
+				-moz-background-size: cover !important;
+				-o-background-size: cover !important;
+				background-size: cover !important;
 			}
 		}
 }
@@ -64,16 +64,16 @@
 		& .wide {
 			height:490px; 
 				&.one{
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				-webkit-background-size: cover !important;
+				-moz-background-size: cover !important;
+				-o-background-size: cover !important;
+				background-size: cover !important;
 				height:550px}
 				&.two{
-					-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;}
+					-webkit-background-size: cover !important;
+				-moz-background-size: cover !important;
+				-o-background-size: cover !important;
+				background-size: cover !important;}
 		}
 		& .txt-wrap {
 			@include grid-row();
@@ -98,26 +98,26 @@
 		& .wide {
 			height:650px;
 			&.one{
-    			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;}
+    			-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;}
 			&.two{
-    			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+    			-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;
 				height:650px}
 			&.three{
-    			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;height:650px}
+    			-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;height:650px}
 			&.four{
-    			-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;height:650px}
+    			-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;height:650px}
 		}
 }
 
@@ -131,18 +131,18 @@
 			height:650px;
 			&.one{
 				background:url("../images/overview/overview-1.jpg");
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;
 				background-position: center center;
 			}
 			&.two{
 				background:url("../images/overview/overview-2.jpg") ;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				-webkit-background-size: cover  !important;
+				-moz-background-size: cover  !important;
+				-o-background-size: cover  !important;
+				background-size: cover  !important;
 				background-position: center center;
  			}
 		}

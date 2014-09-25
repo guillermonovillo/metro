@@ -9,9 +9,10 @@
 
   function initialize() {
         var isDraggable = $(document).width() > 480 ? true : false; 
+        // var center = $(document).width() > 480 ? new google.maps.LatLng(34.052751, -118.258978) : ;
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-          center: new google.maps.LatLng(34.052751, -118.258978), 
+          center: new google.maps.LatLng(34.048066, -118.267096), 
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
