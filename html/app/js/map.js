@@ -8,7 +8,7 @@
     scrolls = Array();
 
   function initialize() {
-        var isDraggable = $(document).width() > 480 ? true : false; 
+        // var isDraggable = $(document).width() > 480 ? true : false; 
         // var center = $(document).width() > 480 ? new google.maps.LatLng(34.052751, -118.258978) : ;
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
@@ -30,7 +30,7 @@
               position: google.maps.ControlPosition.RIGHT_CENTER
           },
           scrollwheel: false,
-          draggable: isDraggable,
+          draggable: true,
           styles: [
                 {
                   "featureType": "road.highway",
@@ -207,7 +207,7 @@
     map: map
   });
 
-    var boxText = '<div><div class="infobox-content"><h2 style="color:white">Metropolis</h2><p>888 S Figueroa Street</p></div></div>';
+    var boxText = '<div><div class="infobox-content"><h2 style="color:white">Metropolis<br><small>889 S Figueroa Street</small></h2></div></div>';
       var myOptions2 = {
         content: boxText,
         boxClass: "infoBox metropolis",
@@ -280,7 +280,7 @@ $('.mapData').each(function (i, list) {
       newMarker.category = type;
       newMarker.setVisible(false);
 
-      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><h2>' + title[1] + '</h2><p>' + address + '</p></div></div>'
+      var boxText = '<div class="infobox-icontype"><img src='+ icon +' /></div><div><div class="infobox-content"><h2>' + title[1] + ' <br><small>' + address + '</small></h2></div></div>'
       var myOptions = {
         content: boxText,
         boxClass: "infoBox "+type,

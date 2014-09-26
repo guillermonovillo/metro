@@ -3306,7 +3306,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-close:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -28px;
@@ -3315,43 +3315,43 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-close:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-douglas {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -167px;
+    background-position: 0px -208px;
     width: 185px;
     height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-douglas {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-gensler {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -293px;
+    background-position: 0px -167px;
     width: 83px;
-    height: 41px; }
+    height: 40px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-gensler {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-greenland {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -698px;
+    background-position: 0px -697px;
     width: 134px;
     height: 81px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-greenland:hover {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -616px;
+    background-position: 0px -615px;
     width: 134px;
     height: 81px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-greenland-infinite {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -79px;
@@ -3360,7 +3360,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland-infinite {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-greenland-infinite:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -108px;
@@ -3369,16 +3369,16 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-greenland-infinite:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-isologo {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -515px;
+    background-position: 0px -514px;
     width: 47px;
     height: 47px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-isologo {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-menu {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -14px;
@@ -3387,7 +3387,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-menu {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-menu:hover {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px 0px;
@@ -3396,7 +3396,7 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-menu:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-metropolis-h {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -60px;
@@ -3405,34 +3405,34 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis-h {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-metropolis {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -780px;
+    background-position: 0px -779px;
     width: 165px;
     height: 97px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-metropolis {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-span {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -251px;
+    background-position: 0px -292px;
     width: 186px;
     height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-span {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-tishman {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -209px;
+    background-position: 0px -250px;
     width: 100px;
     height: 41px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-tishman {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-totop {
     background-image: url(../images/sprites/sprites.png);
     background-position: 0px -137px;
@@ -3441,52 +3441,52 @@ The provided mixins are intended to be used with the array-like variables
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-totop {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-xclose {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -563px;
+    background-position: 0px -562px;
     width: 14px;
     height: 52px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-xclose {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-left {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -335px;
+    background-position: 0px -334px;
     width: 24px;
     height: 44px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-left {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-right {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -470px;
+    background-position: 0px -469px;
     width: 24px;
     height: 44px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-right {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-left:hover {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -425px;
+    background-position: 0px -424px;
     width: 24px;
     height: 44px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-left:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .icon-right:hover {
     background-image: url(../images/sprites/sprites.png);
-    background-position: 0px -380px;
+    background-position: 0px -379px;
     width: 24px;
     height: 44px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
       .icon-right:hover {
         background-image: url(../images/sprites/sprites@2x.png);
-        background-size: 246px 877px; } }
+        background-size: 246px 876px; } }
   .gold {
     color: #B5995C; }
   .rp {
@@ -3520,7 +3520,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .nav-logo .icon-isologo {
       display: none; }
   .btn-menu {
@@ -3746,7 +3746,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .menu-on.main-nav .icon-menu:hover {
       background-image: url(../images/sprites/sprites.png);
       background-position: 0px -28px;
@@ -3755,7 +3755,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .menu-on.main-nav .icon-menu:hover {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .menu-on.main-nav .navigation {
       display: block;
       position: absolute; }
@@ -4027,7 +4027,7 @@ The provided mixins are intended to be used with the array-like variables
     background: rgba(0, 0, 0, 0.1); }
     .home .wide.one {
       background: url("../images/home-1.jpg");
-      background-size: 1447px 490px;
+      background-size: 1447px 490px !important;
       background-position: center center;
       margin: 0;
       height: 490px; }
@@ -4049,23 +4049,23 @@ The provided mixins are intended to be used with the array-like variables
     background: rgba(0, 0, 0, 0.1); }
     .lifestyle .wide.one {
       background: url("../images/lifestyle/lifestyle-1.jpg");
-      background-size: 1447px 490px;
+      background-size: 1447px 490px !important;
       background-position: center center;
       height: 490px;
       margin-top: 0; }
     .lifestyle .wide.two {
       background: url("../images/lifestyle/lifestyle-2.jpg");
-      background-size: 1447px 490px;
+      background-size: 1447px 490px !important;
       background-position: center center;
       height: 300px; }
     .lifestyle .wide.three {
       background: url("../images/lifestyle/lifestyle-3.jpg");
-      background-size: 1447px 490px;
+      background-size: 1447px 490px !important;
       background-position: center center;
       height: 300px; }
     .lifestyle .wide.four {
       background: url("../images/lifestyle/lifestyle-4.jpg");
-      background-size: 1447px 490px;
+      background-size: 1447px 490px !important;
       background-position: center center;
       height: 300px;
       margin-bottom: 0; }
@@ -4079,11 +4079,11 @@ The provided mixins are intended to be used with the array-like variables
       background: rgba(0, 0, 0, 0.1); }
       .overview .wide.one {
         background: url("../images/overview/overview-1.jpg");
-        background-size: 1344px 490px;
+        background-size: 1344px 490px !important;
         background-position: center center; }
       .overview .wide.two {
         background: url("../images/overview/overview-2.jpg");
-        background-size: 1089px 490px;
+        background-size: 1089px 490px !important;
         background-position: center center; }
     .overview .gallery {
       background: rgba(0, 0, 0, 0.1); }
@@ -4190,48 +4190,48 @@ The provided mixins are intended to be used with the array-like variables
     .overview .slick-prev {
       left: 30px;
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -335px;
+      background-position: 0px -334px;
       width: 24px;
       height: 44px; }
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .overview .slick-prev {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .overview .slick-prev:hover {
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -425px;
+      background-position: 0px -424px;
       width: 24px;
       height: 44px; }
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .overview .slick-prev:hover {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .overview .slick-next {
       right: 30px;
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -470px;
+      background-position: 0px -469px;
       width: 24px;
       height: 44px; }
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .overview .slick-next {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
     .overview .slick-next:hover {
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -380px;
+      background-position: 0px -379px;
       width: 24px;
       height: 44px; }
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .overview .slick-next:hover {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
   .neighborhood {
     margin-bottom: 3rem; }
     .neighborhood .wide {
       height: 300px; }
       .neighborhood .wide.one {
         background: url("../images/neighborhood/neighborhood-1.jpg");
-        background-size: 1920px 490px;
+        background-size: 1920px 490px !important;
         background-position: center center;
         height: 430px;
         margin-top: 0; }
@@ -4412,7 +4412,13 @@ The provided mixins are intended to be used with the array-like variables
     .infobox-content h2 {
       margin: 0 0 10px;
       font-size: 13px;
-      line-height: 12px; }
+      line-height: 12px;
+      top: 50%;
+      position: absolute;
+      width: 110px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
     .infobox-content p {
       margin: 0;
       font-size: 9px;
@@ -4983,7 +4989,8 @@ The provided mixins are intended to be used with the array-like variables
         width: 75px; }
   .press .cover, .press-news .cover {
     background: url("../images/press/press_image_cover.jpg") no-repeat center center;
-    background-size: cover;
+    background-size: 726px 245px !important;
+    background-position: center center;
     height: 245px; }
   .press .hgroup, .press-news .hgroup {
     border-bottom: 1px solid #B5995C;
@@ -5382,7 +5389,7 @@ The provided mixins are intended to be used with the array-like variables
     height: 13px; }
     .nav-logo .icon-metropolis {
       background-image: url(../images/sprites/sprites.png);
-      background-position: 0px -780px;
+      background-position: 0px -779px;
       width: 165px;
       height: 97px;
       -webkit-animation-name: fadeInDown;
@@ -5412,7 +5419,7 @@ The provided mixins are intended to be used with the array-like variables
       @media only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
         .nav-logo .icon-metropolis {
           background-image: url(../images/sprites/sprites@2x.png);
-          background-size: 246px 877px; } }
+          background-size: 246px 876px; } }
       @media only screen and (min-width: 40.063em) and (max-width: 46em) {
         .nav-logo .icon-metropolis {
           -webkit-animation-name: fadeOutUp;
@@ -5761,7 +5768,9 @@ The provided mixins are intended to be used with the array-like variables
   .cgroup .press .form .field-button {
     padding-top: 12px; }
   .press .cover, .press-news .cover {
-    height: 295px; }
+    height: 295px;
+    background-size: 874px 295px !important;
+    background-position: center center; }
   .press .content {
     max-width: 640px; }
   .press .main-content {
@@ -5841,14 +5850,14 @@ The provided mixins are intended to be used with the array-like variables
       height: 38%; } }
   .home .wide.one {
     height: 650px;
-    background-size: cover; }
+    background-size: cover !important; }
   .neighborhood .wide {
     height: 490px; }
     .neighborhood .wide.one {
-      background-size: cover;
+      background-size: cover !important;
       height: 550px; }
     .neighborhood .wide.two {
-      background-size: cover; }
+      background-size: cover !important; }
   .neighborhood .txt-wrap {
     width: 100%;
     margin-left: auto;
@@ -5872,28 +5881,29 @@ The provided mixins are intended to be used with the array-like variables
   .lifestyle .wide {
     height: 650px; }
     .lifestyle .wide.one {
-      background-size: cover; }
+      background-size: cover !important; }
     .lifestyle .wide.two {
-      background-size: cover;
+      background-size: cover !important;
       height: 650px; }
     .lifestyle .wide.three {
-      background-size: cover;
+      background-size: cover !important;
       height: 650px; }
     .lifestyle .wide.four {
-      background-size: cover;
+      background-size: cover !important;
       height: 650px; }
   .overview .wide {
     height: 650px; }
     .overview .wide.one {
       background: url("../images/overview/overview-1.jpg");
-      background-size: cover;
+      background-size: cover !important;
       background-position: center center; }
     .overview .wide.two {
       background: url("../images/overview/overview-2.jpg");
-      background-size: cover;
+      background-size: cover !important;
       background-position: center center; }
   .press .cover, .press-news .cover {
-    height: 340px; }
+    height: 340px;
+    background-size: cover !important; }
   .press .content {
     max-width: 960px;
     padding: 0; }

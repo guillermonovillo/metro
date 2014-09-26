@@ -190,7 +190,12 @@
 .press,
 .press-news {
 
-   .cover { height: 295px; }
+   .cover { 
+      height: 295px; 
+      -webkit-background-size: 874px 295px !important;
+      background-size: 874px 295px !important;
+      background-position: center center;
+   }
 }
 
 // ## press ##

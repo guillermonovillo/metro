@@ -394,10 +394,9 @@ body {
 
    .cover {
       background: url("../images/press/press_image_cover.jpg") no-repeat center center; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      -webkit-background-size: 726px 245px !important;
+      background-size: 726px 245px !important;
+      background-position: center center;
       height: 245px;
    }
 
