@@ -1,44 +1,27 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package WordPress
- * @subpackage Metropolis
- * Template Name: Press
- */
-$activa="press";
-get_header(); 
+	if($_SERVER['REQUEST_METHOD'] == "POST"){
+	require('../../../wp-blog-header.php');
+	header("HTTP/1.1 200 OK");
 
-$args_news=array(
+	$pagina=$_POST["page"];
+	$cat=$_POST["category"];
+
+	$args_news=array(
         "showposts"=>4,
-        "post_type"=>"post" 
-        );
+        "post_type"=>"post",
+        "paged" =>$pagina
+    );
 
-$query_news= new WP_Query($args_news);
+    if($cat!="all"){
+    	$args_news["category_name"]=$cat;
+    }
+
+    $traer= new WP_Query($args_news);
+}
 ?>
+<?php if ( $traer->have_posts() ) : while ( $traer->have_posts() ) : $traer->the_post();
 
-<article class="press">
-      <section class="cover"></section>
-      <section class="content">
-         <div class="hgroup">
-            <h1>Press</h1>
-         </div>
-         <aside class="aside">
-            <ul class="aside-ul filter-options">
-               <li><a href="<?php echo RAIZ ?>/category/domestic/" class="art-filter" data-filter-value="domestic">Domestic</a></li>
-               <li><a href="<?php echo RAIZ ?>/category/international/" class="art-filter" data-filter-value="international">International</a></li>
-
-            </ul>
-         </aside>
-         <section class="main-content">
-
-          <?php if ( $query_news->have_posts() ) : while ( $query_news->have_posts() ) : $query_news->the_post(); 
-            $cat=get_the_category();
+			$cat=get_the_category();
             $imgid=get_post_thumbnail_id( get_the_ID());
             $imgsrc=wp_get_attachment_image_src( $imgid, "press");
             $file=get_field("pdf");
@@ -77,18 +60,6 @@ $query_news= new WP_Query($args_news);
                <a href="<?php echo $enlace; ?>" class="link" target="<?php echo $tar; ?>"><?php echo $text; ?></a>
             </article>
 
-          <?php endwhile; ?>
-          <?php else: ?>
-          <?php endif; ?>
-
-            
-
-         </section>
-         <a href="#" data-page="2" data-mode="all" class="load-more">Load More</a>
-      </section>
-   </article>
-
-<?php get_footer(); ?>
-
-<!-- Remover una vez que esté comprimido -->
-<script type="text/javascript" src="<?php echo URL; ?>/js/app_max.js"></script>
+<?php endwhile; ?>
+<?php else: ?>
+<?php endif; ?>

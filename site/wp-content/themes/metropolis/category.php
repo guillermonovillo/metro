@@ -74,8 +74,11 @@ query_posts( $query_string );
             
 
          </section>
-         
+         <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more">Load More</a>
       </section>
    </article>
 
 <?php get_footer(); ?>
+
+<!-- Remover una vez que esté comprimido -->
+<script type="text/javascript" src="<?php echo URL; ?>/js/app_max.js"></script>
