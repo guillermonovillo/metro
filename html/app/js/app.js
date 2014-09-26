@@ -248,22 +248,22 @@ $('.gallery').slick({
     var page = $(this).data("page");
     var mode = $(this).data("mode");
     var load = "press/morenews-"+mode+"-"+page+".html";
-    console.log("ahora:"+load);
+    // console.log("ahora:"+load);
     var loadNext = "press/morenews-"+mode+"-"+Number(page+1)+".html";
-    console.log("Next:"+loadNext);
+    // console.log("Next:"+loadNext);
     $.post(load, function(content) {
       $('.main-content').append(content);
     });
 
     $.post(loadNext, function(content) { 
       if(content == "") {
-        console.log("NO MAS NEWS");
+        // console.log("NO MAS NEWS");
        $('.load-more').fadeOut();
         return;
     }
 
     }).fail(function() {
-      console.log("NO FILE");
+      // console.log("NO FILE");
         $('.load-more').fadeOut();
         return;
   });

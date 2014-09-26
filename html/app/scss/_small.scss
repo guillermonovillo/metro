@@ -320,6 +320,11 @@ figure {
 	}
 	& h4 {position:absolute; z-index:5; text-transform:uppercase; border:0; margin:0 15px; left: 0; top: 10px; height:40px; color: $primary-color; line-height:15px;font-size:14px;font-weight: bold;}
 
+	& .t1-line {position:absolute; top:0px; left:0px; width:0px; height:0px; visibility:hidden}
+	& .t2-line {position:absolute; top:0px; left:0px; width:0px; height:0px; visibility:hidden} 
+	& .t3-line {position:absolute; top:0px; left:0px; width:0px; height:0px; visibility:hidden} 
+	& .t4-line {position:absolute; top:0px; left:0px; width:0px; height:0px; visibility:hidden} 
+
 	// &	.t1 {width:277px; text-align:right;left: -270px; top: 56%; height:220px}
 	// 	.t2 {width:277px; text-align:right;left: -0.5%; top: 43%; height: 46%}
 	// 	.t3 {width:277px; text-align:right;left: 17%; top: 25%; height:45%}
@@ -725,7 +730,17 @@ margin-bottom:3rem;
 .infobox-content { 
 	padding:25px 10px 0;
 	text-align:center;
-	& h2 {margin:0 0 10px ; font-size:13px; line-height:12px}
+	& h2 {
+		margin:0 0 10px ; 
+		font-size:13px; 
+		line-height:12px; 
+		top: 50%; 
+		position: 
+		absolute; 
+		width: 110px; 
+		transform: translateY(-50%);
+		& small {}
+	}
 	& p {margin:0; font-size:9px; line-height:9px}
 	& img {margin-top:-20px}
 }

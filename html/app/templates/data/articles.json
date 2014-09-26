@@ -122,6 +122,18 @@
 	      "photo": "10. China Firm Broadens Reach.jpg",
 	    "short": "Forest City Ratner Cos.' giant, 6,400-unit development near the new Barclays Center in Brooklyn has faced delays for over a decade. Enter China's Greenland Holding Group, which has different plans: finish the 15-tower project in less than 10 years. Forest City has only one tower under way and had been planning to take nearly two decades to complete the remaining buildings.",
 	    "article": ""
+	  },
+	  	  {
+	    "id":10,
+	    "p3":"2",
+	    "title": "Two Blocks From Staples Center, Metropolis Los Angeles Scores With Phase-One Luxury Condominium Units Now 40% Reserved",
+	    "link": "http://www.reuters.com/article/2014/09/17/ca-metropolisla-condo-idUSnPn18gWKt+86+PRN20140917",
+	    "type": "domestic",
+	     "author":{"name": "", "source": "PR Newswire"},
+	    "fecha": "Sep 17, 2014",
+	    "photo": "11.Metropolis Los Angeles Scores With Phase-One.jpg",
+	    "short": "Two blocks from Staples Center, a fast-moving star in the real estate arena is proving itself another hot ticket – Metropolis Los Angeles, the luxury high-rise development whose Phase I will finish construction in the fall of 2016, yet has already seen reservations for its first residential units cross the 40% mark.",
+	    "article": ""
 	  }
   ],
   "internationals": [
@@ -131,7 +143,7 @@
 	    "title": "专访：绿地总裁：中国市场让我们更具竞争力",
 	    "link": "http://news.uschinapress.com/2014/0214/969128.shtml",
 	    "type": "international",
-	    "author": {"name":"周慧", "source": "侨报网"},
+	    "author": {"name":"周慧一", "source": "侨报网"},
 	    "fecha": "02/14/2014",
 	    "photo": "_0001.jpg",
 	    "short": "【侨报记者周慧一2月14日洛杉矶报道】中国地产开发与运营的龙头企业绿地集团，2月14日宣布其在洛杉矶市中心的大都会投资项目一期工程正式动工，这象征着绿地集团正式进军美国房地产业。集团总裁张玉良表示，目前是一个进军美国的非常好的时机，在美国的投资将继续保持绿地集团开发与商业运营并重的传统，而广阔的中国市场也使中国房地产开发商在国际上更加具有竞争力。",
@@ -143,7 +155,7 @@
 	    "title": "绿地集团洛市大都会项目一期工程动工",
 	    "link": "http://news.uschinapress.com/2014/0214/969127.shtml",
 	    "type": "international",
-	    "author": {"name":"周慧", "source": "侨报网"},
+	    "author": {"name":"周慧一", "source": "侨报网"},
 	    "fecha": "02/14/2014",
 	      "photo": "_0002.jpg",
 	    "short": "【侨报记者周慧一2月14日洛杉矶报道】中国绿地集团在洛杉矶市中心投资的大都会项目一期工程14日正式动工。一期工程包含一家四星级高档酒店及一栋住宅楼，计划于2016年中期完工。据悉，大都会项目投资共10亿美元，是中国绿地集团进军美国房地产的第一笔投资。",
