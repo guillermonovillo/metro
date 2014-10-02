@@ -34,7 +34,7 @@ get_header(); ?>
     <div class="column medium-6 end">
         <div class="row gallery-btngroup">
           <div class="column small-3 text-right">
-                <a href="" class="btn btn-prev">        
+                <a href="#" class="btn btn-prev">        
                   <div class="line"> 
                   <span class="gold horizontal full to-l"></span>
                   </div> 
@@ -45,7 +45,7 @@ get_header(); ?>
                   <span class="counter-current">01</span>/<span class="counter-total">05</span>
           </div>
           <div class="column small-3">
-                <a href="" class="btn btn-next" >
+                <a href="#" class="btn btn-next" >
                   Next         
                   <div class="line"> 
                   <span class="gold horizontal full to-r"></span>

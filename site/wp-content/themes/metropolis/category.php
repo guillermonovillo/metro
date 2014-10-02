@@ -74,7 +74,9 @@ query_posts( $query_string );
             
 
          </section>
+         <div class="loadMore-wrap">
          <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more">Load More</a>
+       </div>
       </section>
    </article>
 

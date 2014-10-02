@@ -84,7 +84,9 @@ $query_news= new WP_Query($args_news);
             
 
          </section>
-         <a href="#" data-page="2" data-mode="all" class="load-more">Load More</a>
+         <div class="loadMore-wrap"> 
+          <a href="#" data-page="2" data-mode="domestic" class="load-more">Load More</a>
+       </div>
       </section>
    </article>
 

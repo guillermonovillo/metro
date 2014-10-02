@@ -22,8 +22,7 @@ get_header(); ?>
           <div class="line"> 
             <span class="white vertical full to-t"></span>
           </div>
-            <h1>URBAN LIVING REIMAGINED</h1>
-            <h2>Introducing the most luxurious<br/> new address in downtown L.A.</h2>
+            <h1>AMERICA'S <br>NEXT GREAT CITY<br>IS INSIDE L.A. </h1>
           <div class="line">
             <span class="white vertical full to-b"></span>
           </div>
@@ -46,8 +45,8 @@ skyline and beyond.
 
 <div class="row">
   <div class="column small-10 small-centered text-center">
-    <h1 class="wow fadeInUp">ALL THE ELEMENTS FOR <br>A LIFE WELL-LIVED</h1>
-    <p class="wow fadeInUp">In the stunning vertical community of Metropolis, daily desires and necessities are both easily met by the diverse selection of options for work, play and life all located mere moments away. From green spaces and cafes to a carefully curated collection of retail and fine dining, Metropolis brings together all the elements for a life well-lived in one dynamic city block.</p>
+    <h1 class="wow fadeInUp">ALL THE ELEMENTS OF <br>A LIFE WELL-LIVED</h1>
+    <p class="wow fadeInUp">In the stunning vertical community of Metropolis, daily desires and necessities are both easily met by the diverse selection of options for work, play and life all located mere moments away. From green spaces and cafes to a carefully curated collection of retail and fine dining, Metropolis brings together all the elements of a life well-lived in one dynamic city block.</p>
   </div>
 </div>
 
@@ -67,9 +66,8 @@ skyline and beyond.
 
 <figure class="lifestyle wide four wow fadeInUp"></figure>
 
-
-
-
 </main>
+
+
 
 <?php get_footer(); ?>

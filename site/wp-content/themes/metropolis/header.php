@@ -17,7 +17,11 @@ global $activa;
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Metropolis</title>
+    
+    <title>Exclusive Condominium Residences in Downtown Los Angeles | Metropolis</title>
+   <meta name="description" content="Upscale, beautiful modern condominium residences with gorgeous panoramic views in Downtown Los Angeles" />
+   <meta name="keywords" content="Exclusive real estate in LA, Luxury real estate los angeles, Apartments Downtown, Los Angeles, Modern Real Estate Developments, Sophisticated Los Angeles condominiums, Upscale condo community, Southern California premium real estate" />
+
     <link rel="stylesheet" href="<?php echo URL ?>/css/libraries.min.css">
     <link rel="stylesheet" href="<?php echo URL ?>/css/app.min.css">
     <script src="<?php echo URL ?>/js/vendor/modernizr.min.js"></script>

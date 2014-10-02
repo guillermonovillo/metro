@@ -9,10 +9,11 @@
  *
  * @package WordPress
  * @subpackage Metropolis
- * Template Name: Contact
+ * Template Name: Thanks
  */
 $activa="contact";
 get_header(); ?>
+
    <article class="contact">
       <div class="content">
          <div class="hgroup">
@@ -452,8 +453,7 @@ get_header(); ?>
          </div>
 
 
-
-         <div class="thanks">
+         <div class="thanks visible">
             <div class="wrapper">
                <div class="wrapper-in">
                   <a href="#" class="close">Close</a>

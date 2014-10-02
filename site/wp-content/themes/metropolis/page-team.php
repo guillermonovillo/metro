@@ -14,13 +14,17 @@
 $activa="team";
 get_header(); ?>
 
-	<main class="team">
+<main class="team">
   <figure class="wide one"></figure>
 <div class="row">
   <div class="column small-12 text-center">
     <h1>The Team</h1>
     <hr>
-    <i class="icon-greenland"></i>
+    <a href="http://www.greenlandsc.com"><i class="icon icon-greenland"></i></a>
+    <br>
+    <br>
+    <a href="http://www.greenlandsc.com"> <i class="icon icon-greenland-infinite"></i> </a>
+   
     <h2>Setting the Global Gold Standard for Excellence in Living</h2>
     <img src="<?php echo URL; ?>/images/team/team-world.png" alt=""/>
   </div>
