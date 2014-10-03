@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-02 21:20-0300\n"
-"PO-Revision-Date: 2014-10-02 21:21-0300\n"
+"POT-Creation-Date: 2014-10-03 01:12-0300\n"
+"PO-Revision-Date: 2014-10-03 01:12-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -622,6 +622,40 @@ msgstr ""
 
 #: .././page-neighborhood.php:425
 msgid "Shopping and relaxation"
+msgstr ""
+
+#: .././page-overview.php:62
+msgid "Residences"
+msgstr ""
+
+#: .././page-overview.php:63
+msgid ""
+"From the stunning view to the subtle details, Metropolis is designed for "
+"stylish, effortless living. Residences feature the finest materials, top-of-"
+"the-line appliances, energy-efficient design, maximized light and space and "
+"cinematic views from every angle."
+msgstr ""
+
+#: .././page-overview.php:72
+msgid "Hotel"
+msgstr ""
+
+#: .././page-overview.php:73
+msgid ""
+"Operated by a renown global hospitality brand, the hotel within the "
+"Metropolis complex will offer 350 rooms, and a variety of dining \n"
+"options and services."
+msgstr ""
+
+#: .././page-overview.php:81
+msgid "RETAIL COLLECTION AND FINE DINING"
+msgstr ""
+
+#: .././page-overview.php:82
+msgid ""
+"The Metropolis complex will offer a thoughtfully curated collection of "
+"retail and dining to provide its residents and guests with all elements \n"
+"for effortless lifestyle."
 msgstr ""
 
 #: .././search.php:18

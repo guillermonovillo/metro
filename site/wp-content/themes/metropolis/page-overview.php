@@ -59,10 +59,8 @@ get_header(); ?>
 
   <div class="row">
     <div class="column small-8 small-centered text-center">
-      <h1 class="wow fadeInUp">Residences</h1>
-      <p class="wow fadeInUp">From the stunning view to the subtle details, Metropolis is designed for 
-stylish, effortless living. Residences feature the finest materials, top-of-the-line appliances, energy-efficient design, maximized light and space and 
-cinematic views from every angle. </p>
+      <h1 class="wow fadeInUp"><?php _e("Residences","metropolis"); ?></h1>
+      <p class="wow fadeInUp"><?php _e("From the stunning view to the subtle details, Metropolis is designed for stylish, effortless living. Residences feature the finest materials, top-of-the-line appliances, energy-efficient design, maximized light and space and cinematic views from every angle.","metropolis"); ?> </p>
       <a class="btn download wow fadeInUp" href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" target="_BLANK">Download Floor Plans </a>
     </div>
   </div>
@@ -71,21 +69,18 @@ cinematic views from every angle. </p>
 
 <div class="row">
 <div class="column small-8 small-centered text-center">
-  <h1 class="wow fadeInUp">Hotel</h1>
-  <p class="wow fadeInUp">Operated by a renown global hospitality brand, the hotel within the 
-Metropolis complex will offer 350 rooms, and a variety of dining 
-options and services. </p>
+  <h1 class="wow fadeInUp"><?php _e("Hotel","metropolis"); ?></h1>
+  <p class="wow fadeInUp"><?php _e("Operated by a renown global hospitality brand, the hotel within the Metropolis complex will offer 350 rooms, and a variety of dining 
+options and services.","metropolis"); ?> </p>
 </div>
 </div>
 
 <figure class="wide two wow fadeInUp"></figure>
 <div class="row">
 <div class="column small-8 small-centered text-center">
-  <h1 class="wow fadeInUp">RETAIL COLLECTION 
-AND FINE DINING</h1>
-  <p class="wow fadeInUp">The Metropolis complex will offer a thoughtfully curated collection of 
-retail and dining to provide its residents and guests with all elements 
-for effortless lifestyle.</p>
+  <h1 class="wow fadeInUp"><?php _e("RETAIL COLLECTION AND FINE DINING","metropolis"); ?></h1>
+  <p class="wow fadeInUp"><?php _e("The Metropolis complex will offer a thoughtfully curated collection of retail and dining to provide its residents and guests with all elements 
+for effortless lifestyle.","metropolis"); ?></p>
 </div>
 </div>
 </main>
