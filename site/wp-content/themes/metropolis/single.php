@@ -11,7 +11,7 @@ get_header(); ?>
       <section class="cover"></section>
       <section class="content">
          <div class="hgroup">
-            <h1>Press</h1>
+            <h1><?php _e("Press","metropolis"); ?></h1>
          </div>
          <section class="main-content">
 			<article class="press-news-content">
@@ -38,20 +38,18 @@ get_header(); ?>
         <?php 
             if(!empty($file)){
               ?>
-              <a href="<?php echo $file; ?>" class="link" target="_BLANK">Download PDF</a>
+              <a href="<?php echo $file; ?>" class="link" target="_BLANK"><?php _e("Download PDF","metropolis"); ?></a>
               <?php
             }
 
             if(!empty($video)){
               $iframe=wp_oembed_get($video);
-              echo "<pre>";
-              print_r($iframe);
-              echo "</pre>";
+              echo $iframe;
             }
         ?>
                <br />
                <br />
-               <a href="<?php echo RAIZ; ?>/press" class="back">Back to all News</a>
+               <a href="<?php echo RAIZ; ?>/press" class="back"><?php _e("Back to all News","metropolis"); ?></a>
 			</article>
 			<?php $next=get_previous_post();
 				if(!empty($next)){
@@ -68,13 +66,13 @@ get_header(); ?>
                    <div class="hover-content to-right">
                       <div>
                          <span><i>  
-                           <a href="<?php the_permalink();?>" title="the_title();">Read more -</a>
+                           <a href="<?php the_permalink();?>" title="the_title();"><?php _e("Read more","metropolis"); ?> -</a>
                         </i></span>
                       </div>
                    </div>
                </div> 
 
-               <a href="<?php the_permalink();?>" class="link">Read next</a>
+               <a href="<?php the_permalink();?>" class="link"><?php _e("Read next","metropolis"); ?></a>
                <h2><?php the_field("media"); ?>  —</h2>
                <h1><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h1>
                <h3><time><?php echo get_the_date("M d, Y") ?></time></h3>

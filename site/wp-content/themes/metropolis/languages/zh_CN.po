@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-03 01:12-0300\n"
-"PO-Revision-Date: 2014-10-03 01:12-0300\n"
+"POT-Creation-Date: 2014-10-03 15:57-0300\n"
+"PO-Revision-Date: 2014-10-03 15:57-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -636,6 +636,10 @@ msgid ""
 "cinematic views from every angle."
 msgstr ""
 
+#: .././page-overview.php:64
+msgid "Download Floor Plans"
+msgstr ""
+
 #: .././page-overview.php:72
 msgid "Hotel"
 msgstr ""
@@ -658,6 +662,122 @@ msgid ""
 "for effortless lifestyle."
 msgstr ""
 
+#: .././page-press.php:29 .././single.php:14
+msgid "Press"
+msgstr ""
+
+#: .././page-press.php:49
+msgid "DOWNLOAD PDF"
+msgstr ""
+
+#: .././page-press.php:53
+msgid "PLAY VIDEO"
+msgstr ""
+
+#: .././page-press.php:57
+msgid "READ MORE"
+msgstr ""
+
+#: .././page-press.php:88
+msgid "Load More"
+msgstr ""
+
+#: .././page-team.php:21
+msgid "The Team"
+msgstr ""
+
+#: .././page-team.php:28
+msgid "Setting the Global Gold Standard for Excellence in Living"
+msgstr ""
+
+#: .././page-team.php:35
+msgid ""
+"<p>Since its establishment in 1992 in Shanghai, the Greenland Holding Group "
+"has grown to become the leading real estate enterprise in China, ranked "
+"among Fortune Global 500 companies worldwide. Greenland Group’s corporate "
+"mission, “Creating a Better Life,” is linked strongly to the cities and "
+"communities in which the company operates. In addition, the company’s "
+"portfolio of developments includes 4 out of 10 world’s tallest buildings.</"
+"p><p>In 2012, after achieving the pinnacle of brand recognition and "
+"performance in the domestic market, Greenland Group has embarked on a "
+"comprehensive global expansion and has been since seizing critical "
+"opportunities by relying on its extensive experience in creating world-class "
+"developments, substantial resources and strong commitment to the communities "
+"in which they invest. Greenland Group’s philosophy is to operate and develop "
+"independently through immersion in local culture and collaboration of their "
+"global teams with the top local talent in each community. To date, Greenland "
+"Group operates in 13 cities, in 9 countries, on 4 continents throughout "
+"Asia, Australia, Europe and North America. Its development projects are "
+"distinguished by excellence in design and commitment to the highest quality "
+"of construction while maintaining the unique character and fabric of each "
+"city.</p>"
+msgstr ""
+
+#: .././page-team.php:43
+msgid ""
+"<p>Douglas Elliman Development Marketing combines unrivaled sales and "
+"marketing expertise with an in-depth awareness of the most intricate details "
+"to major trends. The Elliman team delivers a holistic approach encompassing "
+"comprehensive in-house research, product development, marketing and sales, "
+"operations, property management, mortgage financing and title services in "
+"New York City, Miami and Southern California.</p><p>Our vision, values and "
+"people share one guiding principle: to ensure the highest level of quality "
+"and expertise powered by innovation, information and influence of the "
+"largest regional and global network of real estate professionals. </"
+"p><p>Through a strategic international partnership with Knight Frank "
+"Residential, the world’s largest privately owned property consultancy, we "
+"market our properties to global audiences in 43 countries across six "
+"continents. Knight Frank Residential allows access to global information on "
+"purchasing trends, enabling the ability to forecast future activity in the "
+"marketplace and stay ahead of the curve the highest quality of construction "
+"while maintaining the unique character and fabric of each city.</p>"
+msgstr ""
+
+#: .././page-team.php:48
+msgid ""
+"<p>Gensler is a global design firm that partners with clients to make cities "
+"more livable, work smarter and leisure more engaging. Our 4,000 "
+"professionals networked across 46 locations believe quality design can "
+"transform organizations and improve people’s lives. Since 1965, we have "
+"helped clients achieve measurable business and organizational goals, "
+"delivering projects as large as a city and as small as a task light for an "
+"individual desk.</p><p>Gensler is organized to support clients at every "
+"stage of the design cycle, from initial strategy and design planning through "
+"implementation and management.</p><p>Gensler regards sustainable design as a "
+"guiding principle for all building and interior projects. It has been at the "
+"forefront of the movement for responsible design that considers the impact "
+"of decisions made today on our lives tomorrow.</p>"
+msgstr ""
+
+#: .././page-team.php:55
+msgid ""
+"<p>SPAN Architecture brings together a diverse array of experiences and "
+"interests as practitioners, teachers, artists and theorists. Karen Stonely, "
+"Peter Pelsinski and Jean-Gabriel Neukomm are registered architects, began "
+"collaboration in 1998 and formed SPAN in 2004. Their award-winning work "
+"combines thoughtful and inventive conceptual design with technological "
+"innovation and creative material application. Above all else, SPaN shares a "
+"deep appreciation and reverence for architecture that guides their pursuit "
+"of creating superlative work.</p>"
+msgstr ""
+
+#: .././page-team.php:61
+msgid ""
+"<p>Tishman is a vertically integrated real estate owner, operator, developer "
+"and advisor. With roots dating back to 1898, Tishman is comprised of a "
+"diversified staff of experienced real estate, financial and hotel management "
+"specialists, and is complemented by a technical staff of architects, "
+"engineers and construction management professionals. Tishman maintains a "
+"strategic relationship with Tishman Construction Corporation, one of the "
+"nation’s leading construction management firms. Given these broad resources, "
+"Tishman typically manages all components of its projects and acquisitions, "
+"from feasibility, design, budgeting, financing and development management to "
+"ongoing property and asset management.</p><p>Over the last 30 years, Tishman "
+"has developed, managed and advised on more than 35 million square feet of "
+"all types of real estate - including more than 50,000 hotel rooms, plus "
+"convention centers, retail, residential and office.</p>"
+msgstr ""
+
 #: .././search.php:18
 #, php-format
 msgid "Search Results for: %s"
@@ -667,6 +787,22 @@ msgstr ""
 msgid ""
 "Sorry, but nothing matched your search criteria. Please try again with some "
 "different keywords."
+msgstr ""
+
+#: .././single.php:41
+msgid "Download PDF"
+msgstr ""
+
+#: .././single.php:52
+msgid "Back to all News"
+msgstr ""
+
+#: .././single.php:69
+msgid "Read more"
+msgstr ""
+
+#: .././single.php:75
+msgid "Read next"
 msgstr ""
 
 #: .././tag.php:21

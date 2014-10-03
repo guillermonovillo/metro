@@ -26,7 +26,7 @@ $query_news= new WP_Query($args_news);
       <section class="cover"></section>
       <section class="content">
          <div class="hgroup">
-            <h1>Press</h1>
+            <h1><?php _e("Press","metropolis"); ?></h1>
          </div>
          <aside class="aside">
             <ul class="aside-ul filter-options">
@@ -46,15 +46,15 @@ $query_news= new WP_Query($args_news);
 
             if(!empty($file)){
               $enlace=$file;
-              $text="DOWNLOAD PDF";
+              $text=__("DOWNLOAD PDF","metropolis");
               $tar="_BLANK";
             }elseif(!empty($video)){
               $enlace=get_permalink();
-              $text="PLAY VIDEO";
+              $text=__("PLAY VIDEO","metropolis");
               $tar="";
             }else{
               $enlace=get_permalink();
-              $text="READ MORE";
+              $text=__("READ MORE","metropolis");
               $tar="";
             }
           ?>
@@ -85,12 +85,9 @@ $query_news= new WP_Query($args_news);
 
          </section>
          <div class="loadMore-wrap"> 
-          <a href="#" data-page="2" data-mode="domestic" class="load-more">Load More</a>
+          <a href="#" data-page="2" data-mode="all" class="load-more"><?php _e("Load More","metropolis"); ?></a>
        </div>
       </section>
    </article>
 
 <?php get_footer(); ?>
-
-<!-- Remover una vez que esté comprimido -->
-<script type="text/javascript" src="<?php echo URL; ?>/js/app_max.js"></script>
