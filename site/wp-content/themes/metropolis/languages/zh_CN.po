@@ -1,0 +1,641 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Metropolis\n"
+"POT-Creation-Date: 2014-10-02 21:20-0300\n"
+"PO-Revision-Date: 2014-10-02 21:21-0300\n"
+"Last-Translator: \n"
+"Language-Team: bridgerconway\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../.\n"
+
+#: .././404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: .././404.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: .././archive.php:29
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: .././archive.php:31
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: .././archive.php:33
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: .././archive.php:35
+msgid "Archives"
+msgstr ""
+
+#: .././author.php:32
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: .././author.php:63 .././content.php:62
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: .././comments.php:42
+msgid "Comment navigation"
+msgstr ""
+
+#: .././comments.php:43
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: .././comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: .././comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: .././content-aside.php:15 .././content-image.php:13
+#: .././content-link.php:14 .././content-quote.php:13
+#: .././content-status.php:31 .././content.php:44
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: .././content-aside.php:20 .././content-link.php:18
+#: .././content-quote.php:17 .././content-status.php:15
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: .././content-aside.php:23 .././content-image.php:23
+#: .././content-link.php:21 .././content-quote.php:20
+#: .././content-status.php:37 .././content.php:33
+msgid "Leave a reply"
+msgstr ""
+
+#: .././content-aside.php:23 .././content-image.php:23
+#: .././content-link.php:21 .././content-quote.php:20
+#: .././content-status.php:37 .././content.php:33
+msgid "1 Reply"
+msgstr ""
+
+#: .././content-aside.php:23 .././content-image.php:23
+#: .././content-link.php:21 .././content-quote.php:20
+#: .././content-status.php:37 .././content.php:33
+msgid "% Replies"
+msgstr ""
+
+#: .././content-aside.php:26 .././content-image.php:26
+#: .././content-link.php:24 .././content-page.php:24 .././content-quote.php:23
+#: .././content-status.php:40 .././content.php:51 .././functions.php:339
+#: .././image.php:37
+msgid "Edit"
+msgstr ""
+
+#: .././content-link.php:12
+msgid "Link"
+msgstr ""
+
+#: .././content-none.php:13 .././index.php:49 .././search.php:34
+msgid "Nothing Found"
+msgstr ""
+
+#: .././content-none.php:17 .././index.php:53
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: .././content-page.php:21 .././content.php:45 .././image.php:102
+msgid "Pages:"
+msgstr ""
+
+#: .././content.php:16
+msgid "Featured post"
+msgstr ""
+
+#: .././content.php:66
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: .././functions.php:62
+msgid "Primary Menu"
+msgstr ""
+
+#: .././functions.php:211
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: .././functions.php:281
+msgid "Post navigation"
+msgstr ""
+
+#: .././functions.php:282
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: .././functions.php:283
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: .././functions.php:307
+msgid "Pingback:"
+msgstr ""
+
+#: .././functions.php:307
+msgid "(Edit)"
+msgstr ""
+
+#: .././functions.php:322
+msgid "Post author"
+msgstr ""
+
+#: .././functions.php:328
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: .././functions.php:334
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: .././functions.php:343
+msgid "Reply"
+msgstr ""
+
+#: .././functions.php:363 .././functions.php:366
+msgid ", "
+msgstr ""
+
+#: .././functions.php:377
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: .././functions.php:383
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author"
+"\"> by %4$s</span>."
+msgstr ""
+
+#: .././functions.php:385
+#, php-format
+msgid ""
+"This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</"
+"span>."
+msgstr ""
+
+#: .././functions.php:387
+#, php-format
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: .././functions.php:532 .././functions.php:533
+msgid "Map Point"
+msgstr ""
+
+#: .././functions.php:534
+msgid "Map Points"
+msgstr ""
+
+#: .././functions.php:535
+msgid "Map"
+msgstr ""
+
+#: .././functions.php:536
+msgid "Add New"
+msgstr ""
+
+#: .././functions.php:537
+msgid "Add New Point"
+msgstr ""
+
+#: .././functions.php:538
+msgid "New Point"
+msgstr ""
+
+#: .././functions.php:539
+msgid "Edit Point"
+msgstr ""
+
+#: .././functions.php:540
+msgid "View Point"
+msgstr ""
+
+#: .././functions.php:541
+msgid "All"
+msgstr ""
+
+#: .././functions.php:542
+msgid "Search"
+msgstr ""
+
+#: .././functions.php:543
+msgid "Parent Point :"
+msgstr ""
+
+#: .././functions.php:544
+msgid "No Points found."
+msgstr ""
+
+#: .././functions.php:545
+msgid "No Points found in Trash."
+msgstr ""
+
+#: .././functions.php:572 .././functions.php:582
+msgid "Types"
+msgstr ""
+
+#: .././functions.php:573
+msgid "Type"
+msgstr ""
+
+#: .././functions.php:574
+msgid "Search Types"
+msgstr ""
+
+#: .././functions.php:575
+msgid "All Types"
+msgstr ""
+
+#: .././functions.php:576
+msgid "Parent Type"
+msgstr ""
+
+#: .././functions.php:577
+msgid "Parent Type:"
+msgstr ""
+
+#: .././functions.php:578
+msgid "Edit Type"
+msgstr ""
+
+#: .././functions.php:579
+msgid "Update Type"
+msgstr ""
+
+#: .././functions.php:580
+msgid "Add New Type"
+msgstr ""
+
+#: .././functions.php:581
+msgid "New Type Name"
+msgstr ""
+
+#: .././image.php:26
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: .././image.php:41
+msgid "&larr; Previous"
+msgstr ""
+
+#: .././image.php:42
+msgid "Next &rarr;"
+msgstr ""
+
+#: .././index.php:38
+msgid "No posts to display"
+msgstr ""
+
+#: .././index.php:42
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: .././page-home.php:26
+msgid "URBAN LIVING REIMAGINED"
+msgstr ""
+
+#: .././page-home.php:27
+msgid "Introducing the most luxurious<br/> new address in downtown L.A."
+msgstr ""
+
+#: .././page-home.php:37
+msgid "Hover over the image<br>and discover Metropolis —"
+msgstr ""
+
+#: .././page-home.php:46
+msgid "Metropolis"
+msgstr ""
+
+#: .././page-home.php:47
+msgid "Hotel Tower"
+msgstr ""
+
+#: .././page-home.php:50 .././page-home.php:52 .././page-home.php:54
+msgid "Metropolis Residential"
+msgstr ""
+
+#: .././page-home.php:50
+msgid "Tower 1"
+msgstr ""
+
+#: .././page-home.php:52
+msgid "Tower 2"
+msgstr ""
+
+#: .././page-home.php:54
+msgid "Tower 3"
+msgstr ""
+
+#: .././page-life.php:25
+msgid "AMERICA'S <br>NEXT GREAT CITY<br>IS INSIDE L.A."
+msgstr ""
+
+#: .././page-life.php:36
+msgid "Cinematic Views"
+msgstr ""
+
+#: .././page-life.php:37
+msgid ""
+"From the comfort of your home, from any angle, in any room, take in the most "
+"expansive and breathtaking views of the Downtown skyline and beyond."
+msgstr ""
+
+#: .././page-life.php:46
+msgid "ALL THE ELEMENTS OF <br>A LIFE WELL-LIVED"
+msgstr ""
+
+#: .././page-life.php:47
+msgid ""
+"In the stunning vertical community of Metropolis, daily desires and "
+"necessities are both easily met by the diverse selection of options for "
+"work, play and life all located mere moments away. From green spaces and "
+"cafes to a carefully curated collection of retail and fine dining, "
+"Metropolis brings together all the elements of a life well-lived in one "
+"dynamic city block."
+msgstr ""
+
+#: .././page-life.php:58
+msgid "A Gateway to Downtown"
+msgstr ""
+
+#: .././page-life.php:59
+msgid ""
+"The new \"Gateway\" to downtown L.A., Metropolis is strategically located "
+"between three of Los Angeles' key neighborhoods. The 6.33-acre urban "
+"community sits at Francisco Street between 8th and 9th Streets, with ample "
+"parking and easy access to the city's major highways and public "
+"transportation."
+msgstr ""
+
+#: .././page-neighborhood.php:74
+msgid "Live the light and life of<br> Los Angeles."
+msgstr ""
+
+#: .././page-neighborhood.php:86
+msgid "Access the Best of L.A."
+msgstr ""
+
+#: .././page-neighborhood.php:87
+msgid ""
+"Created by an award-winning design and development team, Metropolis is a "
+"glittering city-within-a-city that is easily accessible to the nearby "
+"financial district, internationally renowned performing arts institutions, "
+"and high-profile entertainment complexes."
+msgstr ""
+
+#: .././page-neighborhood.php:99 .././page-neighborhood.php:195
+msgid "Walt Disney Concert Hall"
+msgstr ""
+
+#: .././page-neighborhood.php:111 .././page-neighborhood.php:207
+msgid "Staples Center"
+msgstr ""
+
+#: .././page-neighborhood.php:125 .././page-neighborhood.php:221
+msgid "Via Rodeo"
+msgstr ""
+
+#: .././page-neighborhood.php:137 .././page-neighborhood.php:233
+msgid "Venice Beach"
+msgstr ""
+
+#: .././page-neighborhood.php:149 .././page-neighborhood.php:245
+msgid "Hollywood Sign"
+msgstr ""
+
+#: .././page-neighborhood.php:163 .././page-neighborhood.php:259
+msgid "Santa Monica Pier"
+msgstr ""
+
+#: .././page-neighborhood.php:175 .././page-neighborhood.php:271
+msgid "Downtown Los Angeles"
+msgstr ""
+
+#: .././page-neighborhood.php:284
+msgid ""
+"Downtown is the epicenter<br>for exceptional educational<br>opportunities"
+msgstr ""
+
+#: .././page-neighborhood.php:285
+msgid ""
+"In addition to being a vibrant destination for the best entertainment, arts "
+"and dining, Downtown L.A. offers a myriad of exceptional education options, "
+"including private schools, colleges, universities, and libraries."
+msgstr ""
+
+#: .././page-neighborhood.php:294
+msgid "UNIVERSITY OF SOUTH CALIFORNIA"
+msgstr ""
+
+#: .././page-neighborhood.php:303
+msgid "Colleges and Universities"
+msgstr ""
+
+#: .././page-neighborhood.php:305
+msgid "Fashion Institute of Design & Merchandising"
+msgstr ""
+
+#: .././page-neighborhood.php:306
+msgid "University of Southern California"
+msgstr ""
+
+#: .././page-neighborhood.php:307
+msgid "USC Marshall School of Business"
+msgstr ""
+
+#: .././page-neighborhood.php:308
+msgid "The Loyola Law School Los Angeles of Loyola Marymount University"
+msgstr ""
+
+#: .././page-neighborhood.php:309
+msgid "Figoly"
+msgstr ""
+
+#: .././page-neighborhood.php:310
+msgid "Golden Gate University"
+msgstr ""
+
+#: .././page-neighborhood.php:311
+msgid "Southern California Institute of Architecture"
+msgstr ""
+
+#: .././page-neighborhood.php:312
+msgid "Zipper Hall at Colburn School of Performing Arts"
+msgstr ""
+
+#: .././page-neighborhood.php:318
+msgid "Alliance Dr. Olga Mohan High"
+msgstr ""
+
+#: .././page-neighborhood.php:319
+msgid "Alliance Gertz-Ressler High"
+msgstr ""
+
+#: .././page-neighborhood.php:320
+msgid "CA Academy for Liberal Studies Early College High"
+msgstr ""
+
+#: .././page-neighborhood.php:321
+msgid "Castelar Street Elementary"
+msgstr ""
+
+#: .././page-neighborhood.php:322
+msgid "Downtown Business High"
+msgstr ""
+
+#: .././page-neighborhood.php:323
+msgid "Endeavor College Preparatory Charter"
+msgstr ""
+
+#: .././page-neighborhood.php:324
+msgid "Frank Lanterman"
+msgstr ""
+
+#: .././page-neighborhood.php:325
+msgid "Garza (Carmen Lomas) Primary Center"
+msgstr ""
+
+#: .././page-neighborhood.php:326
+msgid "New Designs Charter"
+msgstr ""
+
+#: .././page-neighborhood.php:332
+msgid "Bishop Mora Salesian High School"
+msgstr ""
+
+#: .././page-neighborhood.php:333
+msgid "Cathedral High School"
+msgstr ""
+
+#: .././page-neighborhood.php:334
+msgid "Divine Providence Day Nursery and Kindergarten"
+msgstr ""
+
+#: .././page-neighborhood.php:335
+msgid "Dolores Mission"
+msgstr ""
+
+#: .././page-neighborhood.php:336
+msgid "Immaculate Conception"
+msgstr ""
+
+#: .././page-neighborhood.php:337
+msgid "New Covenant Academy"
+msgstr ""
+
+#: .././page-neighborhood.php:338
+msgid "Personal Coaching Systems"
+msgstr ""
+
+#: .././page-neighborhood.php:339
+msgid "Red Star"
+msgstr ""
+
+#: .././page-neighborhood.php:340
+msgid "Santa Isabel"
+msgstr ""
+
+#: .././page-neighborhood.php:341
+msgid "Star Christian"
+msgstr ""
+
+#: .././page-neighborhood.php:342
+msgid "St. Mary Catholic Elementary"
+msgstr ""
+
+#: .././page-neighborhood.php:343
+msgid "St. Turibius Elementary"
+msgstr ""
+
+#: .././page-neighborhood.php:344
+msgid "St. Vincent Elementary School"
+msgstr ""
+
+#: .././page-neighborhood.php:351
+msgid "downtown l.a.<br>neighborhood favorites"
+msgstr ""
+
+#: .././page-neighborhood.php:357
+msgid "“America’s Next Great City Is Inside L.A.”"
+msgstr ""
+
+#: .././page-neighborhood.php:358
+msgid ""
+"“...amid the glittering towers and crumbly Art Deco facades, a new "
+"generation of adventurous chefs, bartenders, loft dwellers, artists, and "
+"developers are creating a neighborhood as electrifying and gritty as New "
+"York in the ‘70s... the coolest new downtown in America.”"
+msgstr ""
+
+#: .././page-neighborhood.php:360
+msgid "GQ Magazine, January 2014."
+msgstr ""
+
+#: .././page-neighborhood.php:370
+msgid "Food & Drinks"
+msgstr ""
+
+#: .././page-neighborhood.php:389
+msgid "Entertainment"
+msgstr ""
+
+#: .././page-neighborhood.php:407
+msgid "Schools and Parks"
+msgstr ""
+
+#: .././page-neighborhood.php:425
+msgid "Shopping and relaxation"
+msgstr ""
+
+#: .././search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: .././search.php:38
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: .././tag.php:21
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""

@@ -71,7 +71,7 @@ $count=1;
           <div class="line"> 
             <span class="white vertical full to-t"></span>
           </div>
-             <h1>Live the light and life of<br> Los Angeles.</h1>
+             <h1><?php _e("Live the light and life of<br> Los Angeles.","metropolis"); ?></h1>
           <div class="line">
             <span class="white vertical full to-b"></span>
           </div>
@@ -83,8 +83,8 @@ $count=1;
 
 <div class="row space">
   <div class="column small-12 small-centered text-center">
-    <h1 class="wow fadeInUp">Access the Best of L.A.</h1>
-    <p class="wow fadeInUp">Created by an award-winning design and development team, Metropolis is a glittering city-within-a-city that is easily accessible to the nearby financial district, internationally renowned performing arts institutions, and high-profile entertainment complexes. </p>
+    <h1 class="wow fadeInUp"><?php _e("Access the Best of L.A.","metropolis"); ?></h1>
+    <p class="wow fadeInUp"><?php _e("Created by an award-winning design and development team, Metropolis is a glittering city-within-a-city that is easily accessible to the nearby financial district, internationally renowned performing arts institutions, and high-profile entertainment complexes.","metropolis"); ?> </p>
   </div>
 </div>
 
@@ -96,7 +96,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Walt Disney Concert Hall —</h2>
+                      <h2><?php _e("Walt Disney Concert Hall","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -108,7 +108,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Staples Center —</h2>
+                      <h2><?php _e("Staples Center","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -122,7 +122,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Via Rodeo —</h2>
+                      <h2><?php _e("Via Rodeo","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -134,7 +134,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Venice Beach —</h2>
+                      <h2><?php _e("Venice Beach","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -146,7 +146,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Hollywood Sign —</h2>
+                      <h2><?php _e("Hollywood Sign","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -160,7 +160,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Santa Monica Pier —</h2>
+                      <h2><?php _e("Santa Monica Pier","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -172,7 +172,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Downtown Los Angeles —</h2>
+                      <h2><?php _e("Downtown Los Angeles","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -192,7 +192,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Walt Disney Concert Hall —</h2>
+                      <h2><?php _e("Walt Disney Concert Hall","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -204,7 +204,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Staples Center —</h2>
+                      <h2><?php _e("Staples Center","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -218,7 +218,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Via Rodeo —</h2>
+                      <h2><?php _e("Via Rodeo","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -230,7 +230,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Venice Beach —</h2>
+                      <h2><?php _e("Venice Beach","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -242,7 +242,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Hollywood Sign —</h2>
+                      <h2><?php _e("Hollywood Sign","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -256,7 +256,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Santa Monica Pier —</h2>
+                      <h2><?php _e("Santa Monica Pier","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -268,7 +268,7 @@ $count=1;
              <div class="hover-content to-right">
                 <div>
                    <span>
-                      <h2>Downtown Los Angeles —</h2>
+                      <h2><?php _e("Downtown Los Angeles","metropolis"); ?> —</h2>
                    </span>
                 </div>
              </div>
@@ -281,11 +281,8 @@ $count=1;
 
 <div class="row space">
   <div class="column small-12 small-centered medium-8 text-center">
-    <h1  class="wow fadeInUp">Downtown is the epicenter<br> 
-for exceptional educational<br> 
-opportunities</h1>
-  <p  class="wow fadeInUp">In addition to being a vibrant destination for the best entertainment, arts and dining, Downtown L.A. offers a myriad of exceptional 
-education options, including private schools, colleges, universities, and libraries. </p>
+    <h1  class="wow fadeInUp"><?php _e("Downtown is the epicenter<br>for exceptional educational<br>opportunities","metropolis"); ?></h1>
+  <p  class="wow fadeInUp"><?php _e("In addition to being a vibrant destination for the best entertainment, arts and dining, Downtown L.A. offers a myriad of exceptional education options, including private schools, colleges, universities, and libraries.","metropolis"); ?> </p>
   </div>
 </div>
 
@@ -294,7 +291,7 @@ education options, including private schools, colleges, universities, and librar
 <div class="row">
   <div class="column small-10 small-centered medium-6">
     <img src="<?php echo URL; ?>/images/neighborhood/neighborhood-3.jpg" width="100%" alt="UNIVERSITY OF SOUTH CALIFORNIA">
-<p class="caption column small-12 text-center wow fadeInUp">UNIVERSITY OF SOUTH CALIFORNIA</p>
+<p class="caption column small-12 text-center wow fadeInUp"><?php _e("UNIVERSITY OF SOUTH CALIFORNIA","metropolis"); ?></p>
   </div>
 </div>
 
@@ -303,65 +300,64 @@ education options, including private schools, colleges, universities, and librar
 
 <div class="row space notop">
   <div class="column  small-12 small-centered medium-uncentered medium-4">
-    <h2 class="edu wow fadeInUp">Colleges and Universities</h2>
+    <h2 class="edu wow fadeInUp"><?php _e("Colleges and Universities","metropolis"); ?></h2>
     <ul  class="wow fadeInUp edu" data-wow-delay="0.25s">
-      <li>— Fashion Institute of Design & Merchandising</li>
-      <li>— University of Southern California</li>
-      <li>— USC Marshall School of Business</li>
-      <li>— The Loyola Law School Los Angeles of Loyola Marymount University</li>
-      <li>— Figoly</li>
-      <li>— Golden Gate University</li>
-      <li>— Southern California Institute of Architecture</li>
-      <li>— Zipper Hall at Colburn School of Performing Arts</li>
+      <li>— <?php _e("Fashion Institute of Design & Merchandising","metropolis"); ?></li>
+      <li>— <?php _e("University of Southern California","metropolis"); ?></li>
+      <li>— <?php _e("USC Marshall School of Business","metropolis"); ?></li>
+      <li>— <?php _e("The Loyola Law School Los Angeles of Loyola Marymount University","metropolis"); ?></li>
+      <li>— <?php _e("Figoly","metropolis"); ?></li>
+      <li>— <?php _e("Golden Gate University","metropolis"); ?></li>
+      <li>— <?php _e("Southern California Institute of Architecture","metropolis"); ?></li>
+      <li>— <?php _e("Zipper Hall at Colburn School of Performing Arts","metropolis"); ?></li>
     </ul>
   </div>
   <div class="column  small-12 small-centered medium-uncentered medium-4">
      <h2 class="edu wow fadeInUp" data-wow-delay=".5s">Public schools</h2>
      <ul class="wow fadeInUp edu" data-wow-delay=".75s">
-       <li>— Alliance Dr. Olga Mohan High</li>
-       <li>— Alliance Gertz-Ressler High</li>
-       <li>— CA Academy for Liberal Studies Early College High</li>
-       <li>— Castelar Street Elementary</li>
-       <li>— Downtown Business High</li>
-       <li>— Endeavor College Preparatory Charter</li>
-       <li>— Frank Lanterman</li>
-       <li>— Garza (Carmen Lomas) Primary Center</li>
-       <li>— New Designs Charter</li>
+       <li>— <?php _e("Alliance Dr. Olga Mohan High","metropolis"); ?> </li>
+       <li>— <?php _e("Alliance Gertz-Ressler High","metropolis"); ?> </li>
+       <li>— <?php _e("CA Academy for Liberal Studies Early College High","metropolis"); ?> </li>
+       <li>— <?php _e("Castelar Street Elementary","metropolis"); ?> </li>
+       <li>— <?php _e("Downtown Business High","metropolis"); ?> </li>
+       <li>— <?php _e("Endeavor College Preparatory Charter","metropolis"); ?> </li>
+       <li>— <?php _e("Frank Lanterman","metropolis"); ?> </li>
+       <li>— <?php _e("Garza (Carmen Lomas) Primary Center","metropolis"); ?> </li>
+       <li>— <?php _e("New Designs Charter","metropolis"); ?> </li>
      </ul>
   </div>
   <div class="column small-12 small-centered medium-uncentered medium-4">
      <h2 class="edu wow fadeInUp" data-wow-delay="1s">Private schools</h2>
      <ul class="wow fadeInUp edu" data-wow-delay="1.25s">
-       <li>— Bishop Mora Salesian High School</li>
-       <li>— Cathedral High School</li>
-       <li>— Divine Providence Day Nursery and Kindergarten</li>
-       <li>— Dolores Mission</li>
-       <li>— Immaculate Conception</li>
-       <li>— New Covenant Academy</li>
-       <li>— Personal Coaching Systems</li>
-       <li>— Red Star</li>
-       <li>— Santa Isabel</li>
-       <li>— Star Christian</li>
-       <li>— St. Mary Catholic Elementary</li>
-       <li>— St. Turibius Elementary</li>
-       <li>— St. Vincent Elementary School</li>
+       <li>— <?php _e("Bishop Mora Salesian High School","metropolis"); ?> </li>
+       <li>— <?php _e("Cathedral High School","metropolis"); ?> </li>
+       <li>— <?php _e("Divine Providence Day Nursery and Kindergarten","metropolis"); ?> </li>
+       <li>— <?php _e("Dolores Mission","metropolis"); ?> </li>
+       <li>— <?php _e("Immaculate Conception","metropolis"); ?> </li>
+       <li>— <?php _e("New Covenant Academy","metropolis"); ?> </li>
+       <li>— <?php _e("Personal Coaching Systems","metropolis"); ?> </li>
+       <li>— <?php _e("Red Star","metropolis"); ?> </li>
+       <li>— <?php _e("Santa Isabel","metropolis"); ?> </li>
+       <li>— <?php _e("Star Christian","metropolis"); ?> </li>
+       <li>— <?php _e("St. Mary Catholic Elementary","metropolis"); ?> </li>
+       <li>— <?php _e("St. Turibius Elementary","metropolis"); ?> </li>
+       <li>— <?php _e("St. Vincent Elementary School","metropolis"); ?> </li>
      </ul>
   </div>
 </div>
 
 <div class="row space bgold">
   <div class="column small-12 small-centered text-center">
-    <h1 class="wow fadeInUp">downtown l.a.<br>neighborhood favorites</h1>
+    <h1 class="wow fadeInUp"><?php _e("downtown l.a.<br>neighborhood favorites","metropolis"); ?></h1>
   </div>
 </div>
 
     <div class="txt-wrap">
       <div class="txt">
-      <h3><strong>“America’s Next Great City Is Inside L.A.”</strong></h3>
-      <cite>“...amid the glittering towers and crumbly Art Deco facades, a new generation of adventurous chefs, bartenders, loft dwellers, artists, and developers are creating a neighborhood as electrifying and gritty as New York in the ‘70s... the coolest new 
-      downtown in America.”
+      <h3><strong><?php _e("“America’s Next Great City Is Inside L.A.”","metropolis"); ?></strong></h3>
+      <cite><?php _e("“...amid the glittering towers and crumbly Art Deco facades, a new generation of adventurous chefs, bartenders, loft dwellers, artists, and developers are creating a neighborhood as electrifying and gritty as New York in the ‘70s... the coolest new downtown in America.”","metropolis"); ?>
     </cite>
-      <p><strong> ~ GQ Magazine, January 2014.</strong></p>
+      <p><strong> ~ <?php _e("GQ Magazine, January 2014.","metropolis"); ?></strong></p>
       </div>
     </div>
    
@@ -371,7 +367,7 @@ education options, including private schools, colleges, universities, and librar
 
 <div class="row poi">
   <div class="column small-10 small-centered medium-uncentered medium-3">
-    <h2 class="food wow fadeInUp"  data-type="food">Food & Drinks</h2>
+    <h2 class="food wow fadeInUp"  data-type="food"><?php _e("Food & Drinks","metropolis"); ?></h2>
     <ul class="wow fadeInUp mapData" data-wow-delay="0.25s" data-type="food" data-color="574e74">
       <?php 
         $cosultar_food=new WP_Query($args_food);
@@ -390,7 +386,7 @@ education options, including private schools, colleges, universities, and librar
     </ul>
   </div>
   <div class="column small-10 small-centered medium-uncentered  medium-3">
-    <h2 class="culture wow fadeInUp" data-wow-delay="0.5s">Entertainment</h2>
+    <h2 class="culture wow fadeInUp" data-wow-delay="0.5s"><?php _e("Entertainment","metropolis"); ?></h2>
     <ul class="wow fadeInUp mapData" data-wow-delay="0.75s" data-type="Entertainment" data-color="ffb67d">
       <?php 
         $cosultar_ent=new WP_Query($args_ent);
@@ -408,7 +404,7 @@ education options, including private schools, colleges, universities, and librar
     </ul>
   </div>
   <div class="column small-10 small-centered medium-uncentered  medium-3">
-    <h2 class="education wow fadeInUp" data-wow-delay="1s">Schools and Parks</h2>
+    <h2 class="education wow fadeInUp" data-wow-delay="1s"><?php _e("Schools and Parks","metropolis"); ?></h2>
     <ul class="wow fadeInUp mapData" data-wow-delay="1.25s" data-type="education" data-color="ff7092">
       <?php 
         $cosultar_edu=new WP_Query($args_scho);
@@ -426,7 +422,7 @@ education options, including private schools, colleges, universities, and librar
     </ul>
   </div>
   <div class="column  small-10 small-centered medium-uncentered medium-3">
-    <h2 class="misc wow fadeInUp" data-wow-delay="1.5s">Shopping and relaxation</h2>
+    <h2 class="misc wow fadeInUp" data-wow-delay="1.5s"><?php _e("Shopping and relaxation","metropolis"); ?></h2>
     <ul class="wow fadeInUp mapData" data-wow-delay="1.75s" data-type="shopping" data-color="00c1bc">
       <?php 
         $cosultar_relax=new WP_Query($args_relax);

@@ -23,8 +23,8 @@ get_header(); ?>
           <div class="line"> 
             <span class="white vertical full to-t"></span>
           </div>
-            <h1>URBAN LIVING REIMAGINED</h1>
-            <h2>Introducing the most luxurious<br/> new address in downtown L.A.</h2>
+            <h1><?php _e("URBAN LIVING REIMAGINED",",metropolis"); ?></h1>
+            <h2><?php _e("Introducing the most luxurious<br/> new address in downtown L.A.","metropolis"); ?></h2>
           <div class="line">
             <span class="white vertical full to-b"></span>
           </div>
@@ -34,7 +34,7 @@ get_header(); ?>
 <figure id="sunset">
 <div class="overlay-black" > </div> 
 <div class="row" >
-  <h4 class="wow fadeOutUp" data-wow-duration="3s" data-wow-delay="3s">Hover over the image<br>and discover Metropolis —</h4>
+  <h4 class="wow fadeOutUp" data-wow-duration="3s" data-wow-delay="3s"><?php _e("Hover over the image<br>and discover Metropolis —","metropolis"); ?></h4>
     <img src="<?php echo URL; ?>/images/sunset/0.jpg" alt="Metropolis" width="960" height="650"  usemap="#m_crop_c01_Sunset2" id="sunset-image">
     <img src="<?php echo URL; ?>/images/sunset/1.jpg" alt="Metropolis - Hotel Tower"  width="960" height="650"  usemap="#m_crop_c01_Sunset2" class="sunset img1">
     <img src="<?php echo URL; ?>/images/sunset/2.jpg" alt="Metropolis Residential — Tower 1" width="960" height="650"  usemap="#m_crop_c01_Sunset2" class="sunset img2">
@@ -43,15 +43,15 @@ get_header(); ?>
     <span class="t1-line-for-medium"></span>
     <span class="t1-line"></span>
     <div class="txt t1">
-      <h1><span class="h-large">— </span> Metropolis <span class="h-small">—</span> </h1> 
-      <h2>Hotel Tower</h2>
+      <h1><span class="h-large">— </span> <?php _e("Metropolis","metropolis"); ?><span class="h-small"> —</span> </h1> 
+      <h2><?php _e("Hotel Tower","metropolis"); ?></h2>
     </div>
     <span class="t2-line"></span>
-    <div class="txt t2"><h1>Metropolis Residential <span>—</span></h1> <h2>Tower 1</h2></div>
+    <div class="txt t2"><h1><?php _e("Metropolis Residential","metropolis"); ?> <span>—</span></h1> <h2><?php _e("Tower 1","metropolis"); ?></h2></div>
     <span class="t3-line"></span>
-    <div class="txt t3"><h1>Metropolis Residential <span>—</span></h1> <h2>Tower 2</h2></div>
+    <div class="txt t3"><h1><?php _e("Metropolis Residential","metropolis"); ?> <span>—</span></h1> <h2><?php _e("Tower 2","metropolis"); ?></h2></div>
     <span class="t4-line"></span>
-    <div class="txt t4"><h1><span>—</span> Metropolis Residential<span class="tablet-small">—</span></h1> <h2>Tower 3</h2></div>
+    <div class="txt t4"><h1><span>—</span> <?php _e("Metropolis Residential","metropolis"); ?><span class="tablet-small">—</span></h1> <h2><?php _e("Tower 3","metropolis"); ?></h2></div>
 </div>
 </figure>
 
