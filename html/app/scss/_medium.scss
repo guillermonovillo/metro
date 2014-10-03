@@ -236,10 +236,10 @@ html.ie9 {
 		
 
 
-	.t1-line, .t2-line, .t3-line, .t4-line {background:white; width:1px; position: absolute; top:0; float: left;position: absolute; z-index:3; margin:0 15px; display:none; }
+	.t1-line, .t2-line, .t3-line, .t4-line {visibility:visible; background:white; width:1px; float: left; z-index:3; margin:0 15px; display:none; }
 	.t1-line {left:0%; top: 47%; height:51%;}
-	.t2-line {right: 68%; top: 43%; height:46%;}
-	.t3-line {right: 51%; top: 25%; height:45%;}
+	.t2-line {left:auto; right: 68%; top: 43%; height:46%;}
+	.t3-line {left:auto; right: 51%; top: 25%; height:45%;}
 	.t4-line {left: 84.2%; top:4%; height:60%;}
 }
 

@@ -4022,6 +4022,34 @@ The provided mixins are intended to be used with the array-like variables
       line-height: 15px;
       font-size: 14px;
       font-weight: bold; }
+    #sunset .t1-line {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      visibility: hidden; }
+    #sunset .t2-line {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      visibility: hidden; }
+    #sunset .t3-line {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      visibility: hidden; }
+    #sunset .t4-line {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      visibility: hidden; }
   .home .wide {
     margin: 60px 0 80px;
     background: rgba(0, 0, 0, 0.1); }
@@ -5606,12 +5634,10 @@ The provided mixins are intended to be used with the array-like variables
   #sunset h4 {
     top: 70px; }
   #sunset .t1-line, #sunset .t2-line, #sunset .t3-line, #sunset .t4-line {
+    visibility: visible;
     background: white;
     width: 1px;
-    position: absolute;
-    top: 0;
     float: left;
-    position: absolute;
     z-index: 3;
     margin: 0 15px;
     display: none; }
@@ -5620,10 +5646,12 @@ The provided mixins are intended to be used with the array-like variables
     top: 47%;
     height: 51%; }
   #sunset .t2-line {
+    left: auto;
     right: 68%;
     top: 43%;
     height: 46%; }
   #sunset .t3-line {
+    left: auto;
     right: 51%;
     top: 25%;
     height: 45%; }

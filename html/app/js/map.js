@@ -12,7 +12,7 @@
         // var center = $(document).width() > 480 ? new google.maps.LatLng(34.052751, -118.258978) : ;
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-          center: new google.maps.LatLng(34.048066, -118.267096), 
+          center: new google.maps.LatLng(34.0480725,-118.2642603), 
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
@@ -203,11 +203,11 @@
    
   var marker = new google.maps.Marker({
     icon: image,
-    position: new google.maps.LatLng(34.048066, -118.267096),
+    position: new google.maps.LatLng(34.0480725,-118.2642603),
     map: map
   });
 
-    var boxText = '<div><div class="infobox-content"><h2 style="color:white">Metropolis<br><small>889 S Figueroa Street</small></h2></div></div>';
+    var boxText = '<div><div class="infobox-content"><h2 style="color:white">Metropolis<br><small>889 Francisco Street</small></h2></div></div>';
       var myOptions2 = {
         content: boxText,
         boxClass: "infoBox metropolis",
