@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-04 21:20-0300\n"
-"PO-Revision-Date: 2014-10-04 21:20-0300\n"
+"POT-Creation-Date: 2014-10-05 17:01-0300\n"
+"PO-Revision-Date: 2014-10-05 17:01-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -52,6 +52,14 @@ msgstr ""
 #: .././author.php:63 .././content.php:62
 #, php-format
 msgid "About %s"
+msgstr ""
+
+#: .././category.php:28 .././page-press.php:34
+msgid "US"
+msgstr ""
+
+#: .././category.php:29 .././page-press.php:35
+msgid "International"
 msgstr ""
 
 #: .././comments.php:42
@@ -522,7 +530,7 @@ msgstr ""
 msgid "Broker"
 msgstr ""
 
-#: .././page-contact.php:26 .././page-press.php:29 .././page-thanks.php:27
+#: .././page-contact.php:26 .././page-press.php:30 .././page-thanks.php:27
 #: .././single.php:14
 msgid "Press"
 msgstr ""
@@ -992,19 +1000,19 @@ msgid ""
 "for effortless lifestyle."
 msgstr ""
 
-#: .././page-press.php:49
+#: .././page-press.php:50
 msgid "DOWNLOAD PDF"
 msgstr ""
 
-#: .././page-press.php:53
+#: .././page-press.php:54
 msgid "PLAY VIDEO"
 msgstr ""
 
-#: .././page-press.php:57
+#: .././page-press.php:58
 msgid "READ MORE"
 msgstr ""
 
-#: .././page-press.php:88
+#: .././page-press.php:89
 msgid "Load More"
 msgstr ""
 

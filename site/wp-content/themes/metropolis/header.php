@@ -102,7 +102,7 @@ global $activa;
                   <li class="team separator">&middot;</li>
          <li class="nav-item team"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="team"){echo "class='active'";} ?>><?php _e("TEAM","metropolis"); ?><span></span></a></li>
                   <li class="press separator">&middot;</li>
-         <li class="nav-item press"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="press"){echo "class='active'";} ?>><?php _e("PRESS","metropolis"); ?><span></span></a></li>
+         <li class="nav-item press"><a href="<?php echo RAIZ."/$press->post_name"; ?>" <?php if($activa=="press"){echo "class='active'";} ?>><?php _e("PRESS","metropolis"); ?><span></span></a></li>
          <li class="nav-item contact"><a href="<?php echo RAIZ."/$contact->post_name"; ?>" <?php if($activa=="contact"){echo "class='active'";} ?>><?php _e("CONTACT","metropolis"); ?><span></span></a></li>
        </ul>
      </nav>

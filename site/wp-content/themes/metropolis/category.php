@@ -13,7 +13,7 @@
 $activa="press";
 get_header(); 
 global $query_string;
-$query_string.="&posts_per_page=4";
+$query_string.="&posts_per_page=4&lang='en,zh'";
 query_posts( $query_string );
 ?>
 
@@ -25,8 +25,8 @@ query_posts( $query_string );
          </div>
          <aside class="aside">
             <ul class="aside-ul filter-options">
-               <li><a href="<?php echo RAIZ ?>/category/domestic/" class="art-filter" data-filter-value="domestic">Domestic</a></li>
-               <li><a href="<?php echo RAIZ ?>/category/international/" class="art-filter" data-filter-value="international">International</a></li>
+               <li><a href="<?php echo RAIZ ?>/category/us/" class="art-filter" data-filter-value="us"><?php _e("US","metropolis"); ?></a></li>
+               <li><a href="<?php echo RAIZ ?>/category/international/" class="art-filter" data-filter-value="international"><?php _e("International","metropolis"); ?></a></li>
 
             </ul>
          </aside>
