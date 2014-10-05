@@ -16,14 +16,14 @@ get_header(); ?>
    <article class="contact">
       <div class="content">
          <div class="hgroup">
-            <h1>Contact</h1>
-            <p>Please select one</p>
+            <h1><?php _e("Contact","metropolis"); ?></h1>
+            <p><?php _e("Please select one","metropolis"); ?></p>
             <ul class="contact-ul">
-               <li class="selected"><a href="#" class="purchaser">Prospective purchaser</a></li>
+               <li class="selected"><a href="#" class="purchaser"><?php _e("Prospective purchaser","metropolis"); ?></a></li>
                <li class="separator">|</li>
-               <li><a href="#" class="broker">Broker</a></li>
+               <li><a href="#" class="broker"><?php _e("Broker","metropolis"); ?></a></li>
                <li class="separator">|</li>
-               <li><a href="#" class="press">Press</a></li>
+               <li><a href="#" class="press"><?php _e("Press","metropolis"); ?></a></li>
             </ul>
          </div>
          <div class="cgroup">
@@ -39,22 +39,22 @@ get_header(); ?>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
-                              <label>*Name</label>
+                              <label><?php _e("*Name","metropolis"); ?></label>
                               <input name="firstname" placeholder="First" data-place="First" class="text required first" type="text" />
                               <input name="lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
-                              <label>*Address</label>
+                              <label><?php _e("*Address","metropolis"); ?></label>
                               <input name="address" class="text required" type="text" />
                            </div>
                            <div class="field">
-                              <label>*Email</label>
+                              <label><?php _e("*Email","metropolis"); ?></label>
                               <input name="email" class="text required email" type="email" />
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field">
-                              <label>Country</label>
+                              <label><?php _e("Country","metropolis"); ?></label>
                               <select name="country" class="chosen-select">
                                  <option></option>
                                  <option value="Afganistan">Afghanistan</option>
@@ -307,50 +307,50 @@ get_header(); ?>
                            </select>
                            </div>
                            <div class="field">
-                              <label>*Phone</label>
+                              <label><?php _e("*Phone","metropolis"); ?></label>
                               <input name="homephone" class="text required" type="text" />
                            </div>
                            <div class="field alt">
-                              <label>How did you hear<br />about metropolis ?</label>
+                              <label><?php _e("How did you hear<br />about metropolis ?","metropolis"); ?></label>
                               <select name="" class="chosen-select" data-placeholder="">
                                  <option></option>
-                                 <option value="9625" data-html-text="Event">Event</option>
-                                 <option value="9146" data-html-text="Signage">Signage</option>
-                                 <option value="9624" data-html-text="Online Search">Online Search</option>
-                                 <option value="9623" data-html-text="The Real deal">The Real deal</option>
-                                 <option value="9139" data-html-text="NYtimes.com">NYtimes.com</option>
-                                 <option value="9622" data-html-text="Elliman.com">Elliman.com</option>
-                                 <option value="9151" data-html-text="Wall Street Journal">Wall Street Journal</option>
-                                 <option value="9127" data-html-text="Curbed.com">Curbed.com</option>
-                                 <option value="9140" data-html-text="Other">Other</option>
+                                 <option value="9625" data-html-text="Event"><?php _e("Event","metropolis"); ?></option>
+                                 <option value="9146" data-html-text="Signage"><?php _e("Signage","metropolis"); ?></option>
+                                 <option value="9624" data-html-text="Online Search"><?php _e("Online Search","metropolis"); ?></option>
+                                 <option value="9623" data-html-text="The Real deal"><?php _e("The Real deal","metropolis"); ?></option>
+                                 <option value="9139" data-html-text="NYtimes.com"><?php _e("NYtimes.com","metropolis"); ?></option>
+                                 <option value="9622" data-html-text="Elliman.com"><?php _e("Elliman.com","metropolis"); ?></option>
+                                 <option value="9151" data-html-text="Wall Street Journal"><?php _e("Wall Street Journal","metropolis"); ?></option>
+                                 <option value="9127" data-html-text="Curbed.com"><?php _e("Curbed.com","metropolis"); ?></option>
+                                 <option value="9140" data-html-text="Other"><?php _e("Other","metropolis"); ?></option>
                               </select>
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-3">
                            <div class="field field-2">
-                              <label>*Represented by Brokers?</label>
-                              <a data-hasbroker="1" class="radio-button has-broker-yes" href="#">Yes</a>
-                              <a data-hasbroker="0" class="radio-button has-broker-no selected" href="#">No</a>
+                              <label><?php _e("*Represented by Brokers?","metropolis"); ?></label>
+                              <a data-hasbroker="1" class="radio-button has-broker-yes" href="#"><?php _e("Yes","metropolis"); ?></a>
+                              <a data-hasbroker="0" class="radio-button has-broker-no selected" href="#"><?php _e("No","metropolis"); ?></a>
                               <input id="hasbroker" name="hasbroker" type="hidden" value="0" />
                            </div>
                            <div class="has-broker-wrapper">
                               <div class="field field-1">
-                                 <label>*Broker's name</label>
+                                 <label><?php _e("*Broker's name","metropolis"); ?></label>
                                  <input name="broker_firstname" id="purchaser-broker-firstname" placeholder="First" data-place="First" class="text first required skip" type="text" />
                                  <input name="broker_lastname"  id="purchaser-broker-lastname" placeholder="Last" data-place="Last" class="text last required skip" type="text" />
                               </div>
                               <div class="field field-1">
-                                 <label>*Broker's Co. Contact Number</label>
+                                 <label><?php _e("*Broker's Co. Contact Number","metropolis"); ?></label>
                                  <input name="brokerage_company" class="text first required skip" type="text" />
                                  <input name="realtor_phone" class="text last required skip" type="text" />
                               </div>
                               <div class="field">
-                                 <label>*Broker's Co. email</label>
+                                 <label><?php _e("*Broker's Co. email","metropolis"); ?></label>
                                  <input name="realtor_email" class="text email required skip" type="email" />
                               </div>
                            </div>
                            <div class="field field-button">
-                              <button type="submit" class="form-button">Send</button><br /><small>*Required</small>
+                              <button type="submit" class="form-button"><?php _e("Send","metropolis"); ?></button><br /><small><?php _e("*Required","metropolis"); ?></small>
                            </div>
                         </div>
                      </div>
@@ -374,39 +374,39 @@ get_header(); ?>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
-                              <label>*Name</label>
+                              <label><?php _e("*Name","metropolis"); ?></label>
                               <input name="firstname" id="broker-firstname" placeholder="First" data-place="First" class="text required first" type="text" />
                               <input name="lastname"  id="broker-lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
-                              <label for="">*Brokers company</label>
+                              <label for=""><?php _e("*Brokers company","metropolis"); ?></label>
                               <input name="brokerage_company" placeholder="" class="text required" type="text" />
                            </div>
                            <div class="field">
-                              <label for="">*Email</label>
+                              <label for=""><?php _e("*Email","metropolis"); ?></label>
                               <input name="realtor_email" class="text required email" type="text" placeholder="" />
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-2">
                            <div class="field alt">
-                              <label>How did you hear<br />about metropolis ?</label>
+                              <label><?php _e("How did you hear<br />about metropolis ?","metropolis"); ?></label>
                               <select name="hearfrom" class="chosen-select" data-placeholder="">
                                  <option value=""></option>
-                                 <option value="9625" data-html-text="Event">Event</option>
-                                 <option value="9146" data-html-text="Signage">Signage</option>
-                                 <option value="9624" data-html-text="Online Search">Online Search</option>
-                                 <option value="9623" data-html-text="The Real deal">The Real deal</option>
-                                 <option value="9139" data-html-text="NYtimes.com">NYtimes.com</option>
-                                 <option value="9622" data-html-text="Elliman.com">Elliman.com</option>
-                                 <option value="9151" data-html-text="Wall Street Journal">Wall Street Journal</option>
-                                 <option value="9127" data-html-text="Curbed.com">Curbed.com</option>
-                                 <option value="9140" data-html-text="Other">Other</option>
+                                 <option value="9625" data-html-text="Event"><?php _e("Event","metropolis"); ?></option>
+                                 <option value="9146" data-html-text="Signage"><?php _e("Signage","metropolis"); ?></option>
+                                 <option value="9624" data-html-text="Online Search"><?php _e("Online Search","metropolis"); ?></option>
+                                 <option value="9623" data-html-text="The Real deal"><?php _e("The Real deal","metropolis"); ?></option>
+                                 <option value="9139" data-html-text="NYtimes.com"><?php _e("NYtimes.com","metropolis"); ?></option>
+                                 <option value="9622" data-html-text="Elliman.com"><?php _e("Elliman.com","metropolis"); ?></option>
+                                 <option value="9151" data-html-text="Wall Street Journal"><?php _e("Wall Street Journal","metropolis"); ?></option>
+                                 <option value="9127" data-html-text="Curbed.com"><?php _e("Curbed.com","metropolis"); ?></option>
+                                 <option value="9140" data-html-text="Other"><?php _e("Other","metropolis"); ?></option>
                               </select>
                            </div>
                         </div>
                         <div class="medium-4 large-4 columns column-3">
                            <div class="field field-button">
-                              <button type="submit" class="form-button">Send</button><br /><small>*Required</small>
+                              <button type="submit" class="form-button"><?php _e("Send","metropolis"); ?></button><br /><small><?php _e("*Required","metropolis"); ?></small>
                            </div>
                         </div>
                      </div>
@@ -423,26 +423,26 @@ get_header(); ?>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
-                              <label>*Name</label>
+                              <label><?php _e("*Name","metropolis"); ?></label>
                               <input name="first_name" class="text required first" type="text" placeholder="First" data-place="First"  />
                               <input name="last_name" class="text required last" type="text" placeholder="Last" data-place="Last"  />
                            </div>
                            <div class="field">
-                              <label>*Email</label>
+                              <label><?php _e("*Email","metropolis"); ?></label>
                               <input name="email" class="text required email" type="email" />
                            </div>
                            <div class="field">
-                              <label>*Publication</label>
+                              <label><?php _e("*Publication","metropolis"); ?></label>
                               <input name="publication" class="text required" type="text" />
                            </div>
                         </div>
                         <div class="medium-8 large-8 columns column-2">
                            <div class="field field-1">
-                              <label>*Your request</label>
+                              <label><?php _e("*Your request","metropolis"); ?></label>
                               <textarea name="request" class="textarea required"></textarea>
                            </div>
                            <div class="field field-button">
-                              <button class="form-button">Send</button><br /><small>*Required</small>
+                              <button class="form-button"><?php _e("Send","metropolis"); ?></button><br /><small><?php _e("*Required","metropolis"); ?></small>
                            </div>
                         </div>
                      </div>
@@ -456,12 +456,12 @@ get_header(); ?>
          <div class="thanks">
             <div class="wrapper">
                <div class="wrapper-in">
-                  <a href="#" class="close">Close</a>
+                  <a href="#" class="close"><?php _e("Close","metropolis"); ?></a>
                   <div class="hgroup">
-                     <h1>Thank you</h1>
+                     <h1><?php _e("Thank you","metropolis"); ?></h1>
                   </div>
                   <div class="cgroup">
-                     <p>Your information<br />has been successfully submitted</p>
+                     <p><?php _e("Your information<br />has been successfully submitted","metropolis"); ?></p>
                   </div>
                </div>
             </div>

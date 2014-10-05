@@ -69,11 +69,11 @@ global $activa;
    <div class="row nav-lang">
       <div class="column medium-4">
        <p class="lang">
-          LANGUAGE <a href="<?php echo pll_home_url("en"); ?>" <?php if($idioma=="en"){echo 'class="active"'; } ?>>EN</a> <a href="<?php echo pll_home_url("zh"); ?>" <?php if($idioma=="zh"){echo 'class="active"'; } ?>>中文</a><br>
-          <span class="gold">AVAILABILITY — <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK">floor plans</a></span>
+          <?php _e("LANGUAGE","metropolis"); ?> <a href="<?php echo pll_home_url("en"); ?>" <?php if($idioma=="en"){echo 'class="active"'; } ?>>EN</a> <a href="<?php echo pll_home_url("zh"); ?>" <?php if($idioma=="zh"){echo 'class="active"'; } ?>>中文</a><br>
+          <span class="gold"><?php _e("AVAILABILITY","metropolis"); ?> — <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK"><?php _e("floor plans","metropolis"); ?></a></span>
         </p>
       </div>
-      <div class="column medium-4 text-right"><p class="sale rp gold">sales center  los angeles   —   <a href="#">855-657-8300</a></p></div>
+      <div class="column medium-4 text-right"><p class="sale rp gold"><?php _e("sales center  los angeles","metropolis"); ?>   —   <a href="#">855-657-8300</a></p></div>
    </div>
 
 
@@ -92,26 +92,26 @@ global $activa;
    <div class="row navigation">
      <nav class="medium-12 columns nav-links">
        <ul>
-         <li class="nav-item home"><a href="<?php echo pll_home_url($idioma); ?>" <?php if($activa=="home"){echo "class='active'";} ?>>HOME<span></span></a></li>
+         <li class="nav-item home"><a href="<?php echo pll_home_url($idioma); ?>" <?php if($activa=="home"){echo "class='active'";} ?>><?php _e("HOME","metropolis"); ?><span></span></a></li>
                   <li class="lifestyle separator">&middot;</li>
-         <li class="nav-item lifestyle"><a href="<?php echo RAIZ."/$lifestyle->post_name"; ?>" <?php if($activa=="lifestyle"){echo "class='active'";} ?>>LIFESTYLE<span></span></a></li>
+         <li class="nav-item lifestyle"><a href="<?php echo RAIZ."/$lifestyle->post_name"; ?>" <?php if($activa=="lifestyle"){echo "class='active'";} ?>><?php _e("LIFESTYLE","metropolis"); ?><span></span></a></li>
                   <li class="neighborhood separator">&middot;</li>
-         <li class="nav-item neighborhood"><a href="<?php echo RAIZ."/$neighborhood->post_name"; ?>" <?php if($activa=="neighborhood"){echo "class='active'";} ?>>NEIGHBORHOOD<span></span></a></li>
+         <li class="nav-item neighborhood"><a href="<?php echo RAIZ."/$neighborhood->post_name"; ?>" <?php if($activa=="neighborhood"){echo "class='active'";} ?>><?php _e("NEIGHBORHOOD","metropolis"); ?><span></span></a></li>
                   <li class="overview separator">&middot;</li>
-         <li class="nav-item overview"><a href="<?php echo RAIZ."/$overview->post_name"; ?>" <?php if($activa=="overview"){echo "class='active'";} ?>>OVERVIEW<span></span></a></li>
+         <li class="nav-item overview"><a href="<?php echo RAIZ."/$overview->post_name"; ?>" <?php if($activa=="overview"){echo "class='active'";} ?>><?php _e("OVERVIEW","metropolis"); ?><span></span></a></li>
                   <li class="team separator">&middot;</li>
-         <li class="nav-item team"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="team"){echo "class='active'";} ?>>TEAM<span></span></a></li>
+         <li class="nav-item team"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="team"){echo "class='active'";} ?>><?php _e("TEAM","metropolis"); ?><span></span></a></li>
                   <li class="press separator">&middot;</li>
-         <li class="nav-item press"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="press"){echo "class='active'";} ?>>PRESS<span></span></a></li>
-         <li class="nav-item contact"><a href="<?php echo RAIZ."/$contact->post_name"; ?>" <?php if($activa=="contact"){echo "class='active'";} ?>>CONTACT<span></span></a></li>
+         <li class="nav-item press"><a href="<?php echo RAIZ."/$team->post_name"; ?>" <?php if($activa=="press"){echo "class='active'";} ?>><?php _e("PRESS","metropolis"); ?><span></span></a></li>
+         <li class="nav-item contact"><a href="<?php echo RAIZ."/$contact->post_name"; ?>" <?php if($activa=="contact"){echo "class='active'";} ?>><?php _e("CONTACT","metropolis"); ?><span></span></a></li>
        </ul>
      </nav>
      <hr class="line">
      <div class="medium-12 nav-lang-small">
       <div class="">
-       <p>LANGUAGE <a href="#en" class="active">EN</a> <a href="#cn">中文</a></p>
-       <p>AVAILABILITY    —    floor plans</p>
-       <p>sales center  los angeles   —   <a href="#">855-657-8300</a></p>
+       <p><?php _e("LANGUAGE","metropolis"); ?> <a href="#en" class="active">EN</a> <a href="#cn">中文</a></p>
+       <p><?php _e("AVAILABILITY","metropolis"); ?>    —    <?php _e("floor plans","metropolis"); ?></p>
+       <p><?php _e("sales center  los angeles","metropolis"); ?>   —   <a href="#">855-657-8300</a></p>
       </div>
    </div>
 

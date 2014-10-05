@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-03 15:57-0300\n"
-"PO-Revision-Date: 2014-10-03 15:57-0300\n"
+"POT-Creation-Date: 2014-10-04 21:20-0300\n"
+"PO-Revision-Date: 2014-10-04 21:20-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -111,11 +111,11 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
-#: .././content-none.php:13 .././index.php:49 .././search.php:34
+#: .././content-none.php:13 .././search.php:34
 msgid "Nothing Found"
 msgstr ""
 
-#: .././content-none.php:17 .././index.php:53
+#: .././content-none.php:17
 msgid ""
 "Apologies, but no results were found. Perhaps searching will help find a "
 "related post."
@@ -132,6 +132,150 @@ msgstr ""
 #: .././content.php:66
 #, php-format
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: .././footer.php:17
+msgid "Metropolis Sales Center"
+msgstr ""
+
+#: .././footer.php:19
+msgid "777 S. Figueroa Street St. Suite 4650"
+msgstr ""
+
+#: .././footer.php:20 .././footer.php:47
+msgid "Los Angeles"
+msgstr ""
+
+#: .././footer.php:21
+msgid "CA"
+msgstr ""
+
+#: .././footer.php:22
+msgid "90017"
+msgstr ""
+
+#: .././footer.php:23
+msgid "United States"
+msgstr ""
+
+#: .././footer.php:26
+msgid "855-657-8300"
+msgstr ""
+
+#: .././footer.php:30
+msgid "Sales Center China"
+msgstr ""
+
+#: .././footer.php:32
+msgid "＋86 400-628-5588"
+msgstr ""
+
+#: .././footer.php:42
+msgid "Metropolis all rights reserved"
+msgstr ""
+
+#: .././footer.php:42
+msgid "Disclaimer"
+msgstr ""
+
+#: .././footer.php:42
+msgid "Site Credits"
+msgstr ""
+
+#: .././footer.php:51
+msgid "Back to Top"
+msgstr ""
+
+#: .././footer.php:66 .././page-contact.php:459 .././page-thanks.php:460
+msgid "Close"
+msgstr ""
+
+#: .././footer.php:70
+msgid "DISCLAIMER"
+msgstr ""
+
+#: .././footer.php:72
+msgid ""
+"<p>The informational material on this site is provided for informational "
+"purposes only and does not constitute an offering of condominium units for "
+"sale or for solicitation of offers to purchase units. It is to help generate "
+"interest in the proposed project based upon a Preliminary Subdivision Public "
+"Report issued by the California Bureau of Real Estate (“BRE”). </p><p>The "
+"developer has obtained the issuance of a Preliminary Subdivision Public "
+"Report from the BRE and is permitted to advertise the project, take "
+"reservations and receive refundable deposits from prospective buyers. "
+"However, no binding contracts may be entered into at this time. The "
+"materials and information on this site should in no way be relied upon for "
+"financial, tax, accounting, investment, business or legal advice. Oral "
+"representations should not be relied upon as correctly stating "
+"representations of the developer. </p><p>The developer may not enter into "
+"any binding contracts to sell units in the project until after a Conditional "
+"Subdivision Public Report has been issued by the BRE. The BRE review of the "
+"developer’s application and required filing materials includes, but is not "
+"limited to, the terms and conditions of the proposed offering, the condition "
+"of title, the status of blanket liens on the project, security arrangements "
+"to assure project completion, access from public streets, the availability "
+"of sufficient water service, utilities, public schools and other public "
+"services and improvements for the proposed development, and acceptable "
+"documents and provisions for establishment of one or more owners’ "
+"associations to manage and operate the project. </p><p>The complete offering "
+"terms will be made available to prospective buyers by the developer and its "
+"real estate brokers when such offering terms and conditions have been "
+"finalized and have been authorized by the BRE to be used for entering into "
+"purchase agreements. Purchasers should obtain a copy of the Conditional or "
+"Final Subdivision Public Report, when available, for additional information "
+"about the project. No federal agency has judged the merits or value, if any, "
+"of this project. </p><p>The diagrams and drawings of the proposed project on "
+"this site are artist’s renderings and are conceptual only. Maps, floor "
+"plans, model and other improvements represented, are not to scale or shown "
+"in their final as-built locations and orientations. The developer expressly "
+"reserves the right to make such modifications, revisions, and changes in the "
+"design of the project and the buildings and condominium units therein, that "
+"it deems desirable in its sole and absolute discretion or as may be required "
+"by law or governmental bodies. All features, specifications and plans are "
+"subject to change without notice. Dimensions and square footages are "
+"approximate only, based upon initial architectural drawings, and may vary "
+"with actual construction of the project and redesign of the size, "
+"orientation and locations of the units and other building elements. </"
+"p><p>Any views represented in the materials on this site are also "
+"preliminary and are subject to be changed or eliminated in the final "
+"construction of the project. Views shown cannot be relied upon as the actual "
+"view from any particular unit within the project. Views will differ "
+"depending on conditions such as location, skyline, and weather. Prospective "
+"purchasers should be aware that any view from the unit and the remainder of "
+"the project may in the future be limited or eliminated by construction of "
+"buildings on adjacent or neighboring properties. Developer hereby gives "
+"notice to prospective purchasers that developer in no manner guarantees the "
+"continuing existence of any view from any particular unit in the project. "
+"Further, developer gives notice to prospective purchasers that the developer "
+"makes no commitment or representation concerning the development of any "
+"property in proximity to, or visible from, the unit or project. </"
+"p><p>Interior photos shown depict model units with designer elements, "
+"options and upgrades that may or may not be available for purchase by a "
+"prospective buyer, and are not representative of the standard features of "
+"units as presently planned. All fixtures, furniture, art and items of finish "
+"and decoration of units are for illustration purposes only, and will not be "
+"included with the unit unless otherwise provided by developer in the "
+"purchase and sale documents. </p><p>Purchase of a condominium unit, and "
+"access to particular recreational or other amenities in the project, will "
+"require membership in one or more owners’ or condominium associations, and "
+"payment of monthly fees and assessments in addition to the purchase price. </"
+"p><p>Any prices and project features that may be provided, from time to "
+"time, are subject to change without notice. </p><p>We are pledged to the "
+"letter and spirit of U.S. policy for the achievement of equal housing "
+"opportunity throughout the Nation. We encourage and support an affirmative "
+"advertising and marketing program in which there are no barriers to "
+"obtaining housing because of race, color, religion, sex, handicap, familial "
+"status, or national origin.</p><p>This advertising material is neither an "
+"offer to sell nor a solicitation of an offer to buy to residents of any "
+"state or jurisdiction in which the legally required registration "
+"requirements have not been fulfilled, and may also be subject to a "
+"registration requirement under federal law.</p><p>The unauthorized use or "
+"reproduction of these plans and information is strictly prohibited. </"
+"p><p>Neither the information and materials described herein, nor any "
+"communication made or given in connection with any of the foregoing, may be "
+"deemed to constitute any form of warranty or may otherwise be relied upon by "
+"any person or entity for any reason whatsoever. </p>"
 msgstr ""
 
 #: .././functions.php:62
@@ -300,6 +444,50 @@ msgstr ""
 msgid "New Type Name"
 msgstr ""
 
+#: .././header.php:72 .././header.php:112
+msgid "LANGUAGE"
+msgstr ""
+
+#: .././header.php:73 .././header.php:113
+msgid "AVAILABILITY"
+msgstr ""
+
+#: .././header.php:73 .././header.php:113
+msgid "floor plans"
+msgstr ""
+
+#: .././header.php:76 .././header.php:114
+msgid "sales center  los angeles"
+msgstr ""
+
+#: .././header.php:95
+msgid "HOME"
+msgstr ""
+
+#: .././header.php:97
+msgid "LIFESTYLE"
+msgstr ""
+
+#: .././header.php:99
+msgid "NEIGHBORHOOD"
+msgstr ""
+
+#: .././header.php:101
+msgid "OVERVIEW"
+msgstr ""
+
+#: .././header.php:103
+msgid "TEAM"
+msgstr ""
+
+#: .././header.php:105
+msgid "PRESS"
+msgstr ""
+
+#: .././header.php:106
+msgid "CONTACT"
+msgstr ""
+
 #: .././image.php:26
 #, php-format
 msgid ""
@@ -318,13 +506,155 @@ msgstr ""
 msgid "Next &rarr;"
 msgstr ""
 
-#: .././index.php:38
-msgid "No posts to display"
+#: .././page-contact.php:19 .././page-thanks.php:20
+msgid "Contact"
 msgstr ""
 
-#: .././index.php:42
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+#: .././page-contact.php:20 .././page-thanks.php:21
+msgid "Please select one"
+msgstr ""
+
+#: .././page-contact.php:22 .././page-thanks.php:23
+msgid "Prospective purchaser"
+msgstr ""
+
+#: .././page-contact.php:24 .././page-thanks.php:25
+msgid "Broker"
+msgstr ""
+
+#: .././page-contact.php:26 .././page-press.php:29 .././page-thanks.php:27
+#: .././single.php:14
+msgid "Press"
+msgstr ""
+
+#: .././page-contact.php:42 .././page-contact.php:377
+#: .././page-contact.php:426 .././page-thanks.php:43 .././page-thanks.php:378
+#: .././page-thanks.php:427
+msgid "*Name"
+msgstr ""
+
+#: .././page-contact.php:47 .././page-thanks.php:48
+msgid "*Address"
+msgstr ""
+
+#: .././page-contact.php:51 .././page-contact.php:386
+#: .././page-contact.php:431 .././page-thanks.php:52 .././page-thanks.php:387
+#: .././page-thanks.php:432
+msgid "*Email"
+msgstr ""
+
+#: .././page-contact.php:57 .././page-thanks.php:58
+msgid "Country"
+msgstr ""
+
+#: .././page-contact.php:310 .././page-thanks.php:311
+msgid "*Phone"
+msgstr ""
+
+#: .././page-contact.php:314 .././page-contact.php:392
+#: .././page-thanks.php:315 .././page-thanks.php:393
+msgid "How did you hear<br />about metropolis ?"
+msgstr ""
+
+#: .././page-contact.php:317 .././page-contact.php:395
+#: .././page-thanks.php:318 .././page-thanks.php:396
+msgid "Event"
+msgstr ""
+
+#: .././page-contact.php:318 .././page-contact.php:396
+#: .././page-thanks.php:319 .././page-thanks.php:397
+msgid "Signage"
+msgstr ""
+
+#: .././page-contact.php:319 .././page-contact.php:397
+#: .././page-thanks.php:320 .././page-thanks.php:398
+msgid "Online Search"
+msgstr ""
+
+#: .././page-contact.php:320 .././page-contact.php:398
+#: .././page-thanks.php:321 .././page-thanks.php:399
+msgid "The Real deal"
+msgstr ""
+
+#: .././page-contact.php:321 .././page-contact.php:399
+#: .././page-thanks.php:322 .././page-thanks.php:400
+msgid "NYtimes.com"
+msgstr ""
+
+#: .././page-contact.php:322 .././page-contact.php:400
+#: .././page-thanks.php:323 .././page-thanks.php:401
+msgid "Elliman.com"
+msgstr ""
+
+#: .././page-contact.php:323 .././page-contact.php:401
+#: .././page-thanks.php:324 .././page-thanks.php:402
+msgid "Wall Street Journal"
+msgstr ""
+
+#: .././page-contact.php:324 .././page-contact.php:402
+#: .././page-thanks.php:325 .././page-thanks.php:403
+msgid "Curbed.com"
+msgstr ""
+
+#: .././page-contact.php:325 .././page-contact.php:403
+#: .././page-thanks.php:326 .././page-thanks.php:404
+msgid "Other"
+msgstr ""
+
+#: .././page-contact.php:331 .././page-thanks.php:332
+msgid "*Represented by Brokers?"
+msgstr ""
+
+#: .././page-contact.php:332 .././page-thanks.php:333
+msgid "Yes"
+msgstr ""
+
+#: .././page-contact.php:333 .././page-thanks.php:334
+msgid "No"
+msgstr ""
+
+#: .././page-contact.php:338 .././page-thanks.php:339
+msgid "*Broker's name"
+msgstr ""
+
+#: .././page-contact.php:343 .././page-thanks.php:344
+msgid "*Broker's Co. Contact Number"
+msgstr ""
+
+#: .././page-contact.php:348 .././page-thanks.php:349
+msgid "*Broker's Co. email"
+msgstr ""
+
+#: .././page-contact.php:353 .././page-contact.php:409
+#: .././page-contact.php:445 .././page-thanks.php:354 .././page-thanks.php:410
+#: .././page-thanks.php:446
+msgid "Send"
+msgstr ""
+
+#: .././page-contact.php:353 .././page-contact.php:409
+#: .././page-contact.php:445 .././page-thanks.php:354 .././page-thanks.php:410
+#: .././page-thanks.php:446
+msgid "*Required"
+msgstr ""
+
+#: .././page-contact.php:382 .././page-thanks.php:383
+msgid "*Brokers company"
+msgstr ""
+
+#: .././page-contact.php:435 .././page-thanks.php:436
+msgid "*Publication"
+msgstr ""
+
+#: .././page-contact.php:441 .././page-thanks.php:442
+msgid "*Your request"
+msgstr ""
+
+#: .././page-contact.php:461 .././page-thanks.php:462
+msgid "Thank you"
+msgstr ""
+
+#: .././page-contact.php:464 .././page-thanks.php:465
+msgid "Your information<br />has been successfully submitted"
 msgstr ""
 
 #: .././page-home.php:26
@@ -660,10 +990,6 @@ msgid ""
 "The Metropolis complex will offer a thoughtfully curated collection of "
 "retail and dining to provide its residents and guests with all elements \n"
 "for effortless lifestyle."
-msgstr ""
-
-#: .././page-press.php:29 .././single.php:14
-msgid "Press"
 msgstr ""
 
 #: .././page-press.php:49
