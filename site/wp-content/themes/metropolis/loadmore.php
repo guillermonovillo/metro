@@ -55,7 +55,7 @@
                </div> 
                <h2><?php the_field("media"); ?> —</h2>
                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-               <h3><?php the_field("journalist"); ?> <time><?php the_date("M d, Y"); ?></time></h3>
+               <h3><?php the_field("journalist"); ?> <time><?php echo get_the_date("M d, Y"); ?></time></h3>
                <p><?php echo get_the_excerpt(); ?></p>
                <a href="<?php echo $enlace; ?>" class="link" target="<?php echo $tar; ?>"><?php echo $text; ?></a>
             </article>

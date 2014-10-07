@@ -80,6 +80,7 @@
 
         <script type="text/javascript">
           var path="<?php echo URL; ?>";
+          var txtreq="<?php _e("REQUIRED","metropolis") ?>"
         </script>
          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo URL; ?>/js/vendor/jquery.min.js"><\/script>')</script>

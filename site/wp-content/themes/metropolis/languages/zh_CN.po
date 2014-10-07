@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-05 17:01-0300\n"
-"PO-Revision-Date: 2014-10-05 17:01-0300\n"
+"POT-Creation-Date: 2014-10-07 17:39-0300\n"
+"PO-Revision-Date: 2014-10-07 17:39-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -60,6 +60,18 @@ msgstr ""
 
 #: .././category.php:29 .././page-press.php:35
 msgid "International"
+msgstr ""
+
+#: .././category.php:44 .././page-press.php:50
+msgid "DOWNLOAD PDF"
+msgstr ""
+
+#: .././category.php:48 .././page-press.php:54
+msgid "PLAY VIDEO"
+msgstr ""
+
+#: .././category.php:52 .././page-press.php:58
+msgid "READ MORE"
 msgstr ""
 
 #: .././comments.php:42
@@ -284,6 +296,10 @@ msgid ""
 "communication made or given in connection with any of the foregoing, may be "
 "deemed to constitute any form of warranty or may otherwise be relied upon by "
 "any person or entity for any reason whatsoever. </p>"
+msgstr ""
+
+#: .././footer.php:83
+msgid "REQUIRED"
 msgstr ""
 
 #: .././functions.php:62
@@ -998,18 +1014,6 @@ msgid ""
 "The Metropolis complex will offer a thoughtfully curated collection of "
 "retail and dining to provide its residents and guests with all elements \n"
 "for effortless lifestyle."
-msgstr ""
-
-#: .././page-press.php:50
-msgid "DOWNLOAD PDF"
-msgstr ""
-
-#: .././page-press.php:54
-msgid "PLAY VIDEO"
-msgstr ""
-
-#: .././page-press.php:58
-msgid "READ MORE"
 msgstr ""
 
 #: .././page-press.php:89

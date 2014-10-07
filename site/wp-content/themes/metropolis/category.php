@@ -37,15 +37,20 @@ query_posts( $query_string );
             $imgid=get_post_thumbnail_id( get_the_ID());
             $imgsrc=wp_get_attachment_image_src( $imgid, "press");
             $file=get_field("pdf");
+            $video=get_field("video");
 
-            if(empty($file)){
-              $enlace=get_permalink();
-              $text="Read more";
-              $tar="_parent";
-            }else{
+            if(!empty($file)){
               $enlace=$file;
-              $text="Download PDF";
+              $text=__("DOWNLOAD PDF","metropolis");
               $tar="_BLANK";
+            }elseif(!empty($video)){
+              $enlace=get_permalink();
+              $text=__("PLAY VIDEO","metropolis");
+              $tar="";
+            }else{
+              $enlace=get_permalink();
+              $text=__("READ MORE","metropolis");
+              $tar="";
             }
           ?>
           
@@ -62,7 +67,7 @@ query_posts( $query_string );
                </div> 
                <h2><?php the_field("media"); ?> —</h2>
                <h1><a href="<?php echo $enlace; ?>" TARGET="<?php echo $tar; ?>"><?php the_title(); ?></a></h1>
-               <h3><?php the_field("journalist"); ?> <time><?php the_date("M d, Y"); ?></time></h3>
+               <h3><?php the_field("journalist"); ?> <time><?php echo get_the_date("M d, Y"); ?></time></h3>
                <p><?php echo get_the_excerpt(); ?></p>
                <a href="<?php echo $enlace; ?>" class="link" TARGET="<?php echo $tar; ?>"><?php echo $text; ?></a>
             </article>
