@@ -86,17 +86,17 @@ $(document).ready(function() {
 
          messages: {
 
-            firstname: { required: 'Required' },
-            lastname: { required: 'Required' },
-            address: { required: 'Required' },
-            phone: { required: 'Required' },
-            email: { required: 'Required' },
+            firstname: { required: txtreq },
+            lastname: { required: txtreq },
+            address: { required: txtreq },
+            homephone: { required: txtreq },
+            email: { required: txtreq },
             
-            broker_firstname: { required: 'Required' },
-            broker_lastname: { required: 'Required' },
-            brokerage_company: { required: 'Required' },
-            realtor_phone: { required: 'Required' },
-            realtor_email: { required: 'Required' }
+            broker_firstname: { required: txtreq },
+            broker_lastname: { required: txtreq },
+            brokerage_company: { required: txtreq },
+            realtor_phone: { required: txtreq },
+            realtor_email: { required: txtreq }
          }
 
       });
@@ -115,11 +115,11 @@ $(document).ready(function() {
       $("#press-form").validate({
 
          messages: {
-            firstname: { required: 'Required' },
-            lastname: { required: 'Required' },
-            email: { required: 'Required' },
-            publication: { required: 'Required' },
-            request: { required: 'Required' }
+            first_name: { required: txtreq },
+            last_name: { required: txtreq},
+            email: { required: txtreq },
+            publication: { required: txtreq },
+            request: { required: txtreq }
          }
          
       });
