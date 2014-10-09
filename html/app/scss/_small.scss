@@ -46,10 +46,12 @@
 }
 
 .nav-lang {
+	display:none; 
 	a {}
 	a:hover {color:$third-color;}
 }
 .nav-lang-small {
+	display:none; 
 }
 
 .lang {}
