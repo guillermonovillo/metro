@@ -3503,12 +3503,8 @@ The provided mixins are intended to be used with the array-like variables
     font-family: "proxima-nova-n6", "proxima-nova", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
     font-style: normal;
     font-weight: 600; }
-  .nav-lang {
-    display: none; }
-    .nav-lang a:hover {
-      color: #81cfd3; }
-  .nav-lang-small {
-    display: none; }
+  .nav-lang a:hover {
+    color: #81cfd3; }
   .nav-logo {
     height: 24px; }
     .nav-logo .icon-metropolis {
