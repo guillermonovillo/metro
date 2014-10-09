@@ -70,7 +70,7 @@ global $activa;
       <div class="column medium-4">
        <p class="lang">
           <?php _e("LANGUAGE","metropolis"); ?> <a href="<?php echo pll_home_url("en"); ?>" <?php if($idioma=="en"){echo 'class="active"'; } ?>>EN</a> <a href="<?php echo pll_home_url("zh"); ?>" <?php if($idioma=="zh"){echo 'class="active"'; } ?>>中文</a><br>
-          <span class="gold"><?php _e("AVAILABILITY","metropolis"); ?> — <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK"><?php _e("floor plans","metropolis"); ?></a></span>
+          <span class="gold hide"><?php _e("AVAILABILITY","metropolis"); ?> — <a href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" Target="_BLANK"><?php _e("floor plans","metropolis"); ?></a></span>
         </p>
       </div>
       <div class="column medium-4 text-right"><p class="sale rp gold"><?php _e("sales center  los angeles","metropolis"); ?>   —   <a href="#">855-657-8300</a></p></div>
@@ -110,7 +110,7 @@ global $activa;
      <div class="medium-12 nav-lang-small">
       <div class="">
        <p><?php _e("LANGUAGE","metropolis"); ?> <a href="#en" class="active">EN</a> <a href="#cn">中文</a></p>
-       <p><?php _e("AVAILABILITY","metropolis"); ?>    —    <?php _e("floor plans","metropolis"); ?></p>
+       <p class="hide"><?php _e("AVAILABILITY","metropolis"); ?>    —    <?php _e("floor plans","metropolis"); ?></p>
        <p><?php _e("sales center  los angeles","metropolis"); ?>   —   <a href="#">855-657-8300</a></p>
       </div>
    </div>

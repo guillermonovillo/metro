@@ -361,7 +361,7 @@ body {
   color: #353535;
   padding: 0;
   margin: 0;
-  font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 150%;
@@ -1313,7 +1313,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222;
@@ -5502,7 +5502,7 @@ The provided mixins are intended to be used with the array-like variables
     padding: 0; }
     .nav-links ul {
       font-size: 12px;
-      font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: "proxima-nova-n4", "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
       margin: 0;
       position: relative; }
       .nav-links ul li {
@@ -5619,7 +5619,7 @@ The provided mixins are intended to be used with the array-like variables
     top: 25%; }
   #sunset .t4 {
     text-align: right;
-    top: 4%;
+    top: 1%;
     left: auto;
     right: 13%;
     width: 230px; }
@@ -5657,7 +5657,7 @@ The provided mixins are intended to be used with the array-like variables
     height: 45%; }
   #sunset .t4-line {
     left: 84.2%;
-    top: 4%;
+    top: 3%;
     height: 60%; }
   .neighborhood #map_canvas {
     height: 550px; }
@@ -5862,7 +5862,8 @@ The provided mixins are intended to be used with the array-like variables
     #sunset .t1 {
       text-align: right;
       left: -158px;
-      top: 56%; }
+      top: 56%;
+      width: 160px; }
       #sunset .t1 h1 {
         padding-right: 16px; }
         #sunset .t1 h1 span.h-large {
