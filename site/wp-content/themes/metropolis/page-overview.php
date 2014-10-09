@@ -19,10 +19,10 @@ get_header(); ?>
 
 <figure class="gallery"> 
         <div class="slider gallery">
-          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Bed-Room.jpg" alt="Bedroom"/></div>
-          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Dining-Room.jpg" alt="Dining Room" class="hide"/></div>
-          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Kitchen.jpg" alt="Kitchen" class="hide"/></div>
-          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Living-Room.jpg" alt="Living Room" class="hide"/></div>
+          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Bed-Room.jpg" alt="<?php _e("Bedroom","metropolis"); ?>"/></div>
+          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Dining-Room.jpg" alt="<?php _e("Dining Room","metropolis"); ?>" class="hide"/></div>
+          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Kitchen.jpg" alt="<?php _e("Kitchen","metropolis"); ?>" class="hide"/></div>
+          <div><img src="<?php echo URL; ?>/images/overview/overview-gal-Living-Room.jpg" alt="<?php _e("Living Room","metropolis"); ?>" class="hide"/></div>
         </div>
 </figure>
 
@@ -38,7 +38,7 @@ get_header(); ?>
                   <div class="line"> 
                   <span class="gold horizontal full to-l"></span>
                   </div> 
-                  Prev
+                  <?php _e("Prev","metropolis"); ?>
                 </a>
           </div>
           <div class="column small-6 gallery-counter">
@@ -46,7 +46,7 @@ get_header(); ?>
           </div>
           <div class="column small-3">
                 <a href="#" class="btn btn-next" >
-                  Next         
+                  <?php _e("Next","metropolis"); ?>         
                   <div class="line"> 
                   <span class="gold horizontal full to-r"></span>
                   </div>

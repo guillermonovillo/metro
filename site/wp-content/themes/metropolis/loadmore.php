@@ -7,9 +7,10 @@
 	$cat=$_POST["category"];
 
 	$args_news=array(
-        "showposts"=>4,
+        "posts_per_page"=>4,
         "post_type"=>"post",
-        "paged" =>$pagina
+        "paged" =>$pagina,
+        'lang' => 'en,zh'
     );
 
     if($cat!="all"){

@@ -11,16 +11,19 @@
  * @subpackage Metropolis
  * Template Name: Press
  */
+session_start();
+$_SESSION["cat"]=false;
 $activa="press";
 get_header(); 
 
 $args_news=array(
-        "showposts"=>4,
+        "posts_per_page"=>4,
         "post_type"=>"post" ,
         'lang' => 'en,zh'
         );
 
 $query_news= new WP_Query($args_news);
+$idioma=pll_current_language();
 ?>
 
 <article class="press">
@@ -31,8 +34,8 @@ $query_news= new WP_Query($args_news);
          </div>
          <aside class="aside">
             <ul class="aside-ul filter-options">
-               <li><a href="<?php echo RAIZ ?>/category/us/" class="art-filter" data-filter-value="us"><?php _e("US","metropolis"); ?></a></li>
-               <li><a href="<?php echo RAIZ ?>/category/international/" class="art-filter" data-filter-value="international"><?php _e("International","metropolis"); ?></a></li>
+               <li><a href="<?php echo RAIZ ?>/category/us<?php if($idioma=="zh"){echo "-zh";} ?>/" class="art-filter" data-filter-value="us"><?php _e("US","metropolis"); ?></a></li>
+               <li><a href="<?php echo RAIZ ?>/category/international<?php if($idioma=="zh"){echo "-zh";} ?>/" class="art-filter" data-filter-value="international"><?php _e("International","metropolis"); ?></a></li>
 
             </ul>
          </aside>

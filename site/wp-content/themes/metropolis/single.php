@@ -5,6 +5,7 @@
  * @package WordPress
  * @subpackage Metropolis
  */
+session_start();
 $activa="press";
 get_header(); ?>
 <article class="press-news">
@@ -51,7 +52,8 @@ get_header(); ?>
                <br />
                <a href="<?php echo RAIZ; ?>/press" class="back"><?php _e("Back to all News","metropolis"); ?></a>
 			</article>
-			<?php $next=get_previous_post();
+			<?php 
+      $next=get_previous_post();
 				if(!empty($next)){
 				$arg=array("p"=>$next->ID);
 				$proximo=new WP_Query($arg);

@@ -12,6 +12,7 @@
  * Template Name: Contact
  */
 $activa="contact";
+$idioma=pll_current_language();
 get_header(); ?>
    <article class="contact">
       <div class="content">
@@ -34,14 +35,14 @@ get_header(); ?>
                <input type="hidden" name="debug" value="1">
                <input type="hidden" name="post_type" value="post">
                <input type="hidden" id="purchaser-realtor-name" name="realtor_name" value="">
-               <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks">
+               <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="firstname" placeholder="First" data-place="First" class="text required first" type="text" />
-                              <input name="lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
+                              <input name="firstname" placeholder="<?php _e("First","metropolis"); ?>" data-place="First" class="text required first" type="text" />
+                              <input name="lastname" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label><?php _e("*Address","metropolis"); ?></label>
