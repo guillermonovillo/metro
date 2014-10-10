@@ -90,7 +90,7 @@ global $activa;
 
 
    <div class="row navigation">
-     <nav class="medium-12 columns nav-links">
+     <nav class="medium-12 columns nav-links <?php echo $idioma; ?>">
        <ul>
          <li class="nav-item home"><a href="<?php echo pll_home_url($idioma); ?>" <?php if($activa=="home"){echo "class='active'";} ?>><?php _e("HOME","metropolis"); ?><span></span></a></li>
                   <li class="lifestyle separator">&middot;</li>

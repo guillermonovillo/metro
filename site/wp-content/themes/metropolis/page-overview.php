@@ -61,7 +61,7 @@ get_header(); ?>
     <div class="column small-8 small-centered text-center">
       <h1 class="wow fadeInUp"><?php _e("Residences","metropolis"); ?></h1>
       <p class="wow fadeInUp"><?php _e("From the stunning view to the subtle details, Metropolis is designed for stylish, effortless living. Residences feature the finest materials, top-of-the-line appliances, energy-efficient design, maximized light and space and cinematic views from every angle.","metropolis"); ?> </p>
-      <a class="btn download wow fadeInUp" href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" target="_BLANK"><?php _e("Download Floor Plans","metropolis"); ?></a>
+      <a class="hide btn-notyet download-notyet wow-notyet fadeInUp-notyet" href="<?php echo URL; ?>/files/Metropolis - Final floor plans 09-03.pdf" target="_BLANK"><?php _e("Download Floor Plans","metropolis"); ?></a>
     </div>
   </div>
 

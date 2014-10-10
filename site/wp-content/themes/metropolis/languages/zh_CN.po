@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-09 19:45-0300\n"
-"PO-Revision-Date: 2014-10-09 19:46-0300\n"
+"POT-Creation-Date: 2014-10-05 17:01-0300\n"
+"PO-Revision-Date: 2014-10-10 12:40-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -54,25 +54,13 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-#: .././category.php:49 .././page-press.php:37
+#: .././category.php:28 .././page-press.php:34
 msgid "US"
 msgstr "美国"
 
-#: .././category.php:50 .././page-press.php:38
+#: .././category.php:29 .././page-press.php:35
 msgid "International"
 msgstr "国际"
-
-#: .././category.php:65 .././page-press.php:53
-msgid "DOWNLOAD PDF"
-msgstr "下载 PDF"
-
-#: .././category.php:69 .././page-press.php:57
-msgid "PLAY VIDEO"
-msgstr "播放视频"
-
-#: .././category.php:73 .././page-press.php:61
-msgid "READ MORE"
-msgstr "阅读更多"
 
 #: .././comments.php:42
 msgid "Comment navigation"
@@ -206,7 +194,7 @@ msgstr "网站致谢"
 msgid "Back to Top"
 msgstr "返回顶部"
 
-#: .././footer.php:66 .././page-contact.php:460 .././page-thanks.php:460
+#: .././footer.php:66 .././page-contact.php:459 .././page-thanks.php:460
 msgid "Close"
 msgstr "关闭"
 
@@ -337,10 +325,6 @@ msgstr ""
 "授权，任何人等不得使用或转载这些规划与信息。</p><p>本网站在此提供的所有信息与"
 "材料以及任何与上述信息与材料的任何沟通或交流都不构成任何形式的保证，也不可作"
 "为任何人或组织基于任何理由的依据。</p>"
-
-#: .././footer.php:83
-msgid "REQUIRED"
-msgstr ""
 
 #: .././functions.php:62
 msgid "Primary Menu"
@@ -570,162 +554,154 @@ msgstr ""
 msgid "Next &rarr;"
 msgstr ""
 
-#: .././page-contact.php:20 .././page-thanks.php:20
+#: .././page-contact.php:19 .././page-thanks.php:20
 msgid "Contact"
 msgstr "联系我们"
 
-#: .././page-contact.php:21 .././page-thanks.php:21
+#: .././page-contact.php:20 .././page-thanks.php:21
 msgid "Please select one"
 msgstr "请选择一项"
 
-#: .././page-contact.php:23 .././page-thanks.php:23
+#: .././page-contact.php:22 .././page-thanks.php:23
 msgid "Prospective purchaser"
 msgstr "有意向的买家"
 
-#: .././page-contact.php:25 .././page-thanks.php:25
+#: .././page-contact.php:24 .././page-thanks.php:25
 msgid "Broker"
 msgstr "房产经纪人"
 
-#: .././page-contact.php:27 .././page-press.php:33 .././page-thanks.php:27
-#: .././single.php:15
+#: .././page-contact.php:26 .././page-press.php:30 .././page-thanks.php:27
+#: .././single.php:14
 msgid "Press"
 msgstr "媒体"
 
-#: .././page-contact.php:43 .././page-contact.php:378
-#: .././page-contact.php:427 .././page-thanks.php:43 .././page-thanks.php:378
+#: .././page-contact.php:42 .././page-contact.php:377
+#: .././page-contact.php:426 .././page-thanks.php:43 .././page-thanks.php:378
 #: .././page-thanks.php:427
 msgid "*Name"
-msgstr "姓名"
+msgstr "*姓名"
 
-#: .././page-contact.php:44
-msgid "First"
-msgstr ""
-
-#: .././page-contact.php:45
-msgid "Last"
-msgstr ""
-
-#: .././page-contact.php:48 .././page-thanks.php:48
+#: .././page-contact.php:47 .././page-thanks.php:48
 msgid "*Address"
-msgstr "地址"
+msgstr "*地址"
 
-#: .././page-contact.php:52 .././page-contact.php:387
-#: .././page-contact.php:432 .././page-thanks.php:52 .././page-thanks.php:387
+#: .././page-contact.php:51 .././page-contact.php:386
+#: .././page-contact.php:431 .././page-thanks.php:52 .././page-thanks.php:387
 #: .././page-thanks.php:432
 msgid "*Email"
-msgstr "邮箱"
+msgstr "*邮箱"
 
-#: .././page-contact.php:58 .././page-thanks.php:58
+#: .././page-contact.php:57 .././page-thanks.php:58
 msgid "Country"
 msgstr "国家"
 
-#: .././page-contact.php:311 .././page-thanks.php:311
+#: .././page-contact.php:310 .././page-thanks.php:311
 msgid "*Phone"
-msgstr "电话"
+msgstr "*电话"
 
-#: .././page-contact.php:315 .././page-contact.php:393
+#: .././page-contact.php:314 .././page-contact.php:392
 #: .././page-thanks.php:315 .././page-thanks.php:393
 msgid "How did you hear<br />about metropolis ?"
 msgstr "你如何得知<br />Metropolis 洛杉矶绿地中心 ?"
 
-#: .././page-contact.php:318 .././page-contact.php:396
+#: .././page-contact.php:317 .././page-contact.php:395
 #: .././page-thanks.php:318 .././page-thanks.php:396
 msgid "Event"
 msgstr "活动"
 
-#: .././page-contact.php:319 .././page-contact.php:397
+#: .././page-contact.php:318 .././page-contact.php:396
 #: .././page-thanks.php:319 .././page-thanks.php:397
 msgid "Signage"
 msgstr "标牌"
 
-#: .././page-contact.php:320 .././page-contact.php:398
+#: .././page-contact.php:319 .././page-contact.php:397
 #: .././page-thanks.php:320 .././page-thanks.php:398
 msgid "Online Search"
 msgstr "在线搜索"
 
-#: .././page-contact.php:321 .././page-contact.php:399
+#: .././page-contact.php:320 .././page-contact.php:398
 #: .././page-thanks.php:321 .././page-thanks.php:399
 msgid "The Real deal"
 msgstr ""
 
-#: .././page-contact.php:322 .././page-contact.php:400
+#: .././page-contact.php:321 .././page-contact.php:399
 #: .././page-thanks.php:322 .././page-thanks.php:400
 msgid "NYtimes.com"
 msgstr ""
 
-#: .././page-contact.php:323 .././page-contact.php:401
+#: .././page-contact.php:322 .././page-contact.php:400
 #: .././page-thanks.php:323 .././page-thanks.php:401
 msgid "Elliman.com"
 msgstr ""
 
-#: .././page-contact.php:324 .././page-contact.php:402
+#: .././page-contact.php:323 .././page-contact.php:401
 #: .././page-thanks.php:324 .././page-thanks.php:402
 msgid "Wall Street Journal"
 msgstr ""
 
-#: .././page-contact.php:325 .././page-contact.php:403
+#: .././page-contact.php:324 .././page-contact.php:402
 #: .././page-thanks.php:325 .././page-thanks.php:403
 msgid "Curbed.com"
 msgstr ""
 
-#: .././page-contact.php:326 .././page-contact.php:404
+#: .././page-contact.php:325 .././page-contact.php:403
 #: .././page-thanks.php:326 .././page-thanks.php:404
 msgid "Other"
 msgstr "其他"
 
-#: .././page-contact.php:332 .././page-thanks.php:332
+#: .././page-contact.php:331 .././page-thanks.php:332
 msgid "*Represented by Brokers?"
 msgstr "*是否有房产经纪人代理？"
 
-#: .././page-contact.php:333 .././page-thanks.php:333
+#: .././page-contact.php:332 .././page-thanks.php:333
 msgid "Yes"
 msgstr "有"
 
-#: .././page-contact.php:334 .././page-thanks.php:334
+#: .././page-contact.php:333 .././page-thanks.php:334
 msgid "No"
 msgstr "没有"
 
-#: .././page-contact.php:339 .././page-thanks.php:339
+#: .././page-contact.php:338 .././page-thanks.php:339
 msgid "*Broker's name"
 msgstr "*房产经纪人姓名"
 
-#: .././page-contact.php:344 .././page-thanks.php:344
+#: .././page-contact.php:343 .././page-thanks.php:344
 msgid "*Broker's Co. Contact Number"
 msgstr "*房产经纪人公司联系电话"
 
-#: .././page-contact.php:349 .././page-thanks.php:349
+#: .././page-contact.php:348 .././page-thanks.php:349
 msgid "*Broker's Co. email"
 msgstr "*房产经纪人公司邮箱"
 
-#: .././page-contact.php:354 .././page-contact.php:410
-#: .././page-contact.php:446 .././page-thanks.php:354 .././page-thanks.php:410
+#: .././page-contact.php:353 .././page-contact.php:409
+#: .././page-contact.php:445 .././page-thanks.php:354 .././page-thanks.php:410
 #: .././page-thanks.php:446
 msgid "Send"
 msgstr "发送"
 
-#: .././page-contact.php:354 .././page-contact.php:410
-#: .././page-contact.php:446 .././page-thanks.php:354 .././page-thanks.php:410
+#: .././page-contact.php:353 .././page-contact.php:409
+#: .././page-contact.php:445 .././page-thanks.php:354 .././page-thanks.php:410
 #: .././page-thanks.php:446
 msgid "*Required"
 msgstr "*必填"
 
-#: .././page-contact.php:383 .././page-thanks.php:383
+#: .././page-contact.php:382 .././page-thanks.php:383
 msgid "*Brokers company"
 msgstr "*房产经纪人公司"
 
-#: .././page-contact.php:436 .././page-thanks.php:436
+#: .././page-contact.php:435 .././page-thanks.php:436
 msgid "*Publication"
 msgstr "* 刊物"
 
-#: .././page-contact.php:442 .././page-thanks.php:442
+#: .././page-contact.php:441 .././page-thanks.php:442
 msgid "*Your request"
 msgstr "*您的要求"
 
-#: .././page-contact.php:462 .././page-thanks.php:462
+#: .././page-contact.php:461 .././page-thanks.php:462
 msgid "Thank you"
 msgstr "谢谢"
 
-#: .././page-contact.php:465 .././page-thanks.php:465
+#: .././page-contact.php:464 .././page-thanks.php:465
 msgid "Your information<br />has been successfully submitted"
 msgstr "您的信息<br />已成功提交"
 
@@ -881,7 +857,7 @@ msgstr ""
 
 #: .././page-neighborhood.php:303
 msgid "Colleges and Universities"
-msgstr ""
+msgstr "高校学院与大学"
 
 #: .././page-neighborhood.php:305
 msgid "Fashion Institute of Design & Merchandising"
@@ -1042,30 +1018,6 @@ msgstr "学校与公园"
 msgid "Shopping and relaxation"
 msgstr "购物与休闲"
 
-#: .././page-overview.php:22
-msgid "Bedroom"
-msgstr ""
-
-#: .././page-overview.php:23
-msgid "Dining Room"
-msgstr ""
-
-#: .././page-overview.php:24
-msgid "Kitchen"
-msgstr ""
-
-#: .././page-overview.php:25
-msgid "Living Room"
-msgstr ""
-
-#: .././page-overview.php:41
-msgid "Prev"
-msgstr ""
-
-#: .././page-overview.php:49
-msgid "Next"
-msgstr ""
-
 #: .././page-overview.php:62
 msgid "Residences"
 msgstr "住宅大厦"
@@ -1111,7 +1063,19 @@ msgstr ""
 "Metropolis 洛杉矶绿地中心将精心遴选零售与美食餐厅入驻 ，\n"
 "让居民与访客体验轻松的生活方式。"
 
-#: .././page-press.php:92
+#: .././page-press.php:50
+msgid "DOWNLOAD PDF"
+msgstr "下载 PDF"
+
+#: .././page-press.php:54
+msgid "PLAY VIDEO"
+msgstr "播放视频"
+
+#: .././page-press.php:58
+msgid "READ MORE"
+msgstr "阅读更多"
+
+#: .././page-press.php:89
 msgid "Load More"
 msgstr "更多新闻"
 
@@ -1259,19 +1223,19 @@ msgid ""
 "different keywords."
 msgstr "不好意思，目前找不到您搜寻的关键字"
 
-#: .././single.php:42
+#: .././single.php:41
 msgid "Download PDF"
 msgstr "下载 PDF"
 
-#: .././single.php:53
+#: .././single.php:52
 msgid "Back to all News"
 msgstr "返回至新闻首页"
 
-#: .././single.php:71
+#: .././single.php:69
 msgid "Read more"
 msgstr "阅读更多"
 
-#: .././single.php:77
+#: .././single.php:75
 msgid "Read next"
 msgstr "阅读下一篇"
 

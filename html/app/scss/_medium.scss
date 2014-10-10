@@ -205,6 +205,27 @@ html.ie9 {
 		.separator.team {right:102px; }
 		.separator.press {right:45px;}
 		.separator.contac {right:-8px;}
+
+	}
+
+	&.zh {
+		ul {
+			.home {left: 0px}
+			.lifestyle {left:59px }
+			.neighborhood  {left:137px }
+			.overview {right:195px; & span {right:0}}
+			.team {right:141px; & span {right:0}}
+			.press {right:62px; & span {right:0}}
+			.contact {right:-18px; & span {right:0}}
+
+			.separator {color:$primary-color; display:block}
+			.separator.lifestyle {left:40px }
+			.separator.neighborhood  {left:121px }
+			.separator.overview {right:178px; }
+			.separator.team {right:124px; }
+			.separator.press {right:45px;}
+			.separator.contac {right:-8px;}
+		}
 	}
 }
 

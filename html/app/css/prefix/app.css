@@ -4932,31 +4932,6 @@ The provided mixins are intended to be used with the array-like variables
       .thanks .wrapper .wrapper-in {
         display: table-cell;
         vertical-align: middle; }
-    .thanks .close {
-      color: #353535;
-      display: inline-block;
-      font-family: "proxima-nova-n4", "proxima-nova", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 14px;
-      text-transform: uppercase;
-      position: absolute;
-      padding-left: 24px;
-      top: 35px;
-      right: -10px;
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg); }
-      .thanks .close:before {
-        background: url("../images/ui/close-black.png") no-repeat scroll 0 0 transparent;
-        content: "";
-        display: block;
-        width: 14px;
-        height: 14px;
-        position: absolute;
-        top: 0;
-        left: 0; }
     .thanks .hgroup {
       height: 175px;
       position: relative; }
@@ -4990,6 +4965,8 @@ The provided mixins are intended to be used with the array-like variables
           position: absolute;
           top: 10px;
           left: 110%; }
+      .thanks .hgroup h1.zh {
+        margin-left: -19px; }
     .thanks .cgroup {
       padding: 20px 0;
       text-align: center; }
@@ -5000,6 +4977,31 @@ The provided mixins are intended to be used with the array-like variables
         font-weight: 400;
         font-size: 15px;
         text-transform: uppercase; }
+  .close {
+    color: #353535;
+    display: inline-block;
+    font-family: "proxima-nova-n4", "proxima-nova", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    padding-left: 24px;
+    top: 35px;
+    right: -10px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    .close:before {
+      background: url("../images/ui/close-black.png") no-repeat scroll 0 0 transparent;
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 0;
+      left: 0; }
   .cgroup .purchaser .form, .cgroup .broker .form, .cgroup .press .form {
     margin: 0 auto;
     width: 220px; }
@@ -5581,6 +5583,43 @@ The provided mixins are intended to be used with the array-like variables
         right: 45px; }
       .nav-links ul .separator.contac {
         right: -8px; }
+    .nav-links.zh ul .home {
+      left: 0px; }
+    .nav-links.zh ul .lifestyle {
+      left: 59px; }
+    .nav-links.zh ul .neighborhood {
+      left: 137px; }
+    .nav-links.zh ul .overview {
+      right: 195px; }
+      .nav-links.zh ul .overview span {
+        right: 0; }
+    .nav-links.zh ul .team {
+      right: 141px; }
+      .nav-links.zh ul .team span {
+        right: 0; }
+    .nav-links.zh ul .press {
+      right: 62px; }
+      .nav-links.zh ul .press span {
+        right: 0; }
+    .nav-links.zh ul .contact {
+      right: -18px; }
+      .nav-links.zh ul .contact span {
+        right: 0; }
+    .nav-links.zh ul .separator {
+      color: #B5995C;
+      display: block; }
+    .nav-links.zh ul .separator.lifestyle {
+      left: 40px; }
+    .nav-links.zh ul .separator.neighborhood {
+      left: 121px; }
+    .nav-links.zh ul .separator.overview {
+      right: 178px; }
+    .nav-links.zh ul .separator.team {
+      right: 124px; }
+    .nav-links.zh ul .separator.press {
+      right: 45px; }
+    .nav-links.zh ul .separator.contac {
+      right: -8px; }
   #sunset .sunset {
     display: none; }
   #sunset .txt {
