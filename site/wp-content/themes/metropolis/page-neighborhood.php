@@ -313,7 +313,7 @@ $count=1;
     </ul>
   </div>
   <div class="column  small-12 small-centered medium-uncentered medium-4">
-     <h2 class="edu wow fadeInUp" data-wow-delay=".5s"><?php _e("Public schools","metropolis") ?></h2>
+     <h2 class="edu wow fadeInUp" data-wow-delay=".5s">Public schools</h2>
      <ul class="wow fadeInUp edu" data-wow-delay=".75s">
        <li>— <?php _e("Alliance Dr. Olga Mohan High","metropolis"); ?> </li>
        <li>— <?php _e("Alliance Gertz-Ressler High","metropolis"); ?> </li>
@@ -327,7 +327,7 @@ $count=1;
      </ul>
   </div>
   <div class="column small-12 small-centered medium-uncentered medium-4">
-     <h2 class="edu wow fadeInUp" data-wow-delay="1s"><?php _e("Private schools","metropolis"); ?></h2>
+     <h2 class="edu wow fadeInUp" data-wow-delay="1s">Private schools</h2>
      <ul class="wow fadeInUp edu" data-wow-delay="1.25s">
        <li>— <?php _e("Bishop Mora Salesian High School","metropolis"); ?> </li>
        <li>— <?php _e("Cathedral High School","metropolis"); ?> </li>
