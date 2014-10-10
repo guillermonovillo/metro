@@ -63,7 +63,7 @@
     <div class="small-11 small-centered column" id="">
         <div class="modal" id="modal">
           <div class="modal-content">
-            <a href="#" class="close"><?php _e("Close","metropolis"); ?></a>
+            <a href="#" class="btnClose close"><?php _e("Close","metropolis"); ?></a>
             <div class="line"> 
             <span class="black vertical full to-t"></span>
             </div>

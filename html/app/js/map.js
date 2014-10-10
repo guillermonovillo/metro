@@ -195,7 +195,7 @@
 
 
   var image = new google.maps.MarkerImage(
-    'images/locations/metropolis-pin.png',
+    'http://metropolislosangeles.com/images/locations/metropolis-pin.png',
     new google.maps.Size(82,104),
     new google.maps.Point(0,0),
     new google.maps.Point(41,101)
@@ -257,7 +257,7 @@ $('.mapData').each(function (i, list) {
       coords = $item.attr('data-coords').split(',');
       iteration = $item.attr('data-iteration');
       latLng = new google.maps.LatLng(coords[0], coords[1]);
-      icon = 'images/locations/infobox-'+type+'.png';
+      icon = 'http://metropolislosangeles.com/images/locations/infobox-'+type+'.png';
 
       newMarker = new MarkerWithLabel({
         position: latLng,

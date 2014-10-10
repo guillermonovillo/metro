@@ -12,6 +12,7 @@
  * Template Name: Thanks
  */
 $activa="contact";
+$idioma=pll_current_language();
 get_header(); ?>
 
    <article class="contact">
@@ -459,7 +460,7 @@ get_header(); ?>
                <div class="wrapper-in">
                   <a href="#" class="close"><?php _e("Close","metropolis"); ?></a>
                   <div class="hgroup">
-                     <h1><?php _e("Thank you","metropolis"); ?></h1>
+                     <h1 class="<?php echo $idioma; ?>"><?php _e("Thank you","metropolis"); ?></h1>
                   </div>
                   <div class="cgroup">
                      <p><?php _e("Your information<br />has been successfully submitted","metropolis"); ?></p>

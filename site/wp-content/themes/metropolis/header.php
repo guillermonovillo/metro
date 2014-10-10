@@ -83,8 +83,8 @@ global $activa;
 
    <div class="row nav-logo">
      <div class="large-12">
-      <i class="icon icon-metropolis"></i>
-      <i class="icon icon-isologo"></i>
+      <a href="<?php echo pll_home_url($idioma); ?>"><i class="icon icon-metropolis"></i>
+      <i class="icon icon-isologo"></i></a>
      </div>
     </div> 
 
