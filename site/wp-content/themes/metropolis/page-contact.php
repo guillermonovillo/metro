@@ -376,8 +376,8 @@ get_header(); ?>
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="firstname" id="broker-firstname" placeholder="First" data-place="First" class="text required first" type="text" />
-                              <input name="lastname"  id="broker-lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
+                              <input name="firstname" id="broker-firstname" placeholder="<?php _e("First","metropolis"); ?>" data-place="First" class="text required first" type="text" />
+                              <input name="lastname"  id="broker-lastname" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label for=""><?php _e("*Brokers company","metropolis"); ?></label>
@@ -426,8 +426,8 @@ get_header(); ?>
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="first_name" class="text required first" type="text" placeholder="First" data-place="First"  />
-                              <input name="last_name" class="text required last" type="text" placeholder="Last" data-place="Last"  />
+                              <input name="first_name" class="text required first" type="text" placeholder="<?php _e("First","metropolis"); ?>" data-place="First"  />
+                              <input name="last_name" class="text required last" type="text" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last"  />
                            </div>
                            <div class="field">
                               <label><?php _e("*Email","metropolis"); ?></label>

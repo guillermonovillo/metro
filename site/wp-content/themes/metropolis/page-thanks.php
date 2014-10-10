@@ -36,14 +36,14 @@ get_header(); ?>
                <input type="hidden" name="debug" value="1">
                <input type="hidden" name="post_type" value="post">
                <input type="hidden" id="purchaser-realtor-name" name="realtor_name" value="">
-               <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks">
+               <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="firstname" placeholder="First" data-place="First" class="text required first" type="text" />
-                              <input name="lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
+                              <input name="firstname" placeholder="<?php _e("First","metropolis"); ?>" data-place="First" class="text required first" type="text" />
+                              <input name="lastname" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label><?php _e("*Address","metropolis"); ?></label>
@@ -368,7 +368,7 @@ get_header(); ?>
                         <input type="hidden" name="client_type" value="9109">
                         <input type="hidden" name="debug" value="1">
                         <input type="hidden" name="post_type" value="post">
-                        <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks">
+                        <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                         <input type="hidden" id="realtor-name" name="realtor_name" value="">
                   <input type="hidden" id="realtor-name" name="realtor_name" value="">
 
@@ -377,8 +377,8 @@ get_header(); ?>
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="firstname" id="broker-firstname" placeholder="First" data-place="First" class="text required first" type="text" />
-                              <input name="lastname"  id="broker-lastname" placeholder="Last" data-place="Last" class="text required last" type="text" />
+                              <input name="firstname" id="broker-firstname" placeholder="<?php _e("First","metropolis"); ?>" data-place="First" class="text required first" type="text" />
+                              <input name="lastname"  id="broker-lastname" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last" class="text required last" type="text" />
                            </div>
                            <div class="field">
                               <label for=""><?php _e("*Brokers company","metropolis"); ?></label>
@@ -421,13 +421,14 @@ get_header(); ?>
 
             <div class="press" style="display: none;">
                <form id="press-form" class="form" method="post" action="form-processing.php">
+                  <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">
                            <div class="field field-1">
                               <label><?php _e("*Name","metropolis"); ?></label>
-                              <input name="first_name" class="text required first" type="text" placeholder="First" data-place="First"  />
-                              <input name="last_name" class="text required last" type="text" placeholder="Last" data-place="Last"  />
+                              <input name="first_name" class="text required first" type="text" placeholder="<?php _e("First","metropolis"); ?>" data-place="First"  />
+                              <input name="last_name" class="text required last" type="text" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last"  />
                            </div>
                            <div class="field">
                               <label><?php _e("*Email","metropolis"); ?></label>
