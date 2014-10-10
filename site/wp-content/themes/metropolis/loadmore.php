@@ -9,8 +9,7 @@
 	$args_news=array(
         "posts_per_page"=>4,
         "post_type"=>"post",
-        "paged" =>$pagina,
-        'lang' => 'en,zh'
+        "paged" =>$pagina
     );
 
     if($cat!="all"){

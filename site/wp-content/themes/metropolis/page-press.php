@@ -18,8 +18,7 @@ get_header();
 
 $args_news=array(
         "posts_per_page"=>4,
-        "post_type"=>"post" ,
-        'lang' => 'en,zh'
+        "post_type"=>"post"
         );
 
 $query_news= new WP_Query($args_news);

@@ -19,18 +19,11 @@ $query_string.="&lang='en,zh'&posts_per_page=4";
 query_posts( $query_string );*/
 global $wp_query;
 
-if($wp_query->query_vars["category_name"]=="us-zh" || $wp_query->query_vars["category_name"]=="us"){
-  $categoria="us";
-}elseif($wp_query->query_vars["category_name"]=="international-zh" || $wp_query->query_vars["category_name"]=="international"){
-  $categoria="international";
-}else{
-  $categoria="us";
-}
+$categoria=$wp_query->query_vars["category_name"];
 
 $args_news=array(
         "posts_per_page"=>4,
         "post_type"=>"post",
-        'lang' => 'en,zh',
         "category_name"=>$categoria
 );
 
