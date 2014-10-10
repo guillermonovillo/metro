@@ -23,7 +23,7 @@ get_header(); ?>
           <div class="line"> 
             <span class="white vertical full to-t"></span>
           </div>
-            <h1><?php _e("URBAN LIVING REIMAGINED",",metropolis"); ?></h1>
+            <h1><?php _e("URBAN LIVING REIMAGINED","metropolis"); ?></h1>
             <h2><?php _e("Introducing the most luxurious<br/> new address in downtown L.A.","metropolis"); ?></h2>
           <div class="line">
             <span class="white vertical full to-b"></span>
