@@ -26,7 +26,7 @@ $subject = $form_subject;
 $response = new stdClass;
 $response->ok = mail($to2, $subject, $message, $header);
 
-header("Location: http://dev.bridgerconwaydigital.com/metropolis/thanks.html");
+header("Location: ".$_POST['returnURL']);
 die();
 // echo json_encode($response);
 // die();

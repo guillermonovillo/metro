@@ -367,7 +367,7 @@ get_header(); ?>
                         <input type="hidden" name="client_type" value="9109">
                         <input type="hidden" name="debug" value="1">
                         <input type="hidden" name="post_type" value="post">
-                        <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks">
+                        <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                         <input type="hidden" id="realtor-name" name="realtor_name" value="">
                   <input type="hidden" id="realtor-name" name="realtor_name" value="">
 
@@ -420,6 +420,7 @@ get_header(); ?>
 
             <div class="press" style="display: none;">
                <form id="press-form" class="form" method="post" action="form-processing.php">
+                  <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                   <fieldset>
                      <div class="row">
                         <div class="medium-4 large-4 columns column-1">

@@ -7,6 +7,7 @@ $(document).ready(function() {
 		$.ajax({
 			url: path + '/loadmore.php',
 			type: 'POST',
+			async:false,
 			data: {page: pagina, category:cat},
 		})
 		.done(function(html) {
