@@ -70,8 +70,7 @@ get_header(); ?>
 <div class="row">
 <div class="column small-8 small-centered text-center">
   <h1 class="wow fadeInUp"><?php _e("Hotel","metropolis"); ?></h1>
-  <p class="wow fadeInUp"><?php _e("Operated by a renown global hospitality brand, the hotel within the Metropolis complex will offer 350 rooms, and a variety of dining 
-options and services.","metropolis"); ?> </p>
+  <p class="wow fadeInUp"><?php _e("Operated by a renown global hospitality brand, the hotel within the Metropolis complex will offer 350 rooms, and a variety of dining options and services.","metropolis"); ?> </p>
 </div>
 </div>
 
@@ -79,8 +78,7 @@ options and services.","metropolis"); ?> </p>
 <div class="row">
 <div class="column small-8 small-centered text-center">
   <h1 class="wow fadeInUp"><?php _e("RETAIL COLLECTION AND FINE DINING","metropolis"); ?></h1>
-  <p class="wow fadeInUp"><?php _e("The Metropolis complex will offer a thoughtfully curated collection of retail and dining to provide its residents and guests with all elements 
-for effortless lifestyle.","metropolis"); ?></p>
+  <p class="wow fadeInUp"><?php _e("The Metropolis complex will offer a thoughtfully curated collection of retail and dining to provide its residents and guests with all elements for effortless lifestyle.","metropolis"); ?></p>
 </div>
 </div>
 </main>

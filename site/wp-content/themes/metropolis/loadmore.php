@@ -30,15 +30,15 @@
 
             if(!empty($file)){
               $enlace=$file;
-              $text="DOWNLOAD PDF";
+              $text=__("DOWNLOAD PDF","metropolis");
               $tar="_BLANK";
             }elseif(!empty($video)){
               $enlace=get_permalink();
-              $text="PLAY VIDEO";
+              $text=__("PLAY VIDEO","metropolis");
               $tar="";
             }else{
               $enlace=get_permalink();
-              $text="READ MORE";
+              $text=__("READ MORE","metropolis");
               $tar="";
             }
           ?>

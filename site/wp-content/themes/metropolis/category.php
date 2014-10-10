@@ -101,7 +101,7 @@ $idioma=pll_current_language();
 
          </section>
          <div class="loadMore-wrap">
-         <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more">Load More</a>
+         <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more"><?php _e("Load More","metropolis"); ?></a>
        </div>
       </section>
    </article>
