@@ -7,6 +7,7 @@
  */
 session_start();
 $activa="press";
+$press=get_post(pll_get_post(15,$idioma),"OBJECT");
 get_header(); ?>
 <article class="press-news">
       <section class="cover"></section>
@@ -50,7 +51,7 @@ get_header(); ?>
         ?>
                <br />
                <br />
-               <a href="<?php echo RAIZ; ?>/press" class="back"><?php _e("Back to all News","metropolis"); ?></a>
+               <a href="<?php echo RAIZ."/$press->post_name"; ?>" class="back"><?php _e("Back to all News","metropolis"); ?></a>
 			</article>
 			<?php 
       $next=get_previous_post();
