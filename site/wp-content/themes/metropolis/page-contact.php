@@ -337,8 +337,8 @@ get_header(); ?>
                            <div class="has-broker-wrapper">
                               <div class="field field-1">
                                  <label><?php _e("*Broker's name","metropolis"); ?></label>
-                                 <input name="broker_firstname" id="purchaser-broker-firstname" placeholder="First" data-place="First" class="text first required skip" type="text" />
-                                 <input name="broker_lastname"  id="purchaser-broker-lastname" placeholder="Last" data-place="Last" class="text last required skip" type="text" />
+                                 <input name="broker_firstname" id="purchaser-broker-firstname" placeholder="<?php _e("First","metropolis"); ?>" data-place="First" class="text first required skip" type="text" />
+                                 <input name="broker_lastname"  id="purchaser-broker-lastname" placeholder="<?php _e("Last","metropolis"); ?>" data-place="Last" class="text last required skip" type="text" />
                               </div>
                               <div class="field field-1">
                                  <label><?php _e("*Broker's Co. Contact Number","metropolis"); ?></label>

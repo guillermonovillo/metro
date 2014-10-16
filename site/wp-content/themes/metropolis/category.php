@@ -94,9 +94,21 @@ $idioma=pll_current_language();
 
          </section>
          <div class="loadMore-wrap">
-         <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more"><?php _e("Load More","metropolis"); ?></a>
+         <a href="#" data-page="2" data-mode="<?php echo $cat[0]->slug ?>" class="load-more" data-max="<?php echo $consulta->max_num_pages; ?>"><?php _e("Load More","metropolis"); ?></a>
        </div>
       </section>
    </article>
 
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".load-more").click(function(event) {
+      actual=$(".load-more").data("page");
+      total=$(".load-more").data("max");
+      if(actual > total){
+        $(".load-more").hide();
+      }
+    });
+  });
+</script>
