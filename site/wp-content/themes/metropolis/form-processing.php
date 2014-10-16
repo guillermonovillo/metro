@@ -18,13 +18,13 @@ if ( isset( $_POST['email'] ) && !empty( $_POST['email'] ) )
 if ( isset( $_POST['publication'] ) && !empty( $_POST['publication'] ) )
 	$message .= "publication: " . $_POST['publication'] . " \r\n";
 
-// $to = "paulette.kam@bwr-pr.com";
-$to2 = "ncornaggia@bridgerconway.com";
+$to = "paulette.kam@bwr-pr.com";
+// $to2 = "ncornaggia@bridgerconway.com";
 
 $subject = $form_subject;
 
 $response = new stdClass;
-$response->ok = mail($to2, $subject, $message, $header);
+$response->ok = mail($to, $subject, $message, $header);
 
 header("Location: ".$_POST['returnURL']);
 die();
