@@ -420,7 +420,7 @@ get_header(); ?>
 
 
             <div class="press" style="display: none;">
-               <form id="press-form" class="form" method="post" action="form-processing.php">
+               <form id="press-form" class="form" method="post" action="<?php echo URL; ?>/form-processing.php">
                   <input type="hidden" name="returnURL" value="<?php echo RAIZ; ?>/thanks<?php if($idioma=="zh"){echo "-zh";} ?>">
                   <fieldset>
                      <div class="row">

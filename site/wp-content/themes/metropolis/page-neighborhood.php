@@ -291,7 +291,7 @@ $count=1;
 <div class="row">
   <div class="column small-10 small-centered medium-6">
     <img src="<?php echo URL; ?>/images/neighborhood/neighborhood-3.jpg" width="100%" alt="UNIVERSITY OF SOUTH CALIFORNIA">
-<p class="caption column small-12 text-center wow fadeInUp"><?php _e("UNIVERSITY OF SOUTH CALIFORNIA","metropolis"); ?></p>
+<p class="caption column small-12 text-center wow fadeInUp"><?php _e("UNIVERSITY OF SOUTHERN CALIFORNIA","metropolis"); ?></p>
   </div>
 </div>
 
@@ -306,8 +306,6 @@ $count=1;
       <li>— <?php _e("University of Southern California","metropolis"); ?></li>
       <li>— <?php _e("USC Marshall School of Business","metropolis"); ?></li>
       <li>— <?php _e("The Loyola Law School Los Angeles of Loyola Marymount University","metropolis"); ?></li>
-      <li>— <?php _e("Figoly","metropolis"); ?></li>
-      <li>— <?php _e("Golden Gate University","metropolis"); ?></li>
       <li>— <?php _e("Southern California Institute of Architecture","metropolis"); ?></li>
       <li>— <?php _e("Zipper Hall at Colburn School of Performing Arts","metropolis"); ?></li>
     </ul>
