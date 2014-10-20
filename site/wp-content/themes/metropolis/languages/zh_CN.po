@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Metropolis\n"
-"POT-Creation-Date: 2014-10-20 19:02-0300\n"
-"PO-Revision-Date: 2014-10-20 19:03-0300\n"
+"POT-Creation-Date: 2014-10-20 19:11-0300\n"
+"PO-Revision-Date: 2014-10-20 19:12-0300\n"
 "Last-Translator: \n"
 "Language-Team: bridgerconway\n"
 "Language: zh_CN\n"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: .././content.php:16
 msgid "Featured post"
-msgstr ""
+msgstr "Featured post"
 
 #: .././content.php:66
 #, php-format
@@ -774,8 +774,8 @@ msgid "Tower 3"
 msgstr "三号住宅楼"
 
 #: .././page-life.php:25
-msgid "GQ:<br/>AMERICA'S <br>NEXT GREAT CITY<br>IS INSIDE L.A."
-msgstr "GQ 杂志<br/>美国<br/>下一座大都市<br/>藏在洛杉矶"
+msgid "GQ:<br>\"AMERICA'S <br>NEXT GREAT CITY<br>IS INSIDE L.A.\""
+msgstr "GQ 杂志<br/>美国<br/>下一座大都市<br/>藏在洛杉矶<br/>"
 
 #: .././page-life.php:36
 msgid "Cinematic Views"
@@ -872,7 +872,7 @@ msgstr "洛杉矶市区 DOWNTOWN LOS ANGELES "
 #: .././page-neighborhood.php:284
 msgid ""
 "Downtown is the epicenter<br>for exceptional educational<br>opportunities"
-msgstr "杉矶市中心<br>拥有<br>无限教育机会"
+msgstr "洛杉矶市中心<br>拥有<br>无限教育机会"
 
 #: .././page-neighborhood.php:285
 msgid ""
@@ -884,12 +884,12 @@ msgstr ""
 "级的教育机会，包括私立学校、高等院校与图书馆。"
 
 #: .././page-neighborhood.php:294
-msgid "UNIVERSITY OF SOUTH CALIFORNIA"
+msgid "UNIVERSITY OF SOUTHERN CALIFORNIA"
 msgstr ""
 
 #: .././page-neighborhood.php:303
 msgid "Colleges and Universities"
-msgstr "高校学院与大学"
+msgstr "高等院校"
 
 #: .././page-neighborhood.php:305
 msgid "Fashion Institute of Design & Merchandising"
@@ -908,126 +908,118 @@ msgid "The Loyola Law School Los Angeles of Loyola Marymount University"
 msgstr ""
 
 #: .././page-neighborhood.php:309
-msgid "Figoly"
-msgstr ""
-
-#: .././page-neighborhood.php:310
-msgid "Golden Gate University"
-msgstr ""
-
-#: .././page-neighborhood.php:311
 msgid "Southern California Institute of Architecture"
 msgstr ""
 
-#: .././page-neighborhood.php:312
+#: .././page-neighborhood.php:310
 msgid "Zipper Hall at Colburn School of Performing Arts"
 msgstr ""
 
-#: .././page-neighborhood.php:316
+#: .././page-neighborhood.php:314
 msgid "Public schools"
 msgstr "公立学校"
 
-#: .././page-neighborhood.php:318
+#: .././page-neighborhood.php:316
 msgid "Alliance Dr. Olga Mohan High"
 msgstr ""
 
-#: .././page-neighborhood.php:319
+#: .././page-neighborhood.php:317
 msgid "Alliance Gertz-Ressler High"
 msgstr ""
 
-#: .././page-neighborhood.php:320
+#: .././page-neighborhood.php:318
 msgid "CA Academy for Liberal Studies Early College High"
 msgstr ""
 
-#: .././page-neighborhood.php:321
+#: .././page-neighborhood.php:319
 msgid "Castelar Street Elementary"
 msgstr ""
 
-#: .././page-neighborhood.php:322
+#: .././page-neighborhood.php:320
 msgid "Downtown Business High"
 msgstr ""
 
-#: .././page-neighborhood.php:323
+#: .././page-neighborhood.php:321
 msgid "Endeavor College Preparatory Charter"
 msgstr ""
 
-#: .././page-neighborhood.php:324
+#: .././page-neighborhood.php:322
 msgid "Frank Lanterman"
 msgstr ""
 
-#: .././page-neighborhood.php:325
+#: .././page-neighborhood.php:323
 msgid "Garza (Carmen Lomas) Primary Center"
 msgstr ""
 
-#: .././page-neighborhood.php:326
+#: .././page-neighborhood.php:324
 msgid "New Designs Charter"
 msgstr ""
 
-#: .././page-neighborhood.php:330
+#: .././page-neighborhood.php:328
 msgid "Private schools"
 msgstr "私立学校"
 
-#: .././page-neighborhood.php:332
+#: .././page-neighborhood.php:330
 msgid "Bishop Mora Salesian High School"
 msgstr ""
 
-#: .././page-neighborhood.php:333
+#: .././page-neighborhood.php:331
 msgid "Cathedral High School"
 msgstr ""
 
-#: .././page-neighborhood.php:334
+#: .././page-neighborhood.php:332
 msgid "Divine Providence Day Nursery and Kindergarten"
 msgstr ""
 
-#: .././page-neighborhood.php:335
+#: .././page-neighborhood.php:333
 msgid "Dolores Mission"
 msgstr ""
 
-#: .././page-neighborhood.php:336
+#: .././page-neighborhood.php:334
 msgid "Immaculate Conception"
 msgstr ""
 
-#: .././page-neighborhood.php:337
+#: .././page-neighborhood.php:335
 msgid "New Covenant Academy"
 msgstr ""
 
-#: .././page-neighborhood.php:338
+#: .././page-neighborhood.php:336
 msgid "Personal Coaching Systems"
 msgstr ""
 
-#: .././page-neighborhood.php:339
+#: .././page-neighborhood.php:337
 msgid "Red Star"
 msgstr ""
 
-#: .././page-neighborhood.php:340
+#: .././page-neighborhood.php:338
 msgid "Santa Isabel"
 msgstr ""
 
-#: .././page-neighborhood.php:341
+#: .././page-neighborhood.php:339
 msgid "Star Christian"
 msgstr ""
 
-#: .././page-neighborhood.php:342
+#: .././page-neighborhood.php:340
 msgid "St. Mary Catholic Elementary"
 msgstr ""
 
-#: .././page-neighborhood.php:343
+#: .././page-neighborhood.php:341
 msgid "St. Turibius Elementary"
 msgstr ""
 
-#: .././page-neighborhood.php:344
+#: .././page-neighborhood.php:342
 msgid "St. Vincent Elementary School"
 msgstr ""
 
-#: .././page-neighborhood.php:351
+#: .././page-neighborhood.php:349
 msgid "downtown l.a.<br>neighborhood favorites"
 msgstr "洛杉矶市中心<br>周边最爱"
 
-#: .././page-neighborhood.php:357
+#: .././page-neighborhood.php:355
 msgid "“America’s Next Great City Is Inside L.A.”"
 msgstr "“美国下一座大都市，藏在洛杉矶"
 
-#: .././page-neighborhood.php:358
+#: .././page-neighborhood.php:356
 msgid ""
 "“...amid the glittering towers and crumbly Art Deco facades, a new "
 "generation of adventurous chefs, bartenders, loft dwellers, artists, and "
@@ -1038,23 +1030,23 @@ msgstr ""
 "阁楼住客、艺术家与开发商正在打造一个与70年代的纽约一样璀璨夺目的社区……美国最"
 "酷炫最新潮的市中心。”"
 
-#: .././page-neighborhood.php:360
+#: .././page-neighborhood.php:358
 msgid "GQ Magazine, January 2014."
 msgstr "GQ 杂志，2014年1月"
 
-#: .././page-neighborhood.php:370
+#: .././page-neighborhood.php:368
 msgid "Food & Drinks"
 msgstr "饮食"
 
-#: .././page-neighborhood.php:389
+#: .././page-neighborhood.php:387
 msgid "Entertainment"
 msgstr "娱乐"
 
-#: .././page-neighborhood.php:407
+#: .././page-neighborhood.php:405
 msgid "Schools and Parks"
 msgstr "学校与公园"
 
-#: .././page-neighborhood.php:425
+#: .././page-neighborhood.php:423
 msgid "Shopping and relaxation"
 msgstr "购物与休闲"
 
