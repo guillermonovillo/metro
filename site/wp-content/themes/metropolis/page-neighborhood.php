@@ -302,12 +302,15 @@ $count=1;
   <div class="column  small-12 small-centered medium-uncentered medium-4">
     <h2 class="edu wow fadeInUp"><?php _e("Colleges and Universities","metropolis"); ?></h2>
     <ul  class="wow fadeInUp edu" data-wow-delay="0.25s">
+      <li>— <?php _e("Colburn School Of Performing Arts","metropolis"); ?></li>
       <li>— <?php _e("Fashion Institute of Design & Merchandising","metropolis"); ?></li>
+       <li>— <?php _e("Southern California Institute of Architecture","metropolis"); ?></li>
+        <li>— <?php _e("The Loyola Law School Los Angeles of Loyola Marymount University","metropolis"); ?></li>
       <li>— <?php _e("University of Southern California","metropolis"); ?></li>
       <li>— <?php _e("USC Marshall School of Business","metropolis"); ?></li>
-      <li>— <?php _e("The Loyola Law School Los Angeles of Loyola Marymount University","metropolis"); ?></li>
-      <li>— <?php _e("Southern California Institute of Architecture","metropolis"); ?></li>
-      <li>— <?php _e("Zipper Hall at Colburn School of Performing Arts","metropolis"); ?></li>
+     
+     
+ 
     </ul>
   </div>
   <div class="column  small-12 small-centered medium-uncentered medium-4">
@@ -334,12 +337,14 @@ $count=1;
        <li>— <?php _e("Immaculate Conception","metropolis"); ?> </li>
        <li>— <?php _e("New Covenant Academy","metropolis"); ?> </li>
        <li>— <?php _e("Personal Coaching Systems","metropolis"); ?> </li>
+       <li>— <?php _e("Pilgrim School","metropolis"); ?> </li>
        <li>— <?php _e("Red Star","metropolis"); ?> </li>
        <li>— <?php _e("Santa Isabel","metropolis"); ?> </li>
        <li>— <?php _e("Star Christian","metropolis"); ?> </li>
        <li>— <?php _e("St. Mary Catholic Elementary","metropolis"); ?> </li>
        <li>— <?php _e("St. Turibius Elementary","metropolis"); ?> </li>
        <li>— <?php _e("St. Vincent Elementary School","metropolis"); ?> </li>
+
      </ul>
   </div>
 </div>

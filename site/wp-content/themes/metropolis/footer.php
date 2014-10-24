@@ -25,15 +25,16 @@
       <div class="tel">
         <a href="tel:8556578300"><?php _e("855-657-8300","metropolis"); ?></a>
       </div>
+      <div class="email">
+        <a href="mailto:info@greenlandusa.com">info@greenlandusa.com</a>
+      </div>
     </div>
     <div class="vcard">
       <span class="fn org url"><?php _e("Sales Center China","metropolis"); ?> —</span>
       <div class="tel">
         <a href="tel:＋864006285588"><?php _e("＋86 400-628-5588","metropolis"); ?></a>
       </div>
-      <div class="email">
-        <a href="mailto:info@greenlandusa.com">info@greenlandusa.com</a>
-      </div>
+
     </div>
 </div>
 <div class="column large-6 medium-6 small-10 small-centered medium-uncentered greenland">
